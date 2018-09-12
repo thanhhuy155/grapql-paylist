@@ -1,0 +1,219 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 17, Errors: 0, Skipped: 0, Time elapsed: 1,688.366 s <<< FAILURE! - in TestSuite
+ArticleTCNo5(tests.AndroidTestCases)  Time elapsed: 71.935 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.ArticleTCNo5(AndroidTestCases.java:113)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1f4d38f9 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.ArticleTCNo5(AndroidTestCases.java:113)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.ArticleTCNo5(AndroidTestCases.java:113)
+
+BookMarkTCNo1(tests.AndroidTestCases)  Time elapsed: 34.813 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.BookMarkTCNo1(AndroidTestCases.java:87)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5dce5c03 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.BookMarkTCNo1(AndroidTestCases.java:87)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.BookMarkTCNo1(AndroidTestCases.java:87)
+
+BookMarkTCNo11(tests.AndroidTestCases)  Time elapsed: 34.138 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:97)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@39342614 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:97)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:97)
+
+BookMarkTCNo14(tests.AndroidTestCases)  Time elapsed: 40.317 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.BookMarkTCNo14(AndroidTestCases.java:102)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4895e8f6 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.BookMarkTCNo14(AndroidTestCases.java:102)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.BookMarkTCNo14(AndroidTestCases.java:102)
+
+BookMarkTCNo3(tests.AndroidTestCases)  Time elapsed: 33.943 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.BookMarkTCNo3(AndroidTestCases.java:92)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1f72fbd1 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.BookMarkTCNo3(AndroidTestCases.java:92)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.BookMarkTCNo3(AndroidTestCases.java:92)
+
+GeneralTCNo1(tests.AndroidTestCases)  Time elapsed: 41.923 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.GeneralTCNo1(AndroidTestCases.java:9)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@52bb3dcd (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.GeneralTCNo1(AndroidTestCases.java:9)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.GeneralTCNo1(AndroidTestCases.java:9)
+
+GeneralTCNo2(tests.AndroidTestCases)  Time elapsed: 41.396 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.GeneralTCNo2(AndroidTestCases.java:14)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@329efc61 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.GeneralTCNo2(AndroidTestCases.java:14)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.GeneralTCNo2(AndroidTestCases.java:14)
+
+GeneralTCNo3(tests.AndroidTestCases)  Time elapsed: 7.509 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Command is not supported (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38083, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8203, udid: FA69J0300462, version: }
+Session ID: b430e673251a76205ca69206f4ec3e9edee2b88f
+	at tests.AndroidTestCases.GeneralTCNo3(AndroidTestCases.java:19)
+
+GeneralTCNo4(tests.AndroidTestCases)  Time elapsed: 34.975 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.GeneralTCNo4(AndroidTestCases.java:24)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6efc9d3f (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.GeneralTCNo4(AndroidTestCases.java:24)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.GeneralTCNo4(AndroidTestCases.java:24)
+
+GeneralTCNo7(tests.AndroidTestCases)  Time elapsed: 78.459 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at tests.AndroidTestCases.GeneralTCNo7(AndroidTestCases.java:29)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@68cc6319 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.GeneralTCNo7(AndroidTestCases.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.GeneralTCNo7(AndroidTestCases.java:29)
+
+HomeTabTCNo8(tests.AndroidTestCases)  Time elapsed: 41.755 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[contains(@resource-id,'subject')]})
+	at tests.AndroidTestCases.HomeTabTCNo8(AndroidTestCases.java:50)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@342a5b57 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.HomeTabTCNo8(AndroidTestCases.java:50)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.widget.EditText[contains(@resource-id,'subject')]})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.HomeTabTCNo8(AndroidTestCases.java:50)
+
+SectionTabTCNo12(tests.AndroidTestCases)  Time elapsed: 1,116.597 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38083, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8203, udid: FA69J0300462, version: }
+Session ID: b430e673251a76205ca69206f4ec3e9edee2b88f
+	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:81)
+Caused by: java.lang.IllegalArgumentException: Cannot decode response content: 
+	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:81)
+Caused by: org.openqa.selenium.json.JsonException: 
+java.io.EOFException: End of input at line 1 column 1 path $
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:81)
+Caused by: java.io.EOFException: End of input at line 1 column 1 path $
+	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:81)
+
+SectionTabTCNo3(tests.AndroidTestCases)  Time elapsed: 0.774 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Session not started or terminated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38083, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8203, udid: FA69J0300462, version: }
+Session ID: b430e673251a76205ca69206f4ec3e9edee2b88f
+	at tests.AndroidTestCases.SectionTabTCNo3(AndroidTestCases.java:56)
+
+SectionTabTCNo4(tests.AndroidTestCases)  Time elapsed: 0.717 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Session not started or terminated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38083, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8203, udid: FA69J0300462, version: }
+Session ID: b430e673251a76205ca69206f4ec3e9edee2b88f
+	at tests.AndroidTestCases.SectionTabTCNo4(AndroidTestCases.java:61)
+
+SectionTabTCNo6(tests.AndroidTestCases)  Time elapsed: 0.812 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Session not started or terminated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38083, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8203, udid: FA69J0300462, version: }
+Session ID: b430e673251a76205ca69206f4ec3e9edee2b88f
+	at tests.AndroidTestCases.SectionTabTCNo6(AndroidTestCases.java:66)
+
+SectionTabTCNo8(tests.AndroidTestCases)  Time elapsed: 0.74 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Session not started or terminated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38083, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8203, udid: FA69J0300462, version: }
+Session ID: b430e673251a76205ca69206f4ec3e9edee2b88f
+	at tests.AndroidTestCases.SectionTabTCNo8(AndroidTestCases.java:71)
+
+tearDown(tests.AndroidTestCases)  Time elapsed: 1.511 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Session not started or terminated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38083, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8203, udid: FA69J0300462, version: }
+Session ID: b430e673251a76205ca69206f4ec3e9edee2b88f
+
