@@ -38,9 +38,9 @@ public class ArticlePage extends BasePage {
         articleDetailElements.back();
 
         bottomBarElements.settingTabClick();
-        bottomBarElements.bookMarkTabClick();
         bottomBarElements.sectionTabClick();
         bottomBarElements.homeTabClick();
+        bottomBarElements.bookMarkTabClick();
 
         closeApp();
     }

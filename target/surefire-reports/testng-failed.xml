@@ -6,22 +6,10 @@
       <class name="tests.AndroidTestCases">
         <methods>
           <include name="HomeTabTCNo8"/>
-          <include name="SectionTabTCNo12"/>
           <include name="BookMarkTCNo11"/>
-          <include name="BookMarkTCNo1"/>
-          <include name="SectionTabTCNo4"/>
-          <include name="SectionTabTCNo3"/>
           <include name="tearDown"/>
           <include name="BookMarkTCNo14"/>
-          <include name="GeneralTCNo7"/>
-          <include name="GeneralTCNo2"/>
           <include name="SectionTabTCNo8"/>
-          <include name="GeneralTCNo1"/>
-          <include name="BookMarkTCNo3"/>
-          <include name="GeneralTCNo4"/>
-          <include name="SectionTabTCNo6"/>
-          <include name="GeneralTCNo3"/>
-          <include name="ArticleTCNo5"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.AndroidTestCases -->

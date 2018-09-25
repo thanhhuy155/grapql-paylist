@@ -1,21 +1,22 @@
 package pages;
 
 import elements.ArticleDetailElements;
+import elements.CommonElements;
 import elements.FeedListElements;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
-import org.testng.Assert;
 import utils.Constants;
 import utils.Utils;
 
 public class HomeTab extends BasePage {
     private FeedListElements feedListElements;
     private ArticleDetailElements articleDetailElements;
+    private CommonElements commonElements;
 
     public HomeTab(AppiumDriver driver) {
         super(driver);
         feedListElements = new FeedListElements(driver);
         articleDetailElements = new ArticleDetailElements(driver);
+        commonElements = new CommonElements(driver);
     }
 
     public void TestCaseNo2() {
@@ -45,7 +46,7 @@ public class HomeTab extends BasePage {
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         if (Utils.isAndroidPlatform()) {
-            Utils.androidScroll(appiumDriver);
+            Utils.scrollByTouchAction(appiumDriver);
         } else {
             Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmark, Constants.LABLE.IOS_BOOKMARK_LB);
         }
@@ -54,7 +55,10 @@ public class HomeTab extends BasePage {
         feedListElements.buttonShareClick();
 
         if (Utils.isAndroidPlatform()) {
-            feedListElements.gmailShareBoxClick();
+            if(commonElements.gmailShareBox.isDisplayed()==false){
+                Utils.scrollHorizontal(appiumDriver);
+            }
+            commonElements.gmailShareBoxClick();
             feedListElements.assetResult(title, feedListElements.getShareGmailTitle());
         } else {
             printLog("Need to implement for iOS");

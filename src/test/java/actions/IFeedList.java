@@ -5,6 +5,10 @@ public interface IFeedList {
 
     String getFeedItemTopStoryTitle();
 
+    String getArticleAuthorOnFeedList();
+
+    String getArticleDateOnFeedList();
+
     void feedItemClick();
 
     void feedItemTopStoryClick();

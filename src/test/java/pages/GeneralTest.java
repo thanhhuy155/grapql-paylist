@@ -4,6 +4,7 @@ import elements.ArticleDetailElements;
 import elements.BottomBarElements;
 import elements.FeedListElements;
 import io.appium.java_client.AppiumDriver;
+import utils.Utils;
 
 public class GeneralTest extends BasePage {
     private BottomBarElements bottomBarElements;
@@ -22,9 +23,9 @@ public class GeneralTest extends BasePage {
         turnOnCellularConnection();
         lauchApp();
 
-        bottomBarElements.bookMarkTabClick();
         bottomBarElements.settingTabClick();
         bottomBarElements.sectionTabClick();
+        bottomBarElements.bookMarkTabClick();
 
         closeApp();
         turnOnWifi();
@@ -35,9 +36,9 @@ public class GeneralTest extends BasePage {
         turnOffCellularConnection();
         lauchApp();
 
-        bottomBarElements.bookMarkTabClick();
         bottomBarElements.settingTabClick();
         bottomBarElements.sectionTabClick();
+        bottomBarElements.bookMarkTabClick();
 
         closeApp();
         turnOnWifi();
@@ -49,9 +50,9 @@ public class GeneralTest extends BasePage {
         resetApp();
         lauchApp();
 
-        bottomBarElements.bookMarkTabClick();
         bottomBarElements.settingTabClick();
         bottomBarElements.sectionTabClick();
+        bottomBarElements.bookMarkTabClick();
 
         closeApp();
         turnOnWifi();
@@ -62,11 +63,13 @@ public class GeneralTest extends BasePage {
         lauchApp();
 
         bottomBarElements.sectionTabClick();
-        bottomBarElements.bookMarkTabClick();
-        bottomBarElements.searchTabClick();
         bottomBarElements.settingTabClick();
         bottomBarElements.homeTabClick();
 
+        if(!Utils.isAndroidPlatform()){
+            bottomBarElements.searchTabClick();
+        }
+        bottomBarElements.bookMarkTabClick();
         closeApp();
     }
 
@@ -78,8 +81,8 @@ public class GeneralTest extends BasePage {
 
         bottomBarElements.sectionTabClick();
         bottomBarElements.homeTabClick();
-        bottomBarElements.bookMarkTabClick();
         bottomBarElements.settingTabClick();
+        bottomBarElements.bookMarkTabClick();
 
         closeApp();
     }

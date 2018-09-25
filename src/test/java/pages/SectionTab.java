@@ -1,22 +1,15 @@
 package pages;
 
-import elements.ArticleDetailElements;
-import elements.BottomBarElements;
-import elements.FeedListElements;
-import elements.SectionElements;
+import elements.*;
 import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.remote.RemoteWebElement;
-import utils.Constants;
 import utils.Utils;
-
-import java.util.HashMap;
 
 public class SectionTab extends BasePage {
     private BottomBarElements bottomBarElements;
     private FeedListElements feedListElements;
     private SectionElements sectionElements;
     private ArticleDetailElements articleDetailElements;
+    private CommonElements commonElements;
 
     public SectionTab(AppiumDriver driver) {
         super(driver);
@@ -24,6 +17,7 @@ public class SectionTab extends BasePage {
         feedListElements = new FeedListElements(driver);
         articleDetailElements = new ArticleDetailElements(driver);
         sectionElements = new SectionElements(driver);
+        commonElements = new CommonElements(driver);
     }
 
     public void TestCaseNo3() {
@@ -74,8 +68,11 @@ public class SectionTab extends BasePage {
         sectionElements.buttonShareClick();
 
         if (Utils.isAndroidPlatform()) {
-            sectionElements.selectShareGmailItemClick();
-            sectionElements.assertTitleResult(title, sectionElements.getShareGmailTitle());
+            if (commonElements.gmailShareBox.isDisplayed()==false){
+                Utils.scrollHorizontal(appiumDriver);
+            }
+            commonElements.selectShareGmailItemClick();
+            commonElements.assertTitleResult(title, sectionElements.getShareGmailTitle());
         } else {
 
         }

@@ -34,6 +34,16 @@ public class FeedListElements extends CommonElements implements IFeedList {
     @iOSFindBy(xpath = "//XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
     public MobileElement feedItemSectionTab;
 
+    @AndroidFindBy(id = "com.ap.philly:id/dateArticle")
+    public MobileElement articleDate;
+
+    @AndroidFindBy(id = "articleAuthor")
+    public MobileElement articleAuthor;
+
+    @AndroidFindBy (id = "cardList")
+    public MobileElement feedList;
+
+
     @Override
     public void feedItemClick() {
         feedItemLayout.click();
@@ -58,4 +68,15 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public String getFeedItemTopStoryTitle() {
         return feedItemTitleTopStory.getText();
     }
+
+    @Override
+    public String getArticleAuthorOnFeedList() {
+        return articleAuthor.getText();
+    }
+
+    @Override
+    public String getArticleDateOnFeedList() {
+        return articleDate.getText();
+    }
+
 }
