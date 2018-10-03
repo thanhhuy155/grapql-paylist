@@ -1,6 +1,6 @@
 package pages;
 
-import elements.BottomBarElements;
+import elements.CommonElements;
 import elements.SettingElements;
 import io.appium.java_client.AppiumDriver;
 import utils.Constants;
@@ -10,18 +10,19 @@ import java.util.Date;
 
 public class SettingTab extends BasePage {
     private SettingElements settingElements;
-    private BottomBarElements bottomBarElements;
+    private CommonElements commonElements;
 
     public SettingTab(AppiumDriver driver) {
         super(driver);
         settingElements = new SettingElements(driver);
-        bottomBarElements = new BottomBarElements(driver);
+        commonElements = new CommonElements(driver);
     }
 
     public void TestCaseNo1() {
         lauchApp();
 
-        bottomBarElements.settingTabClick();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTabClick();
         settingElements.notificationMenuClick();
         if (!Utils.isAndroidPlatform()) {
             settingElements.notificationSettingClick();
@@ -36,8 +37,9 @@ public class SettingTab extends BasePage {
     public void TestCaseNo4() {
         lauchApp();
 
+        waitForVisibilityOf(commonElements.bottomTab);
         if (!Utils.isAndroidPlatform()) {
-            bottomBarElements.settingTabClick();
+            commonElements.settingTabClick();
             settingElements.aboutClick();
             settingElements.assertSettingResult(Constants.SETTING_TITLE.TERMS_OF_USE, settingElements.getTermsofUseTitle());
             settingElements.assertSettingResult(Constants.SETTING_TITLE.PRIVACY_POLICY, settingElements.getPrivacyPolicyTitle());
@@ -48,9 +50,11 @@ public class SettingTab extends BasePage {
     }
 
     public void TestCaseNo5() {
+
         if (!Utils.isAndroidPlatform()) {
             lauchApp();
-            bottomBarElements.settingTabClick();
+            waitForVisibilityOf(commonElements.bottomTab);
+            commonElements.settingTabClick();
             settingElements.moreAppsFromPMNClick();
             settingElements.assertSettingResult(Constants.SETTING_TITLE.THE_PHILADELPHIA_INQUIRER, settingElements.getPhiladelphiaInquirerTitle());
             settingElements.assertSettingResult(Constants.SETTING_TITLE.PHILLY_SPORTS_NEWS, settingElements.getPhillySportsNewsTitle());
@@ -62,9 +66,11 @@ public class SettingTab extends BasePage {
     }
 
     public void TestCaseNo6() {
+
         if (!Utils.isAndroidPlatform()) {
             lauchApp();
-            bottomBarElements.settingTabClick();
+            waitForVisibilityOf(commonElements.bottomTab);
+            commonElements.settingTabClick();
 
             settingElements.assertResult(Utils.isAndroidPlatform()
                             ? Constants.APP_VERSION.ANDROID : Constants.APP_VERSION.IOS,
@@ -74,9 +80,11 @@ public class SettingTab extends BasePage {
     }
 
     public void TestCaseNo7() {
+
         if (!Utils.isAndroidPlatform()) {
             lauchApp();
-            bottomBarElements.settingTabClick();
+            waitForVisibilityOf(commonElements.bottomTab);
+            commonElements.settingTabClick();
 
             settingElements.assertResult(String.valueOf(new Date().getYear()),
                     settingElements.getAppVersion());

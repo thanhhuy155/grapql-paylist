@@ -22,8 +22,9 @@ public class HomeTab extends BasePage {
     public void TestCaseNo2() {
         lauchApp();
 
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         String title = feedListElements.getFeedItemTopStoryTitle();
-        feedListElements.feedItemTopStoryClick();
+        feedListElements.firstTopStorySection.click();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
 
         closeApp();
@@ -32,8 +33,9 @@ public class HomeTab extends BasePage {
     public void TestCaseNo6() {
         lauchApp();
 
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         String title = feedListElements.getFeedItemTitle();
-        feedListElements.feedItemClick();
+        feedListElements.firstFeedItemSection.click();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
 
         closeApp();

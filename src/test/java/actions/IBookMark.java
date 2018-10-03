@@ -13,5 +13,7 @@ public interface IBookMark {
 
     String getBookMarkTitle();
 
+    String clickAndGetArticleTitle();
+
 
 }

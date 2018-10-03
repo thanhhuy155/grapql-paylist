@@ -1,28 +1,32 @@
 package pages;
 
 import elements.ArticleDetailElements;
-import elements.BottomBarElements;
+import elements.CommonElements;
 import elements.FeedListElements;
 import io.appium.java_client.AppiumDriver;
 
 public class ArticlePage extends BasePage {
     private ArticleDetailElements articleDetailElements;
     private FeedListElements feedListElements;
-    private BottomBarElements bottomBarElements;
+    private CommonElements commonElements;
 
     public ArticlePage(AppiumDriver driver) {
         super(driver);
         feedListElements = new FeedListElements(driver);
         articleDetailElements = new ArticleDetailElements(driver);
-        bottomBarElements = new BottomBarElements(driver);
+        commonElements = new CommonElements(driver);
     }
 
 
     public void TestCaseNo1() {
         lauchApp();
 
-        String title = feedListElements.getFeedItemTopStoryTitle();
-        feedListElements.feedItemTopStoryClick();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
+        String title = feedListElements.getFeedItemTitle();
+        feedListElements.firstFeedItemSection.click();
+
+        //feedListElements.feedItemTopStoryClick();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
 
         closeApp();
@@ -37,10 +41,10 @@ public class ArticlePage extends BasePage {
         unLockDevice();
         articleDetailElements.back();
 
-        bottomBarElements.settingTabClick();
-        bottomBarElements.sectionTabClick();
-        bottomBarElements.homeTabClick();
-        bottomBarElements.bookMarkTabClick();
+        commonElements.settingTabClick();
+        commonElements.sectionTabClick();
+        commonElements.homeTabClick();
+        commonElements.bookMarkTabClick();
 
         closeApp();
     }

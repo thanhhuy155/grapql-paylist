@@ -59,4 +59,12 @@ public class BookMarkElements extends CommonElements implements IBookMark {
     public String getBookMarkTitle() {
         return bookmarkTitle.getText();
     }
+
+    @Override
+    public String clickAndGetArticleTitle(){
+        String title;
+        title = getBookMarkTitle();
+        bookMarkItemClick();
+        return title;
+    }
 }

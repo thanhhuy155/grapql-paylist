@@ -16,7 +16,7 @@ public class SectionElements extends CommonElements implements ISection {
     }
 
     @AndroidFindBy(id = "card_view_category")
-    @iOSFindBy(id = "News")
+    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
     public MobileElement sectionItem;
 
     @Override

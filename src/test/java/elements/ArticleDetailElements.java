@@ -22,7 +22,7 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
     public MobileElement articleDetailTitle;
 
     @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeButton")
     public MobileElement backBtn;
 
     @AndroidFindBy(id = "com.ap.philly:id/bookmark")

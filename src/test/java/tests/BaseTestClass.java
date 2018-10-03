@@ -13,6 +13,7 @@ public class BaseTestClass extends AppiumBaseClass {
     SectionTab sectionTab;
     SettingTab settingTab;
     ArticlePage articlePage;
+    SearchTab searchTab;
 
     @BeforeTest
     public void setUp() throws Exception {
@@ -22,6 +23,7 @@ public class BaseTestClass extends AppiumBaseClass {
         bookmarkTab = new BookmarkTab(driver());
         sectionTab = new SectionTab(driver());
         settingTab = new SettingTab(driver());
+        searchTab = new SearchTab(driver());
         articlePage = new ArticlePage(driver());
     }
 

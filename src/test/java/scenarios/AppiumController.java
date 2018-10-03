@@ -17,13 +17,14 @@ import java.util.concurrent.TimeUnit;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class AppiumController {
-    public static OS executionOS = OS.ANDROID;
+    public static OS executionOS = OS.IOS_Simulator;
 
     public enum OS {
         ANDROID,
         IOS,
         ANDROID_BROWSERSTACK,
         IOS_BROWSERSTACK,
+        IOS_Simulator,
     }
 
     public static AppiumController instance = new AppiumController();
@@ -52,12 +53,25 @@ public class AppiumController {
             case IOS:
                 classpathRoot = new File(System.getProperty("user.dir"));
                 appDir = new File(classpathRoot, "/app");
-                app = new File(appDir, "phillydotcom.app");
-                capabilities.setCapability("platformName", "ios");
-                capabilities.setCapability("deviceName", "iPhone 7");
+                app = new File(appDir, "PhillyDotCome.app");
+                capabilities.setCapability("platformName", "iOS");
+                capabilities.setCapability("platformVersion", "11.4");
+                capabilities.setCapability("deviceName", "iPhone X");
                 capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("automationName", "XCUITest");
-                driver = new IOSDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+                driver = new IOSDriver(new URL("http://0.0.0.0:4724/wd/hub"), capabilities);
+                break;
+            case IOS_Simulator:
+                classpathRoot = new File(System.getProperty("user.dir"));
+                appDir = new File(classpathRoot, "/app");
+                app = new File(appDir, "PhillyDotCom.app");
+                capabilities.setCapability("platformName", "iOS");
+                capabilities.setCapability("deviceName", "iPhone X");
+                capabilities.setCapability("platformVersion", "11.4");
+                capabilities.setCapability("app", app.getAbsolutePath());
+                capabilities.setCapability("automationName", "XCUITest");
+                capabilities.setCapability("noReset","true");
+                driver = new IOSDriver(new URL("http://0.0.0.0:4724/wd/hub"), capabilities);
                 break;
             case ANDROID_BROWSERSTACK:
                 capabilities.setCapability("platformName", "Android");

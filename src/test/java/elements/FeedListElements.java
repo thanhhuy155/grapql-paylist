@@ -7,6 +7,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.Utils;
 
 public class FeedListElements extends CommonElements implements IFeedList {
 
@@ -16,7 +17,7 @@ public class FeedListElements extends CommonElements implements IFeedList {
     }
 
     @AndroidFindBy(id = "card_view_article")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeImage[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly.com\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage")
     public MobileElement feedItemTopStoryLayout;
 
     @AndroidFindBy(id = "cardLayoutArticle")
@@ -28,11 +29,23 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public MobileElement feedItemTitle;
 
     @AndroidFindBy(id = "tv_top_story_title")
-    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText[1]")
     public MobileElement feedItemTitleTopStory;
+
+    //========================================================================================//
+    //iOS element only
+    @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly.com\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]")
+    public  MobileElement firstFeedItemSection;
+
+    @iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"Philly.com\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
+    public MobileElement firstTopStorySection;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly.com\"]//XCUIElementTypeStaticText/following-sibling::XCUIElementTypeOther/XCUIElementTypeImage")
+    public MobileElement imageOfArticle;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
     public MobileElement feedItemSectionTab;
+    //========================================================================================//
 
     @AndroidFindBy(id = "com.ap.philly:id/dateArticle")
     public MobileElement articleDate;
@@ -51,7 +64,12 @@ public class FeedListElements extends CommonElements implements IFeedList {
 
     @Override
     public void feedItemTopStoryClick() {
-        feedItemTopStoryLayout.click();
+        if(!Utils.isAndroidPlatform()){
+            firstTopStorySection.click();
+        }
+        else {
+            feedItemTopStoryLayout.click();
+        }
     }
 
     @Override
@@ -78,5 +96,10 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public String getArticleDateOnFeedList() {
         return articleDate.getText();
     }
+
+    @Override
+    public void bookmarkArticle(){
+    }
+
 
 }

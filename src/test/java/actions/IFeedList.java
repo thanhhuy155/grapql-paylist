@@ -9,6 +9,8 @@ public interface IFeedList {
 
     String getArticleDateOnFeedList();
 
+    void bookmarkArticle();
+
     void feedItemClick();
 
     void feedItemTopStoryClick();

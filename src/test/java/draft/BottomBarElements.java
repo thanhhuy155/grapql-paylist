@@ -1,6 +1,7 @@
-package elements;
+package draft;
 
 import actions.IBottomBar;
+import elements.BookMarkElements;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -57,9 +58,12 @@ public class BottomBarElements implements IBottomBar {
     @Override
     public void bookMarkTabClick() {
         bookMarkTab.click();
-//        if (Utils.isAndroidPlatform()) {
-//            bookMarkElements.clickLogin();
-//        }
+        if (Utils.isAndroidPlatform()) {
+            if(bookMarkElements.googleClientLogin.isDisplayed()==true){
+                bookMarkElements.clickLogin();
+            }
+
+        }
     }
 
     @Override

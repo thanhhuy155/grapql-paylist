@@ -5,18 +5,9 @@
     <classes>
       <class name="tests.iOSTestCases">
         <methods>
-          <include name="BookMarkTCNo14"/>
-          <include name="SectionTabTCNo4"/>
-          <include name="HomeTabTCNo2"/>
-          <include name="SettingTabTCNo4"/>
-          <include name="BookMarkTCNo1"/>
-          <include name="SettingTabTCNo1"/>
+          <include name="GeneralTestNo11"/>
           <include name="tearDown"/>
-          <include name="HomeTabTCNo6"/>
-          <include name="SectionTabTCNo6"/>
-          <include name="SettingTabTCNo5"/>
           <include name="setUp"/>
-          <include name="SectionTabTCNo11"/>
         </methods>
       </class> <!-- tests.iOSTestCases -->
     </classes>

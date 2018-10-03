@@ -13,5 +13,15 @@ public interface ICommon {
 
     void gmailShareBoxClick();
 
+    void homeTabClick();
+
+    void sectionTabClick();
+
+    void searchTabClick();
+
+    void bookMarkTabClick();
+
+    void settingTabClick();
+
     String getShareGmailTitle();
 }

@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="AndroidSuite" duration-ms="128150" started-at="2018-09-20T14:14:45Z" finished-at="2018-09-20T14:16:54Z">
+  <suite name="iOSSuite" duration-ms="260237" started-at="2018-10-03T07:52:37Z" finished-at="2018-10-03T07:56:57Z">
     <groups>
     </groups>
-    <test name="AndroidTest" duration-ms="128150" started-at="2018-09-20T14:14:45Z" finished-at="2018-09-20T14:16:54Z">
-      <class name="tests.AndroidTestCases">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.AndroidTestCases@12dae582]" name="setUp" is-config="true" duration-ms="18828" started-at="2018-09-20T14:14:45Z" finished-at="2018-09-20T14:15:04Z">
+    <test name="Test" duration-ms="260237" started-at="2018-10-03T07:52:37Z" finished-at="2018-10-03T07:56:57Z">
+      <class name="tests.iOSTestCases">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.iOSTestCases@1e1d3956]" name="setUp" is-config="true" duration-ms="10973" started-at="2018-10-03T07:52:37Z" finished-at="2018-10-03T07:52:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="GeneralTCNo1()[pri:0, instance:tests.AndroidTestCases@12dae582]" name="GeneralTCNo1" duration-ms="57668" started-at="2018-09-20T14:15:04Z" finished-at="2018-09-20T14:16:02Z">
+        <test-method status="PASS" signature="SearchTabTCNo1()[pri:0, instance:tests.iOSTestCases@1e1d3956]" name="SearchTabTCNo1" duration-ms="19694" started-at="2018-10-03T07:52:48Z" finished-at="2018-10-03T07:53:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GeneralTCNo1 -->
-        <test-method status="PASS" signature="GeneralTCNo2()[pri:0, instance:tests.AndroidTestCases@12dae582]" name="GeneralTCNo2" duration-ms="47593" started-at="2018-09-20T14:16:02Z" finished-at="2018-09-20T14:16:50Z">
+        </test-method> <!-- SearchTabTCNo1 -->
+        <test-method status="PASS" signature="SearchTabTCNo2()[pri:0, instance:tests.iOSTestCases@1e1d3956]" name="SearchTabTCNo2" duration-ms="20375" started-at="2018-10-03T07:53:08Z" finished-at="2018-10-03T07:53:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GeneralTCNo2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.AndroidTestCases@12dae582]" name="tearDown" is-config="true" duration-ms="3920" started-at="2018-09-20T14:16:50Z" finished-at="2018-09-20T14:16:54Z">
+        </test-method> <!-- SearchTabTCNo2 -->
+        <test-method status="PASS" signature="SearchTabTCNo4()[pri:0, instance:tests.iOSTestCases@1e1d3956]" name="SearchTabTCNo4" duration-ms="207765" started-at="2018-10-03T07:53:28Z" finished-at="2018-10-03T07:56:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTabTCNo4 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.iOSTestCases@1e1d3956]" name="tearDown" is-config="true" duration-ms="1012" started-at="2018-10-03T07:56:56Z" finished-at="2018-10-03T07:56:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.AndroidTestCases -->
-    </test> <!-- AndroidTest -->
-  </suite> <!-- AndroidSuite -->
+      </class> <!-- tests.iOSTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- iOSSuite -->
 </testng-results>

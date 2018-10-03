@@ -1,19 +1,19 @@
 package pages;
 
 import elements.ArticleDetailElements;
-import elements.BottomBarElements;
+import elements.CommonElements;
 import elements.FeedListElements;
 import io.appium.java_client.AppiumDriver;
 import utils.Utils;
 
 public class GeneralTest extends BasePage {
-    private BottomBarElements bottomBarElements;
+    private CommonElements commonElements;
     private FeedListElements feedListElements;
     private ArticleDetailElements articleDetailElements;
 
     public GeneralTest(AppiumDriver driver) {
         super(driver);
-        bottomBarElements = new BottomBarElements(driver);
+        commonElements = new CommonElements(driver);
         feedListElements = new FeedListElements(driver);
         articleDetailElements = new ArticleDetailElements(driver);
     }
@@ -23,9 +23,9 @@ public class GeneralTest extends BasePage {
         turnOnCellularConnection();
         lauchApp();
 
-        bottomBarElements.settingTabClick();
-        bottomBarElements.sectionTabClick();
-        bottomBarElements.bookMarkTabClick();
+        commonElements.settingTabClick();
+        commonElements.sectionTabClick();
+        commonElements.bookMarkTabClick();
 
         closeApp();
         turnOnWifi();
@@ -36,9 +36,9 @@ public class GeneralTest extends BasePage {
         turnOffCellularConnection();
         lauchApp();
 
-        bottomBarElements.settingTabClick();
-        bottomBarElements.sectionTabClick();
-        bottomBarElements.bookMarkTabClick();
+        commonElements.settingTabClick();
+        commonElements.sectionTabClick();
+        commonElements.bookMarkTabClick();
 
         closeApp();
         turnOnWifi();
@@ -50,9 +50,9 @@ public class GeneralTest extends BasePage {
         resetApp();
         lauchApp();
 
-        bottomBarElements.settingTabClick();
-        bottomBarElements.sectionTabClick();
-        bottomBarElements.bookMarkTabClick();
+        commonElements.settingTabClick();
+        commonElements.sectionTabClick();
+        commonElements.bookMarkTabClick();
 
         closeApp();
         turnOnWifi();
@@ -62,14 +62,14 @@ public class GeneralTest extends BasePage {
     public void TestCaseNo4() {
         lauchApp();
 
-        bottomBarElements.sectionTabClick();
-        bottomBarElements.settingTabClick();
-        bottomBarElements.homeTabClick();
+        commonElements.sectionTabClick();
+        commonElements.settingTabClick();
+        commonElements.homeTabClick();
 
         if(!Utils.isAndroidPlatform()){
-            bottomBarElements.searchTabClick();
+            commonElements.searchTabClick();
         }
-        bottomBarElements.bookMarkTabClick();
+        commonElements.bookMarkTabClick();
         closeApp();
     }
 
@@ -79,10 +79,10 @@ public class GeneralTest extends BasePage {
         lockDevice();
         unLockDevice();
 
-        bottomBarElements.sectionTabClick();
-        bottomBarElements.homeTabClick();
-        bottomBarElements.settingTabClick();
-        bottomBarElements.bookMarkTabClick();
+        commonElements.sectionTabClick();
+        commonElements.homeTabClick();
+        commonElements.settingTabClick();
+        commonElements.bookMarkTabClick();
 
         closeApp();
     }

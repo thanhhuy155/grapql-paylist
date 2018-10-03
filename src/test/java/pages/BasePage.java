@@ -7,6 +7,8 @@ import io.appium.java_client.android.connection.ConnectionStateBuilder;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import scenarios.AppiumController;
 
+import java.time.Duration;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class BasePage {
@@ -83,6 +85,8 @@ public class BasePage {
     protected void turnOffWifi() {
         switch (AppiumController.executionOS) {
             case IOS:
+            case IOS_Simulator:
+                appiumDriver.runAppInBackground(Duration.ofSeconds(-1));
             case IOS_BROWSERSTACK:
                 //todo
                 break;

@@ -1,11 +1,13 @@
 package pages;
 
-import elements.*;
+import elements.ArticleDetailElements;
+import elements.CommonElements;
+import elements.FeedListElements;
+import elements.SectionElements;
 import io.appium.java_client.AppiumDriver;
 import utils.Utils;
 
 public class SectionTab extends BasePage {
-    private BottomBarElements bottomBarElements;
     private FeedListElements feedListElements;
     private SectionElements sectionElements;
     private ArticleDetailElements articleDetailElements;
@@ -13,7 +15,6 @@ public class SectionTab extends BasePage {
 
     public SectionTab(AppiumDriver driver) {
         super(driver);
-        bottomBarElements = new BottomBarElements(driver);
         feedListElements = new FeedListElements(driver);
         articleDetailElements = new ArticleDetailElements(driver);
         sectionElements = new SectionElements(driver);
@@ -23,7 +24,8 @@ public class SectionTab extends BasePage {
     public void TestCaseNo3() {
         lauchApp();
 
-        bottomBarElements.sectionTabClick();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.sectionTabClick();
         lockDevice();
         unLockDevice();
 
@@ -33,7 +35,8 @@ public class SectionTab extends BasePage {
     public void TestCaseNo4() {
         lauchApp();
 
-        bottomBarElements.sectionTabClick();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
 
         closeApp();
@@ -42,7 +45,8 @@ public class SectionTab extends BasePage {
     public void TestCaseNo6() {
         lauchApp();
 
-        bottomBarElements.sectionTabClick();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
         String title;
         if (Utils.isAndroidPlatform()) {
@@ -61,7 +65,8 @@ public class SectionTab extends BasePage {
     public void TestCaseNo8() {
         lauchApp();
 
-        bottomBarElements.sectionTabClick();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
 
         String title = feedListElements.getFeedItemTitle();
@@ -83,7 +88,8 @@ public class SectionTab extends BasePage {
     public void TestCaseNo11() {
         lauchApp();
 
-        bottomBarElements.sectionTabClick();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
         articleDetailElements.back();
 
@@ -93,16 +99,17 @@ public class SectionTab extends BasePage {
     public void TestCaseNo12() {
         lauchApp();
 
-        bottomBarElements.sectionTabClick();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
 
         lockDevice();
         unLockDevice();
 
-        bottomBarElements.settingTabClick();
-        bottomBarElements.homeTabClick();
-        bottomBarElements.searchTabClick();
-        bottomBarElements.bookMarkTabClick();
+        commonElements.settingTabClick();
+        commonElements.homeTabClick();
+        commonElements.searchTabClick();
+        commonElements.bookMarkTabClick();
 
         closeApp();
     }

@@ -26,7 +26,7 @@ public class SettingElements implements ISetting {
     @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeSwitch[1]")
     public MobileElement allowNotification;
 
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[3]/XCUIElementTypeStatusBar[1]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name=\"Return to Philly.com\"]")
     public MobileElement backPhilly;
 
     @iOSFindBy(id = "Off")

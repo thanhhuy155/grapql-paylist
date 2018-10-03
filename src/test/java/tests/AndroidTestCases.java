@@ -84,7 +84,7 @@ public class AndroidTestCases extends BaseTestClass{
 //
 //     //============== BOOKMARK TAB ============== //
 //    @Test
-//    public void BookMarkTCNo1() {
+//    public void BookMarkTCNo2() {
 //        bookmarkTab.TestCaseNo2();
 //    }
 //
