@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-iOSSuite">
-              <span class="suite-name border-passed">iOSSuite</span>
+            <a href="#" class="navigator-link" panel-name="suite-AndroidSuite">
+              <span class="suite-name border-failed">AndroidSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-iOSSuite">
-                    <span>iOS-test-cases.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AndroidSuite">
+                    <span>C:\Users\ENCLAVEIT\Desktop\mobile-test-pcom\android-test-cases.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-iOSSuite">
+                  <a href="#" class="navigator-link " panel-name="testlist-AndroidSuite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-iOSSuite">
+                  <a href="#" class="navigator-link " panel-name="group-AndroidSuite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-iOSSuite">
+                  <a href="#" class="navigator-link " panel-name="times-AndroidSuite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-iOSSuite">
+                  <a href="#" class="navigator-link " panel-name="reporter-AndroidSuite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-iOSSuite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AndroidSuite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-iOSSuite">
+                  <a href="#" class="navigator-link " panel-name="chronological-AndroidSuite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,31 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-iOSSuite" class="hide-methods passed suite-iOSSuite"> (hide)</a> <!-- hide-methods passed suite-iOSSuite -->
-                      <a href="#" panel-name="suite-iOSSuite" class="show-methods passed suite-iOSSuite"> (show)</a> <!-- show-methods passed suite-iOSSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AndroidSuite" class="hide-methods failed suite-AndroidSuite"> (hide)</a> <!-- hide-methods failed suite-AndroidSuite -->
+                      <a href="#" panel-name="suite-AndroidSuite" class="show-methods failed suite-AndroidSuite"> (show)</a> <!-- show-methods failed suite-AndroidSuite -->
                     </span>
-                    <div class="method-list-content passed suite-iOSSuite">
+                    <div class="method-list-content failed suite-AndroidSuite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-iOSSuite" title="tests.iOSTestCases" hash-for-method="SearchTabTCNo1">SearchTabTCNo1</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AndroidSuite" title="tests.AndroidTestCases" hash-for-method="BookMarkTCNo2">BookMarkTCNo2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-iOSSuite" title="tests.iOSTestCases" hash-for-method="SearchTabTCNo2">SearchTabTCNo2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-iOSSuite" title="tests.iOSTestCases" hash-for-method="SearchTabTCNo4">SearchTabTCNo4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-iOSSuite -->
+                    </div> <!-- method-list-content failed suite-AndroidSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,151 +116,158 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-iOSSuite" class="panel iOSSuite">
-          <div class="suite-iOSSuite-class-passed">
+        <div panel-name="suite-AndroidSuite" class="panel AndroidSuite">
+          <div class="suite-AndroidSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.iOSTestCases</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.AndroidTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SearchTabTCNo1">
-                  </a> <!-- SearchTabTCNo1 -->
-                  <span class="method-name">SearchTabTCNo1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchTabTCNo2">
-                  </a> <!-- SearchTabTCNo2 -->
-                  <span class="method-name">SearchTabTCNo2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchTabTCNo4">
-                  </a> <!-- SearchTabTCNo4 -->
-                  <span class="method-name">SearchTabTCNo4</span>
+                  <a name="BookMarkTCNo2">
+                  </a> <!-- BookMarkTCNo2 -->
+                  <span class="method-name">BookMarkTCNo2</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
+	at elements.CommonElements.bookMarkTabClick(CommonElements.java:138)
+	at pages.BookmarkTab.TestCaseNo2(BookmarkTab.java:40)
+	at tests.AndroidTestCases.BookMarkTCNo2(AndroidTestCases.java:88)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@fe08eaf (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;CPU008&apos;, ip: &apos;172.16.0.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 35 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-iOSSuite-class-passed -->
-        </div> <!-- panel iOSSuite -->
-        <div panel-name="test-xml-iOSSuite" class="panel">
+          </div> <!-- suite-AndroidSuite-class-failed -->
+        </div> <!-- panel AndroidSuite -->
+        <div panel-name="test-xml-AndroidSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/brooklyn/mobile-test-pcom/iOS-test-cases.xml</span>
+            <span class="header-content">C:\Users\ENCLAVEIT\Desktop\mobile-test-pcom\android-test-cases.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;iOSSuite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;AndroidSuite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;AndroidTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.iOSTestCases&quot;/&gt;
+      &lt;class name=&quot;tests.AndroidTestCases&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- iOSSuite --&gt;
+  &lt;/test&gt; &lt;!-- AndroidTest --&gt;
+&lt;/suite&gt; &lt;!-- AndroidSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-iOSSuite" class="panel">
+        <div panel-name="testlist-AndroidSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for iOSSuite</span>
+            <span class="header-content">Tests for AndroidSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">AndroidTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-iOSSuite" class="panel">
+        <div panel-name="group-AndroidSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for iOSSuite</span>
+            <span class="header-content">Groups for AndroidSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-iOSSuite" class="panel">
+        <div panel-name="times-AndroidSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for iOSSuite</span>
+            <span class="header-content">Times for AndroidSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_iOSSuite');
-function tableData_iOSSuite() {
+suiteTableInitFunctions.push('tableData_AndroidSuite');
+function tableData_AndroidSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SearchTabTCNo4')
-data.setCell(0, 2, 'tests.iOSTestCases')
-data.setCell(0, 3, 207765);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SearchTabTCNo2')
-data.setCell(1, 2, 'tests.iOSTestCases')
-data.setCell(1, 3, 20375);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SearchTabTCNo1')
-data.setCell(2, 2, 'tests.iOSTestCases')
-data.setCell(2, 3, 19694);
-window.suiteTableData['iOSSuite']= { tableData: data, tableDiv: 'times-div-iOSSuite'}
+data.setCell(0, 1, 'BookMarkTCNo2')
+data.setCell(0, 2, 'tests.AndroidTestCases')
+data.setCell(0, 3, 43826);
+window.suiteTableData['AndroidSuite']= { tableData: data, tableDiv: 'times-div-AndroidSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
-              <div id="times-div-iOSSuite">
-              </div> <!-- times-div-iOSSuite -->
+              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <div id="times-div-AndroidSuite">
+              </div> <!-- times-div-AndroidSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-iOSSuite" class="panel">
+        <div panel-name="reporter-AndroidSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for iOSSuite</span>
+            <span class="header-content">Reporter output for AndroidSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-iOSSuite" class="panel">
+        <div panel-name="ignored-methods-AndroidSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-iOSSuite" class="panel">
+        <div panel-name="chronological-AndroidSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.iOSTestCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.AndroidTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">SearchTabTCNo1</span>
-                <span class="method-start">11035 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SearchTabTCNo2</span>
-                <span class="method-start">31057 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SearchTabTCNo4</span>
-                <span class="method-start">51435 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BookMarkTCNo2</span>
+                <span class="method-start">14824 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">259220 ms</span>
+                <span class="method-start">58767 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -93,8 +93,18 @@ public class CommonElements implements ICommon {
 
     @Override
     public void buttonBookmarkClick() {
+
         btnBookmark.click();
-        clickLogin();
+        if(btnBookmark.isSelected()==false){
+            btnBookmark.click();
+        }
+        if(googleClientLogin.isDisplayed()==true){
+            googleClientLogin.click();
+        }
+        else {
+            return;
+        }
+
     }
 
     @Override
@@ -125,12 +135,13 @@ public class CommonElements implements ICommon {
     @Override
     public void bookMarkTabClick() {
         bookMarkTab.click();
-        if (Utils.isAndroidPlatform()) {
-            if(googleClientLogin.isDisplayed()==true){
-                clickLogin();
-            }
+        if(googleClientLogin.isDisplayed()==true){
+            googleClientLogin.click();
+        }
+        else {
 
         }
+
     }
 
     @Override

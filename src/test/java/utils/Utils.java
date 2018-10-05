@@ -73,6 +73,7 @@ public class Utils {
                 .moveTo(PointOption.point(endX, endY))
                 .release()
                 .perform();
+
     }
     public static void scrollHorizontal(AppiumDriver appiumDriver){
         Dimension dimension = appiumDriver.manage().window().getSize();

@@ -33,6 +33,7 @@ public class BookmarkTab extends BasePage{
         }
 
         //Step: Bookmark article
+        waitForVisibilityOf(commonElements.btnBookmark);
         commonElements.buttonBookmarkClick();
 
         //Step: Go to Bookmark tab
@@ -51,6 +52,7 @@ public class BookmarkTab extends BasePage{
         lauchApp();
 
         //Step: Go to Bookmark tab
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         commonElements.bookMarkTabClick();
 
         lockDevice();
@@ -87,7 +89,7 @@ public class BookmarkTab extends BasePage{
         }
 
         //Step: Get article title and Bookmark
-        String title = feedListElements.getFeedItemTopStoryTitle();
+        String title = feedListElements.getFeedItemTitle();
         commonElements.buttonBookmarkClick();
 
         //Step: Go to Bookmark tab

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [iOSSuite]">
-  <test thread-count="5" verbose="0" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AndroidSuite]">
+  <test thread-count="5" verbose="0" name="AndroidTest(failed)">
     <classes>
-      <class name="tests.iOSTestCases">
+      <class name="tests.AndroidTestCases">
         <methods>
-          <include name="GeneralTestNo11"/>
+          <include name="BookMarkTCNo2"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- tests.iOSTestCases -->
+      </class> <!-- tests.AndroidTestCases -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [iOSSuite] -->
+  </test> <!-- AndroidTest(failed) -->
+</suite> <!-- Failed suite [AndroidSuite] -->

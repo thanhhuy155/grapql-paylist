@@ -3,16 +3,16 @@ package tests;
 import org.testng.annotations.Test;
 
 public class AndroidTestCases extends BaseTestClass{
-    // ============== General ============== //
-    @Test
-    public void GeneralTCNo1() {
-        generalTest.TestCaseNo1();
-    }
-
-    @Test
-    public void GeneralTCNo2() {
-        generalTest.TestCaseNo2();
-    }
+//    // ============== General ============== //
+//    @Test
+//    public void GeneralTCNo1() {
+//        generalTest.TestCaseNo1();
+//    }
+//
+//    @Test
+//    public void GeneralTCNo2() {
+//        generalTest.TestCaseNo2();
+//    }
 
 //    @Test
 //    public void GeneralTCNo3() {
@@ -82,11 +82,11 @@ public class AndroidTestCases extends BaseTestClass{
 //        sectionTab.TestCaseNo12();
 //    }
 //
-//     //============== BOOKMARK TAB ============== //
-//    @Test
-//    public void BookMarkTCNo2() {
-//        bookmarkTab.TestCaseNo2();
-//    }
+     //============== BOOKMARK TAB ============== //
+    @Test
+    public void BookMarkTCNo2() {
+        bookmarkTab.TestCaseNo2();
+    }
 //
 //    @Test
 //    public void BookMarkTCNo3() {

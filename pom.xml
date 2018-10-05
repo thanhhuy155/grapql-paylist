@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <suiteXmlFile>iOS-test-cases.xml</suiteXmlFile>
+        <suiteXmlFile>android-test-cases.xml</suiteXmlFile>
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
 

@@ -3,10 +3,10 @@ package utils;
 public class Constants {
 
     //Browserstack setup
-    public static final String BS_USERNAME = "thanhhuy2";
-    public static final String BS_ACCESSKEY = "yaNWfSx87K6x4fjJpJop";
+    public static final String BS_USERNAME = "perriduncan1";
+    public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
     public static final String IOS_HASHED_APP_ID = "ad8aca9e609215913a0c6f2d0022c1930230377d";
-    public static final String ANDROID_HASHED_APP_ID = "b6c3ebdb596521cef88c610aaceeee0745c4682b";
+    public static final String ANDROID_HASHED_APP_ID = "7321337981706c8efc95febcee0dc0fa57b5d90b";
 
     public static final int TIME_OUT = 30;
 
