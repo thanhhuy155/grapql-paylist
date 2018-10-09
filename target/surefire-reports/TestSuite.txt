@@ -1,17 +1,43 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 61.992 s <<< FAILURE! - in TestSuite
-BookMarkTCNo2(tests.AndroidTestCases)  Time elapsed: 43.895 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.google.android.gms:id/account_display_name})
-	at tests.AndroidTestCases.BookMarkTCNo2(AndroidTestCases.java:88)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@fe08eaf (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.AndroidTestCases.BookMarkTCNo2(AndroidTestCases.java:88)
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 223.19 s <<< FAILURE! - in TestSuite
+BookMarkTCNo11(tests.AndroidTestCases)  Time elapsed: 49.014 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.ImageButton[@content-desc='Navigate up']})
+	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:98)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3eb9c575 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:98)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.id: com.google.android.gms:id/account_display_name})
+Cannot locate an element using By.chained({By.xpath: //android.widget.ImageButton[@content-desc='Navigate up']})
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'CPU008', ip: '172.16.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+System info: host: 'LAPTOP057', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: driver.version: AndroidDriver
-	at tests.AndroidTestCases.BookMarkTCNo2(AndroidTestCases.java:88)
+	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:98)
+
+SectionTabTCNo12(tests.AndroidTestCases)  Time elapsed: 86.606 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: settings})
+	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:82)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6bf0f70a (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:82)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: settings})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:82)
+
+SectionTabTCNo8(tests.AndroidTestCases)  Time elapsed: 61.146 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Gmail']})
+	at tests.AndroidTestCases.SectionTabTCNo8(AndroidTestCases.java:72)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@632b5c79 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.AndroidTestCases.SectionTabTCNo8(AndroidTestCases.java:72)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Gmail']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.AndroidTestCases.SectionTabTCNo8(AndroidTestCases.java:72)
 

@@ -40,6 +40,7 @@ public class CommonElements implements ICommon {
     //========================================================================================//
     //Bottom Bar Elements
 
+    @AndroidFindBy(id="bottomBar")
     @iOSFindBy(xpath = "//XCUIElementTypeTabBar")
     public MobileElement bottomTab;
 
@@ -95,9 +96,6 @@ public class CommonElements implements ICommon {
     public void buttonBookmarkClick() {
 
         btnBookmark.click();
-        if(btnBookmark.isSelected()==false){
-            btnBookmark.click();
-        }
         if(googleClientLogin.isDisplayed()==true){
             googleClientLogin.click();
         }

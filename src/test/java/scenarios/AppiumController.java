@@ -43,8 +43,8 @@ public class AppiumController {
                 capabilities.setCapability("platformName", "Android");
       /*          capabilities.setCapability("platformVersion", "8.1.0");
                 capabilities.setCapability("deviceName", "HT72E0201037");*/
-                capabilities.setCapability("platformVersion", "5.0");
-                capabilities.setCapability("deviceName", "Galaxy S5");
+                capabilities.setCapability("platformVersion", "7.0");
+                capabilities.setCapability("deviceName", "Galaxy J7 Prime");
                 capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("appPackage", "com.ap.philly");
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");

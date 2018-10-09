@@ -3,151 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/00cc3f6b-9925-4650-9c44-447018b385f5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/07b5e15f-9669-4474-880b-b70d0a1a5231-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/08cbd912-33ae-405b-a751-3e5b77651325-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/096e4d2a-286f-4406-87a9-3042ab4230c9-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/09a30682-5b63-41ef-921c-a10431361f54-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/09e0d1bf-9288-490c-a6a4-1333eac6022c-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0b9fd9d3-99f3-4335-a4d7-fc7b25c33d1a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0dbb1a4f-4a58-4aa8-8b46-9acf688c11a3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0dcc9185-22e2-4421-b3f6-22eb0d8e66c6-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1389f6fd-8319-4b52-bc8c-dc0800a03479-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1486a498-a6d8-4f1f-8fd9-5ca56d9a9211-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/15b4393f-c2fa-466f-87ab-7f4f743cf98d-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/15ea3453-9467-4097-8833-d832c92f8f2d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1760afce-f323-4dd6-a74e-f3e61b12b612-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/18fb019a-72ba-4a13-91e8-0f53214596c0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/19aba124-1a52-46a7-adbe-f85838854114-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/19e3ef78-1793-427f-8d44-54de55eb892b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1a6aaa90-4efc-4e91-996b-f9ae07123703-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1d2629fe-5d63-46ad-ae1b-f422ec655e17-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1d8e65a7-aa36-4b7c-9f60-b6cdce6c22d1-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2281d62f-2cae-492c-8298-e65e072fd4d5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/230bd891-6ded-4897-8c44-6ec53407ed1e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/23dc2903-7d32-4c67-bbb9-093ebba8b3f0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/24a5cdbf-9c38-4db7-a6bf-3f3c00f42986-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2592f1b1-8cd3-42f7-a320-5b148b7787a2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2ae1f895-5c39-4638-8338-c19bfccb4950-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2b0e7201-dc61-4d01-afce-5db17011c93b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2c3c84cb-7fca-4ba0-bffb-4733836ed24a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3044db49-bdc5-4d25-a6e9-59f42f9d9b11-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/32944439-d8ab-402f-9c82-e26d3c6cab73-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/33a5b5fd-1ace-46f8-aad1-d35b90ddb199-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/33f5d636-482f-4269-ae02-6f080f3611cd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3d253a58-eafb-4a51-ac8a-87c437fe2491-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/428362db-8f05-4135-8630-6ecd21959632-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/46c177a5-cf3a-4d17-9221-fea7051d381c-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/47b007f5-a7ac-4366-8bda-a15b5653817f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/47be3c3b-f583-4034-8221-b674d7809268-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4b1bfb71-1f8a-4126-a655-c4e13fcf153f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4b821c82-2d8b-48de-af2d-0ff00edcc70b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4bec3a20-7fb9-455f-adaf-05138cf97bf0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4e2a43d3-cf6b-461c-abdd-79321e3a4752-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5380e9aa-b208-42a9-aa5d-c0e5fde6be03-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/572b02d4-e969-4dd7-92cb-e74975b0c69b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5c4d7572-f516-46a9-983f-351a3200e5c3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5c509350-945c-4d50-b6f1-82e57b031302-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5c595f11-a361-4ccf-ae7d-da2f503a4238-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5d176a86-62f3-4522-8464-1931561ac563-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/60eeb22e-5bb0-46a2-a8d7-cc7d2130c0c2-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/63978db6-3918-4b02-b06b-7fb8ce8bb9d5-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6598bdc4-2868-468d-a8ab-1c97bb78c3a0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/67abc0a6-7be8-40ad-9d2d-adb5a4666bae-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/67ffdc37-e4df-4b1b-ac54-e69cb25e00ed-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/689e6f52-da83-4469-ae90-62620d1e5b8d-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/690ae1c6-e39a-48ce-b410-7390066538b9-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6979a631-6619-4e8a-90c1-d5668010b058-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6b4a3544-fb8e-4d41-9c27-94ec73ff01cb-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6e759728-057e-4332-8433-82e5fb6a5bd0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/702c2821-a1ca-4561-9f44-4c40c564da52-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/728d0f93-b5cd-485f-9701-c159759b5a6f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/738562e5-c87e-421a-8237-3592e2bd41b0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7785645b-491d-4903-a1e6-c874d7d38ff3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/784a66f3-f4f6-4cd5-80ac-2da34751195a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/78a4c0dd-7a4b-4cd4-90f3-7d8eb54ba953-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7b54d81e-9367-4214-811a-efb63d9da1ac-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7ee3bfd5-0228-4f7d-b3af-5f9cee547cc6-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7f40c914-a468-4fac-94ef-1d18241631fd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/81d92667-37da-40cc-96f3-7a8d46b65767-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/874e1fbb-aef3-40fa-8363-8773f3afbb89-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8b8188fc-0d2a-468d-8d34-8f3caffae008-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8e751437-c74a-4a9b-9987-843c3c578146-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/90ddb4cc-4750-4182-b8fa-9c2156d5ea1d-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/90ff5d82-368e-472e-a7df-f0480f0a3399-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/91fa5521-b414-4d93-a774-86fc0e1ecfc0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/92229fd7-f57b-4730-85e7-d283e9f3212b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/923b45b8-1bde-4d50-b1f9-185b10f9fd2d-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/93ca58cf-c487-4795-a6a9-9e4dba8d97cd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/987901e3-52de-44b3-b1ff-1ac1c91a2b66-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9d301c60-a15e-4498-a159-eb9440709bee-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9d6e2297-7617-4b69-87d6-eaf256e0bfdd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9fa14b43-3417-4049-9b47-8c8cb53b5011-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a0fda01e-52c0-46a1-9014-dde3c45299d4-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a54ff4a6-7862-46cf-9395-0b5eccf11982-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a6e4d464-c5e3-4450-91a3-72f92ba973cd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a80017b3-be7d-4f62-988c-5009752e5d17-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a8484bb2-d8c4-46be-a6a6-360e01168039-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a940b399-9b7c-4be5-b486-6f55a12af027-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a95ceb1d-9316-4c3a-98ad-fa602180bab4-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/aa9e0e90-0ec1-475e-90d1-96b04b28a5bd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ab1b35f5-eec0-4d2d-85da-6aaad5ca8956-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ad9323ea-1d42-4ff6-bdc0-ef37aa9c8438-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b3552152-08ad-4ea5-a1b3-b55fdaa4fb67-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b917014b-9c2c-4a60-991d-324ec200d503-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ba34f615-0eb9-4baa-86d5-e491a76c2482-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/bfeed800-bb3e-4c4f-b0fd-077bbb074e4a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c286a2ff-a8a1-4ec3-9dcb-7b046613b60f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c32e0e95-edc0-4b7d-8cf2-0a3eb0614046-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c5a1b326-3ad3-4049-bced-a529050a6d8e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c5cb322e-803b-41e0-b026-cd97aac935ce-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c605cbd9-7f81-41b9-a384-b169a264d576-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c67f0391-8187-421e-8c2b-a392587a2b4d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c997f10a-7522-455a-9a72-18b699754395-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ca447fa6-8aee-4b8e-8575-67cd7b8f5615-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/caef320b-50d9-4f31-a88f-1db592943f9a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/cb26259d-b88c-4e09-b5fe-439ceb5a1b6e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/cb8ac1bc-0596-43de-abce-32ce5418c4d1-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/cd2fc67c-2782-4d40-a81d-53004764929e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ce5faf6c-15ea-4e5b-b760-b7a58f188c01-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d05c460f-d4a5-493c-9a64-e59f6eeafa22-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d10a7d7f-685f-47d5-925e-3efd3a736449-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d18675d9-1667-485f-a301-6d79849069b5-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d26af851-f3a1-4fbf-82e0-e2cd4ad18027-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d31d4eef-4587-4a3c-bba0-5934a2affffd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d5ebd786-b45e-4083-8734-a4f5e31a5695-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d7d66118-6604-41d5-bf8f-a25ea99414f7-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/da326e84-0af6-4506-bfe3-b32b2667144e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/db464fdf-b037-4a68-a09b-448595c57dac-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/db89eb8d-9e2b-4221-87a7-ba5268f724a5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/dd16b716-256f-413a-83b0-bfdef81fee8d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ddb467bc-a4f4-45de-a2e5-1e7cdd170195-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e08fce98-53dc-4e59-8959-bdc91e06aeb8-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e1ddbbd4-7816-4116-807c-6b2ab70aaa6f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e4e7f244-9d2e-4eb8-bc44-a1a504b6acd3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e6c44e08-5e95-451f-a0fa-112bacc5c29e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e81bc47e-36e8-4f18-84f5-9b11ad851e88-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e925bd93-ae39-4d16-9906-2b29d5e24c1e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ebefa749-2895-4904-b113-a92e2f99d4f8-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/eead76c8-02ce-447f-accd-216f5de62d32-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ef66ca32-23a0-4372-9cd1-f8f69fb3db58-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f05c682a-de5e-4a34-a6b7-e944bdd84074-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f129da9f-ab93-4c78-a60b-b42f41b278db-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f132e62b-4a9e-4a9e-b757-fc9adab72ec3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f1752b93-b9c9-4f63-a607-29c98e5950e5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f35f9ffa-2cb2-437e-8613-95bc2bdf7aa6-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f7633be6-24fa-40db-8344-57a13bb9876b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/fc4b4ae2-05eb-4ffd-8fd9-dde020a421b3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/fd3d8411-a9a9-495d-9e34-c0e286512666-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/app-release.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile-test-pcom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile-test-pcom.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/AndroidTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/AndroidTest.html" afterDir="false" />
@@ -168,14 +30,13 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/BottomBarElements.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/elements/CommonElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/CommonElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/FeedListElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/FeedListElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/ArticlePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/ArticlePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/BookmarkTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/BookmarkTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomeTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomeTab.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/AndroidTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/AndroidTestCases.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Utils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -192,21 +53,22 @@
     <session id="1136082177">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="152" />
+          <entry key="java" value="162" />
           <entry key="xml" value="21" />
         </counts>
       </usages-collector>
@@ -214,14 +76,14 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="152" />
+          <entry key="JAVA" value="162" />
           <entry key="XML" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="2174" />
+          <entry key="java" value="2232" />
           <entry key="txt" value="22" />
           <entry key="xml" value="180" />
         </counts>
@@ -229,7 +91,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="2174" />
+          <entry key="JAVA" value="2232" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="XML" value="180" />
         </counts>
@@ -315,13 +177,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+            <state relative-caret-position="1904">
+              <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
               <folding>
-                <element signature="e#1829#1830#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+              <folding>
+                <element signature="e#1803#1804#0" expanded="true" />
+                <element signature="e#1842#1843#0" expanded="true" />
+                <element signature="e#1887#1888#0" expanded="true" />
+                <element signature="e#1926#1927#0" expanded="true" />
+                <element signature="e#1970#1971#0" expanded="true" />
+                <element signature="e#2009#2010#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/ArticlePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+              <folding>
+                <element signature="method#ArticlePage#0;class#ArticlePage#0" />
+                <element signature="method#TestCaseNo5#0;class#ArticlePage#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1445">
+              <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#assetResult#0;class#FeedListElements#0" />
               </folding>
             </state>
           </provider>
@@ -330,58 +245,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+            <state relative-caret-position="1564">
+              <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/HomeTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#BookmarkTab#0;class#BookmarkTab#0" />
-                <element signature="method#TestCaseNo11#0;class#BookmarkTab#0" />
-                <element signature="method#TestCaseNo14#0;class#BookmarkTab#0" />
+                <element signature="method#TestCaseNo8#0;class#HomeTab#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-              <folding>
-                <element signature="e#1394#1395#0" expanded="true" />
-                <element signature="e#1431#1432#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="135" column="36" lean-forward="true" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#clickLogin#0;class#CommonElements#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="49" column="91" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="91" />
+            <state relative-caret-position="595">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -432,15 +318,12 @@
         <option value="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/actions/IBookMark.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/GeneralTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/SettingElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/actions/ISearch.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/SearchElements.java" />
@@ -448,11 +331,14 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" />
       </list>
     </option>
   </component>
@@ -470,10 +356,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="6" />
-    <option name="y" value="91" />
+    <option name="x" value="5" />
+    <option name="y" value="90" />
     <option name="width" value="1300" />
-    <option name="height" value="808" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -481,7 +367,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -544,13 +430,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538733566247" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539052165978" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -644,10 +530,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.22815534" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.23489933" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.21205962" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -657,7 +543,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993225" visible="true" weight="0.2748268" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993225" visible="true" weight="0.27375886" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -812,10 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -830,13 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -869,24 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/HomeTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ArticlePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="method#ArticlePage#0;class#ArticlePage#0" />
-            <element signature="method#TestCaseNo5#0;class#ArticlePage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -916,21 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-          <folding>
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1842#1843#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1970#1971#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -949,9 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,46 +801,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="49" column="91" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#assetResult#0;class#FeedListElements#0" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4334#4335#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-          <folding>
-            <element signature="e#1829#1830#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="442">
           <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding>
             <element signature="e#1394#1395#0" expanded="true" />
@@ -1010,26 +812,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ArticlePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="method#ArticlePage#0;class#ArticlePage#0" />
+            <element signature="method#TestCaseNo5#0;class#ArticlePage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        <state relative-caret-position="1564">
+          <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/HomeTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#BookmarkTab#0;class#BookmarkTab#0" />
-            <element signature="method#TestCaseNo11#0;class#BookmarkTab#0" />
-            <element signature="method#TestCaseNo14#0;class#BookmarkTab#0" />
+            <element signature="method#TestCaseNo8#0;class#HomeTab#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="135" column="36" lean-forward="true" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
+        <state relative-caret-position="595">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#clickLogin#0;class#CommonElements#0" />
+            <element signature="method#assetResult#0;class#FeedListElements#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1842#1843#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1970#1971#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+          <folding>
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
           </folding>
         </state>
       </provider>

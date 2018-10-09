@@ -24,7 +24,7 @@ public class ArticlePage extends BasePage {
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         String title = feedListElements.getFeedItemTitle();
-        feedListElements.firstFeedItemSection.click();
+        feedListElements.feedItemClick();
 
         //feedListElements.feedItemTopStoryClick();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());

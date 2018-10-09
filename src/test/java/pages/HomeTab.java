@@ -24,7 +24,7 @@ public class HomeTab extends BasePage {
 
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         String title = feedListElements.getFeedItemTopStoryTitle();
-        feedListElements.firstTopStorySection.click();
+        feedListElements.feedItemTopStoryLayout.click();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
 
         closeApp();
@@ -35,7 +35,7 @@ public class HomeTab extends BasePage {
 
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         String title = feedListElements.getFeedItemTitle();
-        feedListElements.firstFeedItemSection.click();
+        feedListElements.feedItemClick();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
 
         closeApp();

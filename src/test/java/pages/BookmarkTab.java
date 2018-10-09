@@ -37,7 +37,7 @@ public class BookmarkTab extends BasePage{
         commonElements.buttonBookmarkClick();
 
         //Step: Go to Bookmark tab
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         //Step: Click and Get bookmarked article
         String title= bookMarkElements.clickAndGetArticleTitle();
@@ -93,7 +93,7 @@ public class BookmarkTab extends BasePage{
         commonElements.buttonBookmarkClick();
 
         //Step: Go to Bookmark tab
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         //Step: Check bookmarked article display on Bookmark tab
         bookMarkElements.assertTitleResult(title, bookMarkElements.getBookMarkTitle());

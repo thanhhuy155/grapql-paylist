@@ -13,7 +13,7 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void GeneralTCNo2() {
 //        generalTest.TestCaseNo2();
 //    }
-
+//
 //    @Test
 //    public void GeneralTCNo3() {
 //        generalTest.TestCaseNo3();
@@ -46,11 +46,11 @@ public class AndroidTestCases extends BaseTestClass{
 //        homeTab.TestCaseNo6();
 //    }
 //
-//    @Test
-//    public void HomeTabTCNo8() {
-//        homeTab.TestCaseNo8();
-//    }
-//
+    @Test
+    public void HomeTabTCNo8() {
+        homeTab.TestCaseNo8();
+    }
+
 //     //============== SECTION TAB ============== //
 //    @Test
 //    public void SectionTabTCNo3() {
@@ -66,38 +66,38 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void SectionTabTCNo6() {
 //        sectionTab.TestCaseNo6();
 //    }
-//
+
 //    @Test
 //    public void SectionTabTCNo8() {
 //        sectionTab.TestCaseNo8();
 //    }
-//
+
 //    @Test
 //    public void SectionTabTCNo11() {
 //        sectionTab.TestCaseNo11();
 //    }
-//
+
 //    @Test
 //    public void SectionTabTCNo12() {
 //        sectionTab.TestCaseNo12();
 //    }
-//
-     //============== BOOKMARK TAB ============== //
-    @Test
-    public void BookMarkTCNo2() {
-        bookmarkTab.TestCaseNo2();
-    }
+
+//     //============== BOOKMARK TAB ============== //
+//    @Test
+//    public void BookMarkTCNo2() {
+//        bookmarkTab.TestCaseNo2();
+//    }
 //
 //    @Test
 //    public void BookMarkTCNo3() {
 //        bookmarkTab.TestCaseNo3();
 //    }
-//
+
 //    @Test
 //    public void BookMarkTCNo11() {
 //        bookmarkTab.TestCaseNo11();
 //    }
-//
+
 //    @Test
 //    public void BookMarkTCNo14() {
 //        bookmarkTab.TestCaseNo14();
