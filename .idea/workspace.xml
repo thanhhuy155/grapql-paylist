@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RatingModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/actions/IBookMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/IBookMark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/actions/ISetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/ISetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/SettingElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/SettingElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/GeneralTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GeneralTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/AndroidTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/AndroidTest.html" afterDir="false" />
@@ -21,22 +36,29 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.AndroidTestCases.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.AndroidTestCases.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/actions/ISetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/actions/ISetting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/ArticleDetailElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/ArticleDetailElements.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/elements/CommonElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/CommonElements.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/elements/FeedListElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/FeedListElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/SectionElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/SectionElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/SettingElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/SettingElements.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/ArticlePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/ArticlePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/BookmarkTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/BookmarkTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/GeneralTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/GeneralTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomeTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomeTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SectionTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/SectionTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SettingTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/SettingTab.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/AndroidTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/AndroidTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTestClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Constants$APP_VERSION.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Constants$APP_VERSION.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Utils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,22 +75,23 @@
     <session id="1136082177">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="162" />
+          <entry key="java" value="234" />
           <entry key="xml" value="21" />
         </counts>
       </usages-collector>
@@ -76,23 +99,24 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="162" />
+          <entry key="JAVA" value="234" />
           <entry key="XML" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="2232" />
-          <entry key="txt" value="22" />
+          <entry key="dummy" value="1" />
+          <entry key="java" value="5714" />
+          <entry key="txt" value="48" />
           <entry key="xml" value="180" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="2232" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="JAVA" value="5714" />
+          <entry key="PLAIN_TEXT" value="49" />
           <entry key="XML" value="180" />
         </counts>
       </usages-collector>
@@ -175,99 +199,65 @@
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="mobile-test-pcom" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+            <state relative-caret-position="235">
+              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
               <folding>
-                <element signature="e#1005#1006#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#2077#2078#0" expanded="true" />
+                <element signature="e#2119#2120#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-              <folding>
-                <element signature="e#1803#1804#0" expanded="true" />
-                <element signature="e#1842#1843#0" expanded="true" />
-                <element signature="e#1887#1888#0" expanded="true" />
-                <element signature="e#1926#1927#0" expanded="true" />
-                <element signature="e#1970#1971#0" expanded="true" />
-                <element signature="e#2009#2010#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/ArticlePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-              <folding>
-                <element signature="method#ArticlePage#0;class#ArticlePage#0" />
-                <element signature="method#TestCaseNo5#0;class#ArticlePage#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#assetResult#0;class#FeedListElements#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/HomeTab.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="664">
+              <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
               <folding>
-                <element signature="method#TestCaseNo8#0;class#HomeTab#0" />
+                <element signature="method#TestCaseNo2#0;class#BookmarkTab#0" />
+                <element signature="method#TestCaseNo3#0;class#BookmarkTab#0" />
+                <element signature="method#TestCaseNo11#0;class#BookmarkTab#0" />
+                <element signature="e#2997#3023#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="265">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+              <folding>
+                <element signature="method#clickAndGetArticleTitle#0;class#BookMarkElements#0" />
+                <element signature="method#getBookmarkedTitles#0;class#BookMarkElements#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/elements/SettingElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="192" column="33" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="33" />
+              <folding>
+                <element signature="method#SettingElements#0;class#SettingElements#0" />
+                <element signature="method#getPhiladelphiaInquirerReplicaNJEditionTitle#0;class#SettingElements#0" />
+                <element signature="method#getAppVersion#0;class#SettingElements#0" />
+                <element signature="method#assertSettingResult#0;class#SettingElements#0" />
+                <element signature="method#checkAppVersion#0;class#SettingElements#0" />
+                <element signature="method#checkAppCopyright#0;class#SettingElements#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -301,6 +291,8 @@
       <find>testNG</find>
       <find>jcom</find>
       <find>bookmarkCheckboxClick</find>
+      <find>Dimension dimension \= appiumDriver\.manage\(\)\.window\(\)\.getSize\(\)\;\n        int fromX \= 0\;\n        int fromY \= 0\;\n        int endX \= 0\;\n        int endY \= 0\;\n        switch \(direction\)\{\n            case UP\:\n                fromX \= \(dimension\.getWidth\(\)\)\/2\;\n                fromY \= \(dimension\.getHeight\(\)\)\-700\;\n                endX \= \(dimension\.getWidth\(\)\)\/2\;\n                endY \= 100\;\n                System\.out\.print\(\&quot;Scroll\: \&quot;\+fromX\+\&quot;\-\&quot;\+fromY\+\&quot;\;\&quot;\+endX\+\&quot;\-\&quot;\+endY\)\;\n                \(new TouchAction\(appiumDriver\)\)\n                        \.press\(PointOption\.point\(fromX\,fromY\)\)\n                        \.waitAction\(WaitOptions\.waitOptions\(Duration\.ofMillis\(1000\)\)\)\n                        \.moveTo\(PointOption\.point\(endX\, endY\)\)\n                        \.release\(\)\n                        \.perform\(\)\;\n                break\;\n\n            case RIGHT\:\n                fromX \= \(int\)\(\(dimension\.getWidth\(\)\)\*0\.9\)\;\n                fromY \= \(dimension\.getHeight\(\)\)\-200\;\n                endX \= \(int\)\(\(dimension\.getWidth\(\)\)\*0\.05\)\;\n                endY \= \(dimension\.getHeight\(\)\)\-200\;\n                System\.out\.print\(\&quot;Scroll\: \&quot;\+fromX\+\&quot;\-\&quot;\+fromY\+\&quot;\;\&quot;\+endX\+\&quot;\-\&quot;\+endY\)\;\n                \(new TouchAction\(appiumDriver\)\)\n                        \.press\(PointOption\.point\(fromX\,fromY\)\)\n                        \.waitAction\(WaitOptions\.waitOptions\(Duration\.ofMillis\(1000\)\)\)\n                        \.moveTo\(PointOption\.point\(endX\, endY\)\)\n                        \.release\(\)\n                        \.perform\(\)\;\n                break\;\n        \}\n</find>
+      <find>ating</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -315,29 +307,31 @@
         <option value="$PROJECT_DIR$/src/test/java/elements/BottomBarElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/actions/ICommon.java" />
         <option value="$PROJECT_DIR$/src/test/java/actions/IFeedList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/actions/IBookMark.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/GeneralTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/SettingElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/actions/ISearch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/SearchElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/SearchTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/SettingElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/actions/ISetting.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/GeneralTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/RatingModule.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/SearchTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/actions/IBookMark.java" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" />
       </list>
     </option>
@@ -367,8 +361,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -393,6 +385,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="elements" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
@@ -430,18 +438,21 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539052165978" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539679440078" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -514,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538554199038</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update elements on Android">
+      <created>1539067879067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539067879067</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -533,24 +551,24 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.23489933" />
-      <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.21205962" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4953846" visible="true" weight="0.20469798" />
+      <window_info id="Structure" order="1" sideWeight="0.5030675" side_tool="true" weight="0.19905533" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Favorites" order="7" sideWeight="0.5036145" side_tool="true" weight="0.19905533" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993225" visible="true" weight="0.27375886" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993225" visible="true" weight="0.34893617" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.64355063" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6427526" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5006775" side_tool="true" weight="0.35893854" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32960895" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329429" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.30865923" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32960895" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -565,39 +583,6 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21205962" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.082269505" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.64355063" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31005585" />
-      <window_info anchor="bottom" id="Spring" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -607,7 +592,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update test cases for iOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="update test cases for iOS" />
+    <MESSAGE value="update elements on Android" />
+    <option name="LAST_COMMIT_MESSAGE" value="update elements on Android" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/actions/IArticleDetail.java">
@@ -675,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/actions/IBookMark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/draft/BottomBarElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -694,64 +673,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/SectionElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SettingTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/SettingElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="method#lockDevice#0;class#BasePage#0" />
-            <element signature="method#unLockDevice#0;class#BasePage#0" />
-            <element signature="method#turnOnWifi#0;class#BasePage#0" />
-            <element signature="method#turnOffWifi#0;class#BasePage#0" />
-            <element signature="method#turnOffCellularConnection#0;class#BasePage#0" />
-            <element signature="method#turnOnCellularConnection#0;class#BasePage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/GeneralTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="106" column="40" lean-forward="true" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/actions/ISearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-          <folding>
-            <element signature="e#1624#1625#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,17 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -780,102 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/SearchElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SearchTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding>
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ArticlePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding>
-            <element signature="method#ArticlePage#0;class#ArticlePage#0" />
-            <element signature="method#TestCaseNo5#0;class#ArticlePage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/HomeTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="method#TestCaseNo8#0;class#HomeTab#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#assetResult#0;class#FeedListElements#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,13 +716,263 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/SectionElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/actions/ISetting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#assetResult#0;class#FeedListElements#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+          <folding>
+            <element signature="method#isAndroidPlatform#0;class#Utils#0" />
+            <element signature="method#checkElementExist#0;class#Utils#0" />
+            <element signature="method#iOSScrollToElement#0;class#Utils#0" />
+            <element signature="method#androidScroll#0;class#Utils#0" />
+            <element signature="method#scrollToElement#0;class#Utils#0" />
+            <element signature="method#exampleScroll#0;class#Utils#0" />
+            <element signature="method#scrollToElementexample#0;class#Utils#0" />
+            <element signature="method#scrollBySwipe#0;class#Utils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="136" column="28" lean-forward="true" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
+          <folding>
+            <element signature="method#clickLogin#0;class#CommonElements#0" />
+            <element signature="method#buttonBookmarkClick#0;class#CommonElements#0" />
+            <element signature="method#searchTabClick#0;class#CommonElements#0" />
+            <element signature="e#4681#4682#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+          <folding>
+            <element signature="method#waitForVisibilityOf#0;class#BasePage#0" />
+            <element signature="method#lockDevice#0;class#BasePage#0" />
+            <element signature="method#unLockDevice#0;class#BasePage#0" />
+            <element signature="method#turnOnWifi#0;class#BasePage#0" />
+            <element signature="method#turnOffWifi#0;class#BasePage#0" />
+            <element signature="method#turnOffCellularConnection#0;class#BasePage#0" />
+            <element signature="method#turnOnCellularConnection#0;class#BasePage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ArticlePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/GeneralTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+          <folding>
+            <element signature="method#GeneralTest#0;class#GeneralTest#0" />
+            <element signature="method#TestCaseNo1#0;class#GeneralTest#0" />
+            <element signature="method#TestCaseNo2#0;class#GeneralTest#0" />
+            <element signature="method#TestCaseNo3#0;class#GeneralTest#0" />
+            <element signature="method#TestCaseNo4#0;class#GeneralTest#0" />
+            <element signature="method#TestCaseNo7#0;class#GeneralTest#0" />
+            <element signature="method#TestCaseNo11#0;class#GeneralTest#0" />
+            <element signature="method#openArticle#0;class#GeneralTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/RatingModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestCaseNo1#0;class#RatingModule#0" />
+            <element signature="method#TestCaseNo2#0;class#RatingModule#0" />
+            <element signature="method#TestCaseNo3#0;class#RatingModule#0" />
+            <element signature="method#TestCaseNo4#0;class#RatingModule#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/HomeTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="method#HomeTab#0;class#HomeTab#0" />
+            <element signature="method#TestCaseNo2#0;class#HomeTab#0" />
+            <element signature="method#TestCaseNo6#0;class#HomeTab#0" />
+            <element signature="method#TestCaseNo8#0;class#HomeTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SearchTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="method#TestCaseNo1#0;class#SearchTab#0" />
+            <element signature="method#TestCaseNo2#0;class#SearchTab#0" />
+            <element signature="method#TestCaseNo4#0;class#SearchTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="method#SectionTab#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo3#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo4#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo6#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo8#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo11#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo12#0;class#SectionTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SettingTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="method#TestCaseNo1#0;class#SettingTab#0" />
+            <element signature="method#TestCaseNo4#0;class#SettingTab#0" />
+            <element signature="method#TestCaseNo5#0;class#SettingTab#0" />
+            <element signature="method#TestCaseNo6#0;class#SettingTab#0" />
+            <element signature="method#TestCaseNo7#0;class#SettingTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/actions/IBookMark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+          <folding>
+            <element signature="method#ArticleDetailElements#0;class#ArticleDetailElements#0" />
+            <element signature="method#bookmarkClick#0;class#ArticleDetailElements#0" />
+            <element signature="method#assertTitleResult#0;class#ArticleDetailElements#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/SettingElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="192" column="33" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="33" />
+          <folding>
+            <element signature="method#SettingElements#0;class#SettingElements#0" />
+            <element signature="method#getPhiladelphiaInquirerReplicaNJEditionTitle#0;class#SettingElements#0" />
+            <element signature="method#getAppVersion#0;class#SettingElements#0" />
+            <element signature="method#assertSettingResult#0;class#SettingElements#0" />
+            <element signature="method#checkAppVersion#0;class#SettingElements#0" />
+            <element signature="method#checkAppCopyright#0;class#SettingElements#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="method#clickAndGetArticleTitle#0;class#BookMarkElements#0" />
+            <element signature="method#getBookmarkedTitles#0;class#BookMarkElements#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+        <state relative-caret-position="235">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
           <folding>
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#2077#2078#0" expanded="true" />
+            <element signature="e#2119#2120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+          <folding>
+            <element signature="method#TestCaseNo2#0;class#BookmarkTab#0" />
+            <element signature="method#TestCaseNo3#0;class#BookmarkTab#0" />
+            <element signature="method#TestCaseNo11#0;class#BookmarkTab#0" />
+            <element signature="e#2997#3023#0" />
           </folding>
         </state>
       </provider>

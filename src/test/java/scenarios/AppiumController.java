@@ -39,10 +39,8 @@ public class AppiumController {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
                 File appDir = new File(classpathRoot, "/app");
-                File app = new File(appDir, "app-release.apk");
+                File app = new File(appDir, "v4-51.apk");
                 capabilities.setCapability("platformName", "Android");
-      /*          capabilities.setCapability("platformVersion", "8.1.0");
-                capabilities.setCapability("deviceName", "HT72E0201037");*/
                 capabilities.setCapability("platformVersion", "7.0");
                 capabilities.setCapability("deviceName", "Galaxy J7 Prime");
                 capabilities.setCapability("app", app.getAbsolutePath());

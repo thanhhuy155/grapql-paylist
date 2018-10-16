@@ -5,10 +5,8 @@
     <classes>
       <class name="tests.AndroidTestCases">
         <methods>
-          <include name="SectionTabTCNo12"/>
           <include name="BookMarkTCNo11"/>
           <include name="tearDown"/>
-          <include name="SectionTabTCNo8"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.AndroidTestCases -->

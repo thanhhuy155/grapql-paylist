@@ -17,6 +17,8 @@ elements\FeedListElements.class
 draft\BottomBarElements.class
 elements\CommonElements.class
 pages\BookmarkTab.class
+pages\RatingModule.class
+utils\Utils$1.class
 utils\Utils.class
 actions\ISetting.class
 pages\GeneralTest.class
@@ -31,6 +33,7 @@ tests\AppiumTest.class
 pages\ArticlePage.class
 actions\IBookMark.class
 elements\ArticleDetailElements.class
+utils\Utils$DIRECTION.class
 actions\IBottomBar.class
 elements\SectionElements.class
 actions\IFeedList.class

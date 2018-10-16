@@ -9,6 +9,9 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BookMarkElements extends CommonElements implements IBookMark {
 
     public BookMarkElements(AppiumDriver driver) {
@@ -16,17 +19,20 @@ public class BookMarkElements extends CommonElements implements IBookMark {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @AndroidFindBy(id = "bookmark_title")
+    @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']")
     @iOSFindBy(xpath = "//XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeTextView[1]")
     public MobileElement bookmarkTitle;
 
-    @AndroidFindBy(id = "action_edit")
+    @AndroidFindBy(xpath = "//android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']]")
     public MobileElement actionEdit;
 
     @AndroidFindBy(id = "bookmark_checkbox")
     public MobileElement bookmarkCheckbox;
 
-    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+    @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']")
+    public List<MobileElement> bookmarkTitleList;
+
+    @AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.ap.philly:id/action_mode_bar']/android.widget.ImageView[@resource-id='com.ap.philly:id/action_mode_close_button']")
     @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[1]")
     public MobileElement backBtn;
 
@@ -66,5 +72,14 @@ public class BookMarkElements extends CommonElements implements IBookMark {
         title = getBookMarkTitle();
         bookMarkItemClick();
         return title;
+    }
+
+    @Override
+    public List<String> getBookmarkedTitles(){
+        List<String> titleList = new ArrayList<>();
+        for (MobileElement element: bookmarkTitleList) {
+            titleList.add(element.getText());
+        }
+        return titleList;
     }
 }

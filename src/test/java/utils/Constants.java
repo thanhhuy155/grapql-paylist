@@ -23,7 +23,7 @@ public class Constants {
     }
 
     public static class APP_VERSION {
-        public static final String ANDROID = "3.1.1 (47)";
+        public static final String ANDROID = "4.0.0 (50)";
         public static final String IOS = "2.3.4 (127)";
     }
 

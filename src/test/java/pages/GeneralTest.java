@@ -27,8 +27,8 @@ public class GeneralTest extends BasePage {
         commonElements.sectionTabClick();
         commonElements.bookMarkTabClick();
 
-        closeApp();
         turnOnWifi();
+        closeApp();
     }
 
     public void TestCaseNo2() {
@@ -40,7 +40,6 @@ public class GeneralTest extends BasePage {
         commonElements.sectionTabClick();
         commonElements.bookMarkTabClick();
 
-        closeApp();
         turnOnWifi();
     }
 
@@ -54,10 +53,8 @@ public class GeneralTest extends BasePage {
         commonElements.sectionTabClick();
         commonElements.bookMarkTabClick();
 
-        closeApp();
         turnOnWifi();
     }
-
 
     public void TestCaseNo4() {
         lauchApp();
@@ -70,7 +67,6 @@ public class GeneralTest extends BasePage {
             commonElements.searchTabClick();
         }
         commonElements.bookMarkTabClick();
-        closeApp();
     }
 
     public void TestCaseNo7() {
@@ -82,9 +78,7 @@ public class GeneralTest extends BasePage {
         commonElements.sectionTabClick();
         commonElements.homeTabClick();
         commonElements.settingTabClick();
-        commonElements.bookMarkTabClick();
-
-        closeApp();
+        commonElements.bookMarkTab.click();
     }
 
     public void TestCaseNo11() {
@@ -98,8 +92,6 @@ public class GeneralTest extends BasePage {
 
         openArticle();
         articleDetailElements.back();
-
-        closeApp();
     }
 
     private void openArticle() {

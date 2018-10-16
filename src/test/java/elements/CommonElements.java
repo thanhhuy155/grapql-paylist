@@ -10,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import utils.Utils;
 
+import java.util.Calendar;
+
 public class CommonElements implements ICommon {
 
     public CommonElements(AppiumDriver driver) {
@@ -133,13 +135,10 @@ public class CommonElements implements ICommon {
     @Override
     public void bookMarkTabClick() {
         bookMarkTab.click();
-        if(googleClientLogin.isDisplayed()==true){
+        if(Utils.checkElementExist(googleClientLogin)==true){
             googleClientLogin.click();
         }
-        else {
-
-        }
-
+        Utils.sleep(1000);
     }
 
     @Override
@@ -148,4 +147,10 @@ public class CommonElements implements ICommon {
     }
     //========================================================================================//
 
+    public String getCurrentYear(){
+        Calendar now = Calendar.getInstance();
+        int year = now.get(Calendar.YEAR);
+        String yearInString = String.valueOf(year);
+        return yearInString;
+    }
 }

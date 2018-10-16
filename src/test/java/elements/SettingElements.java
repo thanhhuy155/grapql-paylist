@@ -9,16 +9,39 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import utils.Constants;
+import utils.Utils;
 
-public class SettingElements implements ISetting {
+public class SettingElements extends CommonElements implements ISetting {
 
     public SettingElements(AppiumDriver driver) {
+        super(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Notifications']")
     @iOSFindBy(id = "Notifications")
     public MobileElement notificationMenu;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'About')]]]")
+    @iOSFindBy(id = Constants.SETTING_TITLE.ABOUT_PHILADELPHIA_MEDIA_NETWORK)
+    public MobileElement aboutPMN;
+
+    //========================================================================================//
+    @AndroidFindBy(xpath = "//android.view.View[@resource-id='lCol']//android.view.View[contains(@text,'About Philly.com')]")
+    public MobileElement aboutPMNMenu;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Version and Build Number')]/following-sibling::android.widget.TextView")
+    public MobileElement appVersion;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/title']")
+    public MobileElement pmnName;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/summary']")
+    public MobileElement pmnCopyrightYear;
+
+    //========================================================================================//
+    @iOSFindBy(id = "About")
+    public MobileElement about;
 
     @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'Notifications')]")
     public MobileElement notificationSetting;
@@ -32,18 +55,14 @@ public class SettingElements implements ISetting {
     @iOSFindBy(id = "Off")
     public MobileElement notificationResult;
 
-    @iOSFindBy(id = "About")
-    public MobileElement about;
+    @iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeStaticText")
+    public MobileElement appInfo;
 
     @iOSFindBy(id = Constants.SETTING_TITLE.TERMS_OF_USE)
     public MobileElement termsofUse;
 
     @iOSFindBy(id = Constants.SETTING_TITLE.PRIVACY_POLICY)
     public MobileElement privacyPolicy;
-
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='About Philadelphia Media Network']")
-    @iOSFindBy(id = Constants.SETTING_TITLE.ABOUT_PHILADELPHIA_MEDIA_NETWORK)
-    public MobileElement aboutPMN;
 
     @iOSFindBy(id = "More Apps From PMN")
     public MobileElement moreAppsFromPMN;
@@ -63,9 +82,7 @@ public class SettingElements implements ISetting {
     @iOSFindBy(id = Constants.SETTING_TITLE.THE_PHILADELPHIA_DAILY_NEWS_REPLICA)
     public MobileElement thePhiladelphiaDailyNewsReplica;
 
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@value='Philly.com 2.3.4 (127)  © Copyright 2018 Philadelphia Media Network (Digital), LLC']")
-    public MobileElement versionApp;
-
+    //========================================================================================//
     @Override
     public void notificationMenuClick() {
         notificationMenu.click();
@@ -143,7 +160,14 @@ public class SettingElements implements ISetting {
 
     @Override
     public String getAppVersion() {
-        return versionApp.getText();
+        String appVersionNumber;
+        if(!Utils.isAndroidPlatform()){
+            appVersionNumber = appInfo.getText();
+        }
+        else {
+            appVersionNumber = appVersion.getText();
+        }
+        return appVersionNumber;
     }
 
     @Override
@@ -155,4 +179,27 @@ public class SettingElements implements ISetting {
     public void assertResult(String expectedResult, String actualResult) {
         Assert.assertTrue(actualResult.contains(expectedResult));
     }
+
+    @Override
+    public void checkAppVersion(String androidVersion, String iOSVersion){
+        if(!Utils.isAndroidPlatform()){
+            assertResult(iOSVersion,getAppVersion());
+        }
+        else {
+            assertSettingResult(androidVersion, getAppVersion());
+        }
+    }
+    @Override
+    public void checkAppCopyright(String copyrightText){
+        if(!Utils.isAndroidPlatform()){
+            assertResult(getCurrentYear(),appInfo.getText());
+            assertResult(copyrightText, appInfo.getText());
+        }
+        else {
+            assertResult(getCurrentYear(), pmnCopyrightYear.getText());
+            assertResult(copyrightText,pmnName.getText());
+        }
+    }
+
+
 }

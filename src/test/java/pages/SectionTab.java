@@ -21,6 +21,8 @@ public class SectionTab extends BasePage {
         commonElements = new CommonElements(driver);
     }
 
+
+
     public void TestCaseNo3() {
         lauchApp();
 
@@ -28,8 +30,6 @@ public class SectionTab extends BasePage {
         commonElements.sectionTabClick();
         lockDevice();
         unLockDevice();
-
-        closeApp();
     }
 
     public void TestCaseNo4() {
@@ -38,8 +38,6 @@ public class SectionTab extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
-
-        closeApp();
     }
 
     public void TestCaseNo6() {
@@ -58,8 +56,6 @@ public class SectionTab extends BasePage {
         }
 
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
-
-        closeApp();
     }
 
     public void TestCaseNo8() {
@@ -74,15 +70,13 @@ public class SectionTab extends BasePage {
 
         if (Utils.isAndroidPlatform()) {
             if (commonElements.gmailShareBox.isDisplayed()==false){
-                Utils.scrollHorizontal(appiumDriver);
+                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
             }
             commonElements.selectShareGmailItemClick();
             commonElements.assertTitleResult(title, sectionElements.getShareGmailTitle());
         } else {
 
         }
-
-        closeApp();
     }
 
     public void TestCaseNo11() {
@@ -92,8 +86,6 @@ public class SectionTab extends BasePage {
         commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
         articleDetailElements.back();
-
-        closeApp();
     }
 
     public void TestCaseNo12() {
@@ -103,15 +95,16 @@ public class SectionTab extends BasePage {
         commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
 
+
         lockDevice();
         unLockDevice();
+
+        sectionElements.backToSections.click();
 
         commonElements.settingTabClick();
         commonElements.homeTabClick();
         commonElements.searchTabClick();
         commonElements.bookMarkTabClick();
-
-        closeApp();
     }
 
 }

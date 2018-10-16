@@ -17,6 +17,10 @@ public interface ISetting {
 
     void assertResult(String expectedResult, String actualResult);
 
+    void checkAppVersion(String androidVersion, String iOSVersion);
+
+    void checkAppCopyright(String copyrightText);
+
     String getNotificationSettingTitle();
 
     String getAboutPMNTitle();

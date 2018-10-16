@@ -33,6 +33,34 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public MobileElement feedItemTitleTopStory;
 
     //========================================================================================//
+    //Android element only
+    @AndroidFindBy(id = "com.ap.philly:id/dateArticle")
+    public MobileElement articleDate;
+
+    @AndroidFindBy(id = "articleAuthor")
+    public MobileElement articleAuthor;
+
+    @AndroidFindBy (id = "cardList")
+    public MobileElement feedList;
+
+    @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView[@resource-id='com.ap.philly:id/cardList']/android.widget.RelativeLayout")
+    public MobileElement ratingModule;
+
+    @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView[@resource-id='com.ap.philly:id/cardList']/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@resource-id='com.ap.philly:id/tv_positive']")
+    public MobileElement positiveRating;
+
+    @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView[@resource-id='com.ap.philly:id/cardList']/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@resource-id='com.ap.philly:id/tv_negative']")
+    public MobileElement negativeRating;
+
+    @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView[android.view.ViewGroup[android.widget.TextView[contains(@text,'Philly.com: Latest News')]]]")
+    public MobileElement phillyInPlayStore;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Okay, thanks for using the Philly.com App!')]")
+    public MobileElement thankForUsePhillyMessage;
+    //========================================================================================//
+
+
+    //========================================================================================//
     //iOS element only
     @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly.com\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]")
     public  MobileElement firstFeedItemSection;
@@ -47,14 +75,7 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public MobileElement feedItemSectionTab;
     //========================================================================================//
 
-    @AndroidFindBy(id = "com.ap.philly:id/dateArticle")
-    public MobileElement articleDate;
 
-    @AndroidFindBy(id = "articleAuthor")
-    public MobileElement articleAuthor;
-
-    @AndroidFindBy (id = "cardList")
-    public MobileElement feedList;
 
 
     @Override

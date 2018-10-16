@@ -1,5 +1,7 @@
 package actions;
 
+import java.util.List;
+
 public interface IBookMark {
     void bookMarkItemClick();
 
@@ -14,6 +16,8 @@ public interface IBookMark {
     String getBookMarkTitle();
 
     String clickAndGetArticleTitle();
+
+    List<String> getBookmarkedTitles();
 
 
 }

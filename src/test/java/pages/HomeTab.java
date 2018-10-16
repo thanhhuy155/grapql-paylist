@@ -26,8 +26,6 @@ public class HomeTab extends BasePage {
         String title = feedListElements.getFeedItemTopStoryTitle();
         feedListElements.feedItemTopStoryLayout.click();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
-
-        closeApp();
     }
 
     public void TestCaseNo6() {
@@ -37,10 +35,7 @@ public class HomeTab extends BasePage {
         String title = feedListElements.getFeedItemTitle();
         feedListElements.feedItemClick();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
-
-        closeApp();
     }
-
 
     public void TestCaseNo8() {
         lauchApp();
@@ -48,7 +43,7 @@ public class HomeTab extends BasePage {
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         if (Utils.isAndroidPlatform()) {
-            Utils.scrollByTouchAction(appiumDriver);
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
         } else {
             Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmark, Constants.LABLE.IOS_BOOKMARK_LB);
         }
@@ -58,15 +53,13 @@ public class HomeTab extends BasePage {
 
         if (Utils.isAndroidPlatform()) {
             if(commonElements.gmailShareBox.isDisplayed()==false){
-                Utils.scrollHorizontal(appiumDriver);
+                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
             }
             commonElements.gmailShareBoxClick();
             feedListElements.assetResult(title, feedListElements.getShareGmailTitle());
         } else {
             printLog("Need to implement for iOS");
         }
-
-        closeApp();
     }
 
 }

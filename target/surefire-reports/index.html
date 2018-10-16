@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-AndroidSuite">
-              <span class="suite-name border-failed">AndroidSuite</span>
+              <span class="suite-name border-passed">AndroidSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,31 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 3 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-AndroidSuite" class="hide-methods failed suite-AndroidSuite"> (hide)</a> <!-- hide-methods failed suite-AndroidSuite -->
-                      <a href="#" panel-name="suite-AndroidSuite" class="show-methods failed suite-AndroidSuite"> (show)</a> <!-- show-methods failed suite-AndroidSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AndroidSuite" class="hide-methods passed suite-AndroidSuite"> (hide)</a> <!-- hide-methods passed suite-AndroidSuite -->
+                      <a href="#" panel-name="suite-AndroidSuite" class="show-methods passed suite-AndroidSuite"> (show)</a> <!-- show-methods passed suite-AndroidSuite -->
                     </span>
-                    <div class="method-list-content failed suite-AndroidSuite">
+                    <div class="method-list-content passed suite-AndroidSuite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AndroidSuite" title="tests.AndroidTestCases" hash-for-method="BookMarkTCNo11">BookMarkTCNo11</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AndroidSuite" title="tests.AndroidTestCases" hash-for-method="BookMarkTCNo14">BookMarkTCNo14</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AndroidSuite" title="tests.AndroidTestCases" hash-for-method="SectionTabTCNo12">SectionTabTCNo12</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AndroidSuite" title="tests.AndroidTestCases" hash-for-method="SectionTabTCNo8">SectionTabTCNo8</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-AndroidSuite -->
+                    </div> <!-- method-list-content passed suite-AndroidSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,139 +117,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AndroidSuite" class="panel AndroidSuite">
-          <div class="suite-AndroidSuite-class-failed">
+          <div class="suite-AndroidSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.AndroidTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BookMarkTCNo11">
-                  </a> <!-- BookMarkTCNo11 -->
-                  <span class="method-name">BookMarkTCNo11</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.ImageButton[@content-desc=&apos;Navigate up&apos;]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at elements.BookMarkElements.back(BookMarkElements.java:55)
-	at pages.BookmarkTab.TestCaseNo11(BookmarkTab.java:74)
-	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:98)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3eb9c575 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 33 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.ImageButton[@content-desc=&apos;Navigate up&apos;]})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 35 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SectionTabTCNo12">
-                  </a> <!-- SectionTabTCNo12 -->
-                  <span class="method-name">SectionTabTCNo12</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: settings})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at elements.CommonElements.settingTabClick(CommonElements.java:147)
-	at pages.SectionTab.TestCaseNo12(SectionTab.java:109)
-	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:82)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6bf0f70a (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 33 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: settings})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 35 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SectionTabTCNo8">
-                  </a> <!-- SectionTabTCNo8 -->
-                  <span class="method-name">SectionTabTCNo8</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text=&apos;Gmail&apos;]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
-	at pages.SectionTab.TestCaseNo8(SectionTab.java:76)
-	at tests.AndroidTestCases.SectionTabTCNo8(AndroidTestCases.java:72)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@632b5c79 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 32 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text=&apos;Gmail&apos;]})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 34 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="BookMarkTCNo14">
+                  </a> <!-- BookMarkTCNo14 -->
+                  <span class="method-name">BookMarkTCNo14</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AndroidSuite-class-failed -->
+          </div> <!-- suite-AndroidSuite-class-passed -->
         </div> <!-- panel AndroidSuite -->
         <div panel-name="test-xml-AndroidSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -312,24 +184,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SectionTabTCNo12')
+data.setCell(0, 1, 'BookMarkTCNo14')
 data.setCell(0, 2, 'tests.AndroidTestCases')
-data.setCell(0, 3, 86599);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SectionTabTCNo8')
-data.setCell(1, 2, 'tests.AndroidTestCases')
-data.setCell(1, 3, 61139);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'BookMarkTCNo11')
-data.setCell(2, 2, 'tests.AndroidTestCases')
-data.setCell(2, 3, 48968);
+data.setCell(0, 3, 18657);
 window.suiteTableData['AndroidSuite']= { tableData: data, tableDiv: 'times-div-AndroidSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-AndroidSuite">
               </div> <!-- times-div-AndroidSuite -->
             </div> <!-- times-div -->
@@ -361,26 +225,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">BookMarkTCNo11</span>
-                <span class="method-start">21075 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SectionTabTCNo12</span>
-                <span class="method-start">70144 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SectionTabTCNo8</span>
-                <span class="method-start">156751 ms</span>
+                <span class="method-name">BookMarkTCNo14</span>
+                <span class="method-start">18236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">217899 ms</span>
+                <span class="method-start">37013 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

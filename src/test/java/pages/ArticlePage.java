@@ -4,6 +4,8 @@ import elements.ArticleDetailElements;
 import elements.CommonElements;
 import elements.FeedListElements;
 import io.appium.java_client.AppiumDriver;
+import org.testng.Assert;
+import utils.Utils;
 
 public class ArticlePage extends BasePage {
     private ArticleDetailElements articleDetailElements;
@@ -20,7 +22,6 @@ public class ArticlePage extends BasePage {
 
     public void TestCaseNo1() {
         lauchApp();
-
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         String title = feedListElements.getFeedItemTitle();
@@ -28,8 +29,20 @@ public class ArticlePage extends BasePage {
 
         //feedListElements.feedItemTopStoryClick();
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+    }
 
-        closeApp();
+    public void TestCaseNo4(){
+        lauchApp();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
+        feedListElements.feedItemClick();
+        String title1 = articleDetailElements.articleDetailTitle.getText();
+        Utils.scrollToElement(appiumDriver,articleDetailElements.readNextLink);
+
+        articleDetailElements.readNextLink.click();
+        String title2 = articleDetailElements.articleDetailTitle.getText();
+
+        Assert.assertNotEquals(title1,title2);
     }
 
     public void TestCaseNo5() {
@@ -45,8 +58,6 @@ public class ArticlePage extends BasePage {
         commonElements.sectionTabClick();
         commonElements.homeTabClick();
         commonElements.bookMarkTabClick();
-
-        closeApp();
     }
 
 }

@@ -28,6 +28,9 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
     @AndroidFindBy(id = "com.ap.philly:id/bookmark")
     public MobileElement bookmark;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'READ NEXT')]")
+    public MobileElement readNextLink;
+
     @Override
     public String getTitleArticleDetail() {
         return articleDetailTitle.getText();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="223.19" tests="3" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="48.544" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2018.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,52 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="BookMarkTCNo11" classname="tests.AndroidTestCases" time="49.014">
-    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.ImageButton[@content-desc=&apos;Navigate up&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.ImageButton[@content-desc='Navigate up']})
-	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:98)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3eb9c575 (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:98)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.xpath: //android.widget.ImageButton[@content-desc='Navigate up']})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.AndroidTestCases.BookMarkTCNo11(AndroidTestCases.java:98)
-</failure>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Oct 08, 2018 10:37:34 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="SectionTabTCNo12" classname="tests.AndroidTestCases" time="86.606">
-    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.id: settings})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: settings})
-	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:82)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6bf0f70a (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:82)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.id: settings})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.AndroidTestCases.SectionTabTCNo12(AndroidTestCases.java:82)
-</failure>
-  </testcase>
-  <testcase name="SectionTabTCNo8" classname="tests.AndroidTestCases" time="61.146">
-    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text=&apos;Gmail&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Gmail']})
-	at tests.AndroidTestCases.SectionTabTCNo8(AndroidTestCases.java:72)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@632b5c79 (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.AndroidTestCases.SectionTabTCNo8(AndroidTestCases.java:72)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Gmail']})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.AndroidTestCases.SectionTabTCNo8(AndroidTestCases.java:72)
-</failure>
-  </testcase>
+  <testcase name="BookMarkTCNo14" classname="tests.AndroidTestCases" time="18.714"/>
 </testsuite>

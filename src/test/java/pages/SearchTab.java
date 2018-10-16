@@ -24,20 +24,17 @@ public class SearchTab extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.searchTab.click();
         Assert.assertTrue(searchElements.searchScreen.isDisplayed());
-
-        closeApp();
     }
+
     public void TestCaseNo2() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.searchTab.click();
         Assert.assertTrue(searchElements.quickSearch.isDisplayed());
-
-        closeApp();
     }
 
-    public  void  TestCaseNo4(){
+    public void TestCaseNo4(){
         lauchApp();
 
         //Step: 1. Click on the "Enter search phrase" input
@@ -59,7 +56,6 @@ public class SearchTab extends BasePage {
         //Step: 6. Click back to return to search tab
         searchElements.clearSearchTextButton.click();
         Assert.assertTrue(searchElements.searchScreen.isDisplayed());
-
     }
 
 

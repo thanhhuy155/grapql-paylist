@@ -62,7 +62,7 @@ public class BasePage {
         appiumDriver.closeApp();
     }
 
-    protected void resetApp() {
+    public void resetApp() {
         appiumDriver.resetApp();
     }
 

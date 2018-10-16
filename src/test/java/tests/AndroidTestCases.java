@@ -46,11 +46,11 @@ public class AndroidTestCases extends BaseTestClass{
 //        homeTab.TestCaseNo6();
 //    }
 //
-    @Test
-    public void HomeTabTCNo8() {
-        homeTab.TestCaseNo8();
-    }
-
+//    @Test
+//    public void HomeTabTCNo8() {
+//        homeTab.TestCaseNo8();
+//    }
+//
 //     //============== SECTION TAB ============== //
 //    @Test
 //    public void SectionTabTCNo3() {
@@ -61,7 +61,7 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void SectionTabTCNo4() {
 //        sectionTab.TestCaseNo4();
 //    }
-//
+
 //    @Test
 //    public void SectionTabTCNo6() {
 //        sectionTab.TestCaseNo6();
@@ -71,17 +71,17 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void SectionTabTCNo8() {
 //        sectionTab.TestCaseNo8();
 //    }
-
+//
 //    @Test
 //    public void SectionTabTCNo11() {
 //        sectionTab.TestCaseNo11();
 //    }
-
+//
 //    @Test
 //    public void SectionTabTCNo12() {
 //        sectionTab.TestCaseNo12();
 //    }
-
+//
 //     //============== BOOKMARK TAB ============== //
 //    @Test
 //    public void BookMarkTCNo2() {
@@ -97,12 +97,17 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void BookMarkTCNo11() {
 //        bookmarkTab.TestCaseNo11();
 //    }
+//
+    @Test
+    public void BookMarkTCNo14() {
+        bookmarkTab.TestCaseNo14();
+    }
 
 //    @Test
-//    public void BookMarkTCNo14() {
-//        bookmarkTab.TestCaseNo14();
+//    public void DraftTest(){
+//        bookmarkTab.Draft();
 //    }
-//
+
 //     //============== ARTICLE PAGE ============== //
 //    @Test
 //    public void ArticleTCNo1() {
@@ -112,6 +117,46 @@ public class AndroidTestCases extends BaseTestClass{
 //    @Test
 //    public void ArticleTCNo5() {
 //        articlePage.TestCaseNo5();
+//    }
+
+//    @Test
+//    public void ArticleTCNo4(){
+//        articlePage.TestCaseNo4();
+//    }
+//    //============== SETTING TAB ============== //
+//    @Test
+//    public  void SettingTCNo4(){
+//        settingTab.TestCaseNo4();
+//    }
+//
+//    @Test
+//    public void SettingTCNo6(){
+//        settingTab.TestCaseNo6();
+//    }
+//
+//    @Test
+//    public void SettingTCNo7(){
+//        settingTab.TestCaseNo7();
+//    }
+    //============== RATING MODULE ============== //
+//    @Test
+//    public void RatingModuleTCNo1(){
+//        ratingModule.TestCaseNo1();
+//    }
+
+//    @Test
+//    public void RatingModuleTCNo2(){
+//        ratingModule.TestCaseNo2();
+//    }
+
+//    @Test
+//    public void RatingModuleTCNo3(){
+//        ratingModule.TestCaseNo3();
+//    }
+//
+//    @Test
+//    public void RatingModuleTCNo4(){
+//        ratingModule.TestCaseNo4();
 //    }
 
 }

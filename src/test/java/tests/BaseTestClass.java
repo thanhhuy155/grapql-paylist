@@ -7,6 +7,7 @@ import scenarios.AppiumBaseClass;
 import scenarios.AppiumController;
 
 public class BaseTestClass extends AppiumBaseClass {
+    BasePage basePage;
     GeneralTest generalTest;
     HomeTab homeTab;
     BookmarkTab bookmarkTab;
@@ -14,10 +15,12 @@ public class BaseTestClass extends AppiumBaseClass {
     SettingTab settingTab;
     ArticlePage articlePage;
     SearchTab searchTab;
+    RatingModule ratingModule;
 
     @BeforeTest
     public void setUp() throws Exception {
         AppiumController.instance.start();
+        basePage = new BasePage(driver());
         generalTest = new GeneralTest(driver());
         homeTab = new HomeTab(driver());
         bookmarkTab = new BookmarkTab(driver());
@@ -25,10 +28,12 @@ public class BaseTestClass extends AppiumBaseClass {
         settingTab = new SettingTab(driver());
         searchTab = new SearchTab(driver());
         articlePage = new ArticlePage(driver());
+        ratingModule = new RatingModule(driver());
     }
 
     @AfterTest
     public void tearDown() {
+        basePage.resetApp();
         AppiumController.instance.stop();
     }
 

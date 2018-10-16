@@ -6,8 +6,6 @@ import io.appium.java_client.AppiumDriver;
 import utils.Constants;
 import utils.Utils;
 
-import java.util.Date;
-
 public class SettingTab extends BasePage {
     private SettingElements settingElements;
     private CommonElements commonElements;
@@ -30,8 +28,6 @@ public class SettingTab extends BasePage {
             settingElements.backToPhillyApp();
             settingElements.assertSettingResult("Off", settingElements.getNotificationSettingTitle());
         }
-
-        closeApp();
     }
 
     public void TestCaseNo4() {
@@ -45,8 +41,6 @@ public class SettingTab extends BasePage {
             settingElements.assertSettingResult(Constants.SETTING_TITLE.PRIVACY_POLICY, settingElements.getPrivacyPolicyTitle());
             settingElements.assertSettingResult(Constants.SETTING_TITLE.ABOUT_PHILADELPHIA_MEDIA_NETWORK, settingElements.getAboutPMNTitle());
         }
-
-        closeApp();
     }
 
     public void TestCaseNo5() {
@@ -61,34 +55,24 @@ public class SettingTab extends BasePage {
             settingElements.assertSettingResult(Constants.SETTING_TITLE.THE_PHILADELPHIA_INQUIRER_REPLICA, settingElements.getPhiladelphiaInquirerReplicaTitle());
             settingElements.assertSettingResult(Constants.SETTING_TITLE.THE_PHILADELPHIA_INQUIRER_REPLICA_NJ_EDITION, settingElements.getPhiladelphiaInquirerReplicaNJEditionTitle());
             settingElements.assertSettingResult(Constants.SETTING_TITLE.THE_PHILADELPHIA_DAILY_NEWS_REPLICA, settingElements.getPhiladelphiaDailyNewsReplicaTitle());
-            closeApp();
         }
     }
 
     public void TestCaseNo6() {
+        lauchApp();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTabClick();
 
-        if (!Utils.isAndroidPlatform()) {
-            lauchApp();
-            waitForVisibilityOf(commonElements.bottomTab);
-            commonElements.settingTabClick();
-
-            settingElements.assertResult(Utils.isAndroidPlatform()
-                            ? Constants.APP_VERSION.ANDROID : Constants.APP_VERSION.IOS,
-                    settingElements.getAppVersion());
-            closeApp();
-        }
+        //Step: App Version reflects current app version tested
+        settingElements.checkAppVersion(Constants.APP_VERSION.ANDROID, Constants.APP_VERSION.IOS);
     }
 
     public void TestCaseNo7() {
+        lauchApp();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTabClick();
 
-        if (!Utils.isAndroidPlatform()) {
-            lauchApp();
-            waitForVisibilityOf(commonElements.bottomTab);
-            commonElements.settingTabClick();
-
-            settingElements.assertResult(String.valueOf(new Date().getYear()),
-                    settingElements.getAppVersion());
-            closeApp();
-        }
+        //Step: Copyright reflects current year and Philadelphia Media Network (Digital), LLC
+        settingElements.checkAppCopyright("Philadelphia Media Network (Digital), LLC");
     }
 }
