@@ -65,7 +65,7 @@ public class BookmarkTab extends BasePage{
         commonElements.bookMarkTabClick();
 
         //Step: Click Edit button
-        waitForVisibilityOf(bookMarkElements.bookmarkTitle);
+        //waitForVisibilityOf(bookMarkElements.bookmarkTitle);
         bookMarkElements.actionEditClick();
 
         //Step: Click Back button

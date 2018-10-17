@@ -23,7 +23,7 @@ public class CommonElements implements ICommon {
     public MobileElement btnShare;
 
     @AndroidFindBy(id = "bookmarkIC")
-    @iOSFindBy(xpath = "//XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeButton[2]")
+    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText[contains(@name,'minutes ago')]/following-sibling::XCUIElementTypeButton[1]")
     public MobileElement btnBookmark;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Gmail']")

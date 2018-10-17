@@ -24,16 +24,18 @@ public class BookMarkElements extends CommonElements implements IBookMark {
     public MobileElement bookmarkTitle;
 
     @AndroidFindBy(xpath = "//android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']]")
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name=\"Edit\"]")
     public MobileElement actionEdit;
 
     @AndroidFindBy(id = "bookmark_checkbox")
     public MobileElement bookmarkCheckbox;
 
     @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']")
+    @iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeTextView")
     public List<MobileElement> bookmarkTitleList;
 
     @AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.ap.philly:id/action_mode_bar']/android.widget.ImageView[@resource-id='com.ap.philly:id/action_mode_close_button']")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
     public MobileElement backBtn;
 
     @Override
