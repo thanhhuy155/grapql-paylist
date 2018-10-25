@@ -21,6 +21,7 @@ public class ArticlePage extends BasePage {
 
 
     public void TestCaseNo1() {
+        //Step: Open the Philly.com App
         lauchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
@@ -32,17 +33,25 @@ public class ArticlePage extends BasePage {
     }
 
     public void TestCaseNo4(){
+        //Step: Open the Philly.com App
         lauchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
+        //Step: Click one feed as a sample test
         feedListElements.feedItemClick();
-        String title1 = articleDetailElements.articleDetailTitle.getText();
-        Utils.scrollToElement(appiumDriver,articleDetailElements.readNextLink);
 
-        articleDetailElements.readNextLink.click();
-        String title2 = articleDetailElements.articleDetailTitle.getText();
+        //Step: Click share button on any article feed card
+        articleDetailElements.shareArticleButton.click();
 
-        Assert.assertNotEquals(title1,title2);
+        //Verify point: Share dialog should open
+        Assert.assertTrue(Utils.checkElementExist(commonElements.shareDialog));
+
+        //Step: Click a share option
+        commonElements.shareArticleOn(appiumDriver, CommonElements.ShareOptions.SKYPE);
+
+        //Verify point: Sharing should accurately appear and fill in respective information (ex: article title)
+        waitForVisibilityOf(commonElements.skypeShareScreen);
+        Assert.assertTrue(Utils.checkElementExist(commonElements.phillyLinkOnSkype));
     }
 
     public void TestCaseNo5() {
@@ -58,6 +67,21 @@ public class ArticlePage extends BasePage {
         commonElements.sectionTabClick();
         commonElements.homeTabClick();
         commonElements.bookMarkTabClick();
+    }
+
+    public void TestCaseNo30(){
+        lauchApp();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
+        //Step: Click one feed as a sample test
+        feedListElements.feedItemClick();
+        String title1 = articleDetailElements.articleDetailTitle.getText();
+        Utils.scrollToElement(appiumDriver,articleDetailElements.readNextLink);
+
+        articleDetailElements.readNextLink.click();
+        String title2 = articleDetailElements.articleDetailTitle.getText();
+
+        Assert.assertNotEquals(title1,title2);
     }
 
 }

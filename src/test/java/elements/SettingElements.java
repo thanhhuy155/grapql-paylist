@@ -39,6 +39,11 @@ public class SettingElements extends CommonElements implements ISetting {
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/summary']")
     public MobileElement pmnCopyrightYear;
 
+    @AndroidFindBy(xpath = "//android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Submit Feedback')]]")
+    public MobileElement submitFeedbackLink;
+
+
+
     //========================================================================================//
     @iOSFindBy(id = "About")
     public MobileElement about;
@@ -189,14 +194,15 @@ public class SettingElements extends CommonElements implements ISetting {
             assertSettingResult(androidVersion, getAppVersion());
         }
     }
+
     @Override
     public void checkAppCopyright(String copyrightText){
         if(!Utils.isAndroidPlatform()){
-            assertResult(getCurrentYear(),appInfo.getText());
+            assertResult(Utils.getCurrentYear(),appInfo.getText());
             assertResult(copyrightText, appInfo.getText());
         }
         else {
-            assertResult(getCurrentYear(), pmnCopyrightYear.getText());
+            assertResult(Utils.getCurrentYear(), pmnCopyrightYear.getText());
             assertResult(copyrightText,pmnName.getText());
         }
     }

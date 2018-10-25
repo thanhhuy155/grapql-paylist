@@ -1,15 +1,14 @@
 package actions;
 
+import elements.CommonElements;
+import io.appium.java_client.AppiumDriver;
+
 public interface ICommon {
     void selectShareGmailItemClick();
 
     void assertTitleResult(String expected, String actual);
 
     void clickLogin();
-
-    void buttonShareClick();
-
-    void buttonBookmarkClick();
 
     void gmailShareBoxClick();
 
@@ -22,6 +21,10 @@ public interface ICommon {
     void bookMarkTabClick();
 
     void settingTabClick();
+
+    void shareArticleOn(AppiumDriver appiumDriver, CommonElements.ShareOptions option);
+
+    void signInToGoogleAccount(String username, String password);
 
     String getShareGmailTitle();
 }

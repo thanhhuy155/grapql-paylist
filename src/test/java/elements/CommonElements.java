@@ -10,25 +10,21 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import utils.Utils;
 
-import java.util.Calendar;
-
 public class CommonElements implements ICommon {
 
     public CommonElements(AppiumDriver driver) {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @AndroidFindBy(id = "shareIC")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeButton[3]")
-    public MobileElement btnShare;
-
-    @AndroidFindBy(id = "bookmarkIC")
-    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText[contains(@name,'minutes ago')]/following-sibling::XCUIElementTypeButton[1]")
-    public MobileElement btnBookmark;
-
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Gmail']")
     @iOSFindBy(id = "Reminders")
     public MobileElement selectShareGmailItem;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.LinearLayout[android.widget.TextView[contains(@text,'Skype')]]]")
+    public MobileElement skypeShareOption;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'http://www.philly.com/')]")
+    public MobileElement phillyLinkOnSkype;
 
     @AndroidFindBy(xpath = "//android.widget.EditText[contains(@resource-id,'subject')]")
     public MobileElement shareGmailTitle;
@@ -38,6 +34,45 @@ public class CommonElements implements ICommon {
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Gmail']")
     public MobileElement gmailShareBox;
+
+    @AndroidFindBy (xpath = "//android.widget.LinearLayout[android.widget.LinearLayout[android.widget.TextView[contains(@text,'Share This Article')]]]")
+    public MobileElement shareDialog;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Skype')]")
+    public MobileElement skypeShareScreen;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Checking info')]")
+    public MobileElement infoCheckingScreen;
+
+    @AndroidFindBy(xpath = "//android.widget.EditText")
+    public MobileElement googleAccountTextBox;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='signinconsentNext']")
+    public MobileElement googleAccountIAgreeButton;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='identifierNext']")
+    public MobileElement googleAccountNextButton;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.google.android.gms:id/next_button']")
+    public MobileElement googleAccountAcceptButton;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.LinearLayout[android.widget.TextView[contains(@text,'Gmail')]]]")
+    public MobileElement gmail;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.TextView[@resource-id='com.google.android.gm:id/to_heading']]//android.widget.MultiAutoCompleteTextView[contains(@text,'appteam@philly.com')]")
+    public MobileElement gmailTo;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@resource-id='com.google.android.gm:id/subject_content']/android.widget.EditText[@text='Philly.com Android App Support']")
+    public MobileElement gmailSubject;
+
+    @AndroidFindBy(xpath = "//android.widget.RelativeLayout[@resource-id='com.google.android.gm:id/body_wrapper']//android.view.View")
+    public MobileElement gmailContent;
+
+    @AndroidFindBy(xpath = "//android.view.ViewGroup[android.widget.FrameLayout[android.view.ViewGroup[android.widget.TextView[contains(@text,'Compose')]]]]")
+    public MobileElement gmailComposeScreen;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.LinearLayout[android.widget.TextView[contains(@text,'Send Email')]]]")
+    public MobileElement sendEmaiPopup;
 
     //========================================================================================//
     //Bottom Bar Elements
@@ -66,7 +101,6 @@ public class CommonElements implements ICommon {
     public MobileElement searchTab;
     //========================================================================================//
 
-
     @Override
     public void selectShareGmailItemClick() {
         selectShareGmailItem.click();
@@ -90,28 +124,46 @@ public class CommonElements implements ICommon {
     }
 
     @Override
-    public void buttonShareClick() {
-        btnShare.click();
-    }
-
-    @Override
-    public void buttonBookmarkClick() {
-
-        btnBookmark.click();
-        if(googleClientLogin.isDisplayed()==true){
-            googleClientLogin.click();
-        }
-        else {
-            return;
-        }
-
-    }
-
-    @Override
     public void gmailShareBoxClick() {
         gmailShareBox.click();
     }
 
+    public enum ShareOptions{
+        SKYPE,
+        GMAIL
+    }
+    @Override
+    public void shareArticleOn(AppiumDriver appiumDriver, ShareOptions option){
+        switch (option){
+            case SKYPE:
+                if(Utils.checkElementExist(skypeShareOption)==true){
+                    skypeShareOption.click();
+                }
+                else {
+                    Utils.scrollToElement(appiumDriver,skypeShareOption);
+                    skypeShareOption.click();
+                }
+                break;
+            case GMAIL:
+                break;
+
+            default:
+                System.out.print("Not support that share option");
+                break;
+        }
+    }
+
+    @Override
+    public void signInToGoogleAccount(String username, String password){
+        googleAccountTextBox.sendKeys(username);
+        googleAccountNextButton.click();
+        Utils.sleep(1000);
+        googleAccountTextBox.sendKeys(password);
+        googleAccountNextButton.click();
+        Utils.sleep(1000);
+        googleAccountIAgreeButton.click();
+        googleAccountAcceptButton.click();
+    }
 
     //========================================================================================//
     //Bottom Bar Actions
@@ -135,6 +187,9 @@ public class CommonElements implements ICommon {
     @Override
     public void bookMarkTabClick() {
         bookMarkTab.click();
+//        if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
+//            signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+//        }
         if(Utils.checkElementExist(googleClientLogin)==true){
             googleClientLogin.click();
         }
@@ -146,11 +201,4 @@ public class CommonElements implements ICommon {
         settingTab.click();
     }
     //========================================================================================//
-
-    public String getCurrentYear(){
-        Calendar now = Calendar.getInstance();
-        int year = now.get(Calendar.YEAR);
-        String yearInString = String.valueOf(year);
-        return yearInString;
-    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="48.544" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="337.216" tests="6" errors="0" skipped="0" failures="2">
   <properties>
     <property name="idea.version" value="2018.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,5 +61,38 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="BookMarkTCNo14" classname="tests.AndroidTestCases" time="18.714"/>
+  <testcase name="BookMarkTCNo11" classname="tests.TM_BookmarkTab" time="16.822"/>
+  <testcase name="BookMarkTCNo12" classname="tests.TM_BookmarkTab" time="33.586"/>
+  <testcase name="BookMarkTCNo14" classname="tests.TM_BookmarkTab" time="17.011"/>
+  <testcase name="BookMarkTCNo16" classname="tests.TM_BookmarkTab" time="30.538">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id=&apos;com.ap.philly:id/bookmark_title&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@48a21ea6 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '10.0.24.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
+</failure>
+    <system-out><![CDATA[Scroll: 540-1220;540-100]]></system-out>
+  </testcase>
+  <testcase name="BookMarkTCNo2" classname="tests.TM_BookmarkTab" time="27.133">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id=&apos;com.ap.philly:id/bookmark_title&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@42684d86 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '10.0.24.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
+</failure>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_25102018\BookMarkTCNo16_25_10_2018_03_12_01.pngScroll: 540-1220;540-100]]></system-out>
+  </testcase>
+  <testcase name="BookMarkTCNo3" classname="tests.TM_BookmarkTab" time="53.39"/>
 </testsuite>

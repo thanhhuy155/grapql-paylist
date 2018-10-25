@@ -7,6 +7,9 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.Utils;
+
+import java.util.List;
 
 public class SectionElements extends CommonElements implements ISection {
 
@@ -18,6 +21,13 @@ public class SectionElements extends CommonElements implements ISection {
     @AndroidFindBy(id = "card_view_category")
     @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
     public MobileElement sectionItem;
+
+    @AndroidFindBy(id = "card_view_category")
+    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
+    public List<MobileElement> listSectionItem;
+
+    @AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.ap.philly:id/category_toolbar']/android.widget.ImageButton")
+    public MobileElement backButton;
 
     @AndroidFindBy(id="Navigate up")
     public MobileElement backToSections;
@@ -50,8 +60,29 @@ public class SectionElements extends CommonElements implements ISection {
     public MobileElement entertainmentSection;
 
 
+
     @Override
     public void sectionItemClick() {
         sectionItem.click();
+    }
+
+    @Override
+    public void clickEachSectionItem(AppiumDriver appiumDriver){
+        int numberOfItemInList = listSectionItem.size();
+        if(numberOfItemInList==15){
+            for(int i=0; i<=15; i++){
+                listSectionItem.get(i).click();
+                backButton.click();
+            }
+        }
+        else {
+            listSectionItem.get(0).click();
+            backButton.click();
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+            for(int i=0; i<=14; i++){
+                listSectionItem.get(i).click();
+                backButton.click();
+            }
+        }
     }
 }

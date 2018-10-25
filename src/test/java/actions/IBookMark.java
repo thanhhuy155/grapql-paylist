@@ -13,6 +13,8 @@ public interface IBookMark {
 
     void back();
 
+    void selectBookmarkedArticle(int numberOfArticle);
+
     String getBookMarkTitle();
 
     String clickAndGetArticleTitle();

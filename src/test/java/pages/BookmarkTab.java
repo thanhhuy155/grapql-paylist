@@ -30,20 +30,20 @@ public class BookmarkTab extends BasePage{
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
 
         } else {
-            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmark, Constants.LABLE.IOS_BOOKMARK_LB);
+            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmarkOnFeedArticle, Constants.LABLE.IOS_BOOKMARK_LB);
         }
 
         //Step: Bookmark article
-        waitForVisibilityOf(commonElements.btnBookmark);
-        commonElements.buttonBookmarkClick();
+        waitForVisibilityOf(feedListElements.btnBookmarkOnFeedArticle);
+        feedListElements.buttonBookmarkClick();
 
         //Step: Go to Bookmark tab
-        commonElements.bookMarkTab.click();
+        commonElements.bookMarkTabClick();
 
         //Step: Click and Get bookmarked article
         String title= bookMarkElements.clickAndGetArticleTitle();
 
-        //Step: Check respective article is opened
+        //Verify point: Check respective article is opened
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
     }
 
@@ -65,11 +65,44 @@ public class BookmarkTab extends BasePage{
         commonElements.bookMarkTabClick();
 
         //Step: Click Edit button
-        //waitForVisibilityOf(bookMarkElements.bookmarkTitle);
+        if(Utils.isAndroidPlatform()){
+            waitForVisibilityOf(bookMarkElements.bookmarkTitle);
+        }
         bookMarkElements.actionEditClick();
 
         //Step: Click Back button
         bookMarkElements.back();
+    }
+
+    public void TestCaseNo12(){
+        lauchApp();
+
+        //Pre-condition: Add article to Bookmark tab
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+        if (Utils.isAndroidPlatform()) {
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+
+        } else {
+            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmarkOnFeedArticle, Constants.LABLE.IOS_BOOKMARK_LB);
+        }
+        feedListElements.buttonBookmarkClick();
+
+        //Step: Go to Bookmark tab
+        commonElements.bookMarkTabClick();
+
+        //Step: Click on Edit button at the top right of the screen
+        waitForVisibilityOf(bookMarkElements.bookmarkTitle);
+        bookMarkElements.actionEditClick();
+
+        //Step: Click on any checkbox
+        bookMarkElements.selectBookmarkedArticle(1);
+
+        //Step: Click on Delete icon
+        bookMarkElements.deleteButton.click();
+
+        //Verify point: Bookmark should be deleted
+        Assert.assertFalse(bookMarkElements.getBookmarkedTitles().containsAll(Constants.selectedArticleTitleOnBookmark));
+
     }
 
     public void TestCaseNo14() {
@@ -81,29 +114,51 @@ public class BookmarkTab extends BasePage{
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
 
         } else {
-            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmark, Constants.LABLE.IOS_BOOKMARK_LB);
+            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmarkOnFeedArticle, Constants.LABLE.IOS_BOOKMARK_LB);
         }
 
         //Step: Get article title and Bookmark
         String title = feedListElements.getFeedItemTitle();
-        commonElements.buttonBookmarkClick();
+        feedListElements.buttonBookmarkClick();
 
         //Step: Go to Bookmark tab
-        commonElements.bookMarkTab.click();
+        commonElements.bookMarkTabClick();
 
-        //Step: Check bookmarked article display on Bookmark tab
+        //Verify point: Check bookmarked article display on Bookmark tab
         Assert.assertTrue(bookMarkElements.getBookmarkedTitles().contains(title));
     }
 
-//    public void Draft(){
-//        lauchApp();
-//
-//        //Step: Go to Bookmark tab
-//        commonElements.bookMarkTabClick();
-//
-//        //Step: Click Edit button
-//        waitForVisibilityOf(bookMarkElements.bookmarkTitle);
-//
-//        bookMarkElements.getBookmarkedTitles();
-//    }
+    public void TestCaseNo16(){
+        lauchApp();
+
+        //Pre-condition: Add article to Bookmark tab
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+        if (Utils.isAndroidPlatform()) {
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+
+        } else {
+            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmarkOnFeedArticle, Constants.LABLE.IOS_BOOKMARK_LB);
+        }
+        feedListElements.buttonBookmarkClick();
+
+        //Step: Go to Bookmark tab
+        commonElements.bookMarkTabClick();
+
+        //Step: Click on article
+        bookMarkElements.bookmarkTitle.click();
+
+        //Step: Click on Share button
+        articleDetailElements.shareArticleButton.click();
+
+        //Verify point: Share dialog should open
+        Assert.assertTrue(Utils.checkElementExist(commonElements.shareDialog));
+
+        //Step: Click a share option
+        commonElements.shareArticleOn(appiumDriver, CommonElements.ShareOptions.SKYPE);
+
+        //Verify point: Sharing should accurately appear and fill in respective information (ex: article title)
+        waitForVisibilityOf(commonElements.skypeShareScreen);
+        Assert.assertTrue(Utils.checkElementExist(commonElements.phillyLinkOnSkype));
+
+    }
 }

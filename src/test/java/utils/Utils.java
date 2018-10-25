@@ -11,6 +11,7 @@ import org.openqa.selenium.Dimension;
 import scenarios.AppiumController;
 
 import java.time.Duration;
+import java.util.Calendar;
 import java.util.HashMap;
 
 public class Utils {
@@ -131,5 +132,11 @@ public class Utils {
             Thread.currentThread().interrupt();
             throw new RuntimeException(ex);
         }
+    }
+    public static String getCurrentYear(){
+        Calendar now = Calendar.getInstance();
+        int year = now.get(Calendar.YEAR);
+        String yearInString = String.valueOf(year);
+        return yearInString;
     }
 }

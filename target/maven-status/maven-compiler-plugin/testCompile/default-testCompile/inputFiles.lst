@@ -2,6 +2,7 @@ D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\actions\IArticleDetail.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\elements\SectionElements.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\draft\BottomBarElements.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\pages\ArticlePage.java
+D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\TM_SearchTab.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\pages\HomeTab.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\actions\ISetting.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\iOSTestCases.java
@@ -9,9 +10,12 @@ D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\actions\ICommon.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\pages\BookmarkTab.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\pages\RatingModule.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\scenarios\AppiumBaseClass.java
+D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\TM_RatingModule.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\scenarios\AppiumController.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\pages\BasePage.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\utils\Constants.java
+D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\TM_SectionTab.java
+D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\TM_SettingTab.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\pages\SearchTab.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\elements\BookMarkElements.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\elements\CommonElements.java
@@ -22,12 +26,15 @@ D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\pages\SettingTab.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\elements\SearchElements.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\utils\Utils.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\actions\IBottomBar.java
+D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\TM_GeneralTest.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\actions\ISearch.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\pages\GeneralTest.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\AndroidTestCases.java
+D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\TM_ArticlePage.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\elements\FeedListElements.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\actions\ISection.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\actions\IBookMark.java
+D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\TM_BookmarkTab.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\BaseTestClass.java
-D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\AppiumTest.java
 D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\elements\SettingElements.java
+D:\Hera_Data\Philly\mobile-test-pcom\src\test\java\tests\TM_HomeTab.java

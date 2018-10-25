@@ -45,7 +45,7 @@ public class HomeTab extends BasePage {
         if (Utils.isAndroidPlatform()) {
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
         } else {
-            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmark, Constants.LABLE.IOS_BOOKMARK_LB);
+            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmarkOnFeedArticle, Constants.LABLE.IOS_BOOKMARK_LB);
         }
 
         String title = feedListElements.getFeedItemTitle();

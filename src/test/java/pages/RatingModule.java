@@ -110,7 +110,7 @@ public class RatingModule extends BasePage{
         feedListElements.feedItemClick();
 
         //Step: Scroll through 100 articles
-        for (int right = 1; right <= 50; right++) {
+        for (int right = 1; right <= 55; right++) {
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
         }
         for (int left = 1; left <= 50; left++) {
@@ -130,5 +130,41 @@ public class RatingModule extends BasePage{
         //Step: Check play store not appear
         //Assert.assertTrue(Utils.checkElementExist(feedListElements.thankForUsePhillyMessage));
         Assert.assertFalse(Utils.checkElementExist(feedListElements.phillyInPlayStore));
+    }
+
+    public void TestCaseNo5(){
+        lauchApp();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
+        //Step: Go to article detail page
+        feedListElements.feedItemClick();
+
+        //Step: Scroll through 100 articles
+        for (int right = 1; right <= 50; right++) {
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
+        }
+        for (int left = 1; left <= 50; left++) {
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.LEFT);
+        }
+
+        //Step: Back to Homepage/Feed list and select negative rating - No
+        articleDetailElements.backBtn.click();
+        Utils.sleep(1000);
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+        Utils.sleep(2000);
+        feedListElements.negativeRating.click();
+
+        //Step: Select "Sure" to submit Feedback
+        feedListElements.positiveRating.click();
+
+        //Verify point: Send Email pop-up appears
+        Assert.assertTrue(Utils.checkElementExist(commonElements.sendEmaiPopup));
+
+        //Step: select email to submit
+        commonElements.gmail.click();
+
+        //Verify point: Email default values should match Settings Screen submit feedback
+        Assert.assertTrue(commonElements.gmailTo.getText().contains("appteam@philly.com"));
+        Assert.assertTrue(commonElements.gmailSubject.getText().contains("Module Feedback - Android"));
     }
 }

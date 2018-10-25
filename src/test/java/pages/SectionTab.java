@@ -21,7 +21,15 @@ public class SectionTab extends BasePage {
         commonElements = new CommonElements(driver);
     }
 
+    public void TestCaseNo2(){
+        lauchApp();
 
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.sectionTabClick();
+
+        sectionElements.clickEachSectionItem(appiumDriver);
+
+    }
 
     public void TestCaseNo3() {
         lauchApp();
@@ -66,7 +74,7 @@ public class SectionTab extends BasePage {
         sectionElements.sectionItemClick();
 
         String title = feedListElements.getFeedItemTitle();
-        sectionElements.buttonShareClick();
+        articleDetailElements.shareArticleButton.click();
 
         if (Utils.isAndroidPlatform()) {
             if (commonElements.gmailShareBox.isDisplayed()==false){

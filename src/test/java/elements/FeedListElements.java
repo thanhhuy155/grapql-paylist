@@ -32,6 +32,15 @@ public class FeedListElements extends CommonElements implements IFeedList {
     @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText[1]")
     public MobileElement feedItemTitleTopStory;
 
+    @AndroidFindBy(id = "shareIC")
+    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeButton[3]")
+    public MobileElement btnShareOnFeedArticle;
+
+    @AndroidFindBy(id = "bookmarkIC")
+    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText[contains(@name,'minutes ago')]/following-sibling::XCUIElementTypeButton[1]")
+    public MobileElement btnBookmarkOnFeedArticle;
+
+
     //========================================================================================//
     //Android element only
     @AndroidFindBy(id = "com.ap.philly:id/dateArticle")
@@ -74,9 +83,6 @@ public class FeedListElements extends CommonElements implements IFeedList {
     @iOSFindBy(xpath = "//XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
     public MobileElement feedItemSectionTab;
     //========================================================================================//
-
-
-
 
     @Override
     public void feedItemClick() {
@@ -121,6 +127,25 @@ public class FeedListElements extends CommonElements implements IFeedList {
     @Override
     public void bookmarkArticle(){
     }
+
+    @Override
+    public void buttonShareClick() {
+        btnShareOnFeedArticle.click();
+    }
+
+    @Override
+    public void buttonBookmarkClick() {
+
+        btnBookmarkOnFeedArticle.click();
+//        if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
+//            signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+//        }
+        if(Utils.checkElementExist(googleClientLogin)==true){
+            googleClientLogin.click();
+        }
+        Utils.sleep(1000);
+    }
+
 
 
 }

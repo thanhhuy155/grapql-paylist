@@ -1,14 +1,22 @@
 package utils;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Constants {
 
     //Browserstack setup
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
     public static final String IOS_HASHED_APP_ID = "ad8aca9e609215913a0c6f2d0022c1930230377d";
-    public static final String ANDROID_HASHED_APP_ID = "7321337981706c8efc95febcee0dc0fa57b5d90b";
+    public static final String ANDROID_HASHED_APP_ID = "bfc6ef86d90c6e0b31124ffdceb648327591d5a4";
 
-    public static final int TIME_OUT = 30;
+    public static final int TIME_OUT = 10;
+
+    public static final String GOOGLEACCOUNT_USERNAME = "testphilly114";
+    public static final String GOOGLEACCOUNT_PASSWORD = "testtesttest91";
+
+    public static final List<String> selectedArticleTitleOnBookmark = new ArrayList<>();
 
     public static class SETTING_TITLE {
         public static final String TERMS_OF_USE = "Terms of Use";

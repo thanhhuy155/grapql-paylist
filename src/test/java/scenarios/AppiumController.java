@@ -25,6 +25,7 @@ public class AppiumController {
         ANDROID_BROWSERSTACK,
         IOS_BROWSERSTACK,
         IOS_Simulator,
+        ANDROID_Emulator
     }
 
     public static AppiumController instance = new AppiumController();
@@ -39,7 +40,7 @@ public class AppiumController {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
                 File appDir = new File(classpathRoot, "/app");
-                File app = new File(appDir, "v4-51.apk");
+                File app = new File(appDir, "phillydotcom.apk");
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("platformVersion", "7.0");
                 capabilities.setCapability("deviceName", "Galaxy J7 Prime");
@@ -58,6 +59,18 @@ public class AppiumController {
                 capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("automationName", "XCUITest");
                 driver = new IOSDriver(new URL("http://0.0.0.0:4724/wd/hub"), capabilities);
+                break;
+            case ANDROID_Emulator:
+                classpathRoot = new File(System.getProperty("user.dir"));
+                appDir = new File(classpathRoot, "/app");
+                app = new File(appDir, "phillydotcom.apk");
+                capabilities.setCapability("platformName", "Android");
+                capabilities.setCapability("platformVersion", "8.0");
+                capabilities.setCapability("deviceName", "192.168.78.101:5555");
+                capabilities.setCapability("app", app.getAbsolutePath());
+                capabilities.setCapability("appPackage", "com.ap.philly");
+                capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
+                driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
                 break;
             case IOS_Simulator:
                 classpathRoot = new File(System.getProperty("user.dir"));

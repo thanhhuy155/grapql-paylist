@@ -1,7 +1,5 @@
 package tests;
 
-import org.testng.annotations.Test;
-
 public class AndroidTestCases extends BaseTestClass{
 //    // ============== General ============== //
 //    @Test
@@ -61,12 +59,12 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void SectionTabTCNo4() {
 //        sectionTab.TestCaseNo4();
 //    }
-
+//
 //    @Test
 //    public void SectionTabTCNo6() {
 //        sectionTab.TestCaseNo6();
 //    }
-
+//
 //    @Test
 //    public void SectionTabTCNo8() {
 //        sectionTab.TestCaseNo8();
@@ -81,7 +79,7 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void SectionTabTCNo12() {
 //        sectionTab.TestCaseNo12();
 //    }
-//
+
 //     //============== BOOKMARK TAB ============== //
 //    @Test
 //    public void BookMarkTCNo2() {
@@ -92,16 +90,25 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void BookMarkTCNo3() {
 //        bookmarkTab.TestCaseNo3();
 //    }
-
+//
 //    @Test
 //    public void BookMarkTCNo11() {
 //        bookmarkTab.TestCaseNo11();
 //    }
 //
-    @Test
-    public void BookMarkTCNo14() {
-        bookmarkTab.TestCaseNo14();
-    }
+//    @Test
+//    public void BookMarkTCNo12(){
+//        bookmarkTab.TestCaseNo12();
+//    }
+//
+//    @Test
+//    public void BookMarkTCNo14() {
+//        bookmarkTab.TestCaseNo14();
+//    }
+//    @Test
+//    public void BookMarkTCNo16(){
+//        bookmarkTab.TestCaseNo16();
+//    }
 
 //    @Test
 //    public void DraftTest(){
@@ -118,7 +125,7 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void ArticleTCNo5() {
 //        articlePage.TestCaseNo5();
 //    }
-
+//
 //    @Test
 //    public void ArticleTCNo4(){
 //        articlePage.TestCaseNo4();
@@ -138,17 +145,17 @@ public class AndroidTestCases extends BaseTestClass{
 //    public void SettingTCNo7(){
 //        settingTab.TestCaseNo7();
 //    }
-    //============== RATING MODULE ============== //
+//    //============== RATING MODULE ============== //
 //    @Test
 //    public void RatingModuleTCNo1(){
 //        ratingModule.TestCaseNo1();
 //    }
-
+//
 //    @Test
 //    public void RatingModuleTCNo2(){
 //        ratingModule.TestCaseNo2();
 //    }
-
+//
 //    @Test
 //    public void RatingModuleTCNo3(){
 //        ratingModule.TestCaseNo3();

@@ -3,6 +3,7 @@ package pages;
 import elements.CommonElements;
 import elements.SettingElements;
 import io.appium.java_client.AppiumDriver;
+import org.testng.Assert;
 import utils.Constants;
 import utils.Utils;
 
@@ -28,6 +29,31 @@ public class SettingTab extends BasePage {
             settingElements.backToPhillyApp();
             settingElements.assertSettingResult("Off", settingElements.getNotificationSettingTitle());
         }
+    }
+
+    public void TestCaseNo3(){
+        lauchApp();
+        waitForVisibilityOf(commonElements.bottomTab);
+
+        //Step: Click Settings Tab
+        commonElements.settingTabClick();
+
+        //Step: Click Submit Feedback
+        settingElements.submitFeedbackLink.click();
+
+        //Step: Click email option
+        commonElements.gmail.click();
+
+        //Verify point: email window opens
+        Assert.assertTrue(Utils.checkElementExist(commonElements.gmailComposeScreen));
+
+        //Verify point:
+        Assert.assertTrue(commonElements.gmailTo.getText().contains("appteam@philly.com"));
+        Assert.assertTrue(commonElements.gmailSubject.getText().contains("Philly.com Android App Support"));
+        Assert.assertTrue(commonElements.gmailContent.getText().contains("Model:"));
+        Assert.assertTrue(commonElements.gmailContent.getText().contains("Android SDK Number:"));
+        Assert.assertTrue(commonElements.gmailContent.getText().contains("Android API Version:"));
+        Assert.assertTrue(commonElements.gmailContent.getText().contains("App Version:"));
     }
 
     public void TestCaseNo4() {

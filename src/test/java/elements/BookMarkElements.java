@@ -8,6 +8,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import utils.Constants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,8 +28,14 @@ public class BookMarkElements extends CommonElements implements IBookMark {
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name=\"Edit\"]")
     public MobileElement actionEdit;
 
+    @AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.ap.philly:id/toolbar']/android.support.v7.widget.LinearLayoutCompat/android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']")
+    public MobileElement deleteButton;
+
     @AndroidFindBy(id = "bookmark_checkbox")
     public MobileElement bookmarkCheckbox;
+
+    @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView[@resource-id='com.ap.philly:id/bookmark_card_list']/android.widget.FrameLayout//android.widget.CheckBox")
+    public List<MobileElement> bookmarkCheckboxes;
 
     @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']")
     @iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeTextView")
@@ -83,5 +90,13 @@ public class BookMarkElements extends CommonElements implements IBookMark {
             titleList.add(element.getText());
         }
         return titleList;
+    }
+
+    @Override
+    public void selectBookmarkedArticle(int numberOfArticle){
+        for(int i=0; i<numberOfArticle;i++){
+            bookmarkCheckboxes.get(i).click();
+            Constants.selectedArticleTitleOnBookmark.add(bookmarkTitleList.get(i).getText());
+        }
     }
 }

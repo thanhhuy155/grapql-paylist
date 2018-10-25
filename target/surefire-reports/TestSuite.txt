@@ -1,4 +1,30 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.544 s - in TestSuite
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 337.216 s <<< FAILURE! - in TestSuite
+BookMarkTCNo16(tests.TM_BookmarkTab)  Time elapsed: 30.538 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@48a21ea6 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '10.0.24.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
+
+BookMarkTCNo2(tests.TM_BookmarkTab)  Time elapsed: 27.133 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@42684d86 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '10.0.24.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
+

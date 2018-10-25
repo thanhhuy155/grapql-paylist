@@ -16,4 +16,9 @@ public interface IFeedList {
     void feedItemTopStoryClick();
 
     void assetResult(String expected, String actual);
+
+    void buttonShareClick();
+
+    void buttonBookmarkClick();
+
 }

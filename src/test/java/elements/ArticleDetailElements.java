@@ -31,6 +31,9 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'READ NEXT')]")
     public MobileElement readNextLink;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Share Article']")
+    public MobileElement shareArticleButton;
+
     @Override
     public String getTitleArticleDetail() {
         return articleDetailTitle.getText();
@@ -40,7 +43,13 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
     public void bookmarkClick() {
         bookmark.click();
         if (Utils.isAndroidPlatform()) {
-            clickLogin();
+//            if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
+//                signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+//            }
+            if(Utils.checkElementExist(googleClientLogin)==true){
+                googleClientLogin.click();
+            }
+            Utils.sleep(1000);
         }
     }
 
