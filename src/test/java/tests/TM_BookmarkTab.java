@@ -3,6 +3,7 @@ package tests;
 import org.testng.annotations.Test;
 
 public class TM_BookmarkTab extends BaseTestClass {
+
     @Test
     public void BookMarkTCNo2() {
         bookmarkTab.TestCaseNo2();

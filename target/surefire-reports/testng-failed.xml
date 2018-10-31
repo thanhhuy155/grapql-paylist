@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AndroidSuite]">
-  <test thread-count="5" verbose="0" name="AndroidTest(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [ArticlePageSuite]">
+  <test thread-count="5" verbose="0" name="ArticlePageTest(failed)">
     <classes>
-      <class name="tests.TM_BookmarkTab">
+      <class name="tests.TM_ArticlePage">
         <methods>
-          <include name="runBeforeMethod"/>
-          <include name="BookMarkTCNo16"/>
+          <include name="ArticleTCNo4"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="runAfterMethod"/>
-          <include name="BookMarkTCNo2"/>
         </methods>
-      </class> <!-- tests.TM_BookmarkTab -->
+      </class> <!-- tests.TM_ArticlePage -->
     </classes>
-  </test> <!-- AndroidTest(failed) -->
-</suite> <!-- Failed suite [AndroidSuite] -->
+  </test> <!-- ArticlePageTest(failed) -->
+</suite> <!-- Failed suite [ArticlePageSuite] -->

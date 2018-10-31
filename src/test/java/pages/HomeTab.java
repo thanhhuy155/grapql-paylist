@@ -52,10 +52,10 @@ public class HomeTab extends BasePage {
         feedListElements.buttonShareClick();
 
         if (Utils.isAndroidPlatform()) {
-            if(commonElements.gmailShareBox.isDisplayed()==false){
+            if(commonElements.gmail.isDisplayed()==false){
                 Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
             }
-            commonElements.gmailShareBoxClick();
+            commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
             feedListElements.assetResult(title, feedListElements.getShareGmailTitle());
         } else {
             printLog("Need to implement for iOS");

@@ -5,6 +5,7 @@ import elements.CommonElements;
 import elements.FeedListElements;
 import elements.SectionElements;
 import io.appium.java_client.AppiumDriver;
+import utils.Constants;
 import utils.Utils;
 
 public class SectionTab extends BasePage {
@@ -77,10 +78,10 @@ public class SectionTab extends BasePage {
         articleDetailElements.shareArticleButton.click();
 
         if (Utils.isAndroidPlatform()) {
-            if (commonElements.gmailShareBox.isDisplayed()==false){
+            if (commonElements.gmail.isDisplayed()==false){
                 Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
             }
-            commonElements.selectShareGmailItemClick();
+            commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
             commonElements.assertTitleResult(title, sectionElements.getShareGmailTitle());
         } else {
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="337.216" tests="6" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2,559.189" tests="37" errors="0" skipped="0" failures="15">
   <properties>
     <property name="idea.version" value="2018.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,38 +61,253 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="BookMarkTCNo11" classname="tests.TM_BookmarkTab" time="16.822"/>
-  <testcase name="BookMarkTCNo12" classname="tests.TM_BookmarkTab" time="33.586"/>
-  <testcase name="BookMarkTCNo14" classname="tests.TM_BookmarkTab" time="17.011"/>
-  <testcase name="BookMarkTCNo16" classname="tests.TM_BookmarkTab" time="30.538">
+  <testcase name="GeneralTCNo1" classname="tests.TM_GeneralTest" time="48.313"/>
+  <testcase name="GeneralTCNo11" classname="tests.TM_GeneralTest" time="11.075">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.id: card_view_article})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: card_view_article})
+	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:33)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@dbda472 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: card_view_article})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:33)
+</failure>
+  </testcase>
+  <testcase name="GeneralTCNo2" classname="tests.TM_GeneralTest" time="34.714"/>
+  <testcase name="GeneralTCNo3" classname="tests.TM_GeneralTest" time="43.97"/>
+  <testcase name="GeneralTCNo4" classname="tests.TM_GeneralTest" time="26.46"/>
+  <testcase name="GeneralTCNo7" classname="tests.TM_GeneralTest" time="51.448"/>
+  <testcase name="SectionTabTCNo11" classname="tests.TM_SectionTab" time="10.5"/>
+  <testcase name="SectionTabTCNo12" classname="tests.TM_SectionTab" time="55.226">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.id: Navigate up})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: Navigate up})
+	at tests.TM_SectionTab.SectionTabTCNo12(TM_SectionTab.java:39)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@439c706 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_SectionTab.SectionTabTCNo12(TM_SectionTab.java:39)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: Navigate up})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_SectionTab.SectionTabTCNo12(TM_SectionTab.java:39)
+</failure>
+  </testcase>
+  <testcase name="SectionTabTCNo2" classname="tests.TM_SectionTab" time="60.041"/>
+  <testcase name="SectionTabTCNo3" classname="tests.TM_SectionTab" time="48.123"/>
+  <testcase name="SectionTabTCNo4" classname="tests.TM_SectionTab" time="6.498"/>
+  <testcase name="SectionTabTCNo6" classname="tests.TM_SectionTab" time="12.703"/>
+  <testcase name="SectionTabTCNo8" classname="tests.TM_SectionTab" time="14.535">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@content-desc=&apos;Share Article&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@content-desc='Share Article']})
+	at tests.TM_SectionTab.SectionTabTCNo8(TM_SectionTab.java:29)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@630793f3 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_SectionTab.SectionTabTCNo8(TM_SectionTab.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@content-desc='Share Article']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_SectionTab.SectionTabTCNo8(TM_SectionTab.java:29)
+</failure>
+  </testcase>
+  <testcase name="SettingTCNo1" classname="tests.TM_SettingTab" time="9.262"/>
+  <testcase name="SettingTCNo3" classname="tests.TM_SettingTab" time="12.917">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text=&apos;Gmail&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Gmail']})
+	at tests.TM_SettingTab.SettingTCNo3(TM_SettingTab.java:13)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@13695bca (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_SettingTab.SettingTCNo3(TM_SettingTab.java:13)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Gmail']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_SettingTab.SettingTCNo3(TM_SettingTab.java:13)
+</failure>
+  </testcase>
+  <testcase name="SettingTCNo4" classname="tests.TM_SettingTab" time="4.31"/>
+  <testcase name="SettingTCNo5" classname="tests.TM_SettingTab" time="0.006"/>
+  <testcase name="SettingTCNo6" classname="tests.TM_SettingTab" time="6.77">
+    <failure message="expected [4.0.0 (53)] but found [4.0.0 (50)]" type="java.lang.AssertionError">java.lang.AssertionError: expected [4.0.0 (53)] but found [4.0.0 (50)]
+	at tests.TM_SettingTab.SettingTCNo6(TM_SettingTab.java:27)
+</failure>
+  </testcase>
+  <testcase name="SettingTCNo7" classname="tests.TM_SettingTab" time="8.275"/>
+  <testcase name="HomeTabTCNo2" classname="tests.TM_HomeTab" time="10.563"/>
+  <testcase name="HomeTabTCNo6" classname="tests.TM_HomeTab" time="9.251"/>
+  <testcase name="HomeTabTCNo8" classname="tests.TM_HomeTab" time="42.319">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[contains(@resource-id,&apos;subject&apos;)]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[contains(@resource-id,'subject')]})
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:18)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@486417fc (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:18)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.widget.EditText[contains(@resource-id,'subject')]})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:18)
+</failure>
+    <system-out><![CDATA[Scroll: 540-1094;540-100]]></system-out>
+  </testcase>
+  <testcase name="ArticleTCNo1" classname="tests.TM_ArticlePage" time="11.251"/>
+  <testcase name="ArticleTCNo30" classname="tests.TM_ArticlePage" time="109.817"/>
+  <testcase name="ArticleTCNo4" classname="tests.TM_ArticlePage" time="14.532">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at tests.TM_ArticlePage.ArticleTCNo4(TM_ArticlePage.java:18)
+</failure>
+  </testcase>
+  <testcase name="ArticleTCNo5" classname="tests.TM_ArticlePage" time="76.299"/>
+  <testcase name="BookMarkTCNo11" classname="tests.TM_BookmarkTab" time="37.005"/>
+  <testcase name="BookMarkTCNo12" classname="tests.TM_BookmarkTab" time="55.421"/>
+  <testcase name="BookMarkTCNo14" classname="tests.TM_BookmarkTab" time="49.757">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at tests.TM_BookmarkTab.BookMarkTCNo14(TM_BookmarkTab.java:29)
+</failure>
+    <system-out><![CDATA[Scroll: 540-1094;540-100]]></system-out>
+  </testcase>
+  <testcase name="BookMarkTCNo16" classname="tests.TM_BookmarkTab" time="50.637">
     <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id=&apos;com.ap.philly:id/bookmark_title&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@48a21ea6 (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:34)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@17df114c (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:34)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '10.0.24.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: driver.version: AndroidDriver
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:33)
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:34)
 </failure>
-    <system-out><![CDATA[Scroll: 540-1220;540-100]]></system-out>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_31102018\BookMarkTCNo14_31_10_2018_03_59_07.pngScroll: 540-1094;540-100]]></system-out>
   </testcase>
-  <testcase name="BookMarkTCNo2" classname="tests.TM_BookmarkTab" time="27.133">
+  <testcase name="BookMarkTCNo2" classname="tests.TM_BookmarkTab" time="51.898">
     <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id=&apos;com.ap.philly:id/bookmark_title&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@42684d86 (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:9)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6fd93c83 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:9)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '10.0.24.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: driver.version: AndroidDriver
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:8)
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:9)
 </failure>
-    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_25102018\BookMarkTCNo16_25_10_2018_03_12_01.pngScroll: 540-1220;540-100]]></system-out>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_31102018\BookMarkTCNo16_31_10_2018_04_00_06.pngScroll: 540-1094;540-100]]></system-out>
   </testcase>
-  <testcase name="BookMarkTCNo3" classname="tests.TM_BookmarkTab" time="53.39"/>
+  <testcase name="BookMarkTCNo3" classname="tests.TM_BookmarkTab" time="60.068"/>
+  <testcase name="RatingModuleTCNo1" classname="tests.TM_RatingModule" time="166.682">
+    <failure message="Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;172.16.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69J0313980, version: }&#10;Session ID: fcf8a141f6e7f10ade63dd712ab8fcd7aa46e8b7" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69J0313980, version: }
+Session ID: fcf8a141f6e7f10ade63dd712ab8fcd7aa46e8b7
+	at tests.TM_RatingModule.RatingModuleTCNo1(TM_RatingModule.java:8)
+</failure>
+    <system-out><![CDATA[class: RatingModuleSuitedriver: io.appium.java_client.android.AndroidDriver, Capabilities: {64bit=false, acceptSslCert=false, acceptSslCerts=false, appActivity=com.ap.philly.Views.MainActivity, appPackage=com.ap.philly, appium_port=38082, automationName=uiautomator2, browserstack.appiumLogs=true, browserstack.callbackStop=true, browserstack.debug=true, browserstack.deviceLogs=true, browserstack.ie.noFlash=false, browserstack.minOSVersion=4.1, browserstack.tunnelIdentifier=, browserstack.video=true, browserstack.video.disableWaterMark=true, bundleID=com.ap.philly, device=google pixel, deviceName=google pixel, javascriptEnabled=true, mobile={browser=mobile, version=Google Pixel-7.1}, nativeWebScreenshot=true, newCommandTimeout=100, orig_os=android, os_version=7.1, platform=ANDROID, platformName=ANDROID, proxy_type=node, realMobile=true, systemPort=8202, udid=FA69J0313980, version=}Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594]]></system-out>
+    <system-err><![CDATA[Oct 31, 2018 4:03:03 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="RatingModuleTCNo2" classname="tests.TM_RatingModule" time="181.053">
+    <failure message="Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;172.16.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69J0313980, version: }&#10;Session ID: fcf8a141f6e7f10ade63dd712ab8fcd7aa46e8b7" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69J0313980, version: }
+Session ID: fcf8a141f6e7f10ade63dd712ab8fcd7aa46e8b7
+	at tests.TM_RatingModule.RatingModuleTCNo2(TM_RatingModule.java:13)
+</failure>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_31102018\RatingModuleTCNo1_31_10_2018_04_06_25.pngScroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594]]></system-out>
+  </testcase>
+  <testcase name="RatingModuleTCNo3" classname="tests.TM_RatingModule" time="137.325">
+    <failure message="Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;172.16.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69J0313980, version: }&#10;Session ID: fcf8a141f6e7f10ade63dd712ab8fcd7aa46e8b7" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69J0313980, version: }
+Session ID: fcf8a141f6e7f10ade63dd712ab8fcd7aa46e8b7
+	at tests.TM_RatingModule.RatingModuleTCNo3(TM_RatingModule.java:18)
+</failure>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_31102018\RatingModuleTCNo2_31_10_2018_04_09_33.pngScroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594]]></system-out>
+  </testcase>
+  <testcase name="RatingModuleTCNo4" classname="tests.TM_RatingModule" time="186.446">
+    <failure message="android.support.test.uiautomator.StaleObjectException&#10;	at android.support.test.uiautomator.UiObject2.getAccessibilityNodeInfo(UiObject2.java:629)&#10;	at android.support.test.uiautomator.UiObject2.getVisibleBounds(UiObject2.java:210)&#10;	at android.support.test.uiautomator.UiObject2.getVisibleCenter(UiObject2.java:251)&#10;	at android.support.test.uiautomator.UiObject2.click(UiObject2.java:343)&#10;	at io.appium.uiautomator2.model.UiObject2Element.click(UiObject2Element.java:44)&#10;	at io.appium.uiautomator2.handler.Click.safeHandle(Click.java:40)&#10;	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:56)&#10;	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:202)&#10;	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:193)&#10;	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)&#10;	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)&#10;	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)&#10;	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)&#10;	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)&#10;	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)&#10;	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)&#10;	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)&#10;	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)&#10;	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)&#10;	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)&#10;	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)&#10;	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)&#10;	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)&#10;	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)&#10;	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)&#10;	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)&#10;	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)&#10;	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)&#10;	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)&#10;	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)&#10;	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)&#10;	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)&#10;	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)&#10;	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)&#10;	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)&#10;	at java.lang.Thread.run(Thread.java:761)&#10; (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;172.16.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69J0313980, version: }&#10;Session ID: fcf8a141f6e7f10ade63dd712ab8fcd7aa46e8b7" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+android.support.test.uiautomator.StaleObjectException
+	at android.support.test.uiautomator.UiObject2.getAccessibilityNodeInfo(UiObject2.java:629)
+	at android.support.test.uiautomator.UiObject2.getVisibleBounds(UiObject2.java:210)
+	at android.support.test.uiautomator.UiObject2.getVisibleCenter(UiObject2.java:251)
+	at android.support.test.uiautomator.UiObject2.click(UiObject2.java:343)
+	at io.appium.uiautomator2.model.UiObject2Element.click(UiObject2Element.java:44)
+	at io.appium.uiautomator2.handler.Click.safeHandle(Click.java:40)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:56)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:202)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:193)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:761)
+ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69J0313980, version: }
+Session ID: fcf8a141f6e7f10ade63dd712ab8fcd7aa46e8b7
+	at tests.TM_RatingModule.RatingModuleTCNo4(TM_RatingModule.java:23)
+</failure>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_31102018\RatingModuleTCNo3_31_10_2018_04_11_57.pngScroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 972-1594;54-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594Scroll: 54-1594;972-1594]]></system-out>
+  </testcase>
+  <testcase name="RatingModuleTCNo5" classname="tests.TM_RatingModule" time="36.246">
+    <failure message="Expected condition failed: waiting for visibility of Located by By.chained({By.id: tv_top_story_title}) (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.id: tv_top_story_title}) (tried for 30 second(s) with 500 milliseconds interval)
+	at tests.TM_RatingModule.RatingModuleTCNo5(TM_RatingModule.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: tv_top_story_title})
+	at tests.TM_RatingModule.RatingModuleTCNo5(TM_RatingModule.java:28)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@711ce989 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_RatingModule.RatingModuleTCNo5(TM_RatingModule.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: tv_top_story_title})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '172.16.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_RatingModule.RatingModuleTCNo5(TM_RatingModule.java:28)
+</failure>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_31102018\RatingModuleTCNo4_31_10_2018_04_15_10.png]]></system-out>
+  </testcase>
 </testsuite>

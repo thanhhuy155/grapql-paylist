@@ -7,6 +7,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.Constants;
 import utils.Utils;
 
 public class FeedListElements extends CommonElements implements IFeedList {
@@ -137,15 +138,12 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public void buttonBookmarkClick() {
 
         btnBookmarkOnFeedArticle.click();
-//        if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
-//            signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
-//        }
+        if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
+            signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+        }
         if(Utils.checkElementExist(googleClientLogin)==true){
             googleClientLogin.click();
         }
         Utils.sleep(1000);
     }
-
-
-
 }

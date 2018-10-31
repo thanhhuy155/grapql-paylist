@@ -16,8 +16,8 @@ public class TM_SettingTab extends BaseTestClass {
     public  void SettingTCNo4(){
         settingTab.TestCaseNo4();
     }
-    @Test
 
+    @Test
     public  void SettingTCNo5(){
         settingTab.TestCaseNo5();
     }

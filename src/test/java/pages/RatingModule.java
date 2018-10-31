@@ -5,6 +5,7 @@ import elements.CommonElements;
 import elements.FeedListElements;
 import io.appium.java_client.AppiumDriver;
 import org.testng.Assert;
+import utils.Constants;
 import utils.Utils;
 
 public class RatingModule extends BasePage{
@@ -161,7 +162,7 @@ public class RatingModule extends BasePage{
         Assert.assertTrue(Utils.checkElementExist(commonElements.sendEmaiPopup));
 
         //Step: select email to submit
-        commonElements.gmail.click();
+        commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
 
         //Verify point: Email default values should match Settings Screen submit feedback
         Assert.assertTrue(commonElements.gmailTo.getText().contains("appteam@philly.com"));

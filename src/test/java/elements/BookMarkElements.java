@@ -94,6 +94,7 @@ public class BookMarkElements extends CommonElements implements IBookMark {
 
     @Override
     public void selectBookmarkedArticle(int numberOfArticle){
+        Constants.selectedArticleTitleOnBookmark.clear();
         for(int i=0; i<numberOfArticle;i++){
             bookmarkCheckboxes.get(i).click();
             Constants.selectedArticleTitleOnBookmark.add(bookmarkTitleList.get(i).getText());

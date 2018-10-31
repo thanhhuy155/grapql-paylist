@@ -1,0 +1,55 @@
+//    GeneralTest getGeneralTest(){
+//        if(generalTest == null){
+//            generalTest = new GeneralTest(driver());
+//        }
+//        return generalTest;
+//    }
+//
+//    HomeTab getHomeTab(){
+//        if(homeTab==null){
+//            homeTab = new HomeTab(driver());
+//        }
+//        return homeTab;
+//    }
+//
+//    BookmarkTab getBookmarkTab(){
+//        if(bookmarkTab==null){
+//            bookmarkTab = new BookmarkTab(driver());
+//        }
+//        return bookmarkTab;
+//    }
+//
+//    SectionTab getSectionTab(){
+//        if(sectionTab==null){
+//            sectionTab=new SectionTab(driver());
+//        }
+//        return sectionTab;
+//    }
+//
+//    SettingTab getSettingTab(){
+//        if (settingTab==null){
+//            settingTab = new SettingTab(driver());
+//        }
+//        return settingTab;
+//    }
+//
+//    ArticlePage getArticlePage(){
+//        if (articlePage==null){
+//            articlePage=new ArticlePage(driver());
+//        }
+//        return articlePage;
+//    }
+//
+//    SearchTab getSearchTab(){
+//        if (searchTab==null){
+//            searchTab=new SearchTab(driver());
+//        }
+//        return searchTab;
+//    }
+//
+//    RatingModule getRatingModule(){
+//        if(ratingModule == null){
+//            ratingModule = new RatingModule(driver());
+//        }
+//        return ratingModule;
+//    }

@@ -12,12 +12,14 @@ import utils.Constants;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class AppiumController {
-    public static OS executionOS = OS.ANDROID;
+    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -33,6 +35,7 @@ public class AppiumController {
 
     public void start() throws MalformedURLException {
         if (driver != null) {
+            System.out.print("driver: "+driver);
             return;
         }
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -85,6 +88,9 @@ public class AppiumController {
                 driver = new IOSDriver(new URL("http://0.0.0.0:4724/wd/hub"), capabilities);
                 break;
             case ANDROID_BROWSERSTACK:
+                Calendar calendar = Calendar.getInstance();
+                SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
+                String build = "Build_"+formater2.format(calendar.getTime());
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("device", "Google Pixel");
                 capabilities.setCapability("os_version", "7.1");
@@ -92,6 +98,8 @@ public class AppiumController {
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
                 capabilities.setCapability("browserstack.debug", true);
                 capabilities.setCapability("app", "bs://" + Constants.ANDROID_HASHED_APP_ID);
+                capabilities.setCapability("build",build);
+                capabilities.setCapability("name",Constants.EXECUTING_SUITE);
                 driver = new AndroidDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
             case IOS_BROWSERSTACK:
@@ -108,10 +116,11 @@ public class AppiumController {
 
         if (executionOS.equals(OS.IOS) || executionOS.equals(OS.IOS_BROWSERSTACK)) {
             // for click on dialog allow notification in iOS
-            IOSElement textButton = (IOSElement) new WebDriverWait(driver, 30).until(
+            IOSElement textButton = (IOSElement) new WebDriverWait(driver, 10).until(
                     elementToBeClickable(MobileBy.AccessibilityId("Allow")));
             textButton.click();
         }
+        System.out.print("driver: "+driver);
     }
 
     public void stop() {

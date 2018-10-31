@@ -9,12 +9,14 @@ public class Constants {
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
     public static final String IOS_HASHED_APP_ID = "ad8aca9e609215913a0c6f2d0022c1930230377d";
-    public static final String ANDROID_HASHED_APP_ID = "bfc6ef86d90c6e0b31124ffdceb648327591d5a4";
+    public static final String ANDROID_HASHED_APP_ID = "c1309cd4e426b7f1ccb449c31e7faf0e85bc6692";
 
-    public static final int TIME_OUT = 10;
+    public static final int TIME_OUT = 5;
 
     public static final String GOOGLEACCOUNT_USERNAME = "testphilly114";
     public static final String GOOGLEACCOUNT_PASSWORD = "testtesttest91";
+
+    public static String EXECUTING_SUITE = new String();
 
     public static final List<String> selectedArticleTitleOnBookmark = new ArrayList<>();
 

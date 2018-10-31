@@ -70,7 +70,7 @@ public class SectionElements extends CommonElements implements ISection {
     public void clickEachSectionItem(AppiumDriver appiumDriver){
         int numberOfItemInList = listSectionItem.size();
         if(numberOfItemInList==15){
-            for(int i=0; i<=15; i++){
+            for(int i=0; i<15; i++){
                 listSectionItem.get(i).click();
                 backButton.click();
             }
@@ -79,7 +79,7 @@ public class SectionElements extends CommonElements implements ISection {
             listSectionItem.get(0).click();
             backButton.click();
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
-            for(int i=0; i<=14; i++){
+            for(int i=0; i<14; i++){
                 listSectionItem.get(i).click();
                 backButton.click();
             }

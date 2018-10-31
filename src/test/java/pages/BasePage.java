@@ -42,8 +42,6 @@ public class BasePage {
         }
     }
 
-
-
     public File takeScreenshotOnFailure(ITestResult testResult){
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");

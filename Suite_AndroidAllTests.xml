@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--<suite name = "AndroidSuite">
+    <test name = "All Tests">
+        <classes>
+            <class name = "tests.TM_GeneralTest"/>
+            <class name = "tests.TM_SettingTab"/>
+            <class name = "tests.TM_SectionTab"/>
+            <class name = "tests.TM_HomeTab"/>
+            <class name = "tests.TM_ArticlePage"/>
+            <class name = "tests.TM_BookmarkTab"/>
+        </classes>
+    </test>
+</suite>-->
+
+<suite name="AndroidSuite">
+    <suite-files>
+        <suite-file path="Suite_GeneralTest.xml" />
+        <suite-file path="Suite_SectionTab.xml" />
+        <suite-file path="Suite_SettingTab.xml" />
+        <suite-file path="Suite_HomeTab.xml" />
+        <suite-file path="Suite_ArticlePage.xml" />
+        <suite-file path="Suite_Bookmark.xml" />
+        <suite-file path="Suite_RatingModule.xml" />
+    </suite-files>
+</suite>

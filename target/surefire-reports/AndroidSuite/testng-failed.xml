@@ -5,14 +5,36 @@
     <classes>
       <class name="tests.TM_BookmarkTab">
         <methods>
-          <include name="runBeforeMethod"/>
-          <include name="BookMarkTCNo16"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="runAfterMethod"/>
+          <include name="setUp"/>
           <include name="BookMarkTCNo2"/>
         </methods>
       </class> <!-- tests.TM_BookmarkTab -->
     </classes>
   </test> <!-- AndroidTest(failed) -->
+  <test thread-count="5" verbose="0" name="abc(failed)">
+    <classes>
+      <class name="tests.TM_HomeTab">
+        <methods>
+          <include name="tearDown"/>
+          <include name="HomeTabTCNo2"/>
+          <include name="runAfterMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.TM_HomeTab -->
+    </classes>
+  </test> <!-- abc(failed) -->
+  <test thread-count="5" verbose="0" name="sdf(failed)">
+    <classes>
+      <class name="tests.TM_SettingTab">
+        <methods>
+          <include name="tearDown"/>
+          <include name="runAfterMethod"/>
+          <include name="setUp"/>
+          <include name="SettingTCNo1"/>
+        </methods>
+      </class> <!-- tests.TM_SettingTab -->
+    </classes>
+  </test> <!-- sdf(failed) -->
 </suite> <!-- Failed suite [AndroidSuite] -->
