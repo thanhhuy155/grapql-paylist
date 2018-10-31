@@ -8,11 +8,11 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import scenarios.AppiumController;
 
 import java.time.Duration;
 import java.util.Calendar;
-import java.util.HashMap;
 
 public class Utils {
     public static boolean isAndroidPlatform() {
@@ -67,10 +67,10 @@ public class Utils {
         int endY = 0;
         switch (direction){
             case UP:
-                fromX = (dimension.getWidth())/2;
-                fromY = (dimension.getHeight())-700;
                 endX = (dimension.getWidth())/2;
-                endY = 100;
+                endY = (dimension.getHeight())/5;
+                fromX = (dimension.getWidth())/2;
+                fromY = (dimension.getHeight())-endY;
                 System.out.print("Scroll: "+fromX+"-"+fromY+";"+endX+"-"+endY);
                 (new TouchAction(appiumDriver))
                         .press(PointOption.point(fromX,fromY))
@@ -78,6 +78,7 @@ public class Utils {
                         .moveTo(PointOption.point(endX, endY))
                         .release()
                         .perform();
+                sleep(1000);
                 break;
 
             case RIGHT:
