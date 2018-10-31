@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [iOSSuite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="tests.iOSTestCases">
+      <class name="tests.TM_BookmarkTab">
         <methods>
-          <include name="GeneralTestNo11"/>
+          <include name="runBeforeMethod"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="runAfterMethod"/>
+          <include name="BookMarkTCNo2"/>
         </methods>
-      </class> <!-- tests.iOSTestCases -->
+      </class> <!-- tests.TM_BookmarkTab -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [iOSSuite] -->
