@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class AppiumController {
-    public static OS executionOS = OS.ANDROID;
+    public static OS executionOS = OS.IOS_Simulator;
 
     public enum OS {
         ANDROID,
@@ -43,7 +43,7 @@ public class AppiumController {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
                 File appDir = new File(classpathRoot, "/app");
-                File app = new File(appDir, "SprintB_Release.apk");
+                File app = new File(appDir, "phillydotcom.apk");
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("platformVersion", "7.0");
                 capabilities.setCapability("deviceName", "Galaxy J7 Prime");
@@ -66,7 +66,7 @@ public class AppiumController {
             case ANDROID_Emulator:
                 classpathRoot = new File(System.getProperty("user.dir"));
                 appDir = new File(classpathRoot, "/app");
-                app = new File(appDir, "SprintB_Release.apk");
+                app = new File(appDir, "phillydotcom.apk");
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("platformVersion", "8.0");
                 capabilities.setCapability("deviceName", "192.168.78.101:5555");
@@ -78,9 +78,9 @@ public class AppiumController {
             case IOS_Simulator:
                 classpathRoot = new File(System.getProperty("user.dir"));
                 appDir = new File(classpathRoot, "/app");
-                app = new File(appDir, "PhillyDotCom.app");
+                app = new File(appDir, "PhillyDotCom131.app");
                 capabilities.setCapability("platformName", "iOS");
-                capabilities.setCapability("deviceName", "iPhone X");
+                capabilities.setCapability("deviceName", "iPhone 6s");
                 capabilities.setCapability("platformVersion", "11.4");
                 capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("automationName", "XCUITest");

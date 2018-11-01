@@ -42,24 +42,14 @@ public class HomeTab extends BasePage {
 
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
-        if (Utils.isAndroidPlatform()) {
-            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
-        } else {
-            Utils.iOSScrollToElement(appiumDriver, feedListElements.btnBookmarkOnFeedArticle, Constants.LABLE.IOS_BOOKMARK_LB);
-        }
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
 
         String title = feedListElements.getFeedItemTitle();
         feedListElements.buttonShareClick();
 
-        if (Utils.isAndroidPlatform()) {
-            if(commonElements.gmail.isDisplayed()==false){
-                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
-            }
-            commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
-            feedListElements.assetResult(title, feedListElements.getShareGmailTitle());
-        } else {
-            printLog("Need to implement for iOS");
-        }
+        //Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
+        commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
+        feedListElements.assetResult(title, feedListElements.getShareGmailTitle());
     }
 
 }
