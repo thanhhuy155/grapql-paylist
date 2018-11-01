@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class AppiumController {
-    public static OS executionOS = OS.IOS_Simulator;
+    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -90,7 +90,7 @@ public class AppiumController {
             case ANDROID_BROWSERSTACK:
                 Calendar calendar = Calendar.getInstance();
                 SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-                String build = "Build_"+formater2.format(calendar.getTime());
+                String build = "AndroidBuild_"+formater2.format(calendar.getTime());
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("device", "Google Pixel");
                 capabilities.setCapability("os_version", "7.1");

@@ -3,15 +3,15 @@ package tests;
 import org.testng.annotations.Test;
 
 public class TM_SearchTab extends BaseTestClass {
-    @Test
+    @Test(priority = 1)
     public  void SearchTabTCNo1(){
         searchTab.TestCaseNo1();
     }
-    @Test
+    @Test(priority = 2)
     public  void SearchTabTCNo2(){
         searchTab.TestCaseNo2();
     }
-    @Test
+    @Test(priority = 3)
     public void SearchTabTCNo4(){
         searchTab.TestCaseNo4();
     }
