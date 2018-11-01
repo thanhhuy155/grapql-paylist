@@ -1,82 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="update to run multiple Suites on BrowserStack">
-      <change afterPath="$PROJECT_DIR$/Suite_ArticlePage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Suite_Bookmark.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Suite_GeneralTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Suite_HomeTab.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Suite_RatingModule.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Suite_SearchTab.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Suite_SectionTab.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Suite_SettingTab.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/draft/draftFile" afterDir="false" />
+    <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="Merge branch 'master' of https://bitbucket.org/HeraNguyen/mobile-test-pcom&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;pom.xml&#10;#&#9;target/surefire-reports/TEST-TestSuite.xml&#10;#&#9;target/surefire-reports/TestSuite.txt&#10;#&#9;target/surefire-reports/emailable-report.html&#10;#&#9;target/surefire-reports/index.html&#10;#&#9;target/surefire-reports/junitreports/TEST-tests.iOSTestCases.xml&#10;#&#9;target/surefire-reports/old/index.html&#10;#&#9;target/surefire-reports/testng-failed.xml&#10;#&#9;target/surefire-reports/testng-results.xml&#10;#&#9;target/test-classes/elements/FeedListElements.class&#10;#&#9;target/test-classes/pages/BasePage.class&#10;#&#9;target/test-classes/pages/BookmarkTab.class&#10;#&#9;target/test-classes/scenarios/AppiumController.class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-test-cases.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Suite_AndroidAllTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actions/ICommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/ICommon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RatingModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RatingModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumBaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TM_BookmarkTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TM_BookmarkTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TM_SettingTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TM_SettingTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/AndroidTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/AndroidTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/AndroidTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/AndroidTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AndroidSuite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite1/Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite1/Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite1/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite2/AndroidTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite2/AndroidTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite2/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TM_RatingModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TM_RatingModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.AndroidTestCases.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.AndroidTestCases.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.iOSTestCases.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.iOSTestCases.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/AndroidTest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/AndroidTest.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/AndroidSuite/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/actions/ICommon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/actions/ICommon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/BookMarkElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/BookMarkElements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/CommonElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/CommonElements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/FeedListElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/FeedListElements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/elements/SectionElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/SectionElements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/ArticlePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/ArticlePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/BasePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/BasePage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/BookmarkTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/BookmarkTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomeTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomeTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SectionTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/SectionTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SettingTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/SettingTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumBaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumBaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController$OS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController$OS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/scenarios/AppiumController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/AndroidTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/AndroidTestCases.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Constants$APP_VERSION.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Constants$APP_VERSION.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Constants$LABLE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Constants$LABLE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Constants$SETTING_TITLE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Constants$SETTING_TITLE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/iOSTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/iOSTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Utils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,7 +35,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="11" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.4" value="2" />
@@ -103,30 +44,30 @@
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="6" />
+          <entry key="class" value="7" />
           <entry key="draftFile" value="1" />
           <entry key="dumpstream" value="2" />
           <entry key="html" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="529" />
+          <entry key="java" value="539" />
           <entry key="png" value="9" />
-          <entry key="xml" value="60" />
+          <entry key="xml" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
+          <entry key="CLASS" value="7" />
           <entry key="HTML" value="3" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="9" />
-          <entry key="JAVA" value="529" />
+          <entry key="JAVA" value="539" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="XML" value="60" />
+          <entry key="XML" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -135,7 +76,7 @@
           <entry key="dummy" value="7" />
           <entry key="java" value="11218" />
           <entry key="txt" value="175" />
-          <entry key="xml" value="627" />
+          <entry key="xml" value="634" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -143,7 +84,7 @@
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="11218" />
           <entry key="PLAIN_TEXT" value="182" />
-          <entry key="XML" value="627" />
+          <entry key="XML" value="634" />
         </counts>
       </usages-collector>
     </session>
@@ -231,26 +172,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Suite_AndroidAllTests.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="164">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_SettingTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+            <state relative-caret-position="132">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <element signature="method#SectionTab#0;class#SectionTab#0" />
-                <element signature="method#TestCaseNo3#0;class#SectionTab#0" />
-                <element signature="method#TestCaseNo4#0;class#SectionTab#0" />
-                <element signature="method#TestCaseNo6#0;class#SectionTab#0" />
-                <element signature="method#TestCaseNo11#0;class#SectionTab#0" />
-                <element signature="method#TestCaseNo12#0;class#SectionTab#0" />
+                <element signature="method#isAndroidPlatform#0;class#Utils#0" />
+                <element signature="method#iOSScrollToElement#0;class#Utils#0" />
+                <element signature="method#androidScroll#0;class#Utils#0" />
+                <element signature="method#scrollToElement#0;class#Utils#0" />
+                <element signature="method#exampleScroll#0;class#Utils#0" />
+                <element signature="method#scrollToElementexample#0;class#Utils#0" />
+                <element signature="method#scrollBySwipe#0;class#Utils#0" />
+                <element signature="method#sleep#0;class#Utils#0" />
+                <element signature="method#getCurrentYear#0;class#Utils#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#OS#0;class#AppiumController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_HomeTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="10" selection-start-line="10" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -353,19 +355,19 @@
         <option value="$PROJECT_DIR$/Suite_SectionTab.xml" />
         <option value="$PROJECT_DIR$/Suite_SettingTab.xml" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
         <option value="$PROJECT_DIR$/Suite_AndroidAllTests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_ArticlePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_BookmarkTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_GeneralTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/TM_HomeTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_RatingModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_SearchTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_SectionTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_SettingTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/draft/draftFile" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/TM_HomeTab.java" />
       </list>
     </option>
   </component>
@@ -383,8 +385,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="262" />
-    <option name="y" value="137" />
+    <option name="x" value="261" />
+    <option name="y" value="136" />
     <option name="width" value="1300" />
     <option name="height" value="810" />
   </component>
@@ -412,6 +414,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -485,30 +488,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540980784814" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541086379787" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -643,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540456230438</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'master' of https://bitbucket.org/HeraNguyen/mobile-test-pcom&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;pom.xml&#10;#&#9;target/surefire-reports/TEST-TestSuite.xml&#10;#&#9;target/surefire-reports/TestSuite.txt&#10;#&#9;target/surefire-reports/emailable-report.html&#10;#&#9;target/surefire-reports/index.html&#10;#&#9;target/surefire-reports/junitreports/TEST-tests.iOSTestCases.xml&#10;#&#9;target/surefire-reports/old/index.html&#10;#&#9;target/surefire-reports/testng-failed.xml&#10;#&#9;target/surefire-reports/testng-results.xml&#10;#&#9;target/test-classes/elements/FeedListElements.class&#10;#&#9;target/test-classes/pages/BasePage.class&#10;#&#9;target/test-classes/pages/BookmarkTab.class&#10;#&#9;target/test-classes/scenarios/AppiumController.class">
+      <created>1541001965682</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541001965682</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -671,8 +669,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.24899329" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.252349" />
       <window_info id="Structure" order="1" sideWeight="0.5074257" side_tool="true" weight="0.20738254" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -682,15 +681,15 @@
       <window_info id="Favorites" order="7" sideWeight="0.5036145" side_tool="true" weight="0.19905533" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4539007" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.3858156" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.23120567" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45248228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.71631205" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4283688" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.364539" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3319149" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.19716312" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32960895" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -717,47 +716,10 @@
     <MESSAGE value="update test cases to Android" />
     <MESSAGE value="add new cases for Android" />
     <MESSAGE value="update to run multiple Suites on BrowserStack" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to run multiple Suites on BrowserStack" />
+    <MESSAGE value="Merge branch 'master' of https://bitbucket.org/HeraNguyen/mobile-test-pcom&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;pom.xml&#10;#&#9;target/surefire-reports/TEST-TestSuite.xml&#10;#&#9;target/surefire-reports/TestSuite.txt&#10;#&#9;target/surefire-reports/emailable-report.html&#10;#&#9;target/surefire-reports/index.html&#10;#&#9;target/surefire-reports/junitreports/TEST-tests.iOSTestCases.xml&#10;#&#9;target/surefire-reports/old/index.html&#10;#&#9;target/surefire-reports/testng-failed.xml&#10;#&#9;target/surefire-reports/testng-results.xml&#10;#&#9;target/test-classes/elements/FeedListElements.class&#10;#&#9;target/test-classes/pages/BasePage.class&#10;#&#9;target/test-classes/pages/BookmarkTab.class&#10;#&#9;target/test-classes/scenarios/AppiumController.class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://bitbucket.org/HeraNguyen/mobile-test-pcom&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;pom.xml&#10;#&#9;target/surefire-reports/TEST-TestSuite.xml&#10;#&#9;target/surefire-reports/TestSuite.txt&#10;#&#9;target/surefire-reports/emailable-report.html&#10;#&#9;target/surefire-reports/index.html&#10;#&#9;target/surefire-reports/junitreports/TEST-tests.iOSTestCases.xml&#10;#&#9;target/surefire-reports/old/index.html&#10;#&#9;target/surefire-reports/testng-failed.xml&#10;#&#9;target/surefire-reports/testng-results.xml&#10;#&#9;target/test-classes/elements/FeedListElements.class&#10;#&#9;target/test-classes/pages/BasePage.class&#10;#&#9;target/test-classes/pages/BookmarkTab.class&#10;#&#9;target/test-classes/scenarios/AppiumController.class" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ArticlePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TestCaseNo4#0;class#ArticlePage#0" />
-            <element signature="method#TestCaseNo5#0;class#ArticlePage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.0.0/java-client-6.0.0.jar!/io/appium/java_client/InteractsWithApps.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#feedItemTopStoryClick#0;class#FeedListElements#0" />
-            <element signature="method#assetResult#0;class#FeedListElements#0" />
-            <element signature="method#bookmarkArticle#0;class#FeedListElements#0" />
-            <element signature="method#buttonBookmarkClick#0;class#FeedListElements#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/actions/ICommon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -852,21 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TestCaseNo3#0;class#BookmarkTab#0" />
-            <element signature="method#TestCaseNo11#0;class#BookmarkTab#0" />
-            <element signature="method#TestCaseNo12#0;class#BookmarkTab#0" />
-            <element signature="method#TestCaseNo14#0;class#BookmarkTab#0" />
-            <element signature="method#TestCaseNo16#0;class#BookmarkTab#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/RatingModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -888,25 +835,6 @@
           <caret line="96" column="57" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
           <folding>
             <element signature="method#clickAndGetArticleTitle#0;class#BookMarkElements#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="method#isAndroidPlatform#0;class#Utils#0" />
-            <element signature="method#iOSScrollToElement#0;class#Utils#0" />
-            <element signature="method#androidScroll#0;class#Utils#0" />
-            <element signature="method#scrollToElement#0;class#Utils#0" />
-            <element signature="method#scrollScreen#0;class#Utils#0" />
-            <element signature="method#exampleScroll#0;class#Utils#0" />
-            <element signature="method#scrollToElementexample#0;class#Utils#0" />
-            <element signature="method#scrollBySwipe#0;class#Utils#0" />
-            <element signature="method#sleep#0;class#Utils#0" />
-            <element signature="method#getCurrentYear#0;class#Utils#0" />
           </folding>
         </state>
       </provider>
@@ -991,28 +919,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Suite_HomeTab.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#OS#0;class#AppiumController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,20 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_GeneralTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_HomeTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1065,13 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_SettingTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-462">
@@ -1090,16 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-539">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,14 +1014,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Suite_AndroidAllTests.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="572">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/elements/FeedListElements.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#6788#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="440">
           <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
           <folding>
             <element signature="method#SectionTab#0;class#SectionTab#0" />
@@ -1151,6 +1039,115 @@
             <element signature="method#TestCaseNo6#0;class#SectionTab#0" />
             <element signature="method#TestCaseNo11#0;class#SectionTab#0" />
             <element signature="method#TestCaseNo12#0;class#SectionTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#feedItemTopStoryClick#0;class#FeedListElements#0" />
+            <element signature="method#assetResult#0;class#FeedListElements#0" />
+            <element signature="method#bookmarkArticle#0;class#FeedListElements#0" />
+            <element signature="method#buttonBookmarkClick#0;class#FeedListElements#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-501">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestCaseNo3#0;class#BookmarkTab#0" />
+            <element signature="method#TestCaseNo11#0;class#BookmarkTab#0" />
+            <element signature="method#TestCaseNo12#0;class#BookmarkTab#0" />
+            <element signature="method#TestCaseNo14#0;class#BookmarkTab#0" />
+            <element signature="method#TestCaseNo16#0;class#BookmarkTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_GeneralTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#OS#0;class#AppiumController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_SettingTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_HomeTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="10" selection-start-line="10" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="method#isAndroidPlatform#0;class#Utils#0" />
+            <element signature="method#iOSScrollToElement#0;class#Utils#0" />
+            <element signature="method#androidScroll#0;class#Utils#0" />
+            <element signature="method#scrollToElement#0;class#Utils#0" />
+            <element signature="method#exampleScroll#0;class#Utils#0" />
+            <element signature="method#scrollToElementexample#0;class#Utils#0" />
+            <element signature="method#scrollBySwipe#0;class#Utils#0" />
+            <element signature="method#sleep#0;class#Utils#0" />
+            <element signature="method#getCurrentYear#0;class#Utils#0" />
           </folding>
         </state>
       </provider>
