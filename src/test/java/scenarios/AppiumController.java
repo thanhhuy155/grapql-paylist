@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class AppiumController {
-    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
+    public static OS executionOS = OS.IOS_Simulator;
 
     public enum OS {
         ANDROID,
@@ -78,9 +78,9 @@ public class AppiumController {
             case IOS_Simulator:
                 classpathRoot = new File(System.getProperty("user.dir"));
                 appDir = new File(classpathRoot, "/app");
-                app = new File(appDir, "PhillyDotCom.app");
+                app = new File(appDir, "PhillyDotCom131.app");
                 capabilities.setCapability("platformName", "iOS");
-                capabilities.setCapability("deviceName", "iPhone X");
+                capabilities.setCapability("deviceName", "iPhone 6s");
                 capabilities.setCapability("platformVersion", "11.4");
                 capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("automationName", "XCUITest");
