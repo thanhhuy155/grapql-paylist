@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "iOSBookmarkTabSuite">
+    <test name = "iOSBookmarkTabTest">
+        <classes>
+            <class name = "tests.TM_BookmarkTab">
+                <methods>
+                    <include name="BookMarkTCNo2"/>
+                    <include name="BookMarkTCNo11"/>
+                    <include name="BookMarkTCNo12"/>
+                    <include name="BookMarkTCNo14"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

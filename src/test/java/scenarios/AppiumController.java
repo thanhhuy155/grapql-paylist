@@ -14,7 +14,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
@@ -39,6 +38,10 @@ public class AppiumController {
             return;
         }
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
+        String androidBuild = "AndroidBuild_"+formater2.format(calendar.getTime());
+        String iOSBuild = "iOSBuild_"+formater2.format(calendar.getTime());
         switch (executionOS) {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
@@ -73,6 +76,8 @@ public class AppiumController {
                 capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("appPackage", "com.ap.philly");
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
+                capabilities.setCapability("noReset", "false");
+                capabilities.setCapability("fullReset", "true");
                 driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
                 break;
             case IOS_Simulator:
@@ -88,9 +93,6 @@ public class AppiumController {
                 driver = new IOSDriver(new URL("http://0.0.0.0:4724/wd/hub"), capabilities);
                 break;
             case ANDROID_BROWSERSTACK:
-                Calendar calendar = Calendar.getInstance();
-                SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-                String build = "AndroidBuild_"+formater2.format(calendar.getTime());
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("device", "Google Pixel");
                 capabilities.setCapability("os_version", "7.1");
@@ -98,7 +100,9 @@ public class AppiumController {
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
                 capabilities.setCapability("browserstack.debug", true);
                 capabilities.setCapability("app", "bs://" + Constants.ANDROID_HASHED_APP_ID);
-                capabilities.setCapability("build",build);
+//                capabilities.setCapability("noReset", "false");
+//                capabilities.setCapability("fullReset", "true");
+                capabilities.setCapability("build",androidBuild);
                 capabilities.setCapability("name",Constants.EXECUTING_SUITE);
                 driver = new AndroidDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
@@ -108,19 +112,23 @@ public class AppiumController {
                 capabilities.setCapability("automationName", "XCUITest");
                 capabilities.setCapability("browserstack.debug", true);
                 capabilities.setCapability("app", "bs://" + Constants.IOS_HASHED_APP_ID);
+//                capabilities.setCapability("noReset", "false");
+//                capabilities.setCapability("fullReset", "true");
+                capabilities.setCapability("build",iOSBuild);
+                capabilities.setCapability("name",Constants.EXECUTING_SUITE);
                 driver = new IOSDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
         }
 
-        driver.manage().timeouts().implicitlyWait(Constants.TIME_OUT, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(Constants.TIME_OUT, TimeUnit.SECONDS);
 
         if (executionOS.equals(OS.IOS) || executionOS.equals(OS.IOS_BROWSERSTACK)) {
             // for click on dialog allow notification in iOS
-            IOSElement textButton = (IOSElement) new WebDriverWait(driver, 10).until(
+            IOSElement textButton = (IOSElement) new WebDriverWait(driver, 5).until(
                     elementToBeClickable(MobileBy.AccessibilityId("Allow")));
             textButton.click();
         }
-        System.out.print("driver: "+driver);
+        //System.out.print("driver: "+driver);
     }
 
     public void stop() {

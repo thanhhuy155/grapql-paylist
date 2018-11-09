@@ -112,7 +112,7 @@ public class CommonElements implements ICommon {
     public MobileElement sectionTab;
 
     @AndroidFindBy(id = "bookmarks")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTabBar[1]/XCUIElementTypeButton[4]")
+    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[4]")
     public MobileElement bookMarkTab;
 
     @AndroidFindBy(id = "settings")
@@ -220,13 +220,15 @@ public class CommonElements implements ICommon {
     @Override
     public void bookMarkTabClick() {
         bookMarkTab.click();
-        if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
-            signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+        if(Utils.isAndroidPlatform()){
+            if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
+                signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+            }
+            else if(Utils.checkElementExist(googleClientLogin)==true){
+                googleClientLogin.click();
+            }
         }
-        else if(Utils.checkElementExist(googleClientLogin)==true){
-            googleClientLogin.click();
-        }
-        Utils.sleep(1000);
+        Utils.sleep(500);
     }
 
     @Override

@@ -15,4 +15,8 @@ public class TM_SearchTab extends BaseTestClass {
     public void SearchTabTCNo4(){
         searchTab.TestCaseNo4();
     }
+    @Test(priority = 4)
+    public void SearchTabTCNo5(){
+        searchTab.TestCaseNo5();
+    }
 }

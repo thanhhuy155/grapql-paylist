@@ -40,7 +40,7 @@ public class RatingModule extends BasePage{
         articleDetailElements.backBtn.click();
 
         //Step: Scroll up screen and check the Rating Module appears
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
         Utils.checkElementExist(feedListElements.ratingModule);
     }
 
@@ -62,7 +62,7 @@ public class RatingModule extends BasePage{
         //Step: Back to Homepage/Feed list and select positive rating - Yes
         articleDetailElements.backBtn.click();
         Utils.sleep(1000);
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
         Utils.sleep(2000);
         feedListElements.positiveRating.click();
 
@@ -91,7 +91,7 @@ public class RatingModule extends BasePage{
         //Step: Back to Homepage/Feed list and select positive rating - Yes
         articleDetailElements.backBtn.click();
         Utils.sleep(1000);
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
         Utils.sleep(2000);
         feedListElements.positiveRating.click();
 
@@ -121,7 +121,7 @@ public class RatingModule extends BasePage{
         //Step: Back to Homepage/Feed list and select negative rating - No
         articleDetailElements.backBtn.click();
         Utils.sleep(1000);
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
         Utils.sleep(2000);
         feedListElements.negativeRating.click();
 
@@ -151,7 +151,7 @@ public class RatingModule extends BasePage{
         //Step: Back to Homepage/Feed list and select negative rating - No
         articleDetailElements.backBtn.click();
         Utils.sleep(1000);
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
         Utils.sleep(2000);
         feedListElements.negativeRating.click();
 

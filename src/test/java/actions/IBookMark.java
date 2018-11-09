@@ -15,6 +15,8 @@ public interface IBookMark {
 
     void selectBookmarkedArticle(int numberOfArticle);
 
+    void deleteBookmark(int numberOfDeletedItem);
+
     String getBookMarkTitle();
 
     String clickAndGetArticleTitle();

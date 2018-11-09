@@ -42,7 +42,7 @@ public class HomeTab extends BasePage {
 
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
 
         String title = feedListElements.getFeedItemTitle();
         feedListElements.buttonShareClick();

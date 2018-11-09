@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <suiteXmlFile>Suite_AndroidAllTests.xml</suiteXmlFile>
+        <suiteXmlFile>Suite_Bookmark.xml</suiteXmlFile>
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
 

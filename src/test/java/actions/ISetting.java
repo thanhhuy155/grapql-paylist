@@ -1,7 +1,7 @@
 package actions;
 
 public interface ISetting {
-    void notificationMenuClick();
+    void notificationClick();
 
     void notificationSettingClick();
 

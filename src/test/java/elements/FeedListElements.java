@@ -138,11 +138,13 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public void buttonBookmarkClick() {
 
         btnBookmarkOnFeedArticle.click();
-        if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
-            signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
-        }
-        if(Utils.checkElementExist(googleClientLogin)==true){
-            googleClientLogin.click();
+        if(Utils.isAndroidPlatform()){
+            if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
+                signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+            }
+            else if(Utils.checkElementExist(googleClientLogin)==true){
+                googleClientLogin.click();
+            }
         }
         Utils.sleep(1000);
     }

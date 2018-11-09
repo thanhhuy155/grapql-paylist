@@ -6,7 +6,10 @@
       <class name="tests.TM_ArticlePage">
         <methods>
           <include name="ArticleTCNo4"/>
+          <include name="ArticleTCNo30"/>
+          <include name="ArticleTCNo5"/>
           <include name="tearDown"/>
+          <include name="ArticleTCNo1"/>
           <include name="setUp"/>
           <include name="runAfterMethod"/>
         </methods>

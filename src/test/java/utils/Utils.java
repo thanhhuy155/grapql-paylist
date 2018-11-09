@@ -66,7 +66,7 @@ public class Utils {
         int endX = 0;
         int endY = 0;
         switch (direction){
-            case UP:
+            case DOWN:
                 endX = (dimension.getWidth())/2;
                 endY = (dimension.getHeight())/5;
                 fromX = (dimension.getWidth())/2;
@@ -78,9 +78,22 @@ public class Utils {
                         .moveTo(PointOption.point(endX, endY))
                         .release()
                         .perform();
-                sleep(1000);
+                sleep(1500);
                 break;
-
+            case UP:
+                endX = (dimension.getWidth())/2;
+                fromY = (dimension.getHeight())/5;
+                fromX = (dimension.getWidth())/2;
+                endY = (dimension.getHeight())-fromY;
+                System.out.print("Scroll: "+fromX+"-"+fromY+";"+endX+"-"+endY);
+                (new TouchAction(appiumDriver))
+                        .press(PointOption.point(fromX,fromY))
+                        .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                        .moveTo(PointOption.point(endX, endY))
+                        .release()
+                        .perform();
+                sleep(1500);
+                break;
             case RIGHT:
                 fromX = (int)((dimension.getWidth())*0.9);
                 fromY = (dimension.getHeight())/2;

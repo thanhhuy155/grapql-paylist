@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "iOSGeneralTestSuite">
+    <test name = "iOSGeneralTest">
+        <classes>
+            <class name = "tests.TM_GeneralTest">
+                <methods>
+                    <include name="GeneralTCNo11"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

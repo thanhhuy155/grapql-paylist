@@ -8,7 +8,7 @@ public class Constants {
     //Browserstack setup
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
-    public static final String IOS_HASHED_APP_ID = "ad8aca9e609215913a0c6f2d0022c1930230377d";
+    public static final String IOS_HASHED_APP_ID = "35f65c20973d9bea248b8ed3c144e9a932553e5c";
     public static final String ANDROID_HASHED_APP_ID = "c1309cd4e426b7f1ccb449c31e7faf0e85bc6692";
 
     public static final int TIME_OUT = 5;

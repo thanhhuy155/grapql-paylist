@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="57.63" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="48,485.557" tests="61" errors="0" skipped="44" failures="10">
   <properties>
     <property name="idea.version" value="2018.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,5 +61,273 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="HomeTabTCNo2" classname="tests.TM_HomeTab" time="19.205"/>
+  <testcase name="BookMarkTCNo2" classname="tests.TM_BookmarkTab" time="24.342">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.Button[@resource-id=&apos;com.google.android.gms:id/next_button&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Button[@resource-id='com.google.android.gms:id/next_button']})
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@416b681c (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.widget.Button[@resource-id='com.google.android.gms:id/next_button']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
+</failure>
+    <system-out><![CDATA[class: BookmarkTabSuiteScroll: 540-1436;540-358]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Nov 08, 2018 11:35:11 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="BookMarkTCNo3" classname="tests.TM_BookmarkTab" time="36.147"/>
+  <testcase name="BookMarkTCNo11" classname="tests.TM_BookmarkTab" time="13.024">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id=&apos;com.ap.philly:id/action_edit&apos;]]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']]})
+	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@a1a72d4 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']]})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
+</failure>
+  </testcase>
+  <testcase name="BookMarkTCNo12" classname="tests.TM_BookmarkTab" time="31.092"/>
+  <testcase name="BookMarkTCNo14" classname="tests.TM_BookmarkTab" time="32.912">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at tests.TM_BookmarkTab.BookMarkTCNo14(TM_BookmarkTab.java:34)
+</failure>
+    <system-out><![CDATA[Scroll: 540-1436;540-358Scroll: 540-358;540-1436]]></system-out>
+  </testcase>
+  <testcase name="BookMarkTCNo16" classname="tests.TM_BookmarkTab" time="28.452">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id=&apos;com.ap.philly:id/bookmark_title&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7b57587e (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
+</failure>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_08112018\BookMarkTCNo14_08_11_2018_11_38_51.pngScroll: 540-1436;540-358Scroll: 540-358;540-1436]]></system-out>
+  </testcase>
+  <testcase name="RatingModuleTCNo1" classname="tests.TM_RatingModule" time="107.627">
+    <failure message="Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, customFullReset: false, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69R0316662, version: }&#10;Session ID: 508bdf6df63656a82849db46677b43380739f568" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, customFullReset: false, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69R0316662, version: }
+Session ID: 508bdf6df63656a82849db46677b43380739f568
+	at tests.TM_RatingModule.RatingModuleTCNo1(TM_RatingModule.java:8)
+</failure>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_08112018\BookMarkTCNo16_08_11_2018_11_39_32.pngclass: RatingModuleSuiteScroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897]]></system-out>
+    <system-err><![CDATA[Nov 08, 2018 11:40:20 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="GeneralTCNo1" classname="tests.TM_GeneralTest" time="47.267"/>
+  <testcase name="GeneralTCNo2" classname="tests.TM_GeneralTest" time="27.664"/>
+  <testcase name="GeneralTCNo3" classname="tests.TM_GeneralTest" time="29.983"/>
+  <testcase name="GeneralTCNo4" classname="tests.TM_GeneralTest" time="16.359"/>
+  <testcase name="GeneralTCNo7" classname="tests.TM_GeneralTest" time="41.051"/>
+  <testcase name="GeneralTCNo11" classname="tests.TM_GeneralTest" time="6.751">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.id: detailHeadline})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: detailHeadline})
+	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@566095d9 (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.chained({By.id: detailHeadline})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
+</failure>
+  </testcase>
+  <testcase name="setUp" classname="tests.TM_SectionTab" time="47,734.198">
+    <failure message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.net.SocketException: Connection reset
+</failure>
+    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_08112018\GeneralTCNo11_08_11_2018_11_47_13.pngclass: SectionTabSuite]]></system-out>
+  </testcase>
+  <testcase name="SectionTabTCNo2" classname="tests.TM_SectionTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="SectionTabTCNo3" classname="tests.TM_SectionTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SectionTabTCNo4" classname="tests.TM_SectionTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SectionTabTCNo6" classname="tests.TM_SectionTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SectionTabTCNo8" classname="tests.TM_SectionTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SectionTabTCNo11" classname="tests.TM_SectionTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SectionTabTCNo12" classname="tests.TM_SectionTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="tearDown" classname="tests.TM_SectionTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.TM_SettingTab" time="47,734.385">
+    <failure message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
+</failure>
+    <system-out><![CDATA[class: SettingTabSuite]]></system-out>
+  </testcase>
+  <testcase name="SettingTCNo1" classname="tests.TM_SettingTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="SettingTCNo3" classname="tests.TM_SettingTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SettingTCNo4" classname="tests.TM_SettingTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SettingTCNo5" classname="tests.TM_SettingTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SettingTCNo6" classname="tests.TM_SettingTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="SettingTCNo7" classname="tests.TM_SettingTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="tearDown" classname="tests.TM_SettingTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.TM_HomeTab" time="47,734.52">
+    <failure message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
+</failure>
+    <system-out><![CDATA[class: HomeTabSuite]]></system-out>
+  </testcase>
+  <testcase name="HomeTabTCNo2" classname="tests.TM_HomeTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_HomeTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_HomeTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_HomeTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="HomeTabTCNo6" classname="tests.TM_HomeTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="HomeTabTCNo8" classname="tests.TM_HomeTab" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="tearDown" classname="tests.TM_HomeTab" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.TM_ArticlePage" time="47,734.68">
+    <failure message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AndroidDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
+</failure>
+    <system-out><![CDATA[class: ArticlePageSuite]]></system-out>
+  </testcase>
+  <testcase name="ArticleTCNo1" classname="tests.TM_ArticlePage" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_ArticlePage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_ArticlePage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_ArticlePage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="runAfterMethod" classname="tests.TM_ArticlePage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="ArticleTCNo5" classname="tests.TM_ArticlePage" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="ArticleTCNo4" classname="tests.TM_ArticlePage" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="ArticleTCNo30" classname="tests.TM_ArticlePage" time="0">
+    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+  </testcase>
+  <testcase name="tearDown" classname="tests.TM_ArticlePage" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

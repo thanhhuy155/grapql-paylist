@@ -81,7 +81,7 @@ public class SectionElements extends CommonElements implements ISection {
             else {
                 listSectionItem.get(0).click();
                 backButton.click();
-                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
                 for(int i=0; i<14; i++){
                     listSectionItem.get(i).click();
                     backButton.click();
@@ -96,7 +96,7 @@ public class SectionElements extends CommonElements implements ISection {
                 backButton.click();
             }
             Utils.sleep(1000);
-            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
             numberOfItemInList=listSectionItem.size();
             for(int i=0; i<numberOfItemInList; i++){
                 listSectionItem.get(i).click();

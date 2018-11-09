@@ -11,7 +11,7 @@ public class TM_SectionTab extends BaseTestClass {
     }
 
     @Test(priority = 2)
-    //Note: As current researching, Unable to automatically lock and unlock iOS device from iOS 9.
+    //Note: As current researching, Unable to automatically lock and unlock iOS device from iOS 10.
     public void SectionTabTCNo3() {
         sectionTab.TestCaseNo3();
     }
@@ -41,7 +41,7 @@ public class TM_SectionTab extends BaseTestClass {
     }
 
     @Test(priority = 7)
-    //Note: As current researching, Unable to automatically lock and unlock iOS device from iOS 9.
+    //Note: As current researching, Unable to automatically lock and unlock iOS device from iOS 10.
     public void SectionTabTCNo12() {
         sectionTab.TestCaseNo12();
     }

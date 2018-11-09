@@ -2,6 +2,7 @@ package pages;
 
 import elements.*;
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
 public class SearchTab extends BasePage {
@@ -58,5 +59,25 @@ public class SearchTab extends BasePage {
         Assert.assertTrue(searchElements.searchScreen.isDisplayed());
     }
 
+    public void TestCaseNo5(){
+        String searchTerm = "election";
+        lauchApp();
+
+        //Step: 1. Click on the "Enter search phrase" input
+        waitForVisibilityOf(commonElements.bookMarkTab);
+        commonElements.searchTab.click();
+
+        //Step: 2. Begin to type any letter/word
+        searchElements.searchBox.sendKeys(searchTerm);
+
+        //Step: 3. Execute the search
+        appiumDriver.getKeyboard().pressKey(Keys.ENTER);
+
+        //Verify point: Search takes search term
+        Assert.assertEquals(searchTerm,searchElements.searchBox.getAttribute("value"));
+
+        //Verify point: Search is executed and result returns
+        Assert.assertTrue(searchElements.newestSortOptionForSearchResult.isDisplayed());
+    }
 
 }

@@ -20,11 +20,15 @@ public class SettingElements extends CommonElements implements ISetting {
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Notifications']")
     @iOSFindBy(id = "Notifications")
-    public MobileElement notificationMenu;
+    public MobileElement notification;
 
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'About')]]]")
     @iOSFindBy(id = Constants.SETTING_TITLE.ABOUT_PHILADELPHIA_MEDIA_NETWORK)
     public MobileElement aboutPMN;
+
+    @AndroidFindBy(xpath = "//android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Submit Feedback')]]")
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Submit Feedback')]")
+    public MobileElement submitFeedbackLink;
 
     //========================================================================================//
     @AndroidFindBy(xpath = "//android.view.View[@resource-id='lCol']//android.view.View[contains(@text,'About Philly.com')]")
@@ -38,9 +42,6 @@ public class SettingElements extends CommonElements implements ISetting {
 
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/summary']")
     public MobileElement pmnCopyrightYear;
-
-    @AndroidFindBy(xpath = "//android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Submit Feedback')]]")
-    public MobileElement submitFeedbackLink;
 
 
 
@@ -89,8 +90,8 @@ public class SettingElements extends CommonElements implements ISetting {
 
     //========================================================================================//
     @Override
-    public void notificationMenuClick() {
-        notificationMenu.click();
+    public void notificationClick() {
+        notification.click();
     }
 
     @Override

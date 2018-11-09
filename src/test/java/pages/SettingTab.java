@@ -22,7 +22,7 @@ public class SettingTab extends BasePage {
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
-        settingElements.notificationMenuClick();
+        settingElements.notificationClick();
         if (!Utils.isAndroidPlatform()) {
             settingElements.notificationSettingClick();
             settingElements.allowNotificationClick();
@@ -100,5 +100,13 @@ public class SettingTab extends BasePage {
 
         //Step: Copyright reflects current year and Philadelphia Media Network (Digital), LLC
         settingElements.checkAppCopyright("Philadelphia Media Network (Digital), LLC");
+    }
+
+    public void Draft(){
+        lauchApp();
+
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTabClick();
+        settingElements.submitFeedbackLink.click();
     }
 }

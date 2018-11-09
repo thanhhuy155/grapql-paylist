@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "iOSSectionTabSuite">
+    <test name = "iOSSectionTabTest">
+        <classes>
+            <class name = "tests.TM_SectionTab">
+                <methods>
+                    <include name="SectionTabTCNo2"/>
+                    <include name="SectionTabTCNo4"/>
+                    <include name="SectionTabTCNo6"/>
+                    <include name="SectionTabTCNo11"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

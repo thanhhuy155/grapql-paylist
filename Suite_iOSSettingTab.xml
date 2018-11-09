@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "iOSSettingTabSuite">
+    <test name = "iOSSettingTabTest">
+        <classes>
+            <class name = "tests.TM_SettingTab">
+                <methods>
+                    <include name="SettingTCNo1"/>
+                    <include name="SettingTCNo4"/>
+                    <include name="SettingTCNo5"/>
+                    <include name="SettingTCNo6"/>
+                    <include name="SettingTCNo7"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

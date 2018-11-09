@@ -11,6 +11,8 @@ public class TM_SettingTab extends BaseTestClass {
     }
 
     @Test(priority = 2)
+    //Note: Cannot create email on iOS device because cannot sign in to iPhone on BrowserStack/Simulator
+    //Can only be tested on real device at ourselves.
     public void SettingTCNo3(){settingTab.TestCaseNo3();}
 
     @Test(priority = 3)
@@ -26,11 +28,13 @@ public class TM_SettingTab extends BaseTestClass {
     }
 
     @Test(priority = 5)
+    //Note: Implemented for both iOS and Android
     public void SettingTCNo6(){
         settingTab.TestCaseNo6();
     }
 
     @Test(priority = 6)
+    //Note: Implemented for both iOS and Android
     public void SettingTCNo7(){
         settingTab.TestCaseNo7();
     }

@@ -29,12 +29,14 @@ public class BookMarkElements extends CommonElements implements IBookMark {
     public MobileElement actionEdit;
 
     @AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.ap.philly:id/toolbar']/android.support.v7.widget.LinearLayoutCompat/android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']")
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name=\"Delete\"]")
     public MobileElement deleteButton;
 
     @AndroidFindBy(id = "bookmark_checkbox")
     public MobileElement bookmarkCheckbox;
 
     @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView[@resource-id='com.ap.philly:id/bookmark_card_list']/android.widget.FrameLayout//android.widget.CheckBox")
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[contains(@name,'Delete')]")
     public List<MobileElement> bookmarkCheckboxes;
 
     @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']")
@@ -94,10 +96,22 @@ public class BookMarkElements extends CommonElements implements IBookMark {
 
     @Override
     public void selectBookmarkedArticle(int numberOfArticle){
+        //iOS can only select 1 article at a time to delete
         Constants.selectedArticleTitleOnBookmark.clear();
+
         for(int i=0; i<numberOfArticle;i++){
             bookmarkCheckboxes.get(i).click();
             Constants.selectedArticleTitleOnBookmark.add(bookmarkTitleList.get(i).getText());
         }
+
+    }
+
+    @Override
+    public void deleteBookmark(int numberOfDeletedItem) {
+        actionEditClick();
+
+        selectBookmarkedArticle(numberOfDeletedItem);
+
+        deleteButton.click();
     }
 }
