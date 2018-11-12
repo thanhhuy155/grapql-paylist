@@ -1,107 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 61, Failures: 10, Errors: 0, Skipped: 44, Time elapsed: 48,485.557 s <<< FAILURE! - in TestSuite
-BookMarkTCNo2(tests.TM_BookmarkTab)  Time elapsed: 24.342 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Button[@resource-id='com.google.android.gms:id/next_button']})
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@416b681c (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 131.639 s <<< FAILURE! - in TestSuite
+HomeTabTCNo8(tests.TM_HomeTab)  Time elapsed: 22.064 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText})
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:21)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2e7517aa (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:21)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.xpath: //android.widget.Button[@resource-id='com.google.android.gms:id/next_button']})
+Cannot locate an element using By.chained({By.xpath: //android.widget.EditText})
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+System info: host: 'CPU008', ip: '172.16.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: driver.version: AndroidDriver
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
-
-BookMarkTCNo11(tests.TM_BookmarkTab)  Time elapsed: 13.024 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']]})
-	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@a1a72d4 (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']]})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
-
-BookMarkTCNo14(tests.TM_BookmarkTab)  Time elapsed: 32.912 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at tests.TM_BookmarkTab.BookMarkTCNo14(TM_BookmarkTab.java:34)
-
-BookMarkTCNo16(tests.TM_BookmarkTab)  Time elapsed: 28.452 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7b57587e (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
-
-RatingModuleTCNo1(tests.TM_RatingModule)  Time elapsed: 107.627 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, customFullReset: false, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69R0316662, version: }
-Session ID: 508bdf6df63656a82849db46677b43380739f568
-	at tests.TM_RatingModule.RatingModuleTCNo1(TM_RatingModule.java:8)
-
-GeneralTCNo11(tests.TM_GeneralTest)  Time elapsed: 6.751 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: detailHeadline})
-	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@566095d9 (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.id: detailHeadline})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
-
-setUp(tests.TM_SectionTab)  Time elapsed: 47,734.198 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: java.net.SocketException: Connection reset
-
-setUp(tests.TM_SettingTab)  Time elapsed: 47,734.385 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
-
-setUp(tests.TM_HomeTab)  Time elapsed: 47,734.52 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
-
-setUp(tests.TM_ArticlePage)  Time elapsed: 47,734.68 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:21)
 

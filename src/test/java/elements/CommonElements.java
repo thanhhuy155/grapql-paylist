@@ -180,6 +180,7 @@ public class CommonElements implements ICommon {
 
     @Override
     public void signInToGoogleAccount(String username, String password){
+        Utils.sleep(1000);
         googleAccountTextBox.sendKeys(username);
         googleAccountNextButton.click();
         Utils.sleep(1000);

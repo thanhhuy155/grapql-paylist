@@ -1,333 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="48,485.557" tests="61" errors="0" skipped="44" failures="10">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="131.639" tests="3" errors="0" skipped="0" failures="1">
   <properties>
-    <property name="idea.version" value="2018.2.2"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
-    <property name="java.vm.version" value="25.131-b11"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Hera_Data\Philly\mobile-test-pcom"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="US"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Hera_Data\Philly\mobile-test-pcom"/>
-    <property name="java.runtime.version" value="1.8.0_131-b11"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Hera\AppData\Local\Temp\"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.2\plugins\maven\lib\maven3\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\bin;C:\xampp\php;C:\Users\Hera\AppData\Local\ComposerSetup\bin;D:\Hera_Data\Philly\allure-2.7.0\bin;D:\Android\sdk\platform-tools;C:\Users\Hera\AppData\Local\Microsoft\WindowsApps;C:\Users\Hera\AppData\Local\Programs\Git\cmd;C:\xampp\php;C:\Users\Hera\AppData\Local\ComposerSetup\bin;C:\Users\Hera\AppData\Roaming\Composer\vendor\bin;."/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\Hera"/>
-    <property name="user.timezone" value="Asia/Bangkok"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="Hera"/>
-    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.2\lib\idea_rt.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.2.2 test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_131"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.2\plugins\maven\lib\maven3"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="JOB_NAME" value="BookmarkSuiteMaven"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="NUMBER_OF_PROCESSORS" value="4"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="C:\Users\ENCLAVEIT\.jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="3ded2174fae5f9bb"/>
+    <property name="POM_ARTIFACTID" value="mobile-test-pcom"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="sun.desktop" value="windows"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="mobile-test-pcom"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="TEMP" value="C:\Users\ENCLAV~1\AppData\Local\Temp"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="ENCLAVEIT"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="PROMPT" value="$P$G"/>
+    <property name="user.language" value="en"/>
+    <property name="JOB_BASE_NAME" value="BookmarkSuiteMaven"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://192.168.21.169:9090/job/BookmarkSuiteMaven/11/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#11"/>
+    <property name="OneDrive" value="C:\Users\ENCLAVEIT\OneDrive"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="LOCALAPPDATA" value="C:\Users\ENCLAVEIT\AppData\Local"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="USERNAME" value="ENCLAVEIT"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="HOMEDRIVE" value="C:"/>
+    <property name="maven.conf" value="C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven\conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="=::" value="::\"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="US"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="10.0"/>
+    <property name="RUN_DISPLAY_URL" value="http://192.168.21.169:9090/job/BookmarkSuiteMaven/11/display/redirect"/>
+    <property name="POM_VERSION" value="1.0-SNAPSHOT"/>
+    <property name="TMP" value="C:\Users\ENCLAV~1\AppData\Local\Temp"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="user.variant" value=""/>
+    <property name="JOB_DISPLAY_URL" value="http://192.168.21.169:9090/job/BookmarkSuiteMaven/display/redirect"/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="USERDOMAIN_ROAMINGPROFILE" value="CPU008"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_131"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
+    <property name="HOMEPATH" value="\Users\ENCLAVEIT"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="user.script" value=""/>
+    <property name="COMPUTERNAME" value="CPU008"/>
+    <property name="POM_GROUPID" value="mobile-test-pcom"/>
+    <property name="user.home" value="C:\Users\ENCLAVEIT"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="BUILD_TAG" value="jenkins-BookmarkSuiteMaven-11"/>
+    <property name="JENKINS_SERVER_COOKIE" value="3ded2174fae5f9bb"/>
+    <property name="HUDSON_URL" value="http://192.168.21.169:9090/"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="USERPROFILE" value="C:\Users\ENCLAVEIT"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven/bin;C:\Program Files\Java\jdk1.8.0_131/bin;C:\Program Files\Java\jdk1.8.0_131/bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;C:\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Users\ENCLAVEIT\Desktop\allure-2.7.0\bin;C:\Users\ENCLAVEIT\AppData\Local\Android\Sdk\platform-tools;C:\Users\ENCLAVEIT\AppData\Local\Microsoft\WindowsApps;C:\Users\ENCLAVEIT\AppData\Roaming\Composer\vendor\bin;C:\Users\ENCLAVEIT\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="APPDATA" value="C:\Users\ENCLAVEIT\AppData\Roaming"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven"/>
+    <property name="java.class.path" value="C:\Users\ENCLAVEIT\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.11.jar;C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven\boot\plexus-classworlds-2.5.2.jar;C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven C:\Users\ENCLAVEIT\.jenkins\war\WEB-INF\lib\remoting-3.10.jar C:\Users\ENCLAVEIT\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.11.jar C:\Users\ENCLAVEIT\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.11.jar 57450"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_131/bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;C:\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Users\ENCLAVEIT\Desktop\allure-2.7.0\bin;C:\Users\ENCLAVEIT\AppData\Local\Android\Sdk\platform-tools;C:\Users\ENCLAVEIT\AppData\Local\Microsoft\WindowsApps;C:\Users\ENCLAVEIT\AppData\Roaming\Composer\vendor\bin;C:\Users\ENCLAVEIT\AppData\Local\Programs\Microsoft VS Code\bin"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_131/bin"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 58 Stepping 9, GenuineIntel"/>
+    <property name="SESSIONNAME" value="Console"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven"/>
+    <property name="java.io.tmpdir" value="C:\Users\ENCLAV~1\AppData\Local\Temp\"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="HUDSON_HOME" value="C:\Users\ENCLAVEIT\.jenkins"/>
+    <property name="PATH+MAVEN" value="C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven/bin"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="BUILD_URL" value="http://192.168.21.169:9090/job/BookmarkSuiteMaven/11/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="SystemRoot" value="C:\WINDOWS"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="C:\Users\ENCLAVEIT\Desktop\mobile-test-pcom"/>
+    <property name="JOB_URL" value="http://192.168.21.169:9090/job/BookmarkSuiteMaven/"/>
+    <property name="LOGONSERVER" value="\\CPU008"/>
+    <property name="USERDOMAIN" value="CPU008"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="C:\Users\ENCLAVEIT\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="11"/>
+    <property name="ANDROID_HOME" value="C:\Users\ENCLAVEIT\AppData\Local\Android\Sdk"/>
+    <property name="JENKINS_URL" value="http://192.168.21.169:9090/"/>
+    <property name="PROCESSOR_REVISION" value="3a09"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="windir" value="C:\WINDOWS"/>
+    <property name="=C:" value="C:\Users\ENCLAVEIT\.jenkins\workspace"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="maven3.interceptor" value="C:\Users\ENCLAVEIT\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.11.jar"/>
+    <property name="WORKSPACE" value="C:\JKWorkspace\BookmarkSuiteMaven"/>
+    <property name="maven3.interceptor.common" value="C:\Users\ENCLAVEIT\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.11.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules"/>
+    <property name="DriverData" value="C:\Windows\System32\Drivers\DriverData"/>
   </properties>
-  <testcase name="BookMarkTCNo2" classname="tests.TM_BookmarkTab" time="24.342">
-    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.Button[@resource-id=&apos;com.google.android.gms:id/next_button&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Button[@resource-id='com.google.android.gms:id/next_button']})
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@416b681c (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
+  <testcase name="HomeTabTCNo2" classname="tests.TM_HomeTab" time="10.124"/>
+  <testcase name="HomeTabTCNo6" classname="tests.TM_HomeTab" time="9.316"/>
+  <testcase name="HomeTabTCNo8" classname="tests.TM_HomeTab" time="22.064">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText})
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:21)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2e7517aa (tried for 1 second(s) with 500 milliseconds interval)
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:21)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.xpath: //android.widget.Button[@resource-id='com.google.android.gms:id/next_button']})
+Cannot locate an element using By.chained({By.xpath: //android.widget.EditText})
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+System info: host: 'CPU008', ip: '172.16.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: driver.version: AndroidDriver
-	at tests.TM_BookmarkTab.BookMarkTCNo2(TM_BookmarkTab.java:10)
+	at tests.TM_HomeTab.HomeTabTCNo8(TM_HomeTab.java:21)
 </failure>
-    <system-out><![CDATA[class: BookmarkTabSuiteScroll: 540-1436;540-358]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Nov 08, 2018 11:35:11 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: OSS
-]]></system-err>
-  </testcase>
-  <testcase name="BookMarkTCNo3" classname="tests.TM_BookmarkTab" time="36.147"/>
-  <testcase name="BookMarkTCNo11" classname="tests.TM_BookmarkTab" time="13.024">
-    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id=&apos;com.ap.philly:id/action_edit&apos;]]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']]})
-	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@a1a72d4 (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.LinearLayoutCompat[android.widget.TextView[@resource-id='com.ap.philly:id/action_edit']]})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.TM_BookmarkTab.BookMarkTCNo11(TM_BookmarkTab.java:22)
-</failure>
-  </testcase>
-  <testcase name="BookMarkTCNo12" classname="tests.TM_BookmarkTab" time="31.092"/>
-  <testcase name="BookMarkTCNo14" classname="tests.TM_BookmarkTab" time="32.912">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at tests.TM_BookmarkTab.BookMarkTCNo14(TM_BookmarkTab.java:34)
-</failure>
-    <system-out><![CDATA[Scroll: 540-1436;540-358Scroll: 540-358;540-1436]]></system-out>
-  </testcase>
-  <testcase name="BookMarkTCNo16" classname="tests.TM_BookmarkTab" time="28.452">
-    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id=&apos;com.ap.philly:id/bookmark_title&apos;]})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7b57587e (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.xpath: //android.support.v7.widget.RecyclerView//android.widget.TextView[@resource-id='com.ap.philly:id/bookmark_title']})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.TM_BookmarkTab.BookMarkTCNo16(TM_BookmarkTab.java:40)
-</failure>
-    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_08112018\BookMarkTCNo14_08_11_2018_11_38_51.pngScroll: 540-1436;540-358Scroll: 540-358;540-1436]]></system-out>
-  </testcase>
-  <testcase name="RatingModuleTCNo1" classname="tests.TM_RatingModule" time="107.627">
-    <failure message="Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, customFullReset: false, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69R0316662, version: }&#10;Session ID: 508bdf6df63656a82849db46677b43380739f568" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-Appium error: An unknown server-side error occurred while processing the command. Original error: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.ap.philly.Views.MainAct..., appPackage: com.ap.philly, appium_port: 38082, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.callbackStop: true, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.ie.noFlash: false, browserstack.minOSVersion: 4.1, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: true, bundleID: com.ap.philly, customFullReset: false, device: google pixel, deviceName: google pixel, javascriptEnabled: true, mobile: {browser: mobile, version: Google Pixel-7.1}, nativeWebScreenshot: true, newCommandTimeout: 100, orig_os: android, os_version: 7.1, platform: ANDROID, platformName: ANDROID, proxy_type: node, realMobile: true, systemPort: 8202, udid: FA69R0316662, version: }
-Session ID: 508bdf6df63656a82849db46677b43380739f568
-	at tests.TM_RatingModule.RatingModuleTCNo1(TM_RatingModule.java:8)
-</failure>
-    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_08112018\BookMarkTCNo16_08_11_2018_11_39_32.pngclass: RatingModuleSuiteScroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 972-897;54-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897Scroll: 54-897;972-897]]></system-out>
-    <system-err><![CDATA[Nov 08, 2018 11:40:20 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: OSS
-]]></system-err>
-  </testcase>
-  <testcase name="GeneralTCNo1" classname="tests.TM_GeneralTest" time="47.267"/>
-  <testcase name="GeneralTCNo2" classname="tests.TM_GeneralTest" time="27.664"/>
-  <testcase name="GeneralTCNo3" classname="tests.TM_GeneralTest" time="29.983"/>
-  <testcase name="GeneralTCNo4" classname="tests.TM_GeneralTest" time="16.359"/>
-  <testcase name="GeneralTCNo7" classname="tests.TM_GeneralTest" time="41.051"/>
-  <testcase name="GeneralTCNo11" classname="tests.TM_GeneralTest" time="6.751">
-    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.id: detailHeadline})" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: detailHeadline})
-	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@566095d9 (tried for 1 second(s) with 500 milliseconds interval)
-	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.id: detailHeadline})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-	at tests.TM_GeneralTest.GeneralTCNo11(TM_GeneralTest.java:39)
-</failure>
-  </testcase>
-  <testcase name="setUp" classname="tests.TM_SectionTab" time="47,734.198">
-    <failure message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: java.net.SocketException: Connection reset
-</failure>
-    <system-out><![CDATA[D:\Hera_Data\Philly\mobile-test-pcom\target\surefire-reports\Screenshots_08112018\GeneralTCNo11_08_11_2018_11_47_13.pngclass: SectionTabSuite]]></system-out>
-  </testcase>
-  <testcase name="SectionTabTCNo2" classname="tests.TM_SectionTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SectionTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="SectionTabTCNo3" classname="tests.TM_SectionTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SectionTabTCNo4" classname="tests.TM_SectionTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SectionTabTCNo6" classname="tests.TM_SectionTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SectionTabTCNo8" classname="tests.TM_SectionTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SectionTabTCNo11" classname="tests.TM_SectionTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SectionTabTCNo12" classname="tests.TM_SectionTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="tearDown" classname="tests.TM_SectionTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="tests.TM_SettingTab" time="47,734.385">
-    <failure message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
-</failure>
-    <system-out><![CDATA[class: SettingTabSuite]]></system-out>
-  </testcase>
-  <testcase name="SettingTCNo1" classname="tests.TM_SettingTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_SettingTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="SettingTCNo3" classname="tests.TM_SettingTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SettingTCNo4" classname="tests.TM_SettingTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SettingTCNo5" classname="tests.TM_SettingTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SettingTCNo6" classname="tests.TM_SettingTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="SettingTCNo7" classname="tests.TM_SettingTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="tearDown" classname="tests.TM_SettingTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="tests.TM_HomeTab" time="47,734.52">
-    <failure message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
-</failure>
-    <system-out><![CDATA[class: HomeTabSuite]]></system-out>
-  </testcase>
-  <testcase name="HomeTabTCNo2" classname="tests.TM_HomeTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_HomeTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_HomeTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_HomeTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="HomeTabTCNo6" classname="tests.TM_HomeTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="HomeTabTCNo8" classname="tests.TM_HomeTab" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="tearDown" classname="tests.TM_HomeTab" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="tests.TM_ArticlePage" time="47,734.68">
-    <failure message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP057', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: java.net.UnknownHostException: hub-cloud.browserstack.com
-</failure>
-    <system-out><![CDATA[class: ArticlePageSuite]]></system-out>
-  </testcase>
-  <testcase name="ArticleTCNo1" classname="tests.TM_ArticlePage" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_ArticlePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_ArticlePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_ArticlePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="runAfterMethod" classname="tests.TM_ArticlePage" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="ArticleTCNo5" classname="tests.TM_ArticlePage" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="ArticleTCNo4" classname="tests.TM_ArticlePage" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="ArticleTCNo30" classname="tests.TM_ArticlePage" time="0">
-    <skipped message="It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;LAPTOP057&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: AndroidDriver"/>
-  </testcase>
-  <testcase name="tearDown" classname="tests.TM_ArticlePage" time="0">
-    <skipped/>
+    <system-out><![CDATA[Scroll: 540-1436;540-358]]></system-out>
   </testcase>
 </testsuite>

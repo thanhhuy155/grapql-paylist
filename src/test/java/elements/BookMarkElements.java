@@ -9,6 +9,7 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import utils.Constants;
+import utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -113,5 +114,8 @@ public class BookMarkElements extends CommonElements implements IBookMark {
         selectBookmarkedArticle(numberOfDeletedItem);
 
         deleteButton.click();
+
+        //Need to wait for server to actually delete the item
+        Utils.sleep(1000);
     }
 }

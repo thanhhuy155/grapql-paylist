@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [ArticlePageSuite]">
-  <test thread-count="5" verbose="0" name="ArticlePageTest(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [HomeTabSuite]">
+  <test thread-count="5" verbose="0" name="HomeTabTest(failed)">
     <classes>
-      <class name="tests.TM_ArticlePage">
+      <class name="tests.TM_HomeTab">
         <methods>
-          <include name="ArticleTCNo4"/>
-          <include name="ArticleTCNo30"/>
-          <include name="ArticleTCNo5"/>
+          <include name="HomeTabTCNo8"/>
           <include name="tearDown"/>
-          <include name="ArticleTCNo1"/>
           <include name="setUp"/>
           <include name="runAfterMethod"/>
         </methods>
-      </class> <!-- tests.TM_ArticlePage -->
+      </class> <!-- tests.TM_HomeTab -->
     </classes>
-  </test> <!-- ArticlePageTest(failed) -->
-</suite> <!-- Failed suite [ArticlePageSuite] -->
+  </test> <!-- HomeTabTest(failed) -->
+</suite> <!-- Failed suite [HomeTabSuite] -->
