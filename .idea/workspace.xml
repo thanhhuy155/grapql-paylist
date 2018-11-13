@@ -143,14 +143,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="170" />
-          <entry key="txt" value="261" />
+          <entry key="txt" value="262" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="170" />
-          <entry key="PLAIN_TEXT" value="261" />
+          <entry key="PLAIN_TEXT" value="262" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -165,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -363,7 +363,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542104301224" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542104652169" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -673,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542103913301</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="SamplePipeline.txt update parameters">
+      <created>1542104306406</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1542104306406</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1200,7 +1207,7 @@
     <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
