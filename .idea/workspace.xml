@@ -143,14 +143,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="170" />
-          <entry key="txt" value="297" />
+          <entry key="txt" value="318" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="170" />
-          <entry key="PLAIN_TEXT" value="297" />
+          <entry key="PLAIN_TEXT" value="318" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -164,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="336">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -372,7 +372,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542124884709" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542125077377" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -738,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542122799973</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="SamplePipeline.txt update:  bat 'mvn clean test -Dsurefire.suiteXmlFiles=${params.testSuiteName}'">
+      <created>1542124893645</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1542124893645</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -847,7 +854,8 @@
     <MESSAGE value="SamplePipeline.txt update: choices: ['Suite_HomeTab.xml']" />
     <MESSAGE value="SamplePipeline.txt update: choices: &quot;Suite_HomeTab.xml&quot;" />
     <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
-    <option name="LAST_COMMIT_MESSAGE" value="SamplePipeline.txt update:  bat 'mvn clean test Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
+    <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test -Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
+    <option name="LAST_COMMIT_MESSAGE" value="SamplePipeline.txt update:  bat 'mvn clean test -Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/SectionTabTCNo12_31_10_2018_03_41_32.png" />
@@ -1270,8 +1278,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="336">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>
