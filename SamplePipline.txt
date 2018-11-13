@@ -1,16 +1,10 @@
 pipeline{
 	agent any
 	stages{
-	    stage ('Set Parameters'){
-	        steps{
-	            parameters {
-                   choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')
-                }
-	        }
-	    }
 		stage ('Test'){
 			steps{
 				node ('android'){
+				    parameters: [choice(choices: 'Suite_HomeTab.xml', name: 'testSuiteName', description: 'selected test suite')]
 					git branch: 'master',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
