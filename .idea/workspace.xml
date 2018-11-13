@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/iOSAllTestSuites.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplePipline.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SamplePipline.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -129,14 +128,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="20" />
+          <entry key="java" value="22" />
           <entry key="txt" value="3" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="22" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="5" />
         </counts>
@@ -144,14 +143,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="170" />
-          <entry key="txt" value="347" />
+          <entry key="txt" value="360" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="170" />
-          <entry key="PLAIN_TEXT" value="347" />
+          <entry key="PLAIN_TEXT" value="360" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -171,7 +170,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iOSAllTestSuites.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -185,6 +184,33 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#SETTING_TITLE#0;class#Constants#0" />
+                <element signature="class#APP_VERSION#0;class#Constants#0" />
+                <element signature="class#LABLE#0;class#Constants#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -291,7 +317,6 @@
         <option value="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_RatingModule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -299,6 +324,7 @@
         <option value="$PROJECT_DIR$/target/SamplePipline.txt" />
         <option value="$PROJECT_DIR$/SamplePipline.txt" />
         <option value="$PROJECT_DIR$/iOSAllTestSuites.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
       </list>
     </option>
   </component>
@@ -370,6 +396,30 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scenarios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -382,7 +432,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542126415636" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542126997951" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -770,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542125277907</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add iOSAllTestSuites.txt file">
+      <created>1542126433018</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1542126433018</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -882,7 +939,8 @@
     <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test -Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
     <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFiles=Suite_HomeTab.xml'" />
     <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFile=Suite_HomeTab.xml'" />
-    <option name="LAST_COMMIT_MESSAGE" value="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFile=Suite_HomeTab.xml'" />
+    <MESSAGE value="Add iOSAllTestSuites.txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add iOSAllTestSuites.txt file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/SettingTCNo3_31_10_2018_03_46_21.png" />
@@ -1170,29 +1228,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#SETTING_TITLE#0;class#Constants#0" />
-            <element signature="class#APP_VERSION#0;class#Constants#0" />
-            <element signature="class#LABLE#0;class#Constants#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -1313,6 +1348,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#SETTING_TITLE#0;class#Constants#0" />
+            <element signature="class#APP_VERSION#0;class#Constants#0" />
+            <element signature="class#LABLE#0;class#Constants#0" />
+          </folding>
         </state>
       </provider>
     </entry>
