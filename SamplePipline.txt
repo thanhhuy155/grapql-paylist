@@ -5,7 +5,7 @@ pipeline{
         jdk 'JDK8'
     }
 	parameters {
-        choice(choices: ['Suite_HomeTab.xml'], description: 'selected test suite', name: 'testSuiteName')
+        choice(choices: "Suite_HomeTab.xml", description: 'selected test suite', name: 'testSuiteName')
     }
 	stages{
 		stage ('Test'){
