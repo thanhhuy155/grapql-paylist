@@ -56,7 +56,7 @@ public class Utils {
     }
     public static void scrollToElement(AppiumDriver appiumDriver, MobileElement element){
         do{
-            scrollScreen(appiumDriver, DIRECTION.UP);
+            scrollScreen(appiumDriver, DIRECTION.DOWN);
         }while (checkElementExist(element)==false);
     }
     public static void scrollScreen(AppiumDriver appiumDriver, DIRECTION direction ){
