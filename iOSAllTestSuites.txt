@@ -10,11 +10,11 @@ pipeline{
 	stages{
 		stage ('Test'){
 			steps{
-				node ('android'){
+				node ('iOS'){
 					git branch: 'master',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
-                    bat 'mvn clean test -DsuiteXmlFile=Suite_HomeTab.xml'
+                    bat 'mvn clean test -DsuiteXmlFile=Suite_iOSAllTests.xml'
                 }
 			}
 		}
@@ -23,7 +23,7 @@ pipeline{
 		always{
             node('android')
             {
-                bat 'C:\\Users\\ENCLAVEIT\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\android\\workspace\\SamplePipeline\\allure-results -c -o C:\\agents\\android\\workspace\\SamplePipeline\\allure-report'
+                bat 'C:\\Users\\ENCLAVEIT\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\android\\workspace\\iOSAllTestSuites\\allure-results -c -o C:\\agents\\android\\workspace\\iOSAllTestSuites\\allure-report'
                 allure([
         			includeProperties: false,
         			jdk: '',
@@ -38,11 +38,11 @@ pipeline{
 						<br/>
 						<b/>
 						<p><font font="Verdana" size="3" color="navy">***Please click the link to see the detail report:</font>
-						&QUOT;<a href='http://172.16.0.86:9090/job/SamplePipeline/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
+						&QUOT;<a href='http://172.16.0.86:9090/job/iOSAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
-					subject: '$DEFAULT_SUBJECT_Android',
+					subject: '$DEFAULT_SUBJECT_iOSAllTestSuites',
           			to: 'hera@enclave.vn'
 		}
 	}

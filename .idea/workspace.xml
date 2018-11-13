@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/iOSAllTestSuites.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SamplePipline.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SamplePipline.txt" afterDir="false" />
     </list>
@@ -129,28 +130,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="20" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="3" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="20" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="170" />
-          <entry key="txt" value="318" />
+          <entry key="txt" value="347" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="170" />
-          <entry key="PLAIN_TEXT" value="318" />
+          <entry key="PLAIN_TEXT" value="347" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -161,11 +162,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="504">
+              <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/iOSAllTestSuites.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -173,8 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="32" column="52" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="52" />
+            <state relative-caret-position="75">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -238,7 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" />
         <option value="$PROJECT_DIR$/android-test-cases.xml" />
         <option value="$PROJECT_DIR$/Suite_ArticlePage.xml" />
         <option value="$PROJECT_DIR$/Suite_GeneralTest.xml" />
@@ -289,6 +298,7 @@
         <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/target/SamplePipline.txt" />
         <option value="$PROJECT_DIR$/SamplePipline.txt" />
+        <option value="$PROJECT_DIR$/iOSAllTestSuites.txt" />
       </list>
     </option>
   </component>
@@ -372,7 +382,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542125254433" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542126415636" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -387,6 +397,7 @@
       <recent name="actions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ENCLAVEIT\Desktop\mobile-test-pcom" />
       <recent name="D:\Hera_Data\Philly\mobile-test-pcom" />
     </key>
   </component>
@@ -745,7 +756,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542124893645</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFiles=Suite_HomeTab.xml'">
+      <created>1542125092485</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1542125092485</updated>
+    </task>
+    <task id="LOCAL-00030" summary="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFile=Suite_HomeTab.xml'">
+      <created>1542125277907</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1542125277907</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -855,10 +880,11 @@
     <MESSAGE value="SamplePipeline.txt update: choices: &quot;Suite_HomeTab.xml&quot;" />
     <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
     <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test -Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
-    <option name="LAST_COMMIT_MESSAGE" value="SamplePipeline.txt update:  bat 'mvn clean test -Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
+    <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFiles=Suite_HomeTab.xml'" />
+    <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFile=Suite_HomeTab.xml'" />
+    <option name="LAST_COMMIT_MESSAGE" value="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFile=Suite_HomeTab.xml'" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/SectionTabTCNo12_31_10_2018_03_41_32.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/SettingTCNo3_31_10_2018_03_46_21.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/SettingTCNo6_31_10_2018_03_46_48.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/SectionTabSuite/SectionTabTest.xml" />
@@ -1271,15 +1297,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="52" />
+        <state relative-caret-position="75">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="504">
+          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iOSAllTestSuites.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
         </state>
       </provider>
     </entry>
