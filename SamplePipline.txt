@@ -1,11 +1,14 @@
 pipeline{
 	agent any
 	stages{
+	    stage ('Set Parameters'){
+	        steps{
+	            parameters {
+                   choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')
+                }
+	        }
+	    }
 		stage ('Test'){
-		    parameters {
-               choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')
-            }
-
 			steps{
 				node ('android'){
 					git branch: 'master',
