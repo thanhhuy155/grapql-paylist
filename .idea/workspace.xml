@@ -143,14 +143,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="170" />
-          <entry key="txt" value="266" />
+          <entry key="txt" value="271" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="170" />
-          <entry key="PLAIN_TEXT" value="266" />
+          <entry key="PLAIN_TEXT" value="271" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -164,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="63">
+              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -372,7 +372,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542105672247" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542120256218" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -696,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542104656566</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="SamplePipeline.txt update bat">
+      <created>1542118623350</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1542118623350</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -799,7 +806,8 @@
     <MESSAGE value="SamplePipeline.txt update parameters: properties([parameters([choice(choices: ['Suite_HomeTab.xml'], description: '', name: 'testSuiteName')]), pipelineTriggers([])])" />
     <MESSAGE value="SamplePipeline.txt update parameters: choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')" />
     <MESSAGE value="SamplePipeline.txt update parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="SamplePipeline.txt update parameters" />
+    <MESSAGE value="SamplePipeline.txt update bat" />
+    <option name="LAST_COMMIT_MESSAGE" value="SamplePipeline.txt update bat" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/SectionTabTCNo12_31_10_2018_03_41_32.png" />
@@ -1222,8 +1230,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="63">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,9 @@
 pipeline{
 	agent any
+	tools {
+        maven 'Maven3'
+        jdk 'JDK8'
+    }
 	parameters {
         choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')
     }
