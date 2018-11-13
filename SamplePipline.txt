@@ -1,5 +1,7 @@
 pipeline{
 	agent any
+	properties([parameters([choice(choices: ['Suite_HomeTab.xml'], description: '', name: 'testSuiteName')]), pipelineTriggers([])])
+
 	stages{
 		stage ('Test'){
 			steps{
@@ -7,7 +9,6 @@ pipeline{
 							git branch: 'master',
 								credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 								url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
-                            properties([parameters([choice(choices: ['Suite_HomeTab.xml'], description: '', name: 'testSuiteName')]), pipelineTriggers([])])
                             bat 'clean test -DsuiteXmlFile=$testSuiteName'
                         }
 			}
