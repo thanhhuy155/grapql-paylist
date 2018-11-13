@@ -10,7 +10,8 @@ pipeline{
                               parameters {
                                 choice(
                                     name: 'testSuiteName',
-                                    choices: "Suite_HomeTab.xml" )
+                                    choices: "Suite_HomeTab.xml",
+                                    description: 'selected test suite' )
                               }
                             bat 'clean test -DsuiteXmlFile=$testSuiteName'
                         }
