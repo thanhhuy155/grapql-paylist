@@ -1,7 +1,8 @@
 pipeline{
 	agent any
-	properties([parameters([choice(choices: ['Suite_HomeTab.xml'], description: '', name: 'testSuiteName')]), pipelineTriggers([])])
-
+    parameters {
+        choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')
+     }
 	stages{
 		stage ('Test'){
 			steps{
