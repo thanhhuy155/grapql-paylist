@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -143,14 +142,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="170" />
-          <entry key="txt" value="74" />
+          <entry key="txt" value="96" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="170" />
-          <entry key="PLAIN_TEXT" value="74" />
+          <entry key="PLAIN_TEXT" value="96" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -448,7 +447,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542093919871" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542094658280" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -688,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542033461892</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add SamplePipeline.txt">
+      <created>1542094057142</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542094057142</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -736,7 +742,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.22411004" />
@@ -787,7 +793,8 @@
     <MESSAGE value="Merge branch 'master' of https://bitbucket.org/HeraNguyen/mobile-test-pcom&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;pom.xml&#10;#&#9;target/surefire-reports/TEST-TestSuite.xml&#10;#&#9;target/surefire-reports/TestSuite.txt&#10;#&#9;target/surefire-reports/emailable-report.html&#10;#&#9;target/surefire-reports/index.html&#10;#&#9;target/surefire-reports/junitreports/TEST-tests.iOSTestCases.xml&#10;#&#9;target/surefire-reports/old/index.html&#10;#&#9;target/surefire-reports/testng-failed.xml&#10;#&#9;target/surefire-reports/testng-results.xml&#10;#&#9;target/test-classes/elements/FeedListElements.class&#10;#&#9;target/test-classes/pages/BasePage.class&#10;#&#9;target/test-classes/pages/BookmarkTab.class&#10;#&#9;target/test-classes/scenarios/AppiumController.class" />
     <MESSAGE value="Priority tests" />
     <MESSAGE value="updte pom to use suite from Jenkins" />
-    <option name="LAST_COMMIT_MESSAGE" value="updte pom to use suite from Jenkins" />
+    <MESSAGE value="add SamplePipeline.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add SamplePipeline.txt" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/HomeTabTCNo8_31_10_2018_03_49_35.png" />
