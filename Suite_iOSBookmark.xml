@@ -7,9 +7,9 @@
             <class name = "tests.TM_BookmarkTab">
                 <methods>
                     <include name="BookMarkTCNo2"/>
-<!--                    <include name="BookMarkTCNo11"/>
+                    <include name="BookMarkTCNo11"/>
                     <include name="BookMarkTCNo12"/>
-                    <include name="BookMarkTCNo14"/>-->
+                    <include name="BookMarkTCNo14"/>
                 </methods>
             </class>
         </classes>

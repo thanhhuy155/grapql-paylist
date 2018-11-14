@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Suite_iOSBookmark.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Suite_iOSBookmark.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -130,27 +130,27 @@
         <counts>
           <entry key="java" value="28" />
           <entry key="txt" value="3" />
-          <entry key="xml" value="7" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="28" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="XML" value="7" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="250" />
-          <entry key="txt" value="432" />
+          <entry key="txt" value="467" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="250" />
-          <entry key="PLAIN_TEXT" value="432" />
+          <entry key="PLAIN_TEXT" value="467" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -161,14 +161,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="-1617">
               <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Suite_iOSBookmark.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -278,11 +287,11 @@
         <option value="$PROJECT_DIR$/SamplePipline.txt" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
         <option value="$PROJECT_DIR$/iOSAllTestSuites.txt" />
-        <option value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
+        <option value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
       </list>
     </option>
   </component>
@@ -398,7 +407,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542188967327" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542189009398" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -832,7 +841,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542188942674</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="update to run on iOS 12.0 iPhone XS">
+      <created>1542188995818</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1542188995818</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -923,7 +939,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update test cases for iOS" />
     <MESSAGE value="update elements on Android" />
     <MESSAGE value="update test cases to Android" />
     <MESSAGE value="add new cases for Android" />
@@ -948,7 +963,8 @@
     <MESSAGE value="capabilities.setCapability(&quot;device&quot;, &quot;iPhone 6&quot;); capabilities.setCapability(&quot;os_version&quot;, &quot;11.2&quot;);" />
     <MESSAGE value="correct the agent" />
     <MESSAGE value="stableize the framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="stableize the framework" />
+    <MESSAGE value="update to run on iOS 12.0 iPhone XS" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to run on iOS 12.0 iPhone XS" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/SettingTCNo6_31_10_2018_03_46_48.png" />
@@ -1317,13 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Suite_iOSBookmark.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1380,11 +1389,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="-1617">
           <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Suite_iOSBookmark.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="52" />
         </state>
       </provider>
     </entry>
