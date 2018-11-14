@@ -21,9 +21,9 @@ pipeline{
 	}
 	post{
 		always{
-            node('android')
+            node('iOS')
             {
-                bat 'C:\\Users\\ENCLAVEIT\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\android\\workspace\\iOSAllTestSuites\\allure-results -c -o C:\\agents\\android\\workspace\\iOSAllTestSuites\\allure-report'
+                bat 'C:\\Users\\ENCLAVEIT\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\iOS\\workspace\\iOSAllTestSuites\\allure-results -c -o C:\\agents\\iOS\\workspace\\iOSAllTestSuites\\allure-report'
                 allure([
         			includeProperties: false,
         			jdk: '',
@@ -43,7 +43,7 @@ pipeline{
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
 					subject: '$DEFAULT_SUBJECT_iOSAllTestSuites',
-          			to: 'hera@enclave.vn'
+          			to: 'hera@enclave.vn, donna@enclave.vn'
 		}
 	}
 
