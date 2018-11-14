@@ -180,7 +180,7 @@ public class CommonElements implements ICommon {
 
     @Override
     public void signInToGoogleAccount(String username, String password){
-        Utils.sleep(1000);
+        Utils.sleep(2000);
         googleAccountTextBox.sendKeys(username);
         googleAccountNextButton.click();
         Utils.sleep(1000);
@@ -188,6 +188,7 @@ public class CommonElements implements ICommon {
         googleAccountPasswordNextButton.click();
         Utils.sleep(1000);
         googleAccountIAgreeButton.click();
+        Utils.sleep(1000);
         googleAccountAcceptButton.click();
     }
 
@@ -221,6 +222,7 @@ public class CommonElements implements ICommon {
     @Override
     public void bookMarkTabClick() {
         bookMarkTab.click();
+        Utils.sleep(1000);
         if(Utils.isAndroidPlatform()){
             if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
                 signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);

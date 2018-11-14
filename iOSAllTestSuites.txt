@@ -4,9 +4,6 @@ pipeline{
         maven 'Maven3'
         jdk 'JDK8'
     }
-	parameters {
-        choice(choices: "Suite_HomeTab.xml", description: 'selected test suite', name: 'testSuiteName')
-    }
 	stages{
 		stage ('Test'){
 			steps{
@@ -38,7 +35,7 @@ pipeline{
 						<br/>
 						<b/>
 						<p><font font="Verdana" size="3" color="navy">***Please click the link to see the detail report:</font>
-						&QUOT;<a href='http://172.16.0.86:9090/job/iOSAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
+						&QUOT;<a href='http://117.3.65.55:9500/view/PhillyDotComNativeAppProjects/job/iOSAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',

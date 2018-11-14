@@ -18,7 +18,7 @@ import java.util.Calendar;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class AppiumController {
-    public static OS executionOS = OS.IOS_BROWSERSTACK;
+    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -94,8 +94,8 @@ public class AppiumController {
                 break;
             case ANDROID_BROWSERSTACK:
                 capabilities.setCapability("platformName", "Android");
-                capabilities.setCapability("device", "Google Pixel");
-                capabilities.setCapability("os_version", "7.1");
+                capabilities.setCapability("device", "Samsung Galaxy S9");
+                capabilities.setCapability("os_version", "8.0");
                 capabilities.setCapability("appPackage", "com.ap.philly");
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
                 capabilities.setCapability("browserstack.debug", true);
@@ -107,8 +107,8 @@ public class AppiumController {
                 driver = new AndroidDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
             case IOS_BROWSERSTACK:
-                capabilities.setCapability("device", "iPhone 6");
-                capabilities.setCapability("os_version", "11.2");
+                capabilities.setCapability("device", "iPhone XS");
+                capabilities.setCapability("os_version", "12.0");
                 capabilities.setCapability("automationName", "XCUITest");
                 capabilities.setCapability("browserstack.debug", true);
                 capabilities.setCapability("app", "bs://" + Constants.IOS_HASHED_APP_ID);

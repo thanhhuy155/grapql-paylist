@@ -138,6 +138,7 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public void buttonBookmarkClick() {
 
         btnBookmarkOnFeedArticle.click();
+        Utils.sleep(1000);
         if(Utils.isAndroidPlatform()){
             if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
                 signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);

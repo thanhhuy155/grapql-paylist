@@ -70,7 +70,7 @@ public class Utils {
                 endX = (dimension.getWidth())/2;
                 endY = (dimension.getHeight())/5;
                 fromX = (dimension.getWidth())/2;
-                fromY = (dimension.getHeight())-endY;
+                fromY = (dimension.getHeight())-((dimension.getHeight())/4);
                 System.out.print("Scroll: "+fromX+"-"+fromY+";"+endX+"-"+endY);
                 (new TouchAction(appiumDriver))
                         .press(PointOption.point(fromX,fromY))
