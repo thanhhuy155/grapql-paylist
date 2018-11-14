@@ -128,14 +128,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="29" />
+          <entry key="java" value="30" />
           <entry key="txt" value="4" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="29" />
+          <entry key="JAVA" value="30" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="9" />
         </counts>
@@ -143,14 +143,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="252" />
-          <entry key="txt" value="544" />
+          <entry key="txt" value="552" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="252" />
-          <entry key="PLAIN_TEXT" value="544" />
+          <entry key="PLAIN_TEXT" value="552" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -191,11 +191,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="83" column="48" lean-forward="true" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
+              <folding>
+                <element signature="method#isAndroidPlatform#0;class#Utils#0" />
+                <element signature="method#iOSScrollToElement#0;class#Utils#0" />
+                <element signature="method#exampleScroll#0;class#Utils#0" />
+                <element signature="method#scrollToElementexample#0;class#Utils#0" />
+                <element signature="method#scrollBySwipe#0;class#Utils#0" />
+                <element signature="method#sleep#0;class#Utils#0" />
+                <element signature="method#getCurrentYear#0;class#Utils#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
-              <caret line="40" column="99" lean-forward="true" selection-start-line="40" selection-start-column="99" selection-end-line="40" selection-end-column="99" />
+              <caret line="40" column="149" selection-start-line="40" selection-start-column="149" selection-end-line="40" selection-end-column="149" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#feedItemTopStoryClick#0;class#FeedListElements#0" />
@@ -448,7 +466,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542189258285" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542189657420" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -903,7 +921,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542189192636</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="update:     @iOSFindBy(xpath = &quot;//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText[contains(@name,'at')]/following-sibling::XCUIElementTypeButton[1]&quot;)">
+      <created>1542189275789</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1542189275789</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -994,7 +1019,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new cases for Android" />
     <MESSAGE value="update to run multiple Suites on BrowserStack" />
     <MESSAGE value="Merge branch 'master' of https://bitbucket.org/HeraNguyen/mobile-test-pcom&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;pom.xml&#10;#&#9;target/surefire-reports/TEST-TestSuite.xml&#10;#&#9;target/surefire-reports/TestSuite.txt&#10;#&#9;target/surefire-reports/emailable-report.html&#10;#&#9;target/surefire-reports/index.html&#10;#&#9;target/surefire-reports/junitreports/TEST-tests.iOSTestCases.xml&#10;#&#9;target/surefire-reports/old/index.html&#10;#&#9;target/surefire-reports/testng-failed.xml&#10;#&#9;target/surefire-reports/testng-results.xml&#10;#&#9;target/test-classes/elements/FeedListElements.class&#10;#&#9;target/test-classes/pages/BasePage.class&#10;#&#9;target/test-classes/pages/BookmarkTab.class&#10;#&#9;target/test-classes/scenarios/AppiumController.class" />
     <MESSAGE value="Priority tests" />
@@ -1019,7 +1043,8 @@
     <MESSAGE value="update to run on iOS 12.0 iPhone XS" />
     <MESSAGE value="update iOSBookmark suite" />
     <MESSAGE value="update pduncan@phillynews.com for iOSSuite" />
-    <option name="LAST_COMMIT_MESSAGE" value="update pduncan@phillynews.com for iOSSuite" />
+    <MESSAGE value="update:     @iOSFindBy(xpath = &quot;//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText[contains(@name,'at')]/following-sibling::XCUIElementTypeButton[1]&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update:     @iOSFindBy(xpath = &quot;//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText[contains(@name,'at')]/following-sibling::XCUIElementTypeButton[1]&quot;)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/Screenshots_31102018/SettingTCNo6_31_10_2018_03_46_48.png" />
@@ -1374,22 +1399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="83" column="48" lean-forward="true" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
-          <folding>
-            <element signature="method#isAndroidPlatform#0;class#Utils#0" />
-            <element signature="method#iOSScrollToElement#0;class#Utils#0" />
-            <element signature="method#exampleScroll#0;class#Utils#0" />
-            <element signature="method#scrollToElementexample#0;class#Utils#0" />
-            <element signature="method#scrollBySwipe#0;class#Utils#0" />
-            <element signature="method#sleep#0;class#Utils#0" />
-            <element signature="method#getCurrentYear#0;class#Utils#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -1446,10 +1455,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="83" column="48" lean-forward="true" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
+          <folding>
+            <element signature="method#isAndroidPlatform#0;class#Utils#0" />
+            <element signature="method#iOSScrollToElement#0;class#Utils#0" />
+            <element signature="method#exampleScroll#0;class#Utils#0" />
+            <element signature="method#scrollToElementexample#0;class#Utils#0" />
+            <element signature="method#scrollBySwipe#0;class#Utils#0" />
+            <element signature="method#sleep#0;class#Utils#0" />
+            <element signature="method#getCurrentYear#0;class#Utils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
-          <caret line="40" column="99" lean-forward="true" selection-start-line="40" selection-start-column="99" selection-end-line="40" selection-end-column="99" />
+          <caret line="40" column="149" selection-start-line="40" selection-start-column="149" selection-end-line="40" selection-end-column="149" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#feedItemTopStoryClick#0;class#FeedListElements#0" />
