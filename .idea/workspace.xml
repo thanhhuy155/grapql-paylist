@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AndroidAllTestSuites.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -132,29 +129,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="71" />
+          <entry key="java" value="74" />
           <entry key="txt" value="6" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="71" />
+          <entry key="JAVA" value="74" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="407" />
-          <entry key="txt" value="670" />
+          <entry key="java" value="438" />
+          <entry key="txt" value="710" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="407" />
-          <entry key="PLAIN_TEXT" value="670" />
+          <entry key="JAVA" value="438" />
+          <entry key="PLAIN_TEXT" value="710" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -165,16 +162,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="400">
+              <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
               <folding>
                 <element signature="method#SectionTab#0;class#SectionTab#0" />
                 <element signature="method#TestCaseNo3#0;class#SectionTab#0" />
                 <element signature="method#TestCaseNo4#0;class#SectionTab#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#BookmarkTab#0;class#BookmarkTab#0" />
+                <element signature="method#TestCaseNo11#0;class#BookmarkTab#0" />
+                <element signature="method#TestCaseNo12#0;class#BookmarkTab#0" />
+                <element signature="method#TestCaseNo14#0;class#BookmarkTab#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="737">
+              <caret line="233" column="42" selection-start-line="233" selection-start-column="42" selection-end-line="233" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -201,6 +223,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#feedItemTopStoryClick#0;class#FeedListElements#0" />
+                <element signature="method#assetResult#0;class#FeedListElements#0" />
+                <element signature="e#5917#5918#0" expanded="true" />
+                <element signature="e#5963#5964#0" expanded="true" />
+                <element signature="method#bookmarkArticle#0;class#FeedListElements#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -212,7 +251,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>allu</find>
       <find>gmail</find>
       <find>gmailShareBox</find>
       <find>gmailshare</find>
@@ -242,6 +280,7 @@
       <find>//XCUIElementTypeStaticText[contains(@name, 'Notifications')]</find>
       <find>1000</find>
       <find>articleDetailElements</find>
+      <find>sha</find>
     </findStrings>
     <replaceStrings>
       <replace>articlePage</replace>
@@ -309,8 +348,8 @@
         <option value="$PROJECT_DIR$/AndroidAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
       </list>
     </option>
   </component>
@@ -442,7 +481,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542277551421" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542278477942" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -918,7 +957,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542274380787</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="correct action for section case #6 and 8">
+      <created>1542277580141</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1542277580141</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1009,7 +1055,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Priority tests" />
     <MESSAGE value="updte pom to use suite from Jenkins" />
     <MESSAGE value="add SamplePipeline.txt" />
     <MESSAGE value="SamplePipeline.txt update parameters: properties([parameters([choice(choices: ['Suite_HomeTab.xml'], description: '', name: 'testSuiteName')]), pipelineTriggers([])])" />
@@ -1034,7 +1079,8 @@
     <MESSAGE value="update:     @iOSFindBy(xpath = &quot;//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText[contains(@name,'at')]/following-sibling::XCUIElementTypeButton[1]&quot;)" />
     <MESSAGE value="add search actions&#10;Change to run on Android" />
     <MESSAGE value="add Constants.SHORTTIME" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Constants.SHORTTIME" />
+    <MESSAGE value="correct action for section case #6 and 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct action for section case #6 and 8" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/iOS-test-cases.xml">
@@ -1388,19 +1434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="149" column="39" selection-start-line="149" selection-start-column="39" selection-end-line="149" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#feedItemTopStoryClick#0;class#FeedListElements#0" />
-            <element signature="method#assetResult#0;class#FeedListElements#0" />
-            <element signature="method#bookmarkArticle#0;class#FeedListElements#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -1449,20 +1482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/SectionElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1474,10 +1493,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#feedItemTopStoryClick#0;class#FeedListElements#0" />
+            <element signature="method#assetResult#0;class#FeedListElements#0" />
+            <element signature="e#5917#5918#0" expanded="true" />
+            <element signature="e#5963#5964#0" expanded="true" />
+            <element signature="method#bookmarkArticle#0;class#FeedListElements#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/SectionElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+          <folding>
+            <element signature="method#SectionTab#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo3#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo4#0;class#SectionTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="29" />
+        <state relative-caret-position="300">
+          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#BookmarkTab#0;class#BookmarkTab#0" />
@@ -1488,15 +1541,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="method#SectionTab#0;class#SectionTab#0" />
-            <element signature="method#TestCaseNo3#0;class#SectionTab#0" />
-            <element signature="method#TestCaseNo4#0;class#SectionTab#0" />
-          </folding>
+        <state relative-caret-position="737">
+          <caret line="233" column="42" selection-start-line="233" selection-start-column="42" selection-end-line="233" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -56,9 +56,10 @@ public class SectionTab extends BasePage {
         commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
         String title;
+        waitForVisibilityOf(feedListElements.feedItemTitle);
         if (Utils.isAndroidPlatform()) {
-            title = articleDetailElements.getTitleArticleDetail();
-            articleDetailElements.articleDetailTitle.click();
+            title = feedListElements.getFeedItemTitle();
+            feedListElements.feedItemTitle.click();
         } else {
             title = feedListElements.feedItemSectionTab.getText();
             feedListElements.feedItemSectionTab.click();
@@ -74,8 +75,9 @@ public class SectionTab extends BasePage {
         commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
 
-        String title = articleDetailElements.getTitleArticleDetail();
-        articleDetailElements.shareArticleButton.click();
+        waitForVisibilityOf(feedListElements.feedItemTitle);
+        String title = feedListElements.getFeedItemTitle();
+        feedListElements.btnShareOnFeedArticle.click();
 
         if (Utils.isAndroidPlatform()) {
             if (commonElements.gmail.isDisplayed()==false){

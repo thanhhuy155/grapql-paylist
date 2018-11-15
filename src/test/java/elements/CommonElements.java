@@ -231,7 +231,7 @@ public class CommonElements implements ICommon {
                 googleClientLogin.click();
             }
         }
-        Utils.sleep((Constants.SHORTTIME/2));
+        Utils.sleep((Constants.SHORTTIME*3));
     }
 
     @Override
