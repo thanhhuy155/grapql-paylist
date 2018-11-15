@@ -45,6 +45,7 @@ public class BookmarkTab extends BasePage{
         articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
 
         //Post-condition: Delete added bookmark
+        waitForVisibilityOf(articleDetailElements.backBtn);
         articleDetailElements.back();
         bookMarkElements.deleteBookmark(1);
     }

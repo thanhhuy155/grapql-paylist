@@ -138,7 +138,7 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public void buttonBookmarkClick() {
 
         btnBookmarkOnFeedArticle.click();
-        Utils.sleep(1000);
+        Utils.sleep(Constants.SHORTTIME);
         if(Utils.isAndroidPlatform()){
             if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
                 signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
@@ -147,6 +147,6 @@ public class FeedListElements extends CommonElements implements IFeedList {
                 googleClientLogin.click();
             }
         }
-        Utils.sleep(1000);
+        Utils.sleep(Constants.SHORTTIME);
     }
 }

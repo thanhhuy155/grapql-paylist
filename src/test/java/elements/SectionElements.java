@@ -7,6 +7,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.Constants;
 import utils.Utils;
 
 import java.util.List;
@@ -95,7 +96,7 @@ public class SectionElements extends CommonElements implements ISection {
                 listSectionItem.get(i).click();
                 backButton.click();
             }
-            Utils.sleep(1000);
+            Utils.sleep(Constants.SHORTTIME);
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
             numberOfItemInList=listSectionItem.size();
             for(int i=0; i<numberOfItemInList; i++){

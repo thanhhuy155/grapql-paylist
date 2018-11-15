@@ -6,6 +6,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.PageFactory;
+import utils.Constants;
 import utils.Utils;
 
 public class SearchElements extends CommonElements implements ISearch {
@@ -39,7 +40,7 @@ public class SearchElements extends CommonElements implements ISearch {
     @Override
     public void searchByAutoSuggested(){
         autoSuggestedTerm.click();
-        Utils.sleep(1000);
+        Utils.sleep(Constants.SHORTTIME);
     }
 
 }

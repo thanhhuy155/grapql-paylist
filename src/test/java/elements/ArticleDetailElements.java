@@ -8,6 +8,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import utils.Constants;
 import utils.Utils;
 
 public class ArticleDetailElements extends CommonElements implements IArticleDetail {
@@ -49,7 +50,7 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
             if(Utils.checkElementExist(googleClientLogin)==true){
                 googleClientLogin.click();
             }
-            Utils.sleep(1000);
+            Utils.sleep(Constants.SHORTTIME);
         }
     }
 

@@ -116,6 +116,6 @@ public class BookMarkElements extends CommonElements implements IBookMark {
         deleteButton.click();
 
         //Need to wait for server to actually delete the item
-        Utils.sleep(1000);
+        Utils.sleep(Constants.SHORTTIME);
     }
 }

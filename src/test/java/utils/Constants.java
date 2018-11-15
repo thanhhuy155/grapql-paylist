@@ -17,6 +17,7 @@ public class Constants {
     public static final String GOOGLEACCOUNT_PASSWORD = "testtesttest91";
 
     public static String EXECUTING_SUITE = new String();
+    public static int SHORTTIME = 1000;
 
     public static final List<String> selectedArticleTitleOnBookmark = new ArrayList<>();
 
