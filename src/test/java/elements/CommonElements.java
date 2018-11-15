@@ -24,7 +24,7 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.LinearLayout[android.widget.TextView[contains(@text,'Skype')]]]")
     public MobileElement skypeShareOption;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'http://www.philly.com/')]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'philly.com')]")
     public MobileElement phillyLinkOnSkype;
 
     @AndroidFindBy(xpath = "//android.widget.EditText[contains(@resource-id,'subject')]")

@@ -57,8 +57,8 @@ public class SectionTab extends BasePage {
         sectionElements.sectionItemClick();
         String title;
         if (Utils.isAndroidPlatform()) {
-            title = feedListElements.getFeedItemTitle();
-            feedListElements.feedItemClick();
+            title = articleDetailElements.getTitleArticleDetail();
+            articleDetailElements.articleDetailTitle.click();
         } else {
             title = feedListElements.feedItemSectionTab.getText();
             feedListElements.feedItemSectionTab.click();
@@ -74,7 +74,7 @@ public class SectionTab extends BasePage {
         commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
 
-        String title = feedListElements.getFeedItemTitle();
+        String title = articleDetailElements.getTitleArticleDetail();
         articleDetailElements.shareArticleButton.click();
 
         if (Utils.isAndroidPlatform()) {

@@ -73,17 +73,20 @@ public class SectionElements extends CommonElements implements ISection {
         int numberOfItemInList;
         if(Utils.isAndroidPlatform()){
             numberOfItemInList=listSectionItem.size();
-            if(numberOfItemInList==15){
+            if(numberOfItemInList==16){
                 for(int i=0; i<15; i++){
                     listSectionItem.get(i).click();
                     backButton.click();
                 }
             }
             else {
-                listSectionItem.get(0).click();
-                backButton.click();
+                for(int i=0; i<5; i++){
+                    listSectionItem.get(i).click();
+                    backButton.click();
+                }
                 Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
-                for(int i=0; i<14; i++){
+                Utils.sleep(Constants.SHORTTIME);
+                for(int i=0; i<11; i++){
                     listSectionItem.get(i).click();
                     backButton.click();
                 }
