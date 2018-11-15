@@ -6,6 +6,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.PageFactory;
+import utils.Utils;
 
 public class SearchElements extends CommonElements implements ISearch {
 
@@ -34,5 +35,11 @@ public class SearchElements extends CommonElements implements ISearch {
 
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name=\"Clear text\"]")
     public MobileElement clearSearchTextButton;
+
+    @Override
+    public void searchByAutoSuggested(){
+        autoSuggestedTerm.click();
+        Utils.sleep(1000);
+    }
 
 }

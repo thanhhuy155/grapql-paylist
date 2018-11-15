@@ -49,7 +49,7 @@ public class SearchTab extends BasePage {
         Assert.assertTrue(searchElements.autoSuggestedTable.isDisplayed());
 
         //Step: 4. Click any auto-suggested search term
-        searchElements.autoSuggestedTerm.click();
+        searchElements.searchByAutoSuggested();
 
         //Step: 5. Observe the auto-suggest term execute the search
         Assert.assertTrue(searchElements.newestSortOptionForSearchResult.isDisplayed());

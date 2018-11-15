@@ -18,7 +18,7 @@ import java.util.Calendar;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class AppiumController {
-    public static OS executionOS = OS.IOS_BROWSERSTACK;
+    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -40,7 +40,7 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-        String androidBuild = "AndroidBuild_"+formater2.format(calendar.getTime());
+        String androidBuild = "Android_SprintC_RegressionTest_"+formater2.format(calendar.getTime());
         String iOSBuild = "iOS_SprintC_RegressionTest_"+formater2.format(calendar.getTime());
         switch (executionOS) {
             case ANDROID:
