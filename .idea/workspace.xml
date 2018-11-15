@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidAllTestSuites.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -129,29 +128,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="74" />
-          <entry key="txt" value="6" />
+          <entry key="java" value="75" />
+          <entry key="txt" value="7" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="74" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="JAVA" value="75" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="438" />
-          <entry key="txt" value="710" />
+          <entry key="txt" value="717" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="438" />
-          <entry key="PLAIN_TEXT" value="710" />
+          <entry key="PLAIN_TEXT" value="717" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -162,6 +161,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -192,11 +203,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="737">
               <caret line="233" column="42" selection-start-line="233" selection-start-column="42" selection-end-line="233" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidAllTestSuites.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -345,11 +365,11 @@
         <option value="$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/SearchElements.java" />
-        <option value="$PROJECT_DIR$/AndroidAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
+        <option value="$PROJECT_DIR$/AndroidAllTestSuites.txt" />
       </list>
     </option>
   </component>
@@ -481,7 +501,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542278477942" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542279214881" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -964,7 +984,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542277580141</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update actions for section case #6 and 8">
+      <created>1542278496377</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1542278496377</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1055,7 +1082,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updte pom to use suite from Jenkins" />
     <MESSAGE value="add SamplePipeline.txt" />
     <MESSAGE value="SamplePipeline.txt update parameters: properties([parameters([choice(choices: ['Suite_HomeTab.xml'], description: '', name: 'testSuiteName')]), pipelineTriggers([])])" />
     <MESSAGE value="SamplePipeline.txt update parameters: choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')" />
@@ -1080,7 +1106,8 @@
     <MESSAGE value="add search actions&#10;Change to run on Android" />
     <MESSAGE value="add Constants.SHORTTIME" />
     <MESSAGE value="correct action for section case #6 and 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct action for section case #6 and 8" />
+    <MESSAGE value="update actions for section case #6 and 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="update actions for section case #6 and 8" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/iOS-test-cases.xml">
@@ -1434,23 +1461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidAllTestSuites.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="42" column="96" lean-forward="true" selection-start-line="42" selection-start-column="96" selection-end-line="42" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1515,18 +1525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
-          <folding>
-            <element signature="method#SectionTab#0;class#SectionTab#0" />
-            <element signature="method#TestCaseNo3#0;class#SectionTab#0" />
-            <element signature="method#TestCaseNo4#0;class#SectionTab#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1545,6 +1543,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="737">
           <caret line="233" column="42" selection-start-line="233" selection-start-column="42" selection-end-line="233" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+          <folding>
+            <element signature="method#SectionTab#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo3#0;class#SectionTab#0" />
+            <element signature="method#TestCaseNo4#0;class#SectionTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidAllTestSuites.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
