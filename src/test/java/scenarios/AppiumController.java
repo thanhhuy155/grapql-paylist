@@ -41,7 +41,7 @@ public class AppiumController {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
         String androidBuild = "Android_SprintC_RegressionTest_"+formater2.format(calendar.getTime());
-        String iOSBuild = "iOS_SprintC_RegressionTest_"+formater2.format(calendar.getTime());
+        String iOSBuild = System.getProperty("name")+formater2.format(calendar.getTime());
         switch (executionOS) {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
@@ -107,8 +107,8 @@ public class AppiumController {
                 driver = new AndroidDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
             case IOS_BROWSERSTACK:
-                capabilities.setCapability("device", "iPhone XS");
-                capabilities.setCapability("os_version", "12.0");
+                capabilities.setCapability("device", "iPhone 6S Plus");
+                capabilities.setCapability("os_version", "11.4");
                 capabilities.setCapability("automationName", "XCUITest");
                 capabilities.setCapability("browserstack.debug", true);
                 capabilities.setCapability("app", "bs://" + Constants.IOS_HASHED_APP_ID);

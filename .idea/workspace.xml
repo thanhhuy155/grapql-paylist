@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JenkinsiOSFailedTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndroidAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidAllTestSuites.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplePipline.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsSamplePipline.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Suite_AndroidAllTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MasterSuite_AndroidAllTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Suite_iOSAllTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MasterSuite_iOSAllTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iOSAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -128,30 +136,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="75" />
-          <entry key="txt" value="7" />
-          <entry key="xml" value="12" />
+          <entry key="java" value="78" />
+          <entry key="txt" value="12" />
+          <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="75" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="XML" value="12" />
+          <entry key="JAVA" value="78" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="XML" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="438" />
-          <entry key="txt" value="717" />
-          <entry key="xml" value="27" />
+          <entry key="java" value="466" />
+          <entry key="txt" value="810" />
+          <entry key="xml" value="131" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="438" />
-          <entry key="PLAIN_TEXT" value="717" />
-          <entry key="XML" value="27" />
+          <entry key="JAVA" value="466" />
+          <entry key="PLAIN_TEXT" value="810" />
+          <entry key="XML" value="131" />
         </counts>
       </usages-collector>
     </session>
@@ -161,11 +169,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+            <state relative-caret-position="330">
+              <caret line="110" column="62" selection-start-line="110" selection-start-column="62" selection-end-line="110" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,88 +182,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
+        <entry file="file://$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
-              <folding>
-                <element signature="method#SectionTab#0;class#SectionTab#0" />
-                <element signature="method#TestCaseNo3#0;class#SectionTab#0" />
-                <element signature="method#TestCaseNo4#0;class#SectionTab#0" />
-              </folding>
+            <state relative-caret-position="575">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java">
+        <entry file="file://$PROJECT_DIR$/JenkinsSamplePipline.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#BookmarkTab#0;class#BookmarkTab#0" />
-                <element signature="method#TestCaseNo11#0;class#BookmarkTab#0" />
-                <element signature="method#TestCaseNo12#0;class#BookmarkTab#0" />
-                <element signature="method#TestCaseNo14#0;class#BookmarkTab#0" />
-              </folding>
+            <state relative-caret-position="-50">
+              <caret line="16" column="116" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="233" column="42" selection-start-line="233" selection-start-column="42" selection-end-line="233" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidAllTestSuites.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/elements/SectionElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/elements/ArticleDetailElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="43" />
-              <folding>
-                <element signature="method#bookmarkClick#0;class#ArticleDetailElements#0" />
-                <element signature="method#assertTitleResult#0;class#ArticleDetailElements#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/elements/FeedListElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#feedItemTopStoryClick#0;class#FeedListElements#0" />
-                <element signature="method#assetResult#0;class#FeedListElements#0" />
-                <element signature="e#5917#5918#0" expanded="true" />
-                <element signature="e#5963#5964#0" expanded="true" />
-                <element signature="method#bookmarkArticle#0;class#FeedListElements#0" />
-              </folding>
+            <state relative-caret-position="539">
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -319,11 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Suite_RatingModule.xml" />
-        <option value="$PROJECT_DIR$/Suite_SearchTab.xml" />
-        <option value="$PROJECT_DIR$/Suite_SectionTab.xml" />
-        <option value="$PROJECT_DIR$/Suite_SettingTab.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/draft/draftFile" />
         <option value="$PROJECT_DIR$/Suite_AndroidAllTests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumBaseClass.java" />
@@ -351,13 +294,11 @@
         <option value="$PROJECT_DIR$/Suite_iOSAllTests.xml" />
         <option value="$PROJECT_DIR$/Suite_Bookmark.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_RatingModule.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/target/SamplePipline.txt" />
         <option value="$PROJECT_DIR$/SamplePipline.txt" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
         <option value="$PROJECT_DIR$/iOSAllTestSuites.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
         <option value="$PROJECT_DIR$/src/test/java/actions/ISearch.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SearchTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" />
@@ -370,6 +311,13 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
         <option value="$PROJECT_DIR$/AndroidAllTestSuites.txt" />
+        <option value="$PROJECT_DIR$/Suite_iOSFailedTests.xml" />
+        <option value="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" />
+        <option value="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" />
+        <option value="$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/JenkinsSamplePipline.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
       </list>
     </option>
   </component>
@@ -501,7 +449,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542279214881" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542364197566" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -991,7 +939,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542278496377</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Correct the test suite name">
+      <created>1542279229556</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1542279229556</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1082,7 +1037,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add SamplePipeline.txt" />
     <MESSAGE value="SamplePipeline.txt update parameters: properties([parameters([choice(choices: ['Suite_HomeTab.xml'], description: '', name: 'testSuiteName')]), pipelineTriggers([])])" />
     <MESSAGE value="SamplePipeline.txt update parameters: choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')" />
     <MESSAGE value="SamplePipeline.txt update parameters" />
@@ -1107,19 +1061,10 @@
     <MESSAGE value="add Constants.SHORTTIME" />
     <MESSAGE value="correct action for section case #6 and 8" />
     <MESSAGE value="update actions for section case #6 and 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="update actions for section case #6 and 8" />
+    <MESSAGE value="Correct the test suite name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct the test suite name" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/iOS-test-cases.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/actions/ISetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-726">
@@ -1198,20 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Suite_iOSSectionTab.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Suite_iOSSettingTab.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2442">
@@ -1228,9 +1159,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Suite_SearchTab.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_HomeTab.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1257,13 +1185,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_SearchTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1309,34 +1230,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/SamplePipline.txt" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/RatingModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SamplePipline.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/actions/IFeedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -1371,7 +1268,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Suite_iOSAllTests.xml">
+    <entry file="file://$PROJECT_DIR$/MasterSuite_iOSAllTests.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
@@ -1394,13 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iOSAllTestSuites.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="42" column="104" selection-start-line="42" selection-start-column="104" selection-end-line="42" selection-end-column="104" />
         </state>
       </provider>
     </entry>
@@ -1546,16 +1436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/SectionTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1568,10 +1448,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidAllTestSuites.txt">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/RatingModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="-2411">
+          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JenkinsiOSFailedTests.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
           <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Suite_iOSSectionTab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Suite_iOSSettingTab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_SearchTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Suite_SearchTab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JenkinsSamplePipline.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="16" column="116" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="110" column="62" selection-start-line="110" selection-start-column="62" selection-end-line="110" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="iOSSuite">
+    <suite-files>
+        <suite-file path="Suite_iOSSectionTab.xml" >
+            <class name="tests.TM_SectionTab">
+                <methods>
+                    <include name="SectionTabTCNo2"/>
+                </methods>
+            </class>
+        </suite-file>
+        <suite-file path="Suite_iOSSettingTab.xml">
+            <class name="tests.TM_SettingTab">
+                <methods>
+                    <include name="SettingTCNo1"/>
+                    <include name="SettingTCNo6"/>
+                </methods>
+            </class>
+        </suite-file>
+        <suite-file path="Suite_SearchTab.xml">
+            <class name="tests.TM_SearchTab">
+                <methods>
+                    <include name="SearchTabTCNo4"/>
+                </methods>
+            </class>
+        </suite-file>
+    </suite-files>
+</suite>
