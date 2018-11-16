@@ -32,9 +32,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
-                    <systemPropertyVariables>
+<!--                    <systemPropertyVariables>
                         <builName>${name}</builName>
-                    </systemPropertyVariables>
+                    </systemPropertyVariables>-->
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>

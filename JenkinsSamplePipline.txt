@@ -10,18 +10,18 @@ pipeline{
 	stages{
 		stage ('Test'){
 			steps{
-				node ('android'){
+				node ('iOS'){
 					git branch: 'master',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
-                    bat 'mvn clean test -DsuiteXmlFile=MasterSuite_iOSFailedTests.xml -Dname=iOSTest'
+                    bat 'mvn clean test -DsuiteXmlFile=MasterSuite_iOSFailedTests.xml'
                 }
 			}
 		}
 	}
 	post{
 		always{
-            node('android')
+            node('iOS')
             {
                 bat 'C:\\Users\\ENCLAVEIT\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\android\\workspace\\SamplePipeline\\allure-results -c -o C:\\agents\\android\\workspace\\SamplePipeline\\allure-report'
                 allure([

@@ -41,7 +41,7 @@ public class AppiumController {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
         String androidBuild = "Android_SprintC_RegressionTest_"+formater2.format(calendar.getTime());
-        String iOSBuild = System.getProperty("name")+formater2.format(calendar.getTime());
+        String iOSBuild = "iOSBuild_"+formater2.format(calendar.getTime());
         switch (executionOS) {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));

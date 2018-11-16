@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JenkinsiOSFailedTests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndroidAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplePipline.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsSamplePipline.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Suite_AndroidAllTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MasterSuite_AndroidAllTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Suite_iOSAllTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MasterSuite_iOSAllTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iOSAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JenkinsSamplePipline.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsSamplePipline.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
     </list>
@@ -136,29 +130,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="78" />
+          <entry key="java" value="80" />
           <entry key="txt" value="12" />
           <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="78" />
+          <entry key="JAVA" value="80" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="XML" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="466" />
-          <entry key="txt" value="810" />
+          <entry key="java" value="477" />
+          <entry key="txt" value="883" />
           <entry key="xml" value="131" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="466" />
-          <entry key="PLAIN_TEXT" value="810" />
+          <entry key="JAVA" value="477" />
+          <entry key="PLAIN_TEXT" value="883" />
           <entry key="XML" value="131" />
         </counts>
       </usages-collector>
@@ -172,11 +166,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="110" column="62" selection-start-line="110" selection-start-column="62" selection-end-line="110" selection-end-column="62" />
+            <state relative-caret-position="455">
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/SearchTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+              <folding>
+                <element signature="method#SearchTab#0;class#SearchTab#0" />
+                <element signature="method#TestCaseNo1#0;class#SearchTab#0" />
+                <element signature="method#TestCaseNo2#0;class#SearchTab#0" />
+                <element signature="method#TestCaseNo5#0;class#SearchTab#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/elements/SearchElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -193,8 +211,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JenkinsSamplePipline.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50">
-              <caret line="16" column="116" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
+            <state relative-caret-position="400">
+              <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -202,8 +220,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="514">
+              <caret line="34" column="4" selection-start-line="34" selection-end-line="36" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -315,8 +333,8 @@
         <option value="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/JenkinsSamplePipline.txt" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
       </list>
     </option>
@@ -449,7 +467,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542364197566" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542365260912" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_iOSBookmark.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -946,7 +964,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542279229556</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="add failed suites to run failed tests">
+      <created>1542364249874</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1542364249874</updated>
+    </task>
+    <task id="LOCAL-00045" summary="update BS build name">
+      <created>1542364324816</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1542364324816</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1037,8 +1069,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SamplePipeline.txt update parameters: properties([parameters([choice(choices: ['Suite_HomeTab.xml'], description: '', name: 'testSuiteName')]), pipelineTriggers([])])" />
-    <MESSAGE value="SamplePipeline.txt update parameters: choice(choices: 'Suite_HomeTab.xml', description: 'selected test suite', name: 'testSuiteName')" />
     <MESSAGE value="SamplePipeline.txt update parameters" />
     <MESSAGE value="SamplePipeline.txt update bat" />
     <MESSAGE value="SamplePipeline.txt update &#9;tools" />
@@ -1062,7 +1092,9 @@
     <MESSAGE value="correct action for section case #6 and 8" />
     <MESSAGE value="update actions for section case #6 and 8" />
     <MESSAGE value="Correct the test suite name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct the test suite name" />
+    <MESSAGE value="add failed suites to run failed tests" />
+    <MESSAGE value="update BS build name" />
+    <option name="LAST_COMMIT_MESSAGE" value="update BS build name" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/AndroidTestCases.java">
@@ -1308,19 +1340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SearchTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-          <folding>
-            <element signature="method#SearchTab#0;class#SearchTab#0" />
-            <element signature="method#TestCaseNo1#0;class#SearchTab#0" />
-            <element signature="method#TestCaseNo2#0;class#SearchTab#0" />
-            <element signature="method#TestCaseNo5#0;class#SearchTab#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/BookMarkElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
@@ -1341,13 +1360,6 @@
             <element signature="e#4556#4557#0" expanded="true" />
             <element signature="e#4599#4600#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/SearchElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1503,10 +1515,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SearchTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="404">
+          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+          <folding>
+            <element signature="method#SearchTab#0;class#SearchTab#0" />
+            <element signature="method#TestCaseNo1#0;class#SearchTab#0" />
+            <element signature="method#TestCaseNo2#0;class#SearchTab#0" />
+            <element signature="method#TestCaseNo5#0;class#SearchTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/SearchElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1519,15 +1544,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JenkinsSamplePipline.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="16" column="116" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
+        <state relative-caret-position="400">
+          <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="34" column="4" selection-start-line="34" selection-end-line="36" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="110" column="62" selection-start-line="110" selection-start-column="62" selection-end-line="110" selection-end-column="62" />
+        <state relative-caret-position="455">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
