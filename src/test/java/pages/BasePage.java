@@ -107,6 +107,10 @@ public class BasePage {
         appiumDriver.launchApp();
     }
 
+    public void activateApp(){
+        appiumDriver.executeScript("mobile: activateApp", "com.ap.philly");
+    }
+
     protected void closeApp() {
         appiumDriver.closeApp();
     }

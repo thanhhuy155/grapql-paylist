@@ -54,9 +54,9 @@ public class Utils {
             System.out.print("Scroll to the end of article");
         }
     }
-    public static void scrollToElement(AppiumDriver appiumDriver, MobileElement element){
+    public static void scrollToElement(AppiumDriver appiumDriver, DIRECTION direction, MobileElement element){
         do{
-            scrollScreen(appiumDriver, DIRECTION.DOWN);
+            scrollScreen(appiumDriver, direction);
         }while (checkElementExist(element)==false);
     }
     public static void scrollScreen(AppiumDriver appiumDriver, DIRECTION direction ){

@@ -39,6 +39,7 @@ public class BookmarkTab extends BasePage{
         commonElements.bookMarkTabClick();
 
         //Step: Click and Get bookmarked article
+        waitForVisibilityOf(bookMarkElements.bookmarkTitle);
         String title= bookMarkElements.clickAndGetArticleTitle();
 
         //Verify point: Check respective article is opened
@@ -59,6 +60,7 @@ public class BookmarkTab extends BasePage{
 
         lockDevice();
         unLockDevice();
+        activateApp();
     }
 
     public void TestCaseNo11() {
@@ -69,7 +71,7 @@ public class BookmarkTab extends BasePage{
         commonElements.bookMarkTabClick();
 
         //Step: Click Edit button
-        //waitForVisibilityOf(bookMarkElements.bookmarkTitle);
+        waitForVisibilityOf(bookMarkElements.actionEdit);
         bookMarkElements.actionEditClick();
 
         //Step: Click Back button

@@ -40,7 +40,8 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-        String androidBuild = "Android_SprintC_RegressionTest_"+formater2.format(calendar.getTime());
+        //String androidBuild = "Android_SprintC_RegressionTest_"+formater2.format(calendar.getTime());
+        String androidBuild = "AndroidLocalTestBuild";
         String iOSBuild = "iOSBuild_"+formater2.format(calendar.getTime());
         switch (executionOS) {
             case ANDROID:

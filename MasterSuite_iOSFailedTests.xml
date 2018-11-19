@@ -4,11 +4,7 @@
 <suite name="iOSSuite">
     <suite-files>
         <suite-file path="Suite_iOSSectionTab.xml" >
-            <class name="tests.TM_SectionTab">
-                <methods>
-                    <include name="SectionTabTCNo2"/>
-                </methods>
-            </class>
+            <include name="SectionTabTCNo2"/>
         </suite-file>
         <suite-file path="Suite_iOSSettingTab.xml">
             <class name="tests.TM_SettingTab">

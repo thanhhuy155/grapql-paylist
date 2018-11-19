@@ -39,6 +39,7 @@ public class ArticlePage extends BasePage {
 
         //Step: Click one feed as a sample test
         feedListElements.feedItemClick();
+        String title = articleDetailElements.getTitleArticleDetail();
 
         //Step: Click share button on any article feed card
         articleDetailElements.shareArticleButton.click();
@@ -47,11 +48,11 @@ public class ArticlePage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(commonElements.shareDialog));
 
         //Step: Click a share option
-        commonElements.shareArticleOn(appiumDriver, CommonElements.ShareOptions.SKYPE);
+        commonElements.shareArticleOn(appiumDriver, CommonElements.ShareOptions.GMAIL);
 
         //Verify point: Sharing should accurately appear and fill in respective information (ex: article title)
-        waitForVisibilityOf(commonElements.skypeShareScreen);
-        Assert.assertTrue(Utils.checkElementExist(commonElements.phillyLinkOnSkype));
+        waitForVisibilityOf(commonElements.gmailSubject);
+        Assert.assertTrue(commonElements.gmailSubject.getText().contains(title));
     }
 
     public void TestCaseNo5() {
@@ -61,6 +62,7 @@ public class ArticlePage extends BasePage {
 
         lockDevice();
         unLockDevice();
+        activateApp();
         articleDetailElements.back();
 
         commonElements.settingTabClick();
@@ -76,7 +78,7 @@ public class ArticlePage extends BasePage {
         //Step: Click one feed as a sample test
         feedListElements.feedItemClick();
         String title1 = articleDetailElements.articleDetailTitle.getText();
-        Utils.scrollToElement(appiumDriver,articleDetailElements.readNextLink);
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,articleDetailElements.readNextLink);
 
         articleDetailElements.readNextLink.click();
         String title2 = articleDetailElements.articleDetailTitle.getText();

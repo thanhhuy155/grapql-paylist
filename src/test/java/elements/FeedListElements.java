@@ -65,6 +65,9 @@ public class FeedListElements extends CommonElements implements IFeedList {
     @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView[android.view.ViewGroup[android.widget.TextView[contains(@text,'Philly.com: Latest News')]]]")
     public MobileElement phillyInPlayStore;
 
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.android.vending:id/unauth_play_prism']")
+    public MobileElement playStoreSignInScreen;
+
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Okay, thanks for using the Philly.com App!')]")
     public MobileElement thankForUsePhillyMessage;
     //========================================================================================//

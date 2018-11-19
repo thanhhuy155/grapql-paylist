@@ -11,7 +11,7 @@ pipeline{
 					git branch: 'master',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
-                    bat 'mvn clean test -DsuiteXmlFile=MasterSuite_iOSFailedTests.xml'
+                    bat 'mvn clean test -DsuiteXmlFile=MasterSuite_AndroidAllTests.xml'
                 }
 			}
 		}
@@ -31,11 +31,11 @@ pipeline{
 
             }
 				emailext attachLog: true,
-          			body: '''${SCRIPT, template="/groovy-html-phpunit.template"}
+          			body: '''${SCRIPT, template="/groovy-html-test.template"}
 						<br/>
 						<b/>
 						<p><font font="Verdana" size="3" color="navy">***Please click the link to see the detail report:</font>
-						&QUOT;<a href='http://172.16.0.86:9090/job/SamplePipeline/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
+						&QUOT;<a href='http://117.3.65.55:9500/view/XJavaProjects/job/SamplePipeline/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',

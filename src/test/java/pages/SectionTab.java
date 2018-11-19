@@ -5,7 +5,7 @@ import elements.CommonElements;
 import elements.FeedListElements;
 import elements.SectionElements;
 import io.appium.java_client.AppiumDriver;
-import utils.Constants;
+import org.testng.Assert;
 import utils.Utils;
 
 public class SectionTab extends BasePage {
@@ -80,11 +80,8 @@ public class SectionTab extends BasePage {
         feedListElements.btnShareOnFeedArticle.click();
 
         if (Utils.isAndroidPlatform()) {
-            if (commonElements.gmail.isDisplayed()==false){
-                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
-            }
-            commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
-            commonElements.assertTitleResult(title, sectionElements.getShareGmailTitle());
+            commonElements.shareArticleOn(appiumDriver, CommonElements.ShareOptions.GMAIL);
+            Assert.assertTrue(commonElements.gmailSubject.getText().contains(title));
         } else {
 
         }
@@ -96,7 +93,7 @@ public class SectionTab extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.sectionTabClick();
         sectionElements.sectionItemClick();
-        articleDetailElements.back();
+        sectionElements.backButton.click();
     }
 
     public void TestCaseNo12() {
@@ -109,6 +106,7 @@ public class SectionTab extends BasePage {
 
         lockDevice();
         unLockDevice();
+        activateApp();
 
         sectionElements.backToSections.click();
 

@@ -10,15 +10,15 @@ public class TM_ArticlePage extends BaseTestClass {
     }
 
     @Test(priority = 2)
-    //Note: As current researching, Unable to automatically lock and unlock iOS device from iOS 10.
-    public void ArticleTCNo5() {
-        articlePage.TestCaseNo5();
+    //Note: Unable to implement on iOS since Appium cannot catch system element on Share pop-up.
+    public void ArticleTCNo4() {
+        articlePage.TestCaseNo4();
     }
 
     @Test(priority = 3)
-    //Note: Unable to implement on iOS since Appium cannot catch system element on Share pop-up.
-    public void ArticleTCNo4(){
-        articlePage.TestCaseNo4();
+    //Note: As current researching, Unable to automatically lock and unlock iOS device from iOS 10.
+    public void ArticleTCNo5(){
+        articlePage.TestCaseNo5();
     }
 
     @Test(priority = 4)

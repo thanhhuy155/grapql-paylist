@@ -74,7 +74,9 @@ public class GeneralTest extends BasePage {
 
         lockDevice();
         unLockDevice();
+        activateApp();
 
+        waitForVisibilityOf(feedListElements.bottomTab);
         commonElements.sectionTabClick();
         commonElements.homeTabClick();
         commonElements.settingTabClick();

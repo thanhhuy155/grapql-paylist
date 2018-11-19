@@ -36,7 +36,7 @@ public class CommonElements implements ICommon {
 //    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Gmail']")
 //    public MobileElement gmailShareBox;
 
-    @AndroidFindBy (xpath = "//android.widget.LinearLayout[android.widget.LinearLayout[android.widget.TextView[contains(@text,'Share This Article')]]]")
+    @AndroidFindBy (xpath = "//android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Share This Article')]]/following-sibling::android.widget.ListView")
     public MobileElement shareDialog;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Skype')]")
@@ -66,7 +66,7 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.TextView[@resource-id='com.google.android.gm:id/to_heading']]//android.widget.MultiAutoCompleteTextView[contains(@text,'appteam@philly.com')]")
     public MobileElement gmailTo;
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@resource-id='com.google.android.gm:id/subject_content']/android.widget.EditText[@text='Philly.com Android App Support']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.google.android.gm:id/subject']")
     public MobileElement gmailSubject;
 
     @AndroidFindBy(xpath = "//android.widget.RelativeLayout[@resource-id='com.google.android.gm:id/body_wrapper']//android.view.View")
@@ -94,6 +94,7 @@ public class CommonElements implements ICommon {
 
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.TextView[contains(@text,'Google')]]")
     public MobileElement gmailAppGoogleAccountBtn;
+
     //========================================================================================//
 
     //========================================================================================//
@@ -125,9 +126,16 @@ public class CommonElements implements ICommon {
 
     @Override
     public void selectGmail(String username, String password) {
-        gmail.click();
         if (Utils.checkElementExist(gmailAppSkipBtn)==true){
             addAccountToGmail(username, password);
+            gmailAppTakeMetoGMBtn.click();
+        }
+        else {
+            gmail.click();
+            if (Utils.checkElementExist(gmailAppSkipBtn)==true){
+                addAccountToGmail(username, password);
+                gmailAppTakeMetoGMBtn.click();
+            }
         }
     }
 
@@ -157,6 +165,7 @@ public class CommonElements implements ICommon {
         SKYPE,
         GMAIL
     }
+
     @Override
     public void shareArticleOn(AppiumDriver appiumDriver, ShareOptions option){
         switch (option){
@@ -165,11 +174,12 @@ public class CommonElements implements ICommon {
                     skypeShareOption.click();
                 }
                 else {
-                    Utils.scrollToElement(appiumDriver,skypeShareOption);
+                    Utils.scrollToElement(appiumDriver, Utils.DIRECTION.LEFT, skypeShareOption);
                     skypeShareOption.click();
                 }
                 break;
             case GMAIL:
+                selectGmail(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
                 break;
 
             default:

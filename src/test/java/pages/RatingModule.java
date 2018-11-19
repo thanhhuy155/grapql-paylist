@@ -70,7 +70,8 @@ public class RatingModule extends BasePage{
         feedListElements.positiveRating.click();
 
         //Step: Check play store open to rate
-        Assert.assertTrue(Utils.checkElementExist(feedListElements.phillyInPlayStore));
+        Assert.assertTrue((Utils.checkElementExist(feedListElements.phillyInPlayStore)
+                || Utils.checkElementExist(feedListElements.playStoreSignInScreen)));
     }
 
     public void TestCaseNo3(){
