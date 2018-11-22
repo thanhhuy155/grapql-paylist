@@ -31,11 +31,15 @@ pipeline{
 
             }
 				emailext attachLog: true,
-          			body: '''${SCRIPT, template="/groovy-html-phpunit.template"}
+          			body: '''${SCRIPT, template="/groovy-html-test.template"}
 						<br/>
 						<b/>
-						<p><font font="Verdana" size="3" color="navy">***Please click the link to see the detail report:</font>
+						<p><font font="Verdana" size="2" color="navy">Please click the link to see the detail report:</font>
 						&QUOT;<a href='http://117.3.65.55:9500/view/PhillyDotComNativeAppProjects/job/AndroidAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
+
+						<p><font font="Verdana" size="2" color="navy">BrowserStack Android_SprintC_HotFixRegressionTest build:</font>
+                        &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
+
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',

@@ -68,7 +68,7 @@ public class ArticlePage extends BasePage {
         commonElements.settingTabClick();
         commonElements.sectionTabClick();
         commonElements.homeTabClick();
-        commonElements.bookMarkTab.click();
+        commonElements.bookMarkTabClick(appiumDriver);
     }
 
     public void TestCaseNo30(){

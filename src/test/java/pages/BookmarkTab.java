@@ -95,6 +95,7 @@ public class BookmarkTab extends BasePage{
         commonElements.bookMarkTab.click();
 
         //Step: Click on Edit button at the top right of the screen
+        Utils.sleep((Constants.SHORTTIME)*5);
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
         bookMarkElements.actionEditClick();
 
@@ -126,6 +127,7 @@ public class BookmarkTab extends BasePage{
         commonElements.bookMarkTab.click();
 
         //Verify point: Check bookmarked article display on Bookmark tab
+        Utils.sleep((Constants.SHORTTIME)*5);
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
         Assert.assertTrue(bookMarkElements.getBookmarkedTitles().contains(title));
 
@@ -145,6 +147,7 @@ public class BookmarkTab extends BasePage{
         commonElements.bookMarkTab.click();
 
         //Step: Click on article
+        Utils.sleep((Constants.SHORTTIME)*5);
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
         bookMarkElements.bookmarkTitle.click();
 
