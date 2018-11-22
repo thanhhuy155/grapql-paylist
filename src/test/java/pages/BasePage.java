@@ -124,7 +124,7 @@ public class BasePage {
         Utils.sleep((Constants.SHORTTIME)*2);
     }
 
-    protected void closeApp() {
+    public void closeApp() {
         appiumDriver.closeApp();
     }
 

@@ -55,7 +55,7 @@ public class BaseTestClass extends AppiumBaseClass {
     public void runAfterMethod(ITestResult result){
         //convertScreenshotFiletoByte(result);
         basePage.takeScreenshotOnFailure(result);
-        basePage.resetApp();
+        basePage.closeApp();
     }
 
     @AfterTest

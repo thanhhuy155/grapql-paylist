@@ -11,6 +11,8 @@ import org.testng.Assert;
 import utils.Constants;
 import utils.Utils;
 
+import java.time.Duration;
+
 public class CommonElements implements ICommon {
 
     public CommonElements(AppiumDriver driver) {
@@ -192,12 +194,23 @@ public class CommonElements implements ICommon {
         Utils.sleep((Constants.SHORTTIME)*2);
         googleAccountTextBox.sendKeys(password);
         googleAccountPasswordNextButton.click();
-        Utils.waitForElementVisible(appiumDriver, googleAccountIAgreeButton);
-        googleAccountIAgreeButton.click();
-        Utils.waitForElementVisible(appiumDriver, googleAccountAcceptButton);
-        googleAccountAcceptButton.click();
-        if (!Utils.checkElementExist(bookMarkTab)&& !Utils.checkElementExist(gmailAppTakeMetoGMBtn)){
+        Utils.sleep((Constants.SHORTTIME)*5);
+        if (!Utils.checkElementExist(googleAccountIAgreeButton)){
+            try {
+                appiumDriver.runAppInBackground(Duration.ofSeconds(1));
+            }catch (Exception e){
+
+            }
+            Utils.sleep((Constants.SHORTTIME)*2);
+        }
+        else {
+            googleAccountIAgreeButton.click();
+            Utils.waitForElementVisible(appiumDriver, googleAccountAcceptButton);
             googleAccountAcceptButton.click();
+            if (!Utils.checkElementExist(bookMarkTab)&& !Utils.checkElementExist(gmailAppTakeMetoGMBtn)){
+                googleAccountAcceptButton.click();
+            }
+
         }
     }
 

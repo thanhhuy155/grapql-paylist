@@ -8,7 +8,7 @@ import utils.Constants;
 import utils.Utils;
 
 public class BookmarkTab extends BasePage{
-    private BookMarkElements bookMarkElements;
+    public BookMarkElements bookMarkElements;
     private ArticleDetailElements articleDetailElements;
     private CommonElements commonElements;
     private FeedListElements feedListElements;
