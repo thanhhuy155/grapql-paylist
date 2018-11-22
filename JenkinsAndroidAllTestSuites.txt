@@ -40,7 +40,7 @@ pipeline{
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
 					subject: '$DEFAULT_SUBJECT_AndroidAllTestSuites',
-          			to: 'hera@enclave.vn, donna@enclave.vn, pduncan@phillynews.com, tdang@philly.com'
+          			to: 'hera@enclave.vn, donna@enclave.vn, pduncan@phillynews.com, tdang@philly.com, hanie@enclave.vn, missy@enclave.vn'
 		}
 	}
 

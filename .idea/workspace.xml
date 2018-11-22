@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="Maintenance: correct failed test on Android">
+    <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="Maintenance: change n">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actions/ICommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/ICommon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actions/IFeedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actions/IFeedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ArticlePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/GeneralTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GeneralTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RatingModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RatingModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SectionTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/actions/ICommon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/actions/ICommon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/actions/IFeedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/actions/IFeedList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/elements/ArticleDetailElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/elements/ArticleDetailElements.class" afterDir="false" />
@@ -160,30 +148,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="164" />
-          <entry key="txt" value="14" />
+          <entry key="java" value="165" />
+          <entry key="txt" value="15" />
           <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="164" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="JAVA" value="165" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="XML" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1410" />
-          <entry key="txt" value="1018" />
+          <entry key="java" value="1422" />
+          <entry key="txt" value="1127" />
           <entry key="xml" value="135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1410" />
-          <entry key="PLAIN_TEXT" value="1018" />
+          <entry key="JAVA" value="1422" />
+          <entry key="PLAIN_TEXT" value="1127" />
           <entry key="XML" value="135" />
         </counts>
       </usages-collector>
@@ -195,23 +183,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="100" column="56" selection-start-line="100" selection-start-column="56" selection-end-line="100" selection-end-column="56" />
+            <state relative-caret-position="497">
+              <caret line="43" column="71" selection-start-line="43" selection-start-column="71" selection-end-line="43" selection-end-column="71" />
               <folding>
-                <element signature="method#isAndroidPlatform#0;class#Utils#0" />
-                <element signature="class#DIRECTION#0;class#Utils#0" />
-                <element signature="method#iOSScrollToElement#0;class#Utils#0" />
-                <element signature="method#androidScroll#0;class#Utils#0" />
-                <element signature="method#scrollToElement#0;class#Utils#0" />
-                <element signature="method#exampleScroll#0;class#Utils#0" />
-                <element signature="method#scrollToElementexample#0;class#Utils#0" />
-                <element signature="method#scrollBySwipe#0;class#Utils#0" />
-                <element signature="method#sleep#0;class#Utils#0" />
-                <element signature="method#getCurrentYear#0;class#Utils#0" />
-                <element signature="method#waitForElementVisible#0;class#Utils#0" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="42" column="136" selection-start-line="42" selection-start-column="136" selection-end-line="42" selection-end-column="136" />
             </state>
           </provider>
         </entry>
@@ -304,11 +291,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+            <state relative-caret-position="650">
+              <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#SETTING_TITLE#0;class#Constants#0" />
@@ -323,24 +310,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
               <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.0.0/java-client-6.0.0.jar!/io/appium/java_client/InteractsWithApps.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-              <folding>
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="method#installApp#1;class#InteractsWithApps#0" />
-                <element signature="method#isAppInstalled#0;class#InteractsWithApps#0" />
-                <element signature="method#removeApp#1;class#InteractsWithApps#0" />
-                <element signature="e#2606#2607#0" expanded="true" />
-                <element signature="e#2686#2687#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -432,12 +401,10 @@
         <option value="$PROJECT_DIR$/src/test/java/elements/SearchElements.java" />
         <option value="$PROJECT_DIR$/AndroidAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/Suite_iOSFailedTests.xml" />
-        <option value="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_ArticlePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
         <option value="$PROJECT_DIR$/JenkinsSamplePipline.txt" />
         <option value="$PROJECT_DIR$/src/test/java/actions/ICommon.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" />
@@ -455,6 +422,8 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
+        <option value="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" />
       </list>
     </option>
   </component>
@@ -586,7 +555,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542854250305" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542854872026" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MasterSuite_AndroidAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -1160,13 +1129,17 @@
       <option name="project" value="LOCAL" />
       <updated>1542616763078</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Maintenance: add more waiting time to action to stabilize">
+      <created>1542854382144</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1542854382144</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TM_BookmarkTab_BookMarkTCNo12 - 2018.11.20 at 21h 53m 36s.xml">
-      <configuration name="TM_BookmarkTab.BookMarkTCNo12" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TM_BookmarkTab_BookMarkTCNo14 - 2018.11.20 at 21h 56m 52s.xml">
       <configuration name="TM_BookmarkTab.BookMarkTCNo14" configurationId="TestNG" />
     </history-entry>
@@ -1194,6 +1167,9 @@
     <history-entry file="TM_BookmarkTab_BookMarkTCNo14 - 2018.11.22 at 09h 32m 42s.xml">
       <configuration name="TM_BookmarkTab.BookMarkTCNo14" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TM_BookmarkTab_BookMarkTCNo14 - 2018.11.22 at 09h 36m 39s.xml">
+      <configuration name="TM_BookmarkTab.BookMarkTCNo14" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="43382000" />
@@ -1211,7 +1187,7 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.13673139" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.19174758" />
       <window_info id="Structure" order="1" sideWeight="0.5074257" side_tool="true" weight="0.20738254" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1221,7 +1197,7 @@
       <window_info id="Favorites" order="7" sideWeight="0.5036145" side_tool="true" weight="0.19905533" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4539007" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.2817552" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.2817552" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45150116" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1251,7 +1227,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SamplePipeline.txt update  bat 'mvn clean test -DsuiteXmlFile=${params.testSuiteName}'" />
     <MESSAGE value="SamplePipeline.txt update: choices: ['Suite_HomeTab.xml']" />
     <MESSAGE value="SamplePipeline.txt update: choices: &quot;Suite_HomeTab.xml&quot;" />
     <MESSAGE value="SamplePipeline.txt update:  bat 'mvn clean test Dsurefire.suiteXmlFiles=${params.testSuiteName}'" />
@@ -1276,7 +1251,8 @@
     <MESSAGE value="remove out the name paramenter on pom file" />
     <MESSAGE value="remove Jenkins parameter" />
     <MESSAGE value="Maintenance: correct failed test on Android" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maintenance: correct failed test on Android" />
+    <MESSAGE value="Maintenance: add more waiting time to action to stabilize" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maintenance: add more waiting time to action to stabilize" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/iOSTestCases.java">
@@ -1468,13 +1444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="37" selection-start-line="37" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JenkinsSamplePipline.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1569,16 +1538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="7" column="115" selection-start-line="7" selection-start-column="115" selection-end-line="7" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1774,13 +1733,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        <state relative-caret-position="650">
+          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#SETTING_TITLE#0;class#Constants#0" />
             <element signature="class#LABLE#0;class#Constants#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="43" column="71" selection-start-line="43" selection-start-column="71" selection-end-line="43" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="42" column="136" selection-start-line="42" selection-start-column="136" selection-end-line="42" selection-end-column="136" />
         </state>
       </provider>
     </entry>
