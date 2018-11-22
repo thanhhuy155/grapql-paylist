@@ -69,7 +69,8 @@ public class RatingModule extends BasePage{
         //Step: Select positive rating - Yes -  to rate on Play Store
         feedListElements.positiveRating.click();
 
-        //Step: Check play store open to rate
+        //Verify point: Check play store open to rate
+        commonElements.signInToGoogleAccount(appiumDriver,Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
         Assert.assertTrue((Utils.checkElementExist(feedListElements.phillyInPlayStore)
                 || Utils.checkElementExist(feedListElements.playStoreSignInScreen)));
     }
