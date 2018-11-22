@@ -7,18 +7,18 @@ pipeline{
 	stages{
 		stage ('Test'){
 			steps{
-				node ('iOS'){
+				node ('android'){
 					git branch: 'master',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
-                    bat 'mvn clean test -DsuiteXmlFile=MasterSuite_AndroidAllTests.xml'
+                    bat 'mvn clean test -DsuiteXmlFile=MasterSuite_AndroidFailedTests.xml'
                 }
 			}
 		}
 	}
 	post{
 		always{
-            node('iOS')
+            node('android')
             {
                 bat 'C:\\Users\\ENCLAVEIT\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\android\\workspace\\SamplePipeline\\allure-results -c -o C:\\agents\\android\\workspace\\SamplePipeline\\allure-report'
                 allure([
@@ -31,7 +31,7 @@ pipeline{
 
             }
 				emailext attachLog: true,
-          			body: '''${SCRIPT, template="/groovy-html-test.template"}
+          			body: '''${SCRIPT, template="/groovy-html-phpunit.template"}
 						<br/>
 						<b/>
 						<p><font font="Verdana" size="3" color="navy">***Please click the link to see the detail report:</font>

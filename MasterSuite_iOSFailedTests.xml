@@ -13,6 +13,7 @@
                     <include name="SettingTCNo6"/>
                 </methods>
             </class>
+            
         </suite-file>
         <suite-file path="Suite_SearchTab.xml">
             <class name="tests.TM_SearchTab">
