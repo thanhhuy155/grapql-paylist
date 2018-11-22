@@ -4,7 +4,7 @@ import elements.CommonElements;
 import io.appium.java_client.AppiumDriver;
 
 public interface ICommon {
-    void selectGmail(String username, String password);
+    void selectGmail(AppiumDriver appiumDriver,String username, String password);
 
     void assertTitleResult(String expected, String actual);
 
@@ -18,15 +18,15 @@ public interface ICommon {
 
     void searchTabClick();
 
-    void bookMarkTabClick();
+    void bookMarkTabClick(AppiumDriver appiumDriver);
 
     void settingTabClick();
 
     void shareArticleOn(AppiumDriver appiumDriver, CommonElements.ShareOptions option);
 
-    void signInToGoogleAccount(String username, String password);
+    void signInToGoogleAccount(AppiumDriver appiumDriver, String username, String password);
 
-    void addAccountToGmail(String username, String password);
+    void addAccountToGmail(AppiumDriver appiumDriver, String username, String password);
 
     String getShareGmailTitle();
 }

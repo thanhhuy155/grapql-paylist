@@ -138,13 +138,12 @@ public class FeedListElements extends CommonElements implements IFeedList {
     }
 
     @Override
-    public void buttonBookmarkClick() {
-
+    public void buttonBookmarkClick(AppiumDriver appiumDriver) {
         btnBookmarkOnFeedArticle.click();
-        Utils.sleep(Constants.SHORTTIME);
+        Utils.sleep((Constants.SHORTTIME)*2);
         if(Utils.isAndroidPlatform()){
             if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
-                signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+                signInToGoogleAccount(appiumDriver, Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
             }
             else if(Utils.checkElementExist(googleClientLogin)==true){
                 googleClientLogin.click();

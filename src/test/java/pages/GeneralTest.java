@@ -25,7 +25,7 @@ public class GeneralTest extends BasePage {
 
         commonElements.settingTabClick();
         commonElements.sectionTabClick();
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         turnOnWifi();
         closeApp();
@@ -38,7 +38,7 @@ public class GeneralTest extends BasePage {
 
         commonElements.settingTabClick();
         commonElements.sectionTabClick();
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         turnOnWifi();
     }
@@ -51,7 +51,7 @@ public class GeneralTest extends BasePage {
 
         commonElements.settingTabClick();
         commonElements.sectionTabClick();
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         turnOnWifi();
     }
@@ -66,7 +66,7 @@ public class GeneralTest extends BasePage {
         if(!Utils.isAndroidPlatform()){
             commonElements.searchTabClick();
         }
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
     }
 
     public void TestCaseNo7() {

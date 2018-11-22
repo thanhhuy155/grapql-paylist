@@ -47,8 +47,7 @@ public class HomeTab extends BasePage {
         String title = feedListElements.getFeedItemTitle();
         feedListElements.buttonShareClick();
 
-        //Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
-        commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
+        commonElements.selectGmail(appiumDriver,Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
         feedListElements.assetResult(title, feedListElements.getShareGmailTitle());
     }
 

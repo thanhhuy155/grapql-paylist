@@ -11,6 +11,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import scenarios.AppiumController;
+import utils.Constants;
+import utils.Utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -108,7 +110,18 @@ public class BasePage {
     }
 
     public void activateApp(){
-        appiumDriver.executeScript("mobile: activateApp", "com.ap.philly");
+//        Map<String, Object> params = new HashMap<>();
+//        params.put("bundleId", "com.ap.philly");
+//        appiumDriver.executeScript("mobile: activateApp", params);
+//        String a = appiumDriver.getRemoteAddress().toString();
+//        System.out.print("RemoteURL: "+a);
+//        appiumDriver.activateApp(a);
+        try {
+            appiumDriver.runAppInBackground(Duration.ofSeconds(1));
+        }catch (Exception e){
+
+        }
+        Utils.sleep((Constants.SHORTTIME)*2);
     }
 
     protected void closeApp() {

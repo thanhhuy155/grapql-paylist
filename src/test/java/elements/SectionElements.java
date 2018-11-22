@@ -31,7 +31,7 @@ public class SectionElements extends CommonElements implements ISection {
     @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeButton")
     public MobileElement backButton;
 
-    @AndroidFindBy(id="Navigate up")
+    @AndroidFindBy(xpath="//android.widget.ImageButton[@content-desc=\"Navigate up\"]")
     public MobileElement backToSections;
 
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[android.widget.RelativeLayout[android.widget.TextView[@text='News']]]")

@@ -163,7 +163,7 @@ public class RatingModule extends BasePage{
         Assert.assertTrue(Utils.checkElementExist(commonElements.sendEmaiPopup));
 
         //Step: select email to submit
-        commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
+        commonElements.selectGmail(appiumDriver,Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
 
         //Verify point: Email default values should match Settings Screen submit feedback
         Assert.assertTrue(commonElements.gmailTo.getText().contains("appteam@philly.com"));

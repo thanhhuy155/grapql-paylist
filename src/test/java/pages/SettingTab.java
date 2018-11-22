@@ -42,7 +42,7 @@ public class SettingTab extends BasePage {
         settingElements.submitFeedbackLink.click();
 
         //Step: Click email option
-        commonElements.selectGmail(Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
+        commonElements.selectGmail(appiumDriver,Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
 
         //Verify point: email window opens
         Assert.assertTrue(Utils.checkElementExist(commonElements.gmailComposeScreen));

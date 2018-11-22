@@ -30,13 +30,13 @@ public class BookmarkTab extends BasePage{
 
         //Step: Bookmark article
         waitForVisibilityOf(feedListElements.btnBookmarkOnFeedArticle);
-        feedListElements.buttonBookmarkClick();
+        feedListElements.buttonBookmarkClick(appiumDriver);
 
         //Step: Go to Bookmark tab
         if(!Utils.isAndroidPlatform()){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
         }
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         //Step: Click and Get bookmarked article
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
@@ -56,7 +56,7 @@ public class BookmarkTab extends BasePage{
 
         //Step: Go to Bookmark tab
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTabClick(appiumDriver);
 
         lockDevice();
         unLockDevice();
@@ -68,7 +68,7 @@ public class BookmarkTab extends BasePage{
 
         //Step: Go to Bookmark tab
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTabClick(appiumDriver);
 
         //Step: Click Edit button
         waitForVisibilityOf(bookMarkElements.actionEdit);
@@ -85,13 +85,14 @@ public class BookmarkTab extends BasePage{
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
 
-        feedListElements.buttonBookmarkClick();
+        waitForVisibilityOf(feedListElements.btnBookmarkOnFeedArticle);
+        feedListElements.buttonBookmarkClick(appiumDriver);
 
         //Step: Go to Bookmark tab
         if(!Utils.isAndroidPlatform()){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
         }
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         //Step: Click on Edit button at the top right of the screen
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
@@ -111,20 +112,18 @@ public class BookmarkTab extends BasePage{
     public void TestCaseNo14() {
         lauchApp();
 
-        //Step: Scroll to article
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
-
 
         //Step: Get article title and Bookmark
         String title = feedListElements.getFeedItemTitle();
-        feedListElements.buttonBookmarkClick();
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+        feedListElements.buttonBookmarkClick(appiumDriver);
 
         //Step: Go to Bookmark tab
         if(!Utils.isAndroidPlatform()){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
         }
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         //Verify point: Check bookmarked article display on Bookmark tab
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
@@ -140,27 +139,29 @@ public class BookmarkTab extends BasePage{
         //Pre-condition: Add article to Bookmark tab
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
-        feedListElements.buttonBookmarkClick();
+        feedListElements.buttonBookmarkClick(appiumDriver);
 
         //Step: Go to Bookmark tab
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
 
         //Step: Click on article
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
         bookMarkElements.bookmarkTitle.click();
 
         //Step: Click on Share button
+        waitForVisibilityOf(articleDetailElements.shareArticleButton);
         articleDetailElements.shareArticleButton.click();
 
         //Verify point: Share dialog should open
+        Utils.sleep((Constants.SHORTTIME)*5);
         Assert.assertTrue(Utils.checkElementExist(commonElements.shareDialog));
 
         //Step: Click a share option
-        commonElements.shareArticleOn(appiumDriver, CommonElements.ShareOptions.SKYPE);
+        commonElements.shareArticleOn(appiumDriver, CommonElements.ShareOptions.GMAIL);
 
         //Verify point: Sharing should accurately appear and fill in respective information (ex: article title)
-        waitForVisibilityOf(commonElements.skypeShareScreen);
-        Assert.assertTrue(Utils.checkElementExist(commonElements.phillyLinkOnSkype));
+        waitForVisibilityOf(commonElements.gmailContent);
+        Assert.assertTrue(commonElements.gmailContent.getText().contains("philly.com"));
 
     }
 }

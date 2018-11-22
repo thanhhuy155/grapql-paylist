@@ -36,7 +36,7 @@ public class CommonElements implements ICommon {
 //    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Gmail']")
 //    public MobileElement gmailShareBox;
 
-    @AndroidFindBy (xpath = "//android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Share This Article')]]/following-sibling::android.widget.ListView")
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'Share This Article')]")
     public MobileElement shareDialog;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Skype')]")
@@ -125,15 +125,15 @@ public class CommonElements implements ICommon {
     //========================================================================================//
 
     @Override
-    public void selectGmail(String username, String password) {
+    public void selectGmail(AppiumDriver appiumDriver, String username, String password) {
         if (Utils.checkElementExist(gmailAppSkipBtn)==true){
-            addAccountToGmail(username, password);
+            addAccountToGmail(appiumDriver,username, password);
             gmailAppTakeMetoGMBtn.click();
         }
         else {
             gmail.click();
             if (Utils.checkElementExist(gmailAppSkipBtn)==true){
-                addAccountToGmail(username, password);
+                addAccountToGmail(appiumDriver,username, password);
                 gmailAppTakeMetoGMBtn.click();
             }
         }
@@ -156,11 +156,6 @@ public class CommonElements implements ICommon {
         }
     }
 
-//    @Override
-//    public void gmailShareBoxClick() {
-//        gmailShareBox.click();
-//    }
-
     public enum ShareOptions{
         SKYPE,
         GMAIL
@@ -179,7 +174,7 @@ public class CommonElements implements ICommon {
                 }
                 break;
             case GMAIL:
-                selectGmail(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+                selectGmail(appiumDriver,Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
                 break;
 
             default:
@@ -189,25 +184,29 @@ public class CommonElements implements ICommon {
     }
 
     @Override
-    public void signInToGoogleAccount(String username, String password){
+    public void signInToGoogleAccount(AppiumDriver appiumDriver, String username, String password){
         Utils.sleep((Constants.SHORTTIME)*2);
+        Utils.waitForElementVisible(appiumDriver, googleAccountTextBox);
         googleAccountTextBox.sendKeys(username);
         googleAccountNextButton.click();
-        Utils.sleep(Constants.SHORTTIME);
+        Utils.sleep((Constants.SHORTTIME)*2);
         googleAccountTextBox.sendKeys(password);
         googleAccountPasswordNextButton.click();
-        Utils.sleep(Constants.SHORTTIME);
+        Utils.waitForElementVisible(appiumDriver, googleAccountIAgreeButton);
         googleAccountIAgreeButton.click();
-        Utils.sleep(Constants.SHORTTIME);
+        Utils.waitForElementVisible(appiumDriver, googleAccountAcceptButton);
         googleAccountAcceptButton.click();
+        if (!Utils.checkElementExist(bookMarkTab)&& !Utils.checkElementExist(gmailAppTakeMetoGMBtn)){
+            googleAccountAcceptButton.click();
+        }
     }
 
     @Override
-    public void addAccountToGmail(String username, String password){
+    public void addAccountToGmail(AppiumDriver appiumDriver, String username, String password){
             gmailAppSkipBtn.click();
             gmailAppAddAccountBtn.click();
             gmailAppGoogleAccountBtn.click();
-            signInToGoogleAccount(username, password);
+            signInToGoogleAccount(appiumDriver, username, password);
     }
 
     //========================================================================================//
@@ -230,12 +229,12 @@ public class CommonElements implements ICommon {
     }
 
     @Override
-    public void bookMarkTabClick() {
+    public void bookMarkTabClick(AppiumDriver appiumDriver) {
         bookMarkTab.click();
-        Utils.sleep(Constants.SHORTTIME);
+        Utils.sleep((Constants.SHORTTIME)*2);
         if(Utils.isAndroidPlatform()){
             if(Utils.checkElementExist(infoCheckingScreen)==true||Utils.checkElementExist(googleAccountTextBox)==true){
-                signInToGoogleAccount(Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
+                signInToGoogleAccount(appiumDriver,Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
             }
             else if(Utils.checkElementExist(googleClientLogin)==true){
                 googleClientLogin.click();

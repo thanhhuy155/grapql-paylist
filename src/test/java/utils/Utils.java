@@ -8,11 +8,14 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import scenarios.AppiumController;
 
 import java.time.Duration;
 import java.util.Calendar;
 import java.util.HashMap;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class Utils {
     public static boolean isAndroidPlatform() {
@@ -152,5 +155,9 @@ public class Utils {
         int year = now.get(Calendar.YEAR);
         String yearInString = String.valueOf(year);
         return yearInString;
+    }
+    public static void waitForElementVisible(AppiumDriver appiumDriver,MobileElement element) {
+        WebDriverWait webDriverWait = new WebDriverWait(appiumDriver, 30);
+        webDriverWait.until(visibilityOf(element));
     }
 }

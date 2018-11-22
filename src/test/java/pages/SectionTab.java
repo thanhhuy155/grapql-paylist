@@ -6,6 +6,7 @@ import elements.FeedListElements;
 import elements.SectionElements;
 import io.appium.java_client.AppiumDriver;
 import org.testng.Assert;
+import utils.Constants;
 import utils.Utils;
 
 public class SectionTab extends BasePage {
@@ -106,6 +107,7 @@ public class SectionTab extends BasePage {
 
         lockDevice();
         unLockDevice();
+        Utils.sleep(Constants.SHORTTIME);
         activateApp();
 
         sectionElements.backToSections.click();
@@ -113,7 +115,7 @@ public class SectionTab extends BasePage {
         commonElements.settingTabClick();
         commonElements.homeTabClick();
         commonElements.searchTabClick();
-        commonElements.bookMarkTabClick();
+        commonElements.bookMarkTab.click();
     }
 
 }

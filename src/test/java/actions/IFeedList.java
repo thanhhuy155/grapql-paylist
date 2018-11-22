@@ -1,5 +1,7 @@
 package actions;
 
+import io.appium.java_client.AppiumDriver;
+
 public interface IFeedList {
     String getFeedItemTitle();
 
@@ -19,6 +21,6 @@ public interface IFeedList {
 
     void buttonShareClick();
 
-    void buttonBookmarkClick();
+    void buttonBookmarkClick(AppiumDriver appiumDriver);
 
 }
