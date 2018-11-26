@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "FailedTestsHomeTabSuite">
+    <test name = "FailedTestsHomeTabTest">
+        <classes>
+            <class name = "tests.TM_HomeTab">
+                <methods>
+                    <include name="HomeTabTCNo2"/>
+                    <include name="HomeTabTCNo6"/>
+                    <include name="HomeTabTCNo8"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

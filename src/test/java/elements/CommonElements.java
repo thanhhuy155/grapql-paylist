@@ -187,7 +187,7 @@ public class CommonElements implements ICommon {
 
     @Override
     public void signInToGoogleAccount(AppiumDriver appiumDriver, String username, String password){
-        Utils.sleep((Constants.SHORTTIME)*2);
+        Utils.sleep((Constants.SHORTTIME)*3);
         Utils.waitForElementVisible(appiumDriver, googleAccountTextBox);
         googleAccountTextBox.sendKeys(username);
         googleAccountNextButton.click();

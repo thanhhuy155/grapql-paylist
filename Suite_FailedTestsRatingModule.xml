@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "FailedTestsRatingModuleSuite">
+    <test name = "FailedTestsRatingModuleTest">
+        <classes>
+            <class name = "tests.TM_RatingModule">
+                <methods>
+                    <include name="RatingModuleTCNo2"/>
+                    <include name="RatingModuleTCNo3"/>
+                    <include name="RatingModuleTCNo4"/>
+                    <include name="RatingModuleTCNo5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

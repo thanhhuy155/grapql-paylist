@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "FailedTestsSectionTabSuite">
+    <test name = "FailedTestsSectionTabTest">
+        <classes>
+            <class name = "tests.TM_SectionTab">
+                <methods>
+                    <include name="SectionTabTCNo8"/>
+                    <include name="SectionTabTCNo11"/>
+                    <include name="SectionTabTCNo12"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

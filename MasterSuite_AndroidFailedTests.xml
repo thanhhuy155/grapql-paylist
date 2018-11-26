@@ -3,73 +3,10 @@
 
 <suite name="FailedTestsSuite">
     <suite-files>
-        <suite-file path="Suite_Bookmark.xml" >
-            <test name="BookmarkTest">
-                <classes>
-                    <class name = "tests.TM_BookmarkTab">
-                        <methods>
-                            <include name="BookMarkTCNo14"/>
-                            <include name="BookMarkTCNo16"/>
-                        </methods>
-                    </class>
-                </classes>
-            </test>
-        </suite-file>
-
-        <suite-file path="Suite_GeneralTest.xml" >
-            <test name="GeneralTest">
-                <classes>
-                    <class name = "tests.TM_GeneralTest">
-                        <methods>
-                            <include name="GeneralTCNo1"/>
-                            <include name="GeneralTCNo7"/>
-                        </methods>
-                    </class>
-                </classes>
-            </test>
-        </suite-file>
-
-        <suite-file path="Suite_HomeTab.xml" >
-            <test name="HomeTabTest">
-                <classes>
-                    <class name = "tests.TM_HomeTab">
-                        <methods>
-                            <include name="HomeTabTCNo2"/>
-                            <include name="HomeTabTCNo6"/>
-                            <include name="HomeTabTCNo8"/>
-                        </methods>
-                    </class>
-                </classes>
-            </test>
-        </suite-file>
-
-        <suite-file path="Suite_RatingModule.xml" >
-            <test name="RatingModuleTest">
-                <classes>
-                    <class name = "tests.TM_RatingModule">
-                        <methods>
-                            <include name="RatingModuleTCNo2"/>
-                            <include name="RatingModuleTCNo3"/>
-                            <include name="RatingModuleTCNo4"/>
-                            <include name="RatingModuleTCNo5"/>
-                        </methods>
-                    </class>
-                </classes>
-            </test>
-        </suite-file>
-
-        <suite-file path="Suite_SectionTab.xml" >
-            <test name="SectionTabTest">
-                <classes>
-                    <class name = "tests.TM_SectionTab">
-                        <methods>
-                            <include name="SectionTabTCNo8"/>
-                            <include name="SectionTabTCNo11"/>
-                            <include name="SectionTabTCNo12"/>
-                        </methods>
-                    </class>
-                </classes>
-            </test>
-        </suite-file>
+        <suite-file path="Suite_FailedTestsBookmark.xml" />
+        <suite-file path="Suite_FailedTestsGeneralTest.xml" />
+        <suite-file path="Suite_FailedTestsSectionTab.xml" />
+        <suite-file path="Suite_FailedTestsRatingModule.xml" />
+        <suite-file path="Suite_FailedTestsHomeTab.xml" />
     </suite-files>
 </suite>

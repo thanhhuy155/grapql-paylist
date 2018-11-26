@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "FailedTestsGeneralTestSuite">
+    <test name = "FailedTestsGeneralTest">
+        <classes>
+            <class name = "tests.TM_GeneralTest">
+                <methods>
+                    <include name="GeneralTCNo1"/>
+                    <include name="GeneralTCNo7"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
