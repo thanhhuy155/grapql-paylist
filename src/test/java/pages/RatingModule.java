@@ -42,6 +42,9 @@ public class RatingModule extends BasePage{
         //Step: Scroll up screen and check the Rating Module appears
         Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
         Utils.checkElementExist(feedListElements.ratingModule);
+
+        //Post-condition: Reset app data
+        resetApp();
     }
 
     public void TestCaseNo2(){
@@ -70,9 +73,15 @@ public class RatingModule extends BasePage{
         feedListElements.positiveRating.click();
 
         //Verify point: Check play store open to rate
+        waitForVisibilityOf(commonElements.playStoreSignInBtn);
+        commonElements.playStoreSignInBtn.click();
+        waitForVisibilityOf(commonElements.googleAccountTextBox);
         commonElements.signInToGoogleAccount(appiumDriver,Constants.GOOGLEACCOUNT_USERNAME, Constants.GOOGLEACCOUNT_PASSWORD);
         Assert.assertTrue((Utils.checkElementExist(feedListElements.phillyInPlayStore)
                 || Utils.checkElementExist(feedListElements.playStoreSignInScreen)));
+
+        //Post-condition: Reset app data
+        resetApp();
     }
 
     public void TestCaseNo3(){
@@ -102,7 +111,10 @@ public class RatingModule extends BasePage{
 
         //Step: Check play store not appear and thank you message appears on Feed list
         Assert.assertTrue(Utils.checkElementExist(feedListElements.thankForUsePhillyMessage));
-        Assert.assertFalse(Utils.checkElementExist(feedListElements.phillyInPlayStore));
+        Assert.assertFalse(Utils.checkElementExist(feedListElements.playStoreSignInBtn));
+
+        //Post-condition: Reset app data
+        resetApp();
     }
 
     public void TestCaseNo4() {
@@ -132,7 +144,10 @@ public class RatingModule extends BasePage{
 
         //Step: Check play store not appear
         //Assert.assertTrue(Utils.checkElementExist(feedListElements.thankForUsePhillyMessage));
-        Assert.assertFalse(Utils.checkElementExist(feedListElements.phillyInPlayStore));
+        Assert.assertFalse(Utils.checkElementExist(feedListElements.playStoreSignInBtn));
+
+        //Post-condition: Reset app data
+        resetApp();
     }
 
     public void TestCaseNo5(){

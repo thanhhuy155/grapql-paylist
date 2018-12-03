@@ -53,8 +53,8 @@ public class BaseTestClass extends AppiumBaseClass {
 
     @AfterMethod
     public void runAfterMethod(ITestResult result){
-        //convertScreenshotFiletoByte(result);
-        basePage.takeScreenshotOnFailure(result);
+        convertScreenshotFiletoByte(result);
+        //basePage.takeScreenshotOnFailure(result);
         basePage.closeApp();
     }
 

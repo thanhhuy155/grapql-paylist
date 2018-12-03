@@ -97,6 +97,9 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.TextView[contains(@text,'Google')]]")
     public MobileElement gmailAppGoogleAccountBtn;
 
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.android.vending:id/unauth_home_sign_in_button']")
+    public MobileElement playStoreSignInBtn;
+
     //========================================================================================//
 
     //========================================================================================//
