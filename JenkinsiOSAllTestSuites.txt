@@ -36,11 +36,15 @@ pipeline{
 						<b/>
 						<p><font font="Verdana" size="3" color="navy">***Please click the link to see the detail report:</font>
 						&QUOT;<a href='http://117.3.65.55:9500/view/PhillyDotComNativeAppProjects/job/iOSAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
+						<b/>
+						<p><font font="Verdana" size="2" color="navy">BrowserStack iOS_SprintD_RegressionTest build: </font>
+                        &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
+
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
-					subject: '$DEFAULT_SUBJECT_iOSAllTestSuites',
-          			to: 'hera@enclave.vn, donna@enclave.vn, pduncan@phillynews.com, tdang@phillynews.com'
+					subject: '$DEFAULT_SUBJECT_iOS_SprintD_RegressionTest',
+          			to: 'hera@enclave.vn, pduncan@phillynews.com, tdang@phillynews.com, missy@enclave.vn'
 		}
 	}
 

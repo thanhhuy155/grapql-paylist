@@ -18,7 +18,7 @@ import java.util.Calendar;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class AppiumController {
-    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
+    public static OS executionOS = OS.IOS_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -44,7 +44,9 @@ public class AppiumController {
         //String androidBuild = "Android_SprintC_HotFixBuildRegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
         //String androidBuild = "AndroidLocalTestBuild";
-        String iOSBuild = "iOSBuild_"+formater2.format(calendar.getTime());
+        //String iOSBuild = "iOSBuild_"+formater2.format(calendar.getTime());
+        String iOSBuild = "iOS_SprintD_RegressionTest"+formater2.format(calendar.getTime());
+
         switch (executionOS) {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
