@@ -8,7 +8,7 @@ public class Constants {
     //Browserstack setup
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
-    public static final String IOS_HASHED_APP_ID = "28f8e623a2751535e08325bd5047d18fdfae91d4";
+    public static final String IOS_HASHED_APP_ID = "e6325a17213d93e920744ee5bd547d40aa8cfe08";
     public static final String ANDROID_HASHED_APP_ID = "63d939ec548d53280a35b43e999f3e03e4ac3776";
 
     public static final int TIME_OUT = 5;
@@ -37,7 +37,7 @@ public class Constants {
 
     public static class APP_VERSION {
         public static final String ANDROID = "4.0.1 (58)";
-        public static final String IOS = "4.0.2 (132)";
+        public static final String IOS = "4.1.0 (139)";
     }
 
     public static class LABLE {

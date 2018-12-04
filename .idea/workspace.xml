@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -131,7 +129,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="235" />
+          <entry key="java" value="236" />
           <entry key="txt" value="26" />
           <entry key="xml" value="48" />
         </counts>
@@ -139,22 +137,22 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="235" />
+          <entry key="JAVA" value="236" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="XML" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1876" />
-          <entry key="txt" value="1726" />
+          <entry key="java" value="1883" />
+          <entry key="txt" value="1746" />
           <entry key="xml" value="298" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1876" />
-          <entry key="PLAIN_TEXT" value="1726" />
+          <entry key="JAVA" value="1883" />
+          <entry key="PLAIN_TEXT" value="1746" />
           <entry key="XML" value="298" />
         </counts>
       </usages-collector>
@@ -168,12 +166,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="301">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#OS#0;class#AppiumController#0" />
                 <element signature="method#stop#0;class#AppiumController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#SETTING_TITLE#0;class#Constants#0" />
+                <element signature="class#LABLE#0;class#Constants#0" />
               </folding>
             </state>
           </provider>
@@ -188,7 +200,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="514">
@@ -328,11 +340,11 @@
         <option value="$PROJECT_DIR$/MasterSuite_iOSAllTests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/pages/GeneralTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/RatingModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
         <option value="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
       </list>
     </option>
   </component>
@@ -456,7 +468,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543914867072" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543915460603" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MasterSuite_AndroidAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -693,13 +705,6 @@
       <workItem from="1537942752036" duration="21442000" />
       <workItem from="1538131551405" duration="1598000" />
       <workItem from="1538389074154" duration="13352000" />
-    </task>
-    <task id="LOCAL-00011" summary="add SamplePipeline.txt">
-      <created>1542094694549</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1542094694549</updated>
     </task>
     <task id="LOCAL-00012" summary="SamplePipeline.txt update parameters">
       <created>1542094962016</created>
@@ -1037,7 +1042,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543911444552</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Maintenance: CHange to run on iOS">
+      <created>1543914928672</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1543914928673</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1128,7 +1140,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update to run on iOS 12.0 iPhone XS" />
     <MESSAGE value="update iOSBookmark suite" />
     <MESSAGE value="update pduncan@phillynews.com for iOSSuite" />
     <MESSAGE value="update:     @iOSFindBy(xpath = &quot;//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText[contains(@name,'at')]/following-sibling::XCUIElementTypeButton[1]&quot;)" />
@@ -1153,7 +1164,8 @@
     <MESSAGE value="Maintenance: edit RatingModule test cases" />
     <MESSAGE value="Maintenance: edit  @AfterMethod&#10;                      public void runAfterMethod(ITestResult result)" />
     <MESSAGE value="Maintenance: Add Constants items for Rating module tests and exclude Section tab from the test list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maintenance: Add Constants items for Rating module tests and exclude Section tab from the test list" />
+    <MESSAGE value="Maintenance: CHange to run on iOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maintenance: CHange to run on iOS" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1583,18 +1595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#SETTING_TITLE#0;class#Constants#0" />
-            <element signature="class#LABLE#0;class#Constants#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/RatingModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -1606,18 +1606,6 @@
             <element signature="method#TestCaseNo3#0;class#RatingModule#0" />
             <element signature="method#TestCaseNo4#0;class#RatingModule#0" />
             <element signature="method#TestCaseNo5#0;class#RatingModule#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#OS#0;class#AppiumController#0" />
-            <element signature="method#stop#0;class#AppiumController#0" />
           </folding>
         </state>
       </provider>
@@ -1640,6 +1628,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#OS#0;class#AppiumController#0" />
+            <element signature="method#stop#0;class#AppiumController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#SETTING_TITLE#0;class#Constants#0" />
+            <element signature="class#LABLE#0;class#Constants#0" />
+          </folding>
         </state>
       </provider>
     </entry>
