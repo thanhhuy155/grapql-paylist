@@ -196,6 +196,7 @@ public class CommonElements implements ICommon {
         googleAccountNextButton.click();
         Utils.sleep((Constants.SHORTTIME)*2);
         googleAccountTextBox.sendKeys(password);
+        Utils.waitForElementVisible(appiumDriver, googleAccountPasswordNextButton);
         googleAccountPasswordNextButton.click();
         Utils.sleep((Constants.SHORTTIME)*5);
         if (!Utils.checkElementExist(googleAccountIAgreeButton)){

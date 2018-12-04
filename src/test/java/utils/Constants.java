@@ -9,7 +9,7 @@ public class Constants {
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
     public static final String IOS_HASHED_APP_ID = "28f8e623a2751535e08325bd5047d18fdfae91d4";
-    public static final String ANDROID_HASHED_APP_ID = "5db695803e7f2f9d0b0fd9de48703b99b853ac2f";
+    public static final String ANDROID_HASHED_APP_ID = "63d939ec548d53280a35b43e999f3e03e4ac3776";
 
     public static final int TIME_OUT = 5;
 
@@ -18,6 +18,8 @@ public class Constants {
 
     public static String EXECUTING_SUITE = new String();
     public static int SHORTTIME = 1000;
+    public static int MAXNUMBEROPENARTICLE = 100;
+    public static int NUMBEROPENARTICLE = (MAXNUMBEROPENARTICLE/2)+1;
 
     public static final List<String> selectedArticleTitleOnBookmark = new ArrayList<>();
 
@@ -34,7 +36,7 @@ public class Constants {
     }
 
     public static class APP_VERSION {
-        public static final String ANDROID = "4.0.1 (57)";
+        public static final String ANDROID = "4.0.1 (58)";
         public static final String IOS = "4.0.2 (132)";
     }
 

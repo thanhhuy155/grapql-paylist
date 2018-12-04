@@ -29,10 +29,10 @@ public class RatingModule extends BasePage{
         feedListElements.feedItemClick();
 
         //Step: Scroll through 100 articles
-        for(int right=1; right<=50; right++){
+        for(int right=1; right<=Constants.NUMBEROPENARTICLE; right++){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
         }
-        for(int left=1; left<=50; left++){
+        for(int left=1; left<=Constants.NUMBEROPENARTICLE; left++){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.LEFT);
         }
 
@@ -55,10 +55,10 @@ public class RatingModule extends BasePage{
         feedListElements.feedItemClick();
 
         //Step: Scroll through 100 articles
-        for(int right=1; right<=50; right++){
+        for(int right=1; right<=Constants.NUMBEROPENARTICLE; right++){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
         }
-        for(int left=1; left<=50; left++){
+        for(int left=1; left<=Constants.NUMBEROPENARTICLE; left++){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.LEFT);
         }
 
@@ -92,10 +92,10 @@ public class RatingModule extends BasePage{
         feedListElements.feedItemClick();
 
         //Step: Scroll through 100 articles
-        for (int right = 1; right <= 50; right++) {
+        for (int right = 1; right <= Constants.NUMBEROPENARTICLE; right++) {
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
         }
-        for (int left = 1; left <= 50; left++) {
+        for (int left = 1; left <= Constants.NUMBEROPENARTICLE; left++) {
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.LEFT);
         }
 
@@ -125,10 +125,10 @@ public class RatingModule extends BasePage{
         feedListElements.feedItemClick();
 
         //Step: Scroll through 100 articles
-        for (int right = 1; right <= 55; right++) {
+        for (int right = 1; right <= Constants.NUMBEROPENARTICLE; right++) {
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
         }
-        for (int left = 1; left <= 50; left++) {
+        for (int left = 1; left <= Constants.NUMBEROPENARTICLE; left++) {
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.LEFT);
         }
 
@@ -158,10 +158,10 @@ public class RatingModule extends BasePage{
         feedListElements.feedItemClick();
 
         //Step: Scroll through 100 articles
-        for (int right = 1; right <= 50; right++) {
+        for (int right = 1; right <= Constants.NUMBEROPENARTICLE; right++) {
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.RIGHT);
         }
-        for (int left = 1; left <= 50; left++) {
+        for (int left = 1; left <= Constants.NUMBEROPENARTICLE; left++) {
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.LEFT);
         }
 

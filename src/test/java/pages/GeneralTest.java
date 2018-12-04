@@ -28,7 +28,6 @@ public class GeneralTest extends BasePage {
         commonElements.bookMarkTab.click();
 
         turnOnWifi();
-        closeApp();
     }
 
     public void TestCaseNo2() {
