@@ -7,6 +7,11 @@
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/GeneralTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/GeneralTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Constants$APP_VERSION.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Constants$APP_VERSION.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Constants.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -134,31 +139,31 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="280" />
+          <entry key="java" value="282" />
           <entry key="txt" value="30" />
-          <entry key="xml" value="56" />
+          <entry key="xml" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="280" />
+          <entry key="JAVA" value="282" />
           <entry key="PLAIN_TEXT" value="30" />
-          <entry key="XML" value="56" />
+          <entry key="XML" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3234" />
-          <entry key="txt" value="1880" />
-          <entry key="xml" value="360" />
+          <entry key="java" value="3236" />
+          <entry key="txt" value="1881" />
+          <entry key="xml" value="365" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3234" />
-          <entry key="PLAIN_TEXT" value="1880" />
-          <entry key="XML" value="360" />
+          <entry key="JAVA" value="3236" />
+          <entry key="PLAIN_TEXT" value="1881" />
+          <entry key="XML" value="365" />
         </counts>
       </usages-collector>
     </session>
@@ -168,11 +173,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#OS#0;class#AppiumController#0" />
+                <element signature="method#stop#0;class#AppiumController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+            <state relative-caret-position="75">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-580">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <element signature="method#convertScreenshotFiletoByte#0;class#BaseTestClass#0" />
+                <element signature="method#runAfterMethod#0;class#BaseTestClass#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,7 +238,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText[1]</find>
       <find>back</find>
       <find>//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTabBar[1]/XCUIElementTypeButton[4]</find>
       <find>//android.widget.EditText</find>
@@ -227,6 +267,7 @@
       <find>gmailAppTakeMetoGMBtn</find>
       <find>subsectionHeader</find>
       <find>life</find>
+      <find>maven</find>
     </findStrings>
     <replaceStrings>
       <replace>articlePage</replace>
@@ -258,7 +299,6 @@
         <option value="$PROJECT_DIR$/src/test/java/elements/SearchElements.java" />
         <option value="$PROJECT_DIR$/AndroidAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/Suite_iOSFailedTests.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_ArticlePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/actions/ICommon.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SettingTab.java" />
@@ -293,8 +333,9 @@
         <option value="$PROJECT_DIR$/Suite_iOSExploreTab.xml" />
         <option value="$PROJECT_DIR$/MasterSuite_iOSAllTests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
-        <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
         <option value="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" />
       </list>
     </option>
@@ -395,7 +436,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546953193070" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546953967902" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MasterSuite_AndroidAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -426,7 +467,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MasterSuite_AndroidAllTests">
+  <component name="RunManager" selected="Maven.Run Maven">
     <configuration name="Run Maven" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -634,13 +675,6 @@
       <workItem from="1537942752036" duration="21442000" />
       <workItem from="1538131551405" duration="1598000" />
       <workItem from="1538389074154" duration="13352000" />
-    </task>
-    <task id="LOCAL-00018" summary="SamplePipeline.txt update parameters">
-      <created>1542103787301</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1542103787301</updated>
     </task>
     <task id="LOCAL-00019" summary="SamplePipeline.txt update parameters">
       <created>1542103913301</created>
@@ -978,7 +1012,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546953165082</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="update Jenkins send to e-mail">
+      <created>1546953198636</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1546953198636</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1029,7 +1070,7 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.29935277" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.29935277" />
       <window_info id="Structure" order="1" sideWeight="0.5074257" side_tool="true" weight="0.20738254" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1039,12 +1080,12 @@
       <window_info id="Favorites" order="7" sideWeight="0.5036145" side_tool="true" weight="0.19905533" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4539007" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4975728" weight="0.36374134" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4975728" visible="true" weight="0.5103926" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45150116" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4191686" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4191686" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50242716" side_tool="true" weight="0.26212472" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.19630484" />
@@ -1524,35 +1565,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#OS#0;class#AppiumController#0" />
-            <element signature="method#stop#0;class#AppiumController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/agents/android/workspace/AndroidAllTestSuites/src/test/java/tests/BaseTestClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-675">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#convertScreenshotFiletoByte#0;class#BaseTestClass#0" />
-            <element signature="method#runAfterMethod#0;class#BaseTestClass#0" />
           </folding>
         </state>
       </provider>
@@ -1579,11 +1596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1591,10 +1603,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-580">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="method#convertScreenshotFiletoByte#0;class#BaseTestClass#0" />
+            <element signature="method#runAfterMethod#0;class#BaseTestClass#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#OS#0;class#AppiumController#0" />
+            <element signature="method#stop#0;class#AppiumController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+        <state relative-caret-position="75">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
