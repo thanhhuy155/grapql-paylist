@@ -44,7 +44,7 @@ pipeline{
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
 					subject: '$DEFAULT_SUBJECT_Android_SprintE_RegressionTest',
-          			to: 'hera@enclave.vn, pduncan@phillynews.com, tdang@philly.com, missy@enclave.vn'
+          			to: 'hera@enclave.vn
 		}
 	}
 
