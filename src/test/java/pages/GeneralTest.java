@@ -23,6 +23,7 @@ public class GeneralTest extends BasePage {
         turnOnCellularConnection();
         lauchApp();
 
+        waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
         commonElements.sectionTabClick();
         commonElements.bookMarkTab.click();
@@ -35,6 +36,7 @@ public class GeneralTest extends BasePage {
         turnOffCellularConnection();
         lauchApp();
 
+        waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
         commonElements.sectionTabClick();
         commonElements.bookMarkTab.click();
@@ -48,6 +50,7 @@ public class GeneralTest extends BasePage {
         resetApp();
         lauchApp();
 
+        waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
         commonElements.sectionTabClick();
         commonElements.bookMarkTab.click();
@@ -58,6 +61,7 @@ public class GeneralTest extends BasePage {
     public void TestCaseNo4() {
         lauchApp();
 
+        waitForVisibilityOf(commonElements.bottomTab);
         commonElements.sectionTabClick();
         commonElements.settingTabClick();
         commonElements.homeTabClick();
@@ -84,6 +88,7 @@ public class GeneralTest extends BasePage {
 
     public void TestCaseNo11() {
         lauchApp();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         openArticle();
         articleDetailElements.back();

@@ -9,6 +9,6 @@
         <!--<suite-file path="Suite_SectionTab.xml" />-->
         <suite-file path="Suite_SettingTab.xml" />
         <suite-file path="Suite_HomeTab.xml" />
-        <suite-file path="Suite_ArticlePage.xml" />
+        <suite-file path="Suite_ExploreTab.xml" />
     </suite-files>
 </suite>

@@ -10,5 +10,6 @@
         <suite-file path="Suite_iOSHomeTab.xml" />
         <suite-file path="Suite_iOSArticlePage.xml" />
         <suite-file path="Suite_SearchTab.xml" />
+        <suite-file path="Suite_iOSExploreTab.xml" />
     </suite-files>
 </suite>

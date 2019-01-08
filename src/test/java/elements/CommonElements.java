@@ -127,6 +127,10 @@ public class CommonElements implements ICommon {
 
     @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[3]")
     public MobileElement searchTab;
+
+    @AndroidFindBy(id = "find")
+    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[2]")
+    public MobileElement exploreTab;
     //========================================================================================//
 
     @Override
