@@ -35,7 +35,7 @@ pipeline{
 						<br/>
 						<b/>
 						<p><font font="Verdana" size="2" color="navy">Please click the link to see the detail report: </font>
-						&QUOT;<a href='http://113.160.225.76:9500/view/PhillyDotComNativeAppProjects/job/AndroidAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
+						&QUOT;<a href='http://117.3.65.55:9500/view/PhillyDotComNativeAppProjects/job/AndroidAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
                         <b/>
 						<p><font font="Verdana" size="2" color="navy">BrowserStack Android_SprintE_RegressionTest build: </font>
                         &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
