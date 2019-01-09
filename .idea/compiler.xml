@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="mobile-test-pcom" target="8" />
+      <module name="mobile-test-pcom" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

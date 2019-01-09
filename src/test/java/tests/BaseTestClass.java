@@ -43,7 +43,7 @@ public class BaseTestClass extends AppiumBaseClass {
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] convertScreenshotFiletoByte(ITestResult testResult){
+    public byte[] convertScreenshotFileToByte(ITestResult testResult){
         byte[] content =null;
         try{
             content = Files.readAllBytes(basePage.takeScreenshotOnFailure(testResult).toPath());
@@ -56,7 +56,7 @@ public class BaseTestClass extends AppiumBaseClass {
     @AfterMethod
     public void runAfterMethod(ITestResult result){
         try{
-            convertScreenshotFiletoByte(result);
+            convertScreenshotFileToByte(result);
         }catch (Exception i) {
             i.printStackTrace();
         }
