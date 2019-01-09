@@ -120,7 +120,7 @@ public class ExploreElements extends CommonElements implements IExplore {
                     element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath));
                 }
             }
-            if(subsectionList[i]=="All Life"){
+            if(subsectionList[i]=="All Life"||subsectionList[i]=="Families"){
                 Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
             }
             if(!Utils.checkElementExist(element)){

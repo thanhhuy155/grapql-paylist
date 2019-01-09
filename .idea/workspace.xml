@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/ExploreElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/ExploreElements.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -136,7 +136,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="5" />
-          <entry key="java" value="286" />
+          <entry key="java" value="288" />
           <entry key="txt" value="35" />
           <entry key="xml" value="61" />
         </counts>
@@ -144,22 +144,22 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="286" />
+          <entry key="JAVA" value="288" />
           <entry key="PLAIN_TEXT" value="35" />
           <entry key="XML" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3264" />
-          <entry key="txt" value="2041" />
+          <entry key="java" value="3291" />
+          <entry key="txt" value="2077" />
           <entry key="xml" value="374" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3264" />
-          <entry key="PLAIN_TEXT" value="2041" />
+          <entry key="JAVA" value="3291" />
+          <entry key="PLAIN_TEXT" value="2077" />
           <entry key="XML" value="374" />
         </counts>
       </usages-collector>
@@ -182,12 +182,48 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="99" column="38" lean-forward="true" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+            <state relative-caret-position="250">
+              <caret line="101" column="73" selection-start-line="101" selection-start-column="73" selection-end-line="101" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#OS#0;class#AppiumController#0" />
                 <element signature="method#stop#0;class#AppiumController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/elements/ExploreElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="123" column="69" lean-forward="true" selection-start-line="123" selection-start-column="69" selection-end-line="123" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/ExploreTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="185" column="56" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#TestCaseNo1#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo2#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo3#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo4#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo5#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo6#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo7#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo8#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo11#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo13#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo14#0;class#ExploreTab#0" />
+                <element signature="method#TestCaseNo15#0;class#ExploreTab#0" />
               </folding>
             </state>
           </provider>
@@ -298,7 +334,6 @@
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/SectionElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/actions/IExplore.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/ExploreElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ExploreTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TM_ExploreTab.java" />
         <option value="$PROJECT_DIR$/Suite_ExploreTab.xml" />
@@ -312,6 +347,7 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/BaseTestClass.java" />
         <option value="$PROJECT_DIR$/JenkinsPhillyDotComNativeApp2.txt" />
         <option value="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/ExploreElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
       </list>
     </option>
@@ -439,7 +475,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547028124920" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547028941985" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MasterSuite_AndroidAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -470,7 +506,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Run Maven">
+  <component name="RunManager" selected="TestNG.TM_ExploreTab.ExploreTabTCNo12">
     <configuration name="Run Maven" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -655,8 +691,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MasterSuite_AndroidAllTests" />
         <item itemvalue="TestNG.TM_ExploreTab.ExploreTabTCNo12" />
+        <item itemvalue="TestNG.MasterSuite_AndroidAllTests" />
         <item itemvalue="TestNG.TM_BookmarkTab" />
       </list>
     </recent_temporary>
@@ -678,13 +714,6 @@
       <workItem from="1537942752036" duration="21442000" />
       <workItem from="1538131551405" duration="1598000" />
       <workItem from="1538389074154" duration="13352000" />
-    </task>
-    <task id="LOCAL-00027" summary="SamplePipeline.txt update:  bat 'mvn clean test Dsurefire.suiteXmlFiles=${params.testSuiteName}'">
-      <created>1542122799973</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1542122799973</updated>
     </task>
     <task id="LOCAL-00028" summary="SamplePipeline.txt update:  bat 'mvn clean test -Dsurefire.suiteXmlFiles=${params.testSuiteName}'">
       <created>1542124893645</created>
@@ -1022,19 +1051,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547022402553</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="change BrowserStack device to note 9">
+      <created>1547028148628</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1547028148628</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TM_ExploreTab_ExploreTabTCNo1 - 2019.01.07 at 23h 23m 35s.xml">
-      <configuration name="TM_ExploreTab.ExploreTabTCNo1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TM_ExploreTab_ExploreTabTCNo1 - 2019.01.07 at 23h 28m 50s.xml">
-      <configuration name="TM_ExploreTab.ExploreTabTCNo1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TM_ExploreTab_ExploreTabTCNo1 - 2019.01.07 at 23h 35m 11s.xml">
-      <configuration name="TM_ExploreTab.ExploreTabTCNo1" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TM_ExploreTab_ExploreTabTCNo12 - 2019.01.07 at 23h 43m 42s.xml">
       <configuration name="TM_ExploreTab.ExploreTabTCNo12" configurationId="TestNG" />
     </history-entry>
@@ -1055,6 +1082,15 @@
     </history-entry>
     <history-entry file="MasterSuite_AndroidAllTests - 2019.01.08 at 16h 13m 22s.xml">
       <configuration name="MasterSuite_AndroidAllTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TM_ExploreTab_ExploreTabTCNo12 - 2019.01.09 at 17h 05m 28s.xml">
+      <configuration name="TM_ExploreTab.ExploreTabTCNo12" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TM_ExploreTab_ExploreTabTCNo12 - 2019.01.09 at 17h 10m 06s.xml">
+      <configuration name="TM_ExploreTab.ExploreTabTCNo12" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TM_ExploreTab_ExploreTabTCNo12 - 2019.01.09 at 17h 13m 13s.xml">
+      <configuration name="TM_ExploreTab.ExploreTabTCNo12" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1083,12 +1119,12 @@
       <window_info id="Favorites" order="7" sideWeight="0.5036145" side_tool="true" weight="0.19905533" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4539007" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4975728" weight="0.26327944" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4975728" visible="true" weight="0.26327944" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45150116" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32794458" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.49884528" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.30946884" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50242716" side_tool="true" weight="0.26212472" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32794458" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.19630484" />
@@ -1113,7 +1149,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Maintenance: correct failed test on Android" />
     <MESSAGE value="Maintenance: add more waiting time to action to stabilize" />
     <MESSAGE value="Maintenance: change to Android new build number" />
     <MESSAGE value="Maintenance: update app ID to run on latest build" />
@@ -1138,7 +1173,8 @@
     <MESSAGE value="update BaseTestClass" />
     <MESSAGE value="Add JenkinsPhillyDotComNativeApp2.txt file" />
     <MESSAGE value="Update android BS build and Jenkins file to send mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update android BS build and Jenkins file to send mail" />
+    <MESSAGE value="change BrowserStack device to note 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="change BrowserStack device to note 9" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_BookmarkTab.java">
@@ -1384,23 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/ExploreElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="153" column="99" selection-start-line="153" selection-start-column="99" selection-end-line="153" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkSubsectionHeader#0;class#ExploreElements#0" />
-            <element signature="e#9143#9144#0" expanded="true" />
-            <element signature="e#9188#9189#0" expanded="true" />
-            <element signature="e#9244#9245#0" expanded="true" />
-            <element signature="e#9294#9295#0" expanded="true" />
-            <element signature="e#9347#9348#0" expanded="true" />
-            <element signature="e#9394#9395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_SectionTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -1528,29 +1547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ExploreTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TestCaseNo1#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo2#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo3#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo4#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo5#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo6#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo7#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo8#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo11#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo12#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo13#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo14#0;class#ExploreTab#0" />
-            <element signature="method#TestCaseNo15#0;class#ExploreTab#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/test-classes/tests/BaseTestClass.class" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1611,10 +1607,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ExploreTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="185" column="56" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestCaseNo1#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo2#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo3#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo4#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo5#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo6#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo7#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo8#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo11#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo13#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo14#0;class#ExploreTab#0" />
+            <element signature="method#TestCaseNo15#0;class#ExploreTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/ExploreElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="123" column="69" lean-forward="true" selection-start-line="123" selection-start-column="69" selection-end-line="123" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="99" column="38" lean-forward="true" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+        <state relative-caret-position="250">
+          <caret line="101" column="73" selection-start-line="101" selection-start-column="73" selection-end-line="101" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#OS#0;class#AppiumController#0" />
