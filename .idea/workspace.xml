@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -153,14 +151,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="3263" />
-          <entry key="txt" value="1988" />
+          <entry key="txt" value="2041" />
           <entry key="xml" value="374" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3263" />
-          <entry key="PLAIN_TEXT" value="1988" />
+          <entry key="PLAIN_TEXT" value="2041" />
           <entry key="XML" value="374" />
         </counts>
       </usages-collector>
@@ -174,7 +172,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="145">
               <caret line="46" column="104" selection-start-line="46" selection-start-column="104" selection-end-line="46" selection-end-column="104" />
             </state>
           </provider>
@@ -394,7 +392,50 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="elements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="scenarios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobile-test-pcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-test-pcom" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,7 +446,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547022335259" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547022952698" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MasterSuite_AndroidAllTests.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -644,13 +685,6 @@
       <workItem from="1537942752036" duration="21442000" />
       <workItem from="1538131551405" duration="1598000" />
       <workItem from="1538389074154" duration="13352000" />
-    </task>
-    <task id="LOCAL-00026" summary="SamplePipeline.txt update: choices: &quot;Suite_HomeTab.xml&quot;">
-      <created>1542121492661</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1542121492661</updated>
     </task>
     <task id="LOCAL-00027" summary="SamplePipeline.txt update:  bat 'mvn clean test Dsurefire.suiteXmlFiles=${params.testSuiteName}'">
       <created>1542122799973</created>
@@ -988,7 +1022,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547019967146</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Update android BS build and Jenkins file to send mail">
+      <created>1547022402553</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1547022402553</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1037,9 +1078,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.22734627" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49257424" visible="true" weight="0.22734627" />
       <window_info id="Structure" order="1" sideWeight="0.5074257" side_tool="true" weight="0.20738254" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1053,10 +1093,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45150116" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.49884528" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32794458" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.49884528" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50242716" side_tool="true" weight="0.26212472" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32794458" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.19630484" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32960895" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -1079,7 +1119,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove Jenkins parameter" />
     <MESSAGE value="Maintenance: correct failed test on Android" />
     <MESSAGE value="Maintenance: add more waiting time to action to stabilize" />
     <MESSAGE value="Maintenance: change to Android new build number" />
@@ -1104,7 +1143,8 @@
     <MESSAGE value="update BaseTestClass to unicode" />
     <MESSAGE value="update BaseTestClass" />
     <MESSAGE value="Add JenkinsPhillyDotComNativeApp2.txt file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add JenkinsPhillyDotComNativeApp2.txt file" />
+    <MESSAGE value="Update android BS build and Jenkins file to send mail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update android BS build and Jenkins file to send mail" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_BookmarkTab.java">
@@ -1584,7 +1624,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="145">
           <caret line="46" column="104" selection-start-line="46" selection-start-column="104" selection-end-line="46" selection-end-column="104" />
         </state>
       </provider>
