@@ -1,4 +1,4 @@
-package tests;
+﻿package tests;
 
 import io.qameta.allure.Attachment;
 import org.testng.ITestContext;
