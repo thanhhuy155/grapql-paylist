@@ -99,8 +99,8 @@ public class AppiumController {
                 break;
             case ANDROID_BROWSERSTACK:
                 capabilities.setCapability("platformName", "Android");
-                capabilities.setCapability("device", "Samsung Galaxy S9");
-                capabilities.setCapability("os_version", "8.0");
+                capabilities.setCapability("device", "Samsung Galaxy Note 9");
+                capabilities.setCapability("os_version", "8.1");
                 capabilities.setCapability("appPackage", "com.ap.philly");
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
                 capabilities.setCapability("browserstack.debug", true);
