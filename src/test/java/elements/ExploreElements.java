@@ -102,8 +102,11 @@ public class ExploreElements extends CommonElements implements IExplore {
     @Override
     public void checkSubsectionsOpenProperly(AppiumDriver appiumDriver, String subsectionList[], MobileElement section){
         String dynamicXpath = "//android.widget.TextView[contains(@text,'{0}')]";
+        String iOSDynamicXpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
         for(int i = 0; i<subsectionList.length; i++){
             String subsectionXpath = dynamicXpath.replace("{0}",subsectionList[i]);
+            String iOSSubsectionXpath = iOSDynamicXpath.replace("{0}",subsectionList[i]);
+
             MobileElement element;
             if (Utils.isAndroidPlatform()){
                 try{
@@ -114,10 +117,10 @@ public class ExploreElements extends CommonElements implements IExplore {
                 }
             }else {
                 try{
-                    element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath));
+                    element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(iOSSubsectionXpath));
                 }catch(Exception e){
                     Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,section );
-                    element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath));
+                    element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(iOSSubsectionXpath));
                 }
             }
             if(subsectionList[i]=="All Life"||subsectionList[i]=="Families"){

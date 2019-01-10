@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f088e103-2523-4bd1-9917-cec979384c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JenkinsiOSFailedTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsiOSFailedBrokenTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomeTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomeTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/ExploreElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/ExploreElements.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -139,7 +136,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="6" />
-          <entry key="java" value="305" />
+          <entry key="java" value="307" />
           <entry key="txt" value="39" />
           <entry key="xml" value="66" />
         </counts>
@@ -147,22 +144,22 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="305" />
+          <entry key="JAVA" value="307" />
           <entry key="PLAIN_TEXT" value="39" />
           <entry key="XML" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3417" />
-          <entry key="txt" value="2167" />
+          <entry key="java" value="3457" />
+          <entry key="txt" value="2262" />
           <entry key="xml" value="389" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3417" />
-          <entry key="PLAIN_TEXT" value="2167" />
+          <entry key="JAVA" value="3457" />
+          <entry key="PLAIN_TEXT" value="2262" />
           <entry key="XML" value="389" />
         </counts>
       </usages-collector>
@@ -173,11 +170,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JenkinsiOSFailedBrokenTests.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
               <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#SETTING_TITLE#0;class#Constants#0" />
+                <element signature="class#LABLE#0;class#Constants#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/elements/ExploreElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="110" column="43" lean-forward="true" selection-start-line="110" selection-start-column="43" selection-end-line="110" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#checkSectionHeader#0;class#ExploreElements#0" />
+                <element signature="method#navigateToSubSection#0;class#ExploreElements#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -307,15 +332,15 @@
         <option value="$PROJECT_DIR$/JenkinsAndroidAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/src/test/java/elements/CommonElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/BookmarkTab.java" />
-        <option value="$PROJECT_DIR$/src/test/java/elements/ExploreElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/HomeTab.java" />
         <option value="$PROJECT_DIR$/src/test/java/elements/FeedListElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
         <option value="$PROJECT_DIR$/JenkinsiOSAllTestSuites.txt" />
         <option value="$PROJECT_DIR$/MasterSuite_iOSAllTests.xml" />
         <option value="$PROJECT_DIR$/MasterSuite_iOSFailedTests.xml" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/AppiumController.java" />
         <option value="$PROJECT_DIR$/JenkinsiOSFailedBrokenTests.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/elements/ExploreElements.java" />
       </list>
     </option>
   </component>
@@ -442,7 +467,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547111160005" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547112711861" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Suite_SearchTab.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -717,20 +742,6 @@
       <workItem from="1537942752036" duration="21442000" />
       <workItem from="1538131551405" duration="1598000" />
       <workItem from="1538389074154" duration="13352000" />
-    </task>
-    <task id="LOCAL-00030" summary="SamplePipeline.txt update:  bat 'mvn clean test -DsuiteXmlFile=Suite_HomeTab.xml'">
-      <created>1542125277907</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1542125277907</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Add iOSAllTestSuites.txt file">
-      <created>1542126433018</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1542126433018</updated>
     </task>
     <task id="LOCAL-00032" summary="capabilities.setCapability(&quot;device&quot;, &quot;iPhone 6&quot;); capabilities.setCapability(&quot;os_version&quot;, &quot;11.2&quot;);">
       <created>1542127059312</created>
@@ -1061,7 +1072,21 @@
       <option name="project" value="LOCAL" />
       <updated>1547105229255</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Add Suite to run iOSFailedBrokenTests for sprintHoliday">
+      <created>1547111192493</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1547111192493</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Update new BS build ID for sprintHoliday iOS">
+      <created>1547111623170</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1547111623170</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1152,8 +1177,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Maintenance: change to Android new build number" />
-    <MESSAGE value="Maintenance: update app ID to run on latest build" />
     <MESSAGE value="Maintenance: update email template" />
     <MESSAGE value="Maintenance: local test for Android failed test" />
     <MESSAGE value="Maintenance: Add jenkins setting file to run failed test of Android_SprintC_HotFixBuildRegressionTest" />
@@ -1177,7 +1200,9 @@
     <MESSAGE value="Update android BS build and Jenkins file to send mail" />
     <MESSAGE value="change BrowserStack device to note 9" />
     <MESSAGE value="Update iOS elements and build to sprintHoliday" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update iOS elements and build to sprintHoliday" />
+    <MESSAGE value="Add Suite to run iOSFailedBrokenTests for sprintHoliday" />
+    <MESSAGE value="Update new BS build ID for sprintHoliday iOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update new BS build ID for sprintHoliday iOS" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/TM_GeneralTest.java">
@@ -1560,18 +1585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/elements/ExploreElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkSectionHeader#0;class#ExploreElements#0" />
-            <element signature="method#navigateToSubSection#0;class#ExploreElements#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/CommonElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -1586,18 +1599,6 @@
             <element signature="e#9124#9430#0" />
             <element signature="e#9722#9855#0" />
             <element signature="e#9861#10490#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#SETTING_TITLE#0;class#Constants#0" />
-            <element signature="class#LABLE#0;class#Constants#0" />
           </folding>
         </state>
       </provider>
@@ -1665,6 +1666,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#SETTING_TITLE#0;class#Constants#0" />
+            <element signature="class#LABLE#0;class#Constants#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/elements/ExploreElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="110" column="43" lean-forward="true" selection-start-line="110" selection-start-column="43" selection-end-line="110" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkSectionHeader#0;class#ExploreElements#0" />
+            <element signature="method#navigateToSubSection#0;class#ExploreElements#0" />
+          </folding>
         </state>
       </provider>
     </entry>
