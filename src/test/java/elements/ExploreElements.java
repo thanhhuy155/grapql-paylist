@@ -129,7 +129,9 @@ public class ExploreElements extends CommonElements implements IExplore {
             if(!Utils.checkElementExist(element)){
                 Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, element);
             }
+            Utils.sleep(2000);
             element.click();
+            Utils.waitForElementVisible(appiumDriver,feedSectionHeader);
             checkSectionHeader(subsectionList[i],feedSectionHeader.getText());
             backButton.click();
         }
@@ -144,7 +146,10 @@ public class ExploreElements extends CommonElements implements IExplore {
     @Override
     public void navigateToSubSection(AppiumDriver appiumDriver, MobileElement section, String subsectionName) {
         String dynamicXpath = "//android.widget.TextView[contains(@text,'{0}')]";
+        String iOSDynamicXpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
+
         String subsectionXpath = dynamicXpath.replace("{0}",subsectionName);
+        String iOSSubsectionXpath = iOSDynamicXpath.replace("{0}",subsectionName);
 
         MobileElement element;
         if(!Utils.checkElementExist(section)){
@@ -154,7 +159,7 @@ public class ExploreElements extends CommonElements implements IExplore {
         if (Utils.isAndroidPlatform()){
             element = ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath)) ;
         }else {
-            element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath));
+            element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(iOSSubsectionXpath));
         }
         element.click();
     }
