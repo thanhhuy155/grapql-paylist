@@ -268,5 +268,11 @@ public class CommonElements implements ICommon {
     public void settingTabClick() {
         settingTab.click();
     }
+
+   // public void closeBottomBar(AppiumDriver appiumDriver){
+        //do{
+            //Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+        //}
+    //}
     //========================================================================================//
 }

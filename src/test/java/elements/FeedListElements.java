@@ -22,11 +22,11 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public MobileElement feedItemTopStoryLayout;
 
     @AndroidFindBy(id = "cardLayoutArticle")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly.com\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]")
+    @iOSFindBy(xpath = "//XCUIElementTypeCell[XCUIElementTypeOther[XCUIElementTypeOther[XCUIElementTypeStaticText[contains(@name,'LATEST HEADLINES')]]]]/following-sibling::XCUIElementTypeCell")
     public MobileElement feedItemLayout;
 
     @AndroidFindBy(id = "headlineArticle")
-    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
+    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[following-sibling::XCUIElementTypeStaticText[contains(@name,'by')] and preceding-sibling::XCUIElementTypeStaticText]")
     public MobileElement feedItemTitle;
 
     @AndroidFindBy(id = "tv_top_story_title")
@@ -38,7 +38,7 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public MobileElement btnShareOnFeedArticle;
 
     @AndroidFindBy(id = "bookmarkIC")
-    @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]//XCUIElementTypeStaticText/following-sibling::XCUIElementTypeButton[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther/XCUIElementTypeButton[following-sibling::XCUIElementTypeButton[contains(@name,'share feedIcon')] and preceding-sibling::XCUIElementTypeStaticText]")
     public MobileElement btnBookmarkOnFeedArticle;
 
 

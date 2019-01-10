@@ -35,6 +35,8 @@ public class BookmarkTab extends BasePage{
         //Step: Go to Bookmark tab
         if(!Utils.isAndroidPlatform()){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
         }
         commonElements.bookMarkTab.click();
 
@@ -91,6 +93,8 @@ public class BookmarkTab extends BasePage{
         //Step: Go to Bookmark tab
         if(!Utils.isAndroidPlatform()){
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
         }
         commonElements.bookMarkTab.click();
 
@@ -122,6 +126,8 @@ public class BookmarkTab extends BasePage{
 
         //Step: Go to Bookmark tab
         if(!Utils.isAndroidPlatform()){
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
+            Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
             Utils.scrollScreen(appiumDriver, Utils.DIRECTION.UP);
         }
         commonElements.bookMarkTab.click();
