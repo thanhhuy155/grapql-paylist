@@ -108,7 +108,12 @@ public class ExploreElements extends CommonElements implements IExplore {
             String iOSSubsectionXpath = iOSDynamicXpath.replace("{0}",subsectionList[i]);
 
             MobileElement element;
+
+            boolean isAndroidPlat= false;
+
             if (Utils.isAndroidPlatform()){
+                isAndroidPlat= true;
+
                 try{
                     element = ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath)) ;
                 }catch(Exception e){
@@ -127,11 +132,22 @@ public class ExploreElements extends CommonElements implements IExplore {
                 Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
             }
             if(!Utils.checkElementExist(element)){
+
                 Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, element);
+
+                if(isAndroidPlat==false){//iOS platform
+                    element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(iOSSubsectionXpath));
+
+                }else{//android platform
+                    element = ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath)) ;
+                }
             }
             Utils.sleep(2000);
+
             element.click();
+
             Utils.waitForElementVisible(appiumDriver,feedSectionHeader);
+
             checkSectionHeader(subsectionList[i],feedSectionHeader.getText());
             backButton.click();
         }
