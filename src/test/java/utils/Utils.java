@@ -20,6 +20,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 public class Utils {
     public static boolean isAndroidPlatform() {
         if (AppiumController.executionOS == AppiumController.OS.ANDROID_BROWSERSTACK
+                || AppiumController.executionOS == AppiumController.OS.ANDROID_Emulator
                 || AppiumController.executionOS == AppiumController.OS.ANDROID) {
             return true;
         }
@@ -58,10 +59,15 @@ public class Utils {
         }
     }
     public static void scrollToElement(AppiumDriver appiumDriver, DIRECTION direction, MobileElement element){
+       int count=0;
+       int maxLoop =10;
+
         do{
+            count ++;
             scrollScreen(appiumDriver, direction);
-        }while (checkElementExist(element)==false);
+        }while (count <= maxLoop && checkElementExist(element)==false);
     }
+
     public static void scrollScreen(AppiumDriver appiumDriver, DIRECTION direction ){
         Dimension dimension = appiumDriver.manage().window().getSize();
         int fromX = 0;
