@@ -103,16 +103,14 @@ public class ExploreElements extends CommonElements implements IExplore {
     public void checkSubsectionsOpenProperly(AppiumDriver appiumDriver, String subsectionList[], MobileElement section){
         String dynamicXpath = "//android.widget.TextView[contains(@text,'{0}')]";
         String iOSDynamicXpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
+
         for(int i = 0; i<subsectionList.length; i++){
             String subsectionXpath = dynamicXpath.replace("{0}",subsectionList[i]);
             String iOSSubsectionXpath = iOSDynamicXpath.replace("{0}",subsectionList[i]);
 
             MobileElement element;
 
-            boolean isAndroidPlat= false;
-
             if (Utils.isAndroidPlatform()){
-                isAndroidPlat= true;
 
                 try{
                     element = ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath)) ;
@@ -128,21 +126,24 @@ public class ExploreElements extends CommonElements implements IExplore {
                     element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(iOSSubsectionXpath));
                 }
             }
-            if(subsectionList[i]=="All Life"||subsectionList[i]=="Families"){
-                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
-            }
+//            if(subsectionList[i]=="All Life"||subsectionList[i]=="Families"){
+//                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+//            }
+
             if(!Utils.checkElementExist(element)){
 
                 Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, element);
+                Utils.sleep(2000);
 
-                if(isAndroidPlat==false){//iOS platform
+                if (Utils.isAndroidPlatform()){
+                    element = ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath)) ;
+
+                }else{
                     element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(iOSSubsectionXpath));
 
-                }else{//android platform
-                    element = ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath)) ;
                 }
             }
-            Utils.sleep(2000);
+
 
             element.click();
 
@@ -168,17 +169,26 @@ public class ExploreElements extends CommonElements implements IExplore {
         String iOSSubsectionXpath = iOSDynamicXpath.replace("{0}",subsectionName);
 
         MobileElement element;
+
         if(!Utils.checkElementExist(section)){
             Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,section );
+            Utils.sleep(2000);
         }
         section.click();
+
         if (Utils.isAndroidPlatform()){
             element = ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(subsectionXpath)) ;
         }else {
             element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(iOSSubsectionXpath));
         }
+
+        if(!Utils.checkElementExist(element)){
+            Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,element );
+            Utils.waitForElementVisible(appiumDriver,element);
+        }
         element.click();
     }
+
 
     @Override
     public String getHeadingTitle() {
