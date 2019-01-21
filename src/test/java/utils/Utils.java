@@ -60,7 +60,7 @@ public class Utils {
     }
     public static void scrollToElement(AppiumDriver appiumDriver, DIRECTION direction, MobileElement element){
        int count=0;
-       int maxLoop =10;
+       int maxLoop =5;
 
         do{
             count ++;
