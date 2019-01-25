@@ -16,6 +16,10 @@ public class Constants {
     public static final String GOOGLEACCOUNT_USERNAME = "testphilly453";
     public static final String GOOGLEACCOUNT_PASSWORD = "testtesttest91";
 
+    public static final String LOGIN_EMAIL = "fairly@enclave.vn";
+    public static final String LOGIN_PASSWORD = "Test!12345";
+
+
     public static String EXECUTING_SUITE = new String();
     public static int SHORTTIME = 1000;
     public static int MAXNUMBEROPENARTICLE = 100;
@@ -33,6 +37,7 @@ public class Constants {
         public static final String THE_PHILADELPHIA_INQUIRER_REPLICA = "The Philadelphia Inquirer Replica";
         public static final String THE_PHILADELPHIA_INQUIRER_REPLICA_NJ_EDITION = "The Philadelphia Inquirer Replica - NJ Edition";
         public static final String THE_PHILADELPHIA_DAILY_NEWS_REPLICA = "The Philadelphia Daily News Replica";
+        public static final String VIEW_ACCOUNT_DETAILS = "View Account Details";
     }
 
     public static class APP_VERSION {
@@ -45,5 +50,24 @@ public class Constants {
         public static final String IOS_SHARE_LB = " share feedIcon";
 
     }
+
+    public static class LOGIN{
+        public  static final String LOG_IN_TITLE = "Log In";
+        public  static final String LOG_IN_OR_SIGN_UP = "Log In or Sign Up";
+        public  static final String INVALID_EMAIL_ERROR_MESSAGE = "Please enter a valid email address.";
+        public  static final String BLANK_EMAIL_ERROR_MESSAGE = "Please enter your email address.";
+        public  static final String BLANK_PASSWORD_ERROR_MESSAGE = "Please enter your password.";
+        public  static final String ACCOUNT_ERROR_MESSAGE = "The email and password you entered don't match.";
+        public  static final String SIGN_UP = "Don’t have an account? Sign up.";
+
+        public  static final String NETWORK_ERROR_TITLE = "Network Error";
+        public  static final String NETWORK_ERROR_MESSAGE = "We’re unable to process your request. Please check your connection and try again";
+
+        public  static final String UNMATCHED_ACCOUNT_DIALOG_MESSAGE= "The email and password you entered don't match.";
+        public  static final String TRY_AGAIN_DIALOG_BUTTON= "TRY AGAIN";
+
+    }
+
+
 
 }
