@@ -23,6 +23,7 @@ public class BaseTestClass extends AppiumBaseClass {
     SearchTab searchTab;
     RatingModule ratingModule;
     ExploreTab exploreTab;
+    LoginPage loginPage;
 
     @BeforeTest
     public void setUp(ITestContext iTestContext) throws Exception {
@@ -40,6 +41,7 @@ public class BaseTestClass extends AppiumBaseClass {
         articlePage = new ArticlePage(driver());
         ratingModule = new RatingModule(driver());
         exploreTab = new ExploreTab(driver());
+        loginPage = new LoginPage(driver());
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")
