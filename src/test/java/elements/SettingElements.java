@@ -44,6 +44,17 @@ public class SettingElements extends CommonElements implements ISetting {
     public MobileElement pmnCopyrightYear;
 
 
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'Settings')]")
+    public MobileElement settingsHeading;
+
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'Log In or Sign Up')]")
+    public MobileElement logInOrSignUp;
+
+    @AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='android:id/title']")
+    public MobileElement signedUpAccount;
+
+    @AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='android:id/summary']")
+    public MobileElement viewAccountDetails;
 
     //========================================================================================//
     @iOSFindBy(id = "About")
