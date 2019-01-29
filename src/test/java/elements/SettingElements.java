@@ -37,10 +37,12 @@ public class SettingElements extends CommonElements implements ISetting {
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Version and Build Number')]/following-sibling::android.widget.TextView")
     public MobileElement appVersion;
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/title']")
+  // @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/title']")
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'Philadelphia Media Network (Digital), LLC')]")
     public MobileElement pmnName;
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/summary']")
+    //@AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/summary']")
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'© Copyright')]")
     public MobileElement pmnCopyrightYear;
 
 
