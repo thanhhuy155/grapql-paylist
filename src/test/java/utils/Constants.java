@@ -41,7 +41,7 @@ public class Constants {
     }
 
     public static class APP_VERSION {
-        public static final String ANDROID = "4.1.0 (60)";
+        public static final String ANDROID = "4.1.0 (61)";
         public static final String IOS = "4.1.0 (143)";
     }
 
@@ -61,10 +61,14 @@ public class Constants {
         public  static final String SIGN_UP = "Don’t have an account? Sign up.";
 
         public  static final String NETWORK_ERROR_TITLE = "Network Error";
-        public  static final String NETWORK_ERROR_MESSAGE = "We’re unable to process your request. Please check your connection and try again";
+        public  static final String NETWORK_ERROR_MESSAGE = "We’re unable to process your request. Please check your connection and try again.";
 
         public  static final String UNMATCHED_ACCOUNT_DIALOG_MESSAGE= "The email and password you entered don't match.";
         public  static final String TRY_AGAIN_DIALOG_BUTTON= "TRY AGAIN";
+
+
+        //Reset Password screen
+        public  static final String RESET_EMAIL_INFORMATION= "Please call our customer service at 800-222-2765 and we’ll help you recover your login email address.";
 
     }
 
