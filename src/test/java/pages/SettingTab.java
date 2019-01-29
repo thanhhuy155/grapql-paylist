@@ -44,8 +44,12 @@ public class SettingTab extends BasePage {
         //Step: Click email option
         commonElements.selectGmail(appiumDriver,Constants.GOOGLEACCOUNT_USERNAME,Constants.GOOGLEACCOUNT_PASSWORD);
 
+        Utils.sleep(Constants.SHORTTIME);
+
+
         //Verify point: email window opens
         Assert.assertTrue(Utils.checkElementExist(commonElements.gmailComposeScreen));
+
 
         //Verify point:
         Assert.assertTrue(commonElements.gmailTo.getText().contains("appteam@philly.com"));
@@ -89,6 +93,8 @@ public class SettingTab extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
 
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+
         //Step: App Version reflects current app version tested
         settingElements.checkAppVersion(Constants.APP_VERSION.ANDROID, Constants.APP_VERSION.IOS);
     }
@@ -97,6 +103,8 @@ public class SettingTab extends BasePage {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
+
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
 
         //Step: Copyright reflects current year and Philadelphia Media Network (Digital), LLC
         settingElements.checkAppCopyright("Philadelphia Media Network (Digital), LLC");
