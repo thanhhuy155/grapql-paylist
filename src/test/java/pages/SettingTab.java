@@ -24,9 +24,13 @@ public class SettingTab extends BasePage {
         commonElements.settingTabClick();
         settingElements.notificationClick();
         if (!Utils.isAndroidPlatform()) {
+            Utils.waitForElementVisible(appiumDriver, settingElements.notificationSetting);
+
             settingElements.notificationSettingClick();
             settingElements.allowNotificationClick();
             settingElements.backToPhillyApp();
+
+            Utils.waitForElementVisible(appiumDriver, settingElements.notificationResult);
             settingElements.assertSettingResult("Off", settingElements.getNotificationSettingTitle());
         }
     }
