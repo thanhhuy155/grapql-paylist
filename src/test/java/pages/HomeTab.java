@@ -32,6 +32,9 @@ public class HomeTab extends BasePage {
         lauchApp();
 
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
+        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+
         String title = feedListElements.getFeedItemTitle();
         feedListElements.feedItemClick();
 
@@ -44,8 +47,7 @@ public class HomeTab extends BasePage {
 
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
-
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, feedListElements.btnShareOnFeedArticle);
         String title = feedListElements.getFeedItemTitle();
         feedListElements.buttonShareClick();
 
