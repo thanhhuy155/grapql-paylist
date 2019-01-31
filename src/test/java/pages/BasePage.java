@@ -193,4 +193,30 @@ public class BasePage {
                 break;
         }
     }
+
+    protected boolean getWiFiConnectionStatus(){
+
+        boolean isEnable = true;
+        switch (AppiumController.executionOS) {
+            case ANDROID:
+
+                isEnable = ((AndroidDriver) appiumDriver).getConnection().isWiFiEnabled();
+                break;
+        }
+     return  isEnable;
+
+    }
+
+
+    protected boolean getCellularConnectionStatus() {
+
+        boolean isEnable=true;
+
+        switch (AppiumController.executionOS) {
+            case ANDROID:
+                isEnable =  ((AndroidDriver) appiumDriver).getConnection().isDataEnabled();
+                break;
+        }
+    return isEnable;
+    }
 }
