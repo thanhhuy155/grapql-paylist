@@ -16,8 +16,8 @@ public class Constants {
     public static final String GOOGLEACCOUNT_USERNAME = "testphilly453";
     public static final String GOOGLEACCOUNT_PASSWORD = "testtesttest91";
 
-    public static final String LOGIN_EMAIL = "fairly@enclave.vn";
-    public static final String LOGIN_PASSWORD = "Test!12345";
+    public static final String LOGIN_EMAIL = "empphilly01@gmail.com";
+    public static final String LOGIN_PASSWORD = "Test!1234";
 
 
     public static String EXECUTING_SUITE = new String();
@@ -66,9 +66,12 @@ public class Constants {
         public  static final String UNMATCHED_ACCOUNT_DIALOG_MESSAGE= "The email and password you entered don't match.";
         public  static final String TRY_AGAIN_DIALOG_BUTTON= "TRY AGAIN";
 
+        //For got email
+        public  static final String FORGOT_EMAIL_MESSAGE = "Please call our customer service at 800-222-2765 and we’ll help you recover your login email address.";
+        public  static final String CUSTOMER_SERVICE_NUMBER = "+1 800-222-2765";
 
         //Reset Password screen
-        public  static final String RESET_EMAIL_INFORMATION= "Please call our customer service at 800-222-2765 and we’ll help you recover your login email address.";
+        public  static final String RESET_EMAIL_MESSAGE= "Please call our customer service at 800-222-2765 and we’ll help you recover your login email address.";
 
     }
 
