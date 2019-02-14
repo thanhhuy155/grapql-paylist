@@ -97,7 +97,7 @@ public class SettingTab extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
 
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, settingElements.appVersion);
 
         //Step: App Version reflects current app version tested
         settingElements.checkAppVersion(Constants.APP_VERSION.ANDROID, Constants.APP_VERSION.IOS);
@@ -108,7 +108,7 @@ public class SettingTab extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
 
-        Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, settingElements.pmnCopyrightYear);
 
         //Step: Copyright reflects current year and Philadelphia Media Network (Digital), LLC
         settingElements.checkAppCopyright("Philadelphia Media Network (Digital), LLC");
