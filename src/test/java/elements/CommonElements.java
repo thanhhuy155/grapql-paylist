@@ -74,7 +74,8 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(xpath = "//android.widget.RelativeLayout[@resource-id='com.google.android.gm:id/body_wrapper']//android.view.View")
     public MobileElement gmailContent;
 
-    @AndroidFindBy(xpath = "//android.view.ViewGroup[android.widget.FrameLayout[android.view.ViewGroup[android.widget.TextView[contains(@text,'Compose')]]]]")
+   // @AndroidFindBy(xpath = "//android.view.ViewGroup[android.widget.FrameLayout[android.view.ViewGroup[android.widget.TextView[contains(@text,'Compose')]]]]")
+    @AndroidFindBy(xpath = "//android.widget.ScrollView[@resource-id='com.google.android.gm:id/compose']")
     public MobileElement gmailComposeScreen;
 
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.LinearLayout[android.widget.TextView[contains(@text,'Send Email')]]]")
