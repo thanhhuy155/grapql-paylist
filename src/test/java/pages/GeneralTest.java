@@ -1,21 +1,28 @@
 package pages;
 
-import elements.ArticleDetailElements;
-import elements.CommonElements;
-import elements.FeedListElements;
+import elements.*;
 import io.appium.java_client.AppiumDriver;
+import org.testng.Assert;
+import utils.Constants;
 import utils.Utils;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class GeneralTest extends BasePage {
     private CommonElements commonElements;
     private FeedListElements feedListElements;
     private ArticleDetailElements articleDetailElements;
+    private SettingElements settingElements;
+    private ExploreElements exploreElements;
 
     public GeneralTest(AppiumDriver driver) {
         super(driver);
         commonElements = new CommonElements(driver);
         feedListElements = new FeedListElements(driver);
         articleDetailElements = new ArticleDetailElements(driver);
+        settingElements = new SettingElements(driver);
+        exploreElements = new ExploreElements(driver);
     }
 
     public void TestCaseNo1() {
@@ -25,8 +32,17 @@ public class GeneralTest extends BasePage {
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
+        waitForVisibilityOf(settingElements.settingsHeading);
+        Assert.assertTrue(Utils.checkElementExist(settingElements.settingsHeading));
+
         commonElements.sectionTabClick();
+        waitForVisibilityOf(exploreElements.headingTitle);
+        Assert.assertTrue(Utils.checkElementExist(exploreElements.headingTitle));
+
         commonElements.bookMarkTab.click();
+        Utils.sleep(Constants.SHORTTIME);
+
+        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
 
         turnOnWifi();
     }
@@ -38,8 +54,17 @@ public class GeneralTest extends BasePage {
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
+        waitForVisibilityOf(settingElements.settingsHeading);
+        Assert.assertTrue(Utils.checkElementExist(settingElements.settingsHeading));
+
         commonElements.sectionTabClick();
+        waitForVisibilityOf(exploreElements.headingTitle);
+        Assert.assertTrue(Utils.checkElementExist(exploreElements.headingTitle));
+
         commonElements.bookMarkTab.click();
+        Utils.sleep(Constants.SHORTTIME);
+
+        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
 
         turnOnWifi();
     }
@@ -52,8 +77,17 @@ public class GeneralTest extends BasePage {
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
+        waitForVisibilityOf(settingElements.settingsHeading);
+        Assert.assertTrue(Utils.checkElementExist(settingElements.settingsHeading));
+
         commonElements.sectionTabClick();
+        waitForVisibilityOf(exploreElements.headingTitle);
+        Assert.assertTrue(Utils.checkElementExist(exploreElements.headingTitle));
+
         commonElements.bookMarkTab.click();
+        Utils.sleep(Constants.SHORTTIME);
+
+        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
 
         turnOnWifi();
     }
@@ -63,13 +97,24 @@ public class GeneralTest extends BasePage {
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.sectionTabClick();
+        waitForVisibilityOf(exploreElements.headingTitle);
+        Assert.assertTrue(Utils.checkElementExist(exploreElements.headingTitle));
+
         commonElements.settingTabClick();
+        waitForVisibilityOf(settingElements.settingsHeading);
+        Assert.assertTrue(Utils.checkElementExist(settingElements.settingsHeading));
+
         commonElements.homeTabClick();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+        Assert.assertTrue(Utils.checkElementExist(feedListElements.feedItemTitleTopStory));
 
         if(!Utils.isAndroidPlatform()){
             commonElements.searchTabClick();
         }
         commonElements.bookMarkTab.click();
+        Utils.sleep(Constants.SHORTTIME);
+
+        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
     }
 
     public void TestCaseNo7() {
@@ -81,13 +126,26 @@ public class GeneralTest extends BasePage {
 
         waitForVisibilityOf(feedListElements.bottomTab);
         commonElements.sectionTabClick();
+        waitForVisibilityOf(exploreElements.headingTitle);
+        Assert.assertTrue(Utils.checkElementExist(exploreElements.headingTitle));
+
         commonElements.homeTabClick();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+        Assert.assertTrue(Utils.checkElementExist(feedListElements.feedItemTitleTopStory));
+
         commonElements.settingTabClick();
+        waitForVisibilityOf(settingElements.settingsHeading);
+        Assert.assertTrue(Utils.checkElementExist(settingElements.settingsHeading));
+
         commonElements.bookMarkTab.click();
+        Utils.sleep(Constants.SHORTTIME);
+
+        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
     }
 
     public void TestCaseNo11() {
         lauchApp();
+        Utils.sleep(Constants.SHORTTIME);
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         openArticle();
