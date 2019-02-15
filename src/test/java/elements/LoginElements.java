@@ -5,6 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSFindBy;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.support.PageFactory;
@@ -21,46 +22,80 @@ public class LoginElements extends BasePage {
 
 
 
+    @iOSFindBy(id =  "Log In")
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/actionBarTitle']")
     public MobileElement actionBarTitle;
 
+    @iOSFindBy(id =  "Reset Password")
+    public MobileElement resetPasswordTitle;
+
+    @iOSFindBy(id =  "Sign Up")
+    public MobileElement signUpTitle;
+
+    @iOSFindBy(id =  "Cancel")
     @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.ap.philly:id/actionBarBtnClose']")
     public MobileElement closeActionButton;
 
+
+    @iOSFindBy(xpath = "//XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/emailEdt']")
     public MobileElement email;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/textinput_error']")
     public MobileElement messageEmail;
 
+
+    @iOSFindBy(xpath = "//XCUIElementTypeTextField[contains(@value, 'Please enter your email address')]")
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your email address.')]")
     public MobileElement messageEmailForBlank;
+
 
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter a valid email address.')]")
     public MobileElement messageEmailForInvalid;
 
+
+
+
+    @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField")
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/passwordEdt']")
     public MobileElement password;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeTextField[contains(@value,'Test!1234')]")
+    public MobileElement passwordValue;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your password.')]")
     public MobileElement messagePassword;
 
+
+    @iOSFindBy(id= "invisibilityShow")
     @AndroidFindBy(xpath = "//android.widget.ImageButton[@resource-id='com.ap.philly:id/text_input_password_toggle']")
     public MobileElement showOrHidePasswordIcon;
 
+
+    @iOSFindBy(id=  "LOG IN")
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.ap.philly:id/loginBtn']")
     public MobileElement logInButton;
+
+
+    @iOSFindBy(id = "Log In.")
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Already have an account? Log In.')]")
     public MobileElement logInLink;
 
+
+    @iOSFindBy(id=  "Forgot password?")
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/forgotPassword']")
     public MobileElement forgotPasswordLink;
 
+
+    @iOSFindBy(id=  "Forgot email?")
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/forgotEmail']")
     public MobileElement forgotEmailLink;
 
+
+    @iOSFindBy(id = "Sign Up.")
     @AndroidFindBy(xpath = "//android.widget.TextView[(@resource-id='com.ap.philly:id/signUp')]")
     public MobileElement signUpLink;
+
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/heading']")
     public MobileElement userLogin;
@@ -68,9 +103,14 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/dialog_title']")
     public MobileElement dialogTitle;
 
+
+    @iOSFindBy(id = "The email and password you entered don't match.")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name='The email and password you entered don't match.']")
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/dialog_message']")
     public MobileElement dialogMessage;
 
+
+    @iOSFindBy(id=  "TRY AGAIN")
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/btnOK']")
     public MobileElement tryAgainDialogButton;
 
@@ -85,9 +125,12 @@ public class LoginElements extends BasePage {
     public MobileElement resetEmail;
 
 
+    @iOSFindBy(xpath = "//XCUIElementTypeTextView[@value, 'Please call our customer service at 800-222-2765 and we’ll help you recover your login email address.']")
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/resetEmail']")
     public MobileElement forgotEmailMessage;
 
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name, 'closeOnLight']")
     @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.ap.philly:id/exitResetEmail']")
     public MobileElement exitResetEmailButton;
 
@@ -100,6 +143,7 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id='com.android.contacts:id/dialpad_search_frame']")
     public MobileElement dialerWindow;
 
+    @iOSFindBy(id = "800-222-2765 ")
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.android.contacts:id/digits']")
     public MobileElement customerServiceNumber;
 
@@ -148,4 +192,14 @@ public class LoginElements extends BasePage {
 
         touchAction.tap(PointOption.point(pointX,pointY)).perform();
     }
+
+    public void hiddenKeyboard(AppiumDriver appiumDriver, MobileElement element){
+        Point keyboardPoint = element.getLocation();
+        TouchAction touchAction = new TouchAction(appiumDriver);
+        int pointX= keyboardPoint.getX() +2;
+        int pointY= keyboardPoint.getY() -2;
+        touchAction.tap(PointOption.point(pointX,pointY)).perform();
+
+    }
 }
+

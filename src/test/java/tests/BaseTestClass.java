@@ -24,6 +24,7 @@ public class BaseTestClass extends AppiumBaseClass {
     RatingModule ratingModule;
     ExploreTab exploreTab;
     LoginPage loginPage;
+    LoginPageForiOS loginPageForiOS;
     ForgotEmailPage forgotEmailPage;
 
     @BeforeTest
@@ -43,6 +44,7 @@ public class BaseTestClass extends AppiumBaseClass {
         ratingModule = new RatingModule(driver());
         exploreTab = new ExploreTab(driver());
         loginPage = new LoginPage(driver());
+        loginPageForiOS = new LoginPageForiOS(driver());
         forgotEmailPage = new ForgotEmailPage(driver());
     }
 
