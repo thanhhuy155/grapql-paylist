@@ -92,10 +92,7 @@ public class iOSLoginPage extends BasePage {
             settingElements.logInOrSignUp.click();
 
             loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
-            loginElements.assertValue(loginElements.email, Constants.LOGIN_EMAIL);
-
             loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
-            loginElements.assertValue(loginElements.password, Constants.LOGIN_PASSWORD);
             loginElements.logInButton.click();
 
 
