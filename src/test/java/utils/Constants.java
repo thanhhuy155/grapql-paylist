@@ -71,8 +71,12 @@ public class Constants {
         public  static final String CUSTOMER_SERVICE_NUMBER = "+1 800-222-2765";
 
         //Reset Password screen
-        public  static final String RESET_EMAIL_MESSAGE= "Please call our customer service at 800-222-2765 and we’ll help you recover your login email address.";
+        public  static final String FORGOT_EMAIL_ADDRESS_MESSAGE= "If you don’t remember the email address you signed up with, you can call our customer service at 800-222-2765 and we’ll help you recover it.";
 
+        //Forgot Password
+        public  static final String FORGOT_PASSWORD_MESSAGE = "Please enter your email address. We will send you an email to reset your password.";
+
+        public  static final String SEND_EMAIL_SUCCESS_MESSAGE = "If the email you entered is registered, we’ve sent you an email to reset your password.";
     }
 
 
