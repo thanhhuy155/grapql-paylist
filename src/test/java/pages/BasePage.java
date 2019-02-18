@@ -81,9 +81,13 @@ public class BasePage {
     protected void lockDevice() {
         switch (AppiumController.executionOS) {
             case ANDROID:
+                ((AndroidDriver) appiumDriver).lockDevice();
+                break;
+
             case ANDROID_BROWSERSTACK:
                 ((AndroidDriver) appiumDriver).lockDevice();
                 break;
+
             case IOS_BROWSERSTACK:
             case IOS:
                 //todo
@@ -95,9 +99,13 @@ public class BasePage {
     protected void unLockDevice() {
         switch (AppiumController.executionOS) {
             case ANDROID:
+                ((AndroidDriver) appiumDriver).unlockDevice();
+                break;
+
             case ANDROID_BROWSERSTACK:
                 ((AndroidDriver) appiumDriver).unlockDevice();
                 break;
+
             case IOS_BROWSERSTACK:
             case IOS:
                 //todo
