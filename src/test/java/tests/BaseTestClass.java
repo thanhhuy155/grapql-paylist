@@ -27,6 +27,7 @@ public class BaseTestClass extends AppiumBaseClass {
     ForgotEmailPage forgotEmailPage;
     iOSLoginPage iOS_LoginPage;
     iOSForgotEmailPage iOS_ForgotEmailPage;
+    ForgotPasswordPage forgotPasswordPage;
 
     @BeforeTest
     public void setUp(ITestContext iTestContext) throws Exception {
@@ -48,6 +49,8 @@ public class BaseTestClass extends AppiumBaseClass {
         iOS_LoginPage = new iOSLoginPage(driver());
         forgotEmailPage = new ForgotEmailPage(driver());
         iOS_ForgotEmailPage = new iOSForgotEmailPage(driver());
+        forgotPasswordPage = new ForgotPasswordPage(driver());
+
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")

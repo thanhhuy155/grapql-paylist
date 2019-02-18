@@ -66,8 +66,6 @@ public class LoginElements extends BasePage {
     public MobileElement messageEmailForInvalid;
 
 
-
-
     @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField")
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/passwordEdt']")
     public MobileElement password;
@@ -99,6 +97,18 @@ public class LoginElements extends BasePage {
     public MobileElement forgotPasswordLink;
 
 
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@resource-id='com.ap.philly:id/layout_reset_password_item']/android.widget.LinearLayout[@resource-id='com.ap.philly:id/container']/android.widget.TextView")
+    public MobileElement forgotPasswordMessage;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.ap.philly:id/sendEmailBtn']")
+    public MobileElement sendEmailButton;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.ImageView")
+    public MobileElement successImage;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.TextView")
+    public MobileElement successMessage;
+
     @iOSFindBy(id=  "Forgot email?")
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/forgotEmail']")
     public MobileElement forgotEmailLink;
@@ -129,12 +139,6 @@ public class LoginElements extends BasePage {
     // Reset Password screen
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your email address. We will send you an email to reset your password.')]")
     public MobileElement informationMessage;
-
-    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.ap.philly:id/sendEmailBtn']")
-    public MobileElement sendEmailButton;
-
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/resetEmail']")
-    public MobileElement resetEmail;
 
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextView")
