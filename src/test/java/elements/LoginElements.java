@@ -32,10 +32,21 @@ public class LoginElements extends BasePage {
     @iOSFindBy(id =  "Sign Up")
     public MobileElement signUpTitle;
 
-    @iOSFindBy(id =  "Cancel")
     @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.ap.philly:id/actionBarBtnClose']")
     public MobileElement closeActionButton;
 
+
+    @iOSFindBy(id =  "Call")
+    public MobileElement callButton;
+
+    @iOSFindBy(id =  "Cancel")
+    public MobileElement cancelButton;
+
+    @iOSFindBy(id =  "End")
+    public MobileElement endCallButton;
+
+    @iOSFindBy(id =  "OK")
+    public MobileElement OKButton;
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/emailEdt']")
@@ -125,12 +136,12 @@ public class LoginElements extends BasePage {
     public MobileElement resetEmail;
 
 
-    @iOSFindBy(xpath = "//XCUIElementTypeTextView[@value, 'Please call our customer service at 800-222-2765 and we’ll help you recover your login email address.']")
+    @iOSFindBy(xpath = "//XCUIElementTypeTextView")
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/resetEmail']")
     public MobileElement forgotEmailMessage;
 
 
-    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name, 'closeOnLight']")
+    @iOSFindBy(id = "closeOnLight")
     @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.ap.philly:id/exitResetEmail']")
     public MobileElement exitResetEmailButton;
 
@@ -143,7 +154,7 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id='com.android.contacts:id/dialpad_search_frame']")
     public MobileElement dialerWindow;
 
-    @iOSFindBy(id = "800-222-2765 ")
+    @iOSFindBy(xpath = "//XCUIElementTypeLink")
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.android.contacts:id/digits']")
     public MobileElement customerServiceNumber;
 

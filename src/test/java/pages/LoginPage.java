@@ -224,10 +224,8 @@ public class LoginPage extends BasePage {
             settingElements.logInOrSignUp.click();
 
             loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
-            loginElements.assertValue(loginElements.email, Constants.LOGIN_EMAIL);
 
             loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
-            loginElements.assertValue(loginElements.password, Constants.LOGIN_PASSWORD);
             loginElements.logInButton.click();
 
 
@@ -236,7 +234,6 @@ public class LoginPage extends BasePage {
             //Check Setting page appears
             Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
            //Check account display correctly
-            Assert.assertTrue(Utils.checkElementExist(settingElements.signedUpAccount), "Check account logged in successfully");
             Assert.assertTrue(Utils.checkElementExist(settingElements.viewAccountDetails), "Check account logged in successfully");
             Assert.assertEquals(Constants.SETTING_TITLE.VIEW_ACCOUNT_DETAILS,settingElements.viewAccountDetails.getText().trim(), "Check View Account Details displays");
 
