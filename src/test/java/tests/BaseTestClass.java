@@ -24,8 +24,9 @@ public class BaseTestClass extends AppiumBaseClass {
     RatingModule ratingModule;
     ExploreTab exploreTab;
     LoginPage loginPage;
-    LoginPageForiOS loginPageForiOS;
     ForgotEmailPage forgotEmailPage;
+    iOSLoginPage iOS_LoginPage;
+    iOSForgotEmailPage iOS_ForgotEmailPage;
 
     @BeforeTest
     public void setUp(ITestContext iTestContext) throws Exception {
@@ -44,8 +45,9 @@ public class BaseTestClass extends AppiumBaseClass {
         ratingModule = new RatingModule(driver());
         exploreTab = new ExploreTab(driver());
         loginPage = new LoginPage(driver());
-        loginPageForiOS = new LoginPageForiOS(driver());
+        iOS_LoginPage = new iOSLoginPage(driver());
         forgotEmailPage = new ForgotEmailPage(driver());
+        iOS_ForgotEmailPage = new iOSForgotEmailPage(driver());
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")

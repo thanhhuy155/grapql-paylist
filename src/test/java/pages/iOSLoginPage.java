@@ -6,7 +6,7 @@ import org.testng.Assert;
 import utils.Constants;
 import utils.Utils;
 
-public class LoginPageForiOS extends BasePage {
+public class iOSLoginPage extends BasePage {
 
 
     private CommonElements commonElements;
@@ -16,7 +16,7 @@ public class LoginPageForiOS extends BasePage {
     private LoginElements loginElements;
 
 
-    public LoginPageForiOS(AppiumDriver driver) {
+    public iOSLoginPage(AppiumDriver driver) {
         super(driver);
 
         commonElements = new CommonElements(driver);

@@ -6,7 +6,7 @@ import org.testng.Assert;
 import utils.Constants;
 import utils.Utils;
 
-public class ForgotEmailPageForiOS extends BasePage {
+public class iOSForgotEmailPage extends BasePage {
 
 
     private CommonElements commonElements;
@@ -16,7 +16,7 @@ public class ForgotEmailPageForiOS extends BasePage {
     private LoginElements loginElements;
 
 
-    public ForgotEmailPageForiOS(AppiumDriver driver) {
+    public iOSForgotEmailPage(AppiumDriver driver) {
         super(driver);
 
         commonElements = new CommonElements(driver);

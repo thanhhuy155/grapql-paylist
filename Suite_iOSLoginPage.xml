@@ -4,7 +4,7 @@
 <suite name = "LoginPageSuite">
     <test name = "LoginPageTest">
         <classes>
-            <class name = "tests.TM_LoginPageForiOS">
+            <class name = "tests.TM_iOSLoginPage">
             </class>
         </classes>
     </test>
