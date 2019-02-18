@@ -32,6 +32,7 @@ public class LoginElements extends BasePage {
     @iOSFindBy(id =  "Sign Up")
     public MobileElement signUpTitle;
 
+    @iOSFindBy(id =  "Cancel")
     @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.ap.philly:id/actionBarBtnClose']")
     public MobileElement closeActionButton;
 
