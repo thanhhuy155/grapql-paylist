@@ -11,6 +11,7 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import pages.BasePage;
+import utils.Constants;
 import utils.Utils;
 
 public class LoginElements extends BasePage {
@@ -48,6 +49,9 @@ public class LoginElements extends BasePage {
 
     @iOSFindBy(id =  "OK")
     public MobileElement OKButton;
+
+    @iOSFindBy(id = "arrowBack1OnDark")
+    public MobileElement backButton;
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextField")
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/emailEdt']")
@@ -97,15 +101,20 @@ public class LoginElements extends BasePage {
     public MobileElement forgotPasswordLink;
 
 
+    @iOSFindBy(id = Constants.LOGIN.FORGOT_PASSWORD_MESSAGE)
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[@resource-id='com.ap.philly:id/layout_reset_password_item']/android.widget.LinearLayout[@resource-id='com.ap.philly:id/container']/android.widget.TextView")
     public MobileElement forgotPasswordMessage;
 
+
+    @iOSFindBy(id = "SEND EMAIL")
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.ap.philly:id/sendEmailBtn']")
     public MobileElement sendEmailButton;
 
+    @iOSFindBy(id = "passwordSuccess")
     @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.ImageView")
     public MobileElement successImage;
 
+    @iOSFindBy(id = Constants.LOGIN.SEND_EMAIL_SUCCESS_MESSAGE)
     @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.TextView")
     public MobileElement successMessage;
 
@@ -170,7 +179,8 @@ public class LoginElements extends BasePage {
 
 
     public static void setValue(MobileElement element, String value){
-        element.sendKeys(value);
+       // element.sendKeys(value);
+        element.setValue(value);
     }
 
     public void assertVisible(MobileElement element, boolean isVisible){
