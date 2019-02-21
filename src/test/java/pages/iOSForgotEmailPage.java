@@ -80,12 +80,14 @@ public class iOSForgotEmailPage extends BasePage {
         loginElements.callButton.click();
         Assert.assertFalse(Utils.checkElementExist(loginElements.endCallButton));
 
-        //Click OK to end Call
-        loginElements.OKButton.click();
+        if(Utils.checkElementExist(loginElements.OKButton)) {
+        //Click OK to end Call in iPhone 6S Plus
+            loginElements.OKButton.click();
+            Utils.sleep(Constants.SHORTTIME);
 
-
-        //Click Cancel to back Login page Call
-        loginElements.cancelButton.click();
+            //Click Cancel to back Login page
+            loginElements.cancelButton.click();
+        }
 
         //Check Login page
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
@@ -122,6 +124,49 @@ public class iOSForgotEmailPage extends BasePage {
         loginElements.cancelButton.click();
         Assert.assertFalse(Utils.checkElementExist(loginElements.callButton));
 
+    }
+
+
+    public void TestCasePCOM_005_001() {
+
+        //Case 3
+        lauchApp();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTab.click();
+        waitForVisibilityOf(settingElements.logInOrSignUp);
+        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
+
+
+        settingElements.logInOrSignUp.click();
+        Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
+        //Check Login screen
+        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
+
+        //Click Forgot Email link
+        loginElements.forgotEmailLink.click();
+        loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
+
+
+        //Click on phone number on the message
+        loginElements.clickCustomerServiceNumber(appiumDriver, loginElements.forgotEmailMessage);
+        Assert.assertTrue(Utils.checkElementExist(loginElements.callButton));
+
+        //Click Call
+        loginElements.callButton.click();
+        Utils.sleep(Constants.SHORTTIME*2);
+
+        if(Utils.checkElementExist(loginElements.cancelButton)){
+            loginElements.cancelButton.click();
+            Utils.sleep(Constants.SHORTTIME);
+        }
+
+        Assert.assertTrue(Utils.checkElementExist(loginElements.exitResetEmailButton));
+
+
+        //Click Close
+        loginElements.exitResetEmailButton.click();
+        //Check Forgot email information message is disabled
+        Assert.assertFalse(Utils.checkElementExist(loginElements.exitResetEmailButton),"Check Forgot email information message is closed ");
     }
 
 
