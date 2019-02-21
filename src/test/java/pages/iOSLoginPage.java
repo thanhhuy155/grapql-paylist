@@ -101,7 +101,6 @@ public class iOSLoginPage extends BasePage {
             //Check Setting page appears
             Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
             //Check account display correctly
-            Assert.assertTrue(Utils.checkElementExist(settingElements.signedUpAccount), "Check account logged in successfully");
             Assert.assertTrue(Utils.checkElementExist(settingElements.viewAccountDetails), "Check account logged in successfully");
             Assert.assertEquals(Constants.SETTING_TITLE.VIEW_ACCOUNT_DETAILS,settingElements.viewAccountDetails.getText().trim(), "Check View Account Details displays");
 
