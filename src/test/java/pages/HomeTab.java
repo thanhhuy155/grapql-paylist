@@ -36,6 +36,8 @@ public class HomeTab extends BasePage {
         Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
 
         String title = feedListElements.getFeedItemTitle();
+
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.UP, feedListElements.feedItemTitle);
         feedListElements.feedItemClick();
 
         waitForVisibilityOf(articleDetailElements.articleDetailTitle);
