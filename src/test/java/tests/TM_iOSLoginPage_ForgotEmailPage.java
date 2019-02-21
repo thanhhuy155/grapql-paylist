@@ -20,6 +20,10 @@ public class TM_iOSLoginPage_ForgotEmailPage extends BaseTestClass {
     }
 
 
+    @Test(priority = 4)
+    public void ForgotEmailPageTCPCOM_005_001() {
+        iOS_ForgotEmailPage.TestCasePCOM_005_001();
+    }
 
     @Test(priority = 5)
     public void ForgotEmailPageTCPCOM_005_002() {
