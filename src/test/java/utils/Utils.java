@@ -166,4 +166,18 @@ public class Utils {
         WebDriverWait webDriverWait = new WebDriverWait(appiumDriver, 30);
         webDriverWait.until(visibilityOf(element));
     }
+
+
+    public static String getDeviceVersion(AppiumDriver appiumDriver){
+
+        //Get version when running on BrowserStack
+        if(AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS) ||
+                AppiumController.OS.IOS_BROWSERSTACK.equals(AppiumController.executionOS)){
+            return appiumDriver.getCapabilities().getCapability("os_version").toString();
+
+        }else{
+            return appiumDriver.getCapabilities().getCapability("platformVersion").toString();
+        }
+
+    }
 }
