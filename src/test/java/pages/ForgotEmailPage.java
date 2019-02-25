@@ -72,16 +72,37 @@ public class ForgotEmailPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailMessage),"Check forgot email information message display: ");
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 
+        String currentDeviceVersion = Utils.getDeviceVersion(appiumDriver);
+        switch (currentDeviceVersion){
+            case Constants.DEVICE_VERSION.GALAXY_S5_5_0:
+                //Click on phone number on the message
+                loginElements.clickCustomerServiceNumber(appiumDriver, loginElements.forgotEmailMessage);
+                waitForVisibilityOf(loginElements.dialerWindow);
+                Assert.assertTrue(Utils.checkElementExist(loginElements.dialerWindow),"Check dialer window display: ");
+                loginElements.assertValue(loginElements.customerServiceNumber, Constants.LOGIN.CUSTOMER_SERVICE_NUMBER);
 
-        //Click on phone number on the message
-        loginElements.clickCustomerServiceNumber(appiumDriver, loginElements.forgotEmailMessage);
-        waitForVisibilityOf(loginElements.dialerWindow);
-        Assert.assertTrue(Utils.checkElementExist(loginElements.dialerWindow),"Check dialer window display: ");
-        loginElements.assertValue(loginElements.customerServiceNumber, Constants.LOGIN.CUSTOMER_SERVICE_NUMBER);
+                //Click Back button on device to return app
+                ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.BACK));
+                Utils.sleep(Constants.SHORTTIME);
+                break;
 
-        //Click Back button on device to return app
-        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.BACK));
-        Utils.sleep(Constants.SHORTTIME);
+            case Constants.DEVICE_VERSION.GALAXY_S8_8_0:
+                //Click on phone number on the message
+                loginElements.clickCustomerServiceNumber(appiumDriver, loginElements.forgotEmailMessage);
+
+                loginElements.assertValue(loginElements.customerServiceNumber, Constants.LOGIN.CUSTOMER_SERVICE_NUMBER_GALAXY_S8);
+
+                //Click Back button twice to return app
+                ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.BACK));
+                ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.BACK));
+                Utils.sleep(Constants.SHORTTIME);
+                break;
+
+            case Constants.DEVICE_VERSION.GALAXY_NOTE9_8_1:
+                break;
+
+        }
+
         //Check Log In screen is being returned
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
     }
@@ -130,11 +151,6 @@ public class ForgotEmailPage extends BasePage {
 
         //Click Email field
         loginElements.email.click();
-
-
-        //Click Password field
-        loginElements.password.click();
-
 
         //Click Forgot Email link
         loginElements.forgotEmailLink.click();
