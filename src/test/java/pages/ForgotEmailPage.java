@@ -13,8 +13,6 @@ public class ForgotEmailPage extends BasePage {
 
 
     private CommonElements commonElements;
-    private ExploreElements exploreElements;
-    private BookMarkElements bookMarkElements;
     private SettingElements settingElements;
     private LoginElements loginElements;
 
@@ -24,8 +22,6 @@ public class ForgotEmailPage extends BasePage {
 
         commonElements = new CommonElements(driver);
         settingElements= new SettingElements(driver);
-        exploreElements= new ExploreElements(driver);
-        bookMarkElements= new BookMarkElements(driver);
         loginElements = new LoginElements(driver);
 
     }
