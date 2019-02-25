@@ -69,6 +69,7 @@ public class Constants {
         //For got email
         public  static final String FORGOT_EMAIL_MESSAGE = "Please call our customer service at 800-222-2765 and we’ll help you recover your login email address.";
         public  static final String CUSTOMER_SERVICE_NUMBER = "+1 800-222-2765";
+        public  static final String CUSTOMER_SERVICE_NUMBER_GALAXY_S8 = "+18002222765";
 
         //Reset Password screen
         public  static final String FORGOT_EMAIL_ADDRESS_MESSAGE= "If you don’t remember the email address you signed up with, you can call our customer service at 800-222-2765 and we’ll help you recover it.";
@@ -79,6 +80,12 @@ public class Constants {
         public  static final String SEND_EMAIL_SUCCESS_MESSAGE = "If the email you entered is registered, we’ve sent you an email to reset your password.";
     }
 
+    public static class DEVICE_VERSION{
+        public  static final String GALAXY_S5_5_0= "5.0";
+        public  static final String GALAXY_S8_8_0 = "8.0.0";
+        public  static final String GALAXY_NOTE9_8_1 = "8.1";
+
+    }
 
 
 }
