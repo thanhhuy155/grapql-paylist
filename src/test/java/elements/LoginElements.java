@@ -179,7 +179,7 @@ public class LoginElements extends BasePage {
 
 
     public static void setValue(MobileElement element, String value){
-       // element.sendKeys(value);
+        element.clear();
         element.setValue(value);
     }
 
