@@ -49,7 +49,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_007() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -68,7 +67,6 @@ public class iOSLoginPage extends BasePage {
         Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
 
     }
-
 
     public void TestCasePCOM_018() {
 
@@ -140,7 +138,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_020() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -166,7 +163,6 @@ public class iOSLoginPage extends BasePage {
         Assert.assertEquals(part2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
 
     }
-
 
     public void TestCasePCOM_021() {
         lauchApp();
@@ -197,7 +193,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_022() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -226,7 +221,6 @@ public class iOSLoginPage extends BasePage {
         loginElements.assertValue(loginElements.tryAgainDialogButton, Constants.LOGIN.TRY_AGAIN_DIALOG_BUTTON);
 
     }
-
 
     public void TestCasePCOM_023() {
         lauchApp();
@@ -285,7 +279,6 @@ public class iOSLoginPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.dialogMessage), "Check dialog is closed");
     }
 
-
     public void TestCasePCOM_024() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -316,7 +309,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_025() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -343,7 +335,6 @@ public class iOSLoginPage extends BasePage {
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
 
     }
-
 
     public void TestCasePCOM_026() {
         lauchApp();
@@ -383,7 +374,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_027() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -411,7 +401,6 @@ public class iOSLoginPage extends BasePage {
         Assert.assertFalse(passwordMsg.contains(":"));
 
     }
-
 
     public void TestCasePCOM_028() {
         lauchApp();
@@ -443,7 +432,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_029() {
         lauchApp();
 
@@ -470,7 +458,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_030() {
         lauchApp();
 
@@ -496,7 +483,6 @@ public class iOSLoginPage extends BasePage {
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
 
     }
-
 
     public void TestCasePCOM_032() {
         lauchApp();
@@ -549,7 +535,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_035() {
         lauchApp();
 
@@ -582,7 +567,6 @@ public class iOSLoginPage extends BasePage {
         Assert.assertEquals(passwordMsgPart2, Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
 
     }
-
 
     public void TestCasePCOM_036() {
         lauchApp();
@@ -659,7 +643,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_038_001() {
         lauchApp();
 
@@ -713,7 +696,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_038_002() {
         lauchApp();
 
@@ -766,7 +748,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
     public void TestCasePCOM_039() {
         lauchApp();
 
@@ -804,7 +785,6 @@ public class iOSLoginPage extends BasePage {
         Assert.assertFalse(passwordMsg.contains(":"));
 
     }
-
 
     public void TestCasePCOM_040() {
         lauchApp();
@@ -864,8 +844,6 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-
-
     public void TestCasePCOM_042() {
 
         lauchApp();
@@ -891,10 +869,6 @@ public class iOSLoginPage extends BasePage {
 //        loginElements.assertValue(loginElements.passwordValue, Constants.LOGIN_PASSWORD);
 
     }
-
-
-
-
 
     public void TestCasePCOM_045() {
         lauchApp();

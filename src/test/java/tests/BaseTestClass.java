@@ -24,11 +24,7 @@ public class BaseTestClass extends AppiumBaseClass {
     RatingModule ratingModule;
     ExploreTab exploreTab;
     LoginPage loginPage;
-    ForgotEmailPage forgotEmailPage;
     iOSLoginPage iOS_LoginPage;
-    iOSForgotEmailPage iOS_ForgotEmailPage;
-    ForgotPasswordPage forgotPasswordPage;
-    iOSForgotPasswordPage iOS_ForgotPasswordPage;
 
     @BeforeTest
     public void setUp(ITestContext iTestContext) throws Exception {
@@ -48,10 +44,6 @@ public class BaseTestClass extends AppiumBaseClass {
         exploreTab = new ExploreTab(driver());
         loginPage = new LoginPage(driver());
         iOS_LoginPage = new iOSLoginPage(driver());
-        forgotEmailPage = new ForgotEmailPage(driver());
-        iOS_ForgotEmailPage = new iOSForgotEmailPage(driver());
-        forgotPasswordPage = new ForgotPasswordPage(driver());
-        iOS_ForgotPasswordPage = new iOSForgotPasswordPage(driver());
 
     }
 

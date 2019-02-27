@@ -8,7 +8,7 @@ pipeline{
 		stage ('Test'){
 			steps{
 				node ('android'){
-					git branch: 'master',
+					git branch: 'regression',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
                     bat 'mvn clean test -DsuiteXmlFile=MasterSuite_AndroidAllTests.xml'
@@ -37,14 +37,14 @@ pipeline{
 						<p><font font="Verdana" size="2" color="navy">Please click the link to see the detail report: </font>
 						&QUOT;<a href='http://117.3.65.55:9500/view/PhillyDotComNativeAppProjects/job/AndroidAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
                         <b/>
-						<p><font font="Verdana" size="2" color="navy">BrowserStack Android_SprintF_ReTestForServerChange build: </font>
+						<p><font font="Verdana" size="2" color="navy">BrowserStack Android_SprintG_RegressionTest build: </font>
                         &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
 
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
-					subject: '$DEFAULT_SUBJECT_Android_SprintF_ReTestForServerChange',
-          			to: 'hera@enclave.vn, pduncan@phillynews.com, tdang@phillynews.com, missy@enclave.vn, sarah@enclave.vn'
+					subject: '$DEFAULT_SUBJECT_Android_SprintG_RegressionTest',
+          			to: 'hera@enclave.vn, pduncan@philly.com, tdang@phillynews.com, missy@enclave.vn, sarah@enclave.vn'
 		}
 	}
 

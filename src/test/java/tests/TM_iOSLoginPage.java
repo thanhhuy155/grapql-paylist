@@ -136,7 +136,6 @@ public class TM_iOSLoginPage extends BaseTestClass {
     public void LoginPageTCPCOM_046() { iOS_LoginPage.TestCasePCOM_046();
     }
 
-
     //Put tests here to avoid affected to another tests
     @Test(priority = 28)
     public void LoginPageTCPCOM_018() {
