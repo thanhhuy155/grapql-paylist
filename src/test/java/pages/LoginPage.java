@@ -6,6 +6,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.testng.Assert;
+import scenarios.AppiumController;
 import utils.Constants;
 import utils.Utils;
 
@@ -886,75 +887,80 @@ public class LoginPage extends BasePage {
 
     public void TestCasePCOM_043() {
 
-        lauchApp();
+        if(!AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS)) {
 
-        waitForVisibilityOf(commonElements.bottomTab);
-        commonElements.settingTab.click();
-        waitForVisibilityOf(settingElements.logInOrSignUp);
+            lauchApp();
 
-        settingElements.logInOrSignUp.click();
-        //Enter valid Email
-        loginElements.setValue(loginElements.email, "mnguyen@philly.com");
+            waitForVisibilityOf(commonElements.bottomTab);
+            commonElements.settingTab.click();
+            waitForVisibilityOf(settingElements.logInOrSignUp);
 
-        //Enter valid Password
-        loginElements.setValue(loginElements.password, "Philly123");
+            settingElements.logInOrSignUp.click();
+            //Enter valid Email
+            loginElements.setValue(loginElements.email, "mnguyen@philly.com");
 
-        //Disconnect wifi or Cellular
-        if(loginElements.getWiFiConnectionStatus()==true) {
-            turnOffWifi();
+            //Enter valid Password
+            loginElements.setValue(loginElements.password, "Philly123");
+
+            //Disconnect wifi or Cellular
+            if (loginElements.getWiFiConnectionStatus() == true) {
+                turnOffWifi();
+            }
+            if (loginElements.getCellularConnectionStatus() == true) {
+                turnOffCellularConnection();
+            }
+
+            //Click Log In
+            loginElements.logInButton.click();
+
+            //Check messages returned
+            loginElements.assertValue(loginElements.dialogTitle, Constants.LOGIN.NETWORK_ERROR_TITLE);
+            loginElements.assertValue(loginElements.dialogMessage, Constants.LOGIN.NETWORK_ERROR_MESSAGE);
+
+            Assert.assertTrue(Utils.checkElementExist(loginElements.tryAgainDialogButton));
         }
-        if(loginElements.getCellularConnectionStatus()==true){
-            turnOffCellularConnection();
-        }
-
-        //Click Log In
-        loginElements.logInButton.click();
-
-        //Check messages returned
-        loginElements.assertValue(loginElements.dialogTitle, Constants.LOGIN.NETWORK_ERROR_TITLE);
-        loginElements.assertValue(loginElements.dialogMessage, Constants.LOGIN.NETWORK_ERROR_MESSAGE);
-
-        Assert.assertTrue(Utils.checkElementExist(loginElements.tryAgainDialogButton));
     }
 
     public void TestCasePCOM_044() {
-        lauchApp();
+        if(!AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS)) {
+            lauchApp();
 
-        waitForVisibilityOf(commonElements.bottomTab);
-        commonElements.settingTab.click();
-        waitForVisibilityOf(settingElements.logInOrSignUp);
+            waitForVisibilityOf(commonElements.bottomTab);
+            commonElements.settingTab.click();
+            waitForVisibilityOf(settingElements.logInOrSignUp);
 
-        settingElements.logInOrSignUp.click();
+            settingElements.logInOrSignUp.click();
 
-        //Enter valid Email
-        loginElements.setValue(loginElements.email, "mnguyen@philly.com");
+            //Enter valid Email
+            loginElements.setValue(loginElements.email, "mnguyen@philly.com");
 
-        //Enter valid Password
-        loginElements.setValue(loginElements.password, "Philly123");
+            //Enter valid Password
+            loginElements.setValue(loginElements.password, "Philly123");
 
 
-        //Disconnect wifi or Cellular
-        if(loginElements.getWiFiConnectionStatus()==true) {
-            turnOffWifi();
+            //Disconnect wifi or Cellular
+            if (loginElements.getWiFiConnectionStatus() == true) {
+                turnOffWifi();
+            }
+            if (loginElements.getCellularConnectionStatus() == true) {
+                turnOffCellularConnection();
+            }
+
+            //Click Log In
+            loginElements.logInButton.click();
+
+            //Check messages returned
+            loginElements.assertValue(loginElements.dialogTitle, Constants.LOGIN.NETWORK_ERROR_TITLE);
+            loginElements.assertValue(loginElements.dialogMessage, Constants.LOGIN.NETWORK_ERROR_MESSAGE);
+
+            //Click OK button
+            loginElements.tryAgainDialogButton.click();
+
+            //Check Log In screen returned
+            loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
+            loginElements.assertValue(loginElements.email, "mnguyen@philly.com");
+            loginElements.assertValue(loginElements.password, "Philly123");
         }
-        if(loginElements.getCellularConnectionStatus()==true){
-            turnOffCellularConnection();
-        }
-
-        //Click Log In
-        loginElements.logInButton.click();
-
-        //Check messages returned
-        loginElements.assertValue(loginElements.dialogTitle, Constants.LOGIN.NETWORK_ERROR_TITLE);
-        loginElements.assertValue(loginElements.dialogMessage, Constants.LOGIN.NETWORK_ERROR_MESSAGE);
-
-        //Click OK button
-        loginElements.tryAgainDialogButton.click();
-
-        //Check Log In screen returned
-        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
-        loginElements.assertValue(loginElements.email, "mnguyen@philly.com");
-        loginElements.assertValue(loginElements.password, "Philly123");
     }
 
     public void TestCasePCOM_045() {
