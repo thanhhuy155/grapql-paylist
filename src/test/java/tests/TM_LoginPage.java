@@ -147,11 +147,14 @@ public class TM_LoginPage extends BaseTestClass {
     }
 
     //Disconnect wiki/cellular test cases
+    // The test will do nothing when running on BrowserStack because BrowserStack does not allow to turn off connection
     @Test(priority = 29)
     public void LoginPageTCPCOM_043() {
         loginPage.TestCasePCOM_043();
     }
 
+    //Disconnect wiki/cellular test cases
+    // The test will do nothing when running on BrowserStack because BrowserStack does not allow to turn off connection
     @Test(priority = 30)
     public void LoginPageTCPCOM_044() {
         loginPage.TestCasePCOM_044();
