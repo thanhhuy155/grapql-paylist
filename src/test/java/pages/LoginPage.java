@@ -33,6 +33,7 @@ public class LoginPage extends BasePage {
 
     public void TestCasePCOM_002() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
@@ -50,36 +51,31 @@ public class LoginPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailLink), "Check Forgot Email link displays");
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotPasswordLink), "Check Forgot Password link displays");
         Assert.assertTrue(Utils.checkElementExist(loginElements.signUpLink), "Check Sign Up link displays");
-
     }
 
     public void TestCasePCOM_004() {
 
         //Case 1
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
-
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
 
         //Check Login screen
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
-        Assert.assertTrue(Utils.checkElementExist(loginElements.closeActionButton),"Check Top App App - Left Action Close display: ");
+        Assert.assertTrue(Utils.checkElementExist(loginElements.closeActionButton), "Check Top App App - Left Action Close display: ");
 
         //Click Close
         loginElements.closeActionButton.click();
-        Utils.waitForElementVisible(appiumDriver,settingElements.settingsHeading);
+        Utils.waitForElementVisible(appiumDriver, settingElements.settingsHeading);
 
         //Go to Setting tab;
         // Disconnect wifi
-        if(loginElements.getCellularConnectionStatus()==true) {
-            turnOffCellularConnection();
-            Assert.assertFalse(loginElements.getCellularConnectionStatus(), "Cellular connection didn't turn off");
-        }
-        if(loginElements.getWiFiConnectionStatus()==true){
+
+        if (loginElements.getWiFiConnectionStatus() == true) {
             turnOffWifi();
             Assert.assertFalse(loginElements.getWiFiConnectionStatus(), "Wifi connection didn't turn off");
         }
@@ -94,16 +90,13 @@ public class LoginPage extends BasePage {
 
         //Case 2
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
 
         //Go to Setting tab;
-        // Disconnect wifi, Cellular connection
-        if(loginElements.getCellularConnectionStatus()==true) {
-            turnOffCellularConnection();
-            Assert.assertFalse(loginElements.getCellularConnectionStatus(), "Cellular connection didn't turn off");
-        }
-        if(loginElements.getWiFiConnectionStatus()==true){
+        // Disconnect wifi connection
+        if (loginElements.getWiFiConnectionStatus() == true) {
             turnOffWifi();
             Assert.assertFalse(loginElements.getWiFiConnectionStatus(), "Wifi connection didn't turn off");
         }
@@ -114,7 +107,6 @@ public class LoginPage extends BasePage {
 
         //Check Log In screen appear
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
-
     }
 
     public void TestCasePCOM_007() {
@@ -122,8 +114,6 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
-
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
 
@@ -133,22 +123,19 @@ public class LoginPage extends BasePage {
 
         //Check Setting page appears
         Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
-
     }
 
-    //For Android only
     public void TestCasePCOM_009() {
 
-        //Turn on wifi or Cellular
+        //Turn on wifi
         if (getWiFiConnectionStatus()==false) {
             turnOnWifi();
-        }
-        if (getCellularConnectionStatus()==false) {
-            turnOnCellularConnection();
+            Assert.assertTrue(loginElements.getWiFiConnectionStatus(), "Wifi connection didn't turn on");
         }
         Utils.sleep(Constants.SHORTTIME);
 
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
 
@@ -174,16 +161,10 @@ public class LoginPage extends BasePage {
 
         bookMarkElements.bookMarkTab.click();
         ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
-
     }
 
-    //For Android only
+
     public void TestCasePCOM_017() {
-        //Turn on Cellular connection
-        if(loginElements.getCellularConnectionStatus()==false) {
-            turnOnCellularConnection();
-            Assert.assertTrue(loginElements.getCellularConnectionStatus(), "Cellular connection didn't turn on");
-        }
         //Turn on Wifi connection
         if(loginElements.getWiFiConnectionStatus() == false){
             turnOnWifi();
@@ -191,6 +172,7 @@ public class LoginPage extends BasePage {
         }
 
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
 
@@ -204,12 +186,6 @@ public class LoginPage extends BasePage {
     }
 
     public void TestCasePCOM_018() {
-
-        //Turn on Cellular connection
-        if(loginElements.getCellularConnectionStatus()==false) {
-            turnOnCellularConnection();
-            Assert.assertTrue(loginElements.getCellularConnectionStatus(), "Cellular connection didn't turn on");
-        }
         //Turn on Wifi connection
         if(loginElements.getWiFiConnectionStatus() == false){
             turnOnWifi();
@@ -217,40 +193,36 @@ public class LoginPage extends BasePage {
         }
 
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
 
         //check if account has not signed up
-        if(!Utils.checkElementExist(settingElements.viewAccountDetails)) {
+        if(!Constants.LOGIN_EMAIL.equals(settingElements.viewAccountDetails.getText().trim())) {
             settingElements.logInOrSignUp.click();
 
             loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
 
             loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
             loginElements.logInButton.click();
-
-
-            waitForVisibilityOf(settingElements.settingsHeading);
-
-            //Check Setting page appears
-            Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
-           //Check account display correctly
-            Assert.assertTrue(Utils.checkElementExist(settingElements.viewAccountDetails), "Check account logged in successfully");
-            Assert.assertEquals(Constants.SETTING_TITLE.VIEW_ACCOUNT_DETAILS,settingElements.viewAccountDetails.getText().trim(), "Check View Account Details displays");
-
-        }else{
-            Assert.assertEquals(Constants.SETTING_TITLE.VIEW_ACCOUNT_DETAILS,settingElements.viewAccountDetails.getText().trim(), "Check View Account Details displays");
-
         }
+
+        waitForVisibilityOf(settingElements.settingsHeading);
+
+        //Check Setting page appears
+        Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
+
+        //Check account display correctly
+        Assert.assertEquals(settingElements.viewAccountDetails.getText().trim(), Constants.LOGIN_EMAIL,"Check Email address displays");
     }
 
     public void TestCasePCOM_019() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
 
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
         waitForVisibilityOf(loginElements.actionBarTitle);
 
@@ -270,10 +242,10 @@ public class LoginPage extends BasePage {
 
     public void TestCasePCOM_020() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
         waitForVisibilityOf(loginElements.actionBarTitle);
 
@@ -288,15 +260,14 @@ public class LoginPage extends BasePage {
 
         //Check error message is being returned
         loginElements.assertValue(loginElements.messageEmail, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
-
     }
 
     public void TestCasePCOM_021() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
         waitForVisibilityOf(loginElements.actionBarTitle);
 
@@ -316,16 +287,14 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.dialogMessage,Constants.LOGIN.UNMATCHED_ACCOUNT_DIALOG_MESSAGE);
         //Check dialog TRY AGAIN button displays
         loginElements.assertValue(loginElements.tryAgainDialogButton,Constants.LOGIN.TRY_AGAIN_DIALOG_BUTTON);
-
     }
 
     public void TestCasePCOM_022() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
         waitForVisibilityOf(loginElements.actionBarTitle);
 
@@ -348,11 +317,10 @@ public class LoginPage extends BasePage {
 
     public void TestCasePCOM_023() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
         waitForVisibilityOf(loginElements.actionBarTitle);
 
@@ -401,13 +369,11 @@ public class LoginPage extends BasePage {
 
     public void TestCasePCOM_024() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
         settingElements.logInOrSignUp.click();
-
-        //Check Login screen displays
-        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
 
         //Leave Email and Password as blank
 
@@ -421,11 +387,10 @@ public class LoginPage extends BasePage {
 
     public void TestCasePCOM_025() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
         waitForVisibilityOf(loginElements.actionBarTitle);
 
@@ -440,16 +405,14 @@ public class LoginPage extends BasePage {
 
         //Check error message returned
         loginElements.assertValue(loginElements.messageEmail, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
-
     }
 
     public void TestCasePCOM_026() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
         waitForVisibilityOf(loginElements.actionBarTitle);
 
@@ -469,16 +432,14 @@ public class LoginPage extends BasePage {
         //Check error message returned
         loginElements.assertValue(loginElements.messageEmail, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
         loginElements.assertValue(loginElements.messagePassword, Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
-
     }
 
     public void TestCasePCOM_027() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
         waitForVisibilityOf(loginElements.actionBarTitle);
 
@@ -490,7 +451,6 @@ public class LoginPage extends BasePage {
         //Click on password
         loginElements.password.click();
 
-
         //Check no error messages returned
         loginElements.assertVisible(loginElements.messageEmail, false);
         loginElements.assertVisible(loginElements.messagePassword, false);
@@ -498,14 +458,13 @@ public class LoginPage extends BasePage {
 
     public void TestCasePCOM_028() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
         settingElements.logInOrSignUp.click();
-
         waitForVisibilityOf(loginElements.actionBarTitle);
+
         //Check Login screen displays
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
 
@@ -520,7 +479,6 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(loginElements.messageEmail);
         //Check error message returned
         loginElements.assertValue(loginElements.messageEmail,Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
-
     }
 
     public void TestCasePCOM_029() {
@@ -543,7 +501,6 @@ public class LoginPage extends BasePage {
 
         //Check error message returned
         loginElements.assertValue(loginElements.messageEmail,Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
-
     }
 
     public void TestCasePCOM_030() {
@@ -588,7 +545,6 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(loginElements.messagePassword);
         //Check error message returned
         loginElements.assertValue(loginElements.messagePassword,Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
-
     }
 
     public void TestCasePCOM_033() {
@@ -665,7 +621,6 @@ public class LoginPage extends BasePage {
 
         //Check no error message return
         loginElements.assertVisible(loginElements.messageEmail, false);
-
     }
 
     public void TestCasePCOM_037() {
@@ -706,7 +661,6 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
         settingElements.logInOrSignUp.click();
 
         //Enter invalid Email format
@@ -734,7 +688,6 @@ public class LoginPage extends BasePage {
 
         //Check error message is still on Password
         loginElements.assertValue(loginElements.messagePassword,Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
-
     }
 
     public void TestCasePCOM_038_002() {
@@ -743,7 +696,6 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
         settingElements.logInOrSignUp.click();
 
         //Enter invalid Email format
@@ -779,7 +731,6 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
         settingElements.logInOrSignUp.click();
 
         //Enter valid Email
@@ -836,15 +787,14 @@ public class LoginPage extends BasePage {
 
         //Check no error message return
         loginElements.assertVisible(loginElements.messagePassword, false);
-
     }
 
     public void TestCasePCOM_041() {
         lauchApp();
+
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-        loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
 
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
@@ -868,9 +818,7 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
         settingElements.logInOrSignUp.click();
-        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
 
         //Enter Password
         loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
@@ -902,13 +850,12 @@ public class LoginPage extends BasePage {
             //Enter valid Password
             loginElements.setValue(loginElements.password, "Philly123");
 
-            //Disconnect wifi or Cellular
+            //Disconnect wifi
             if (loginElements.getWiFiConnectionStatus() == true) {
                 turnOffWifi();
+                Assert.assertFalse(loginElements.getWiFiConnectionStatus());
             }
-            if (loginElements.getCellularConnectionStatus() == true) {
-                turnOffCellularConnection();
-            }
+
 
             //Click Log In
             loginElements.logInButton.click();
@@ -922,6 +869,7 @@ public class LoginPage extends BasePage {
     }
 
     public void TestCasePCOM_044() {
+
         if(!AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS)) {
             lauchApp();
 
@@ -941,10 +889,9 @@ public class LoginPage extends BasePage {
             //Disconnect wifi or Cellular
             if (loginElements.getWiFiConnectionStatus() == true) {
                 turnOffWifi();
+                Assert.assertFalse(loginElements.getWiFiConnectionStatus());
             }
-            if (loginElements.getCellularConnectionStatus() == true) {
-                turnOffCellularConnection();
-            }
+
 
             //Click Log In
             loginElements.logInButton.click();
@@ -969,16 +916,13 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
         settingElements.logInOrSignUp.click();
-        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
 
         //Click Forgot Password link
         loginElements.forgotPasswordLink.click();
 
         //Check Forgot Password screen appears
         loginElements.assertValue(loginElements.actionBarTitle, "Reset Password");
-
     }
 
     public void TestCasePCOM_046() {
@@ -987,9 +931,7 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
-
         settingElements.logInOrSignUp.click();
-        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
 
         //Enter valid email
         loginElements.setValue(loginElements.email, "mnguyen@philly.com");

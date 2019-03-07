@@ -5,7 +5,16 @@
     <test name = "LoginPageTest">
         <classes>
             <class name = "tests.TM_LoginPage">
-
+            <methods>
+                <exclude name="LoginPageTCPCOM_009"></exclude>
+                <exclude name="LoginPageTCPCOM_025"></exclude>
+                <exclude name="LoginPageTCPCOM_026"></exclude>
+                <exclude name="LoginPageTCPCOM_029"></exclude>
+                <exclude name="LoginPageTCPCOM_029"></exclude>
+                <exclude name="LoginPageTCPCOM_030"></exclude>
+                <exclude name="LoginPageTCPCOM_037"></exclude>
+                <exclude name="LoginPageTCPCOM_040"></exclude>
+            </methods>
 
             </class>
         </classes>
