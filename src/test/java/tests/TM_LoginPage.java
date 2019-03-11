@@ -1,11 +1,9 @@
 package tests;
 
 import org.testng.annotations.Test;
-import scenarios.AppiumController;
 
 public class TM_LoginPage extends BaseTestClass {
     @Test(priority = 1)
-    //Note: Implemented for both iOS and Android
     public void LoginPageTCPCOM_002() {
        loginPage.TestCasePCOM_002();
     }
@@ -47,19 +45,6 @@ public class TM_LoginPage extends BaseTestClass {
     }
 
 
-    //This test does not run well on os_version 8 or higher due to autofill service is enable
-    @Test(priority =9)
-    public void LoginPageTCPCOM_025() {
-
-        loginPage.TestCasePCOM_025();
-    }
-
-    //This test does not run well on os_version 8 or higher due to autofill service is enable
-    @Test(priority = 10)
-    public void LoginPageTCPCOM_026() {
-        loginPage.TestCasePCOM_026();
-    }
-
     @Test(priority = 11)
     public void LoginPageTCPCOM_027() {
         loginPage.TestCasePCOM_027();
@@ -68,18 +53,6 @@ public class TM_LoginPage extends BaseTestClass {
     @Test(priority = 12)
     public void LoginPageTCPCOM_028() {
         loginPage.TestCasePCOM_028();
-    }
-
-    //This test does not run well on os_version 8 or higher due to autofill service is enable
-    @Test(priority = 13)
-    public void LoginPageTCPCOM_029() {
-        loginPage.TestCasePCOM_029();
-    }
-
-    //This test does not run well on os_version 8 or higher due to autofill service is enable
-    @Test(priority = 14)
-    public void LoginPageTCPCOM_030() {
-        loginPage.TestCasePCOM_030();
     }
 
     @Test(priority = 15)
@@ -102,12 +75,6 @@ public class TM_LoginPage extends BaseTestClass {
         loginPage.TestCasePCOM_036();
     }
 
-    //This test does not run well on os_version 8 or higher due to autofill service is enable
-    @Test(priority = 19)
-    public void LoginPageTCPCOM_037() {
-        loginPage.TestCasePCOM_037();
-    }
-
     @Test(priority = 20)
     public void LoginPageTCPCOM_038_001() {
         loginPage.TestCasePCOM_038_001();
@@ -121,12 +88,6 @@ public class TM_LoginPage extends BaseTestClass {
     @Test(priority = 22)
     public void LoginPageTCPCOM_039() {
         loginPage.TestCasePCOM_039();
-    }
-
-    //This test does not run well on os_version 8 or higher due to autofill service is enable
-    @Test(priority = 23)
-    public void LoginPageTCPCOM_040() {
-        loginPage.TestCasePCOM_040();
     }
 
     @Test(priority = 24)
@@ -150,39 +111,7 @@ public class TM_LoginPage extends BaseTestClass {
     }
 
 
-    //Disconnect wiki/cellular test cases
-    // The test will do nothing when running on BrowserStack because BrowserStack does not allow to turn off connection
-    @Test(priority = 28)
-    public void LoginPageTCPCOM_004() {
-        if(!AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS)) {
-            loginPage.TestCasePCOM_004();
-         }
-    }
-
-    //Disconnect wiki/cellular test cases
-    // The test will do nothing when running on BrowserStack because BrowserStack does not allow to turn off connection
-    @Test(priority = 29)
-    public void LoginPageTCPCOM_043() {
-        if(!AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS)) {
-            loginPage.TestCasePCOM_043();
-        }
-    }
-
-    //Disconnect wiki/cellular test cases
-    // The test will do nothing when running on BrowserStack because BrowserStack does not allow to turn off connection
-    @Test(priority = 30)
-    public void LoginPageTCPCOM_044() {
-        if(!AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS)) {
-            loginPage.TestCasePCOM_044();
-        }
-    }
-
     //Put tests here to avoid affected to another tests
-    @Test(priority = 31)
-    public void LoginPageTCPCOM_009() {
-        loginPage.TestCasePCOM_009();
-    }
-
     @Test(priority = 32)
     public void LoginPageTCPCOM_017() {
         loginPage.TestCasePCOM_017();
