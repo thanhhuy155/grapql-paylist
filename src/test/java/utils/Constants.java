@@ -78,6 +78,10 @@ public class Constants {
         public  static final String FORGOT_PASSWORD_MESSAGE = "Please enter your email address. We will send you an email to reset your password.";
 
         public  static final String SEND_EMAIL_SUCCESS_MESSAGE = "If the email you entered is registered, we’ve sent you an email to reset your password.";
+
+        //Sign Up
+        public  static final String SIGN_UP_TERM_AND_POLICY = "By signing up you indicate that you have read and agree to the Terms of Use and Privacy Policy.";
+        public  static final String SIGN_UP_TITLE = "Sign Up";
     }
 
     public static class DEVICE_VERSION{

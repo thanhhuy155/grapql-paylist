@@ -1,3 +1,4 @@
+
 package elements;
 
 import io.appium.java_client.AppiumDriver;
@@ -128,6 +129,36 @@ public class LoginElements extends BasePage {
     public MobileElement signUpLink;
 
 
+    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/validate_layout']")
+    public MobileElement validatePassword;
+
+
+    //    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your password.')]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='At least 8 characters']")
+    public MobileElement validateMinCharacters;
+
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Lower case letters']")
+    public MobileElement validateLowercase;
+
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Upper case letters']")
+    public MobileElement validateUppercase;
+
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Numbers']")
+    public MobileElement validateNumber;
+
+    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/confirmPasswordEdt']")
+    public MobileElement confirmPassword;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.ap.philly:id/signUpBtn']")
+    public MobileElement signUpButton;
+
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/termAndPolicy']")
+    public MobileElement termAndPolicy;
+
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/heading']")
     public MobileElement userLogin;
 
@@ -228,4 +259,3 @@ public class LoginElements extends BasePage {
 
     }
 }
-
