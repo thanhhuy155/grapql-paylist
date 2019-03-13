@@ -184,7 +184,20 @@ public class Utils {
     }
 
     public static void launchSettingsApp(AppiumDriver appiumDriver){
-        Activity activity = new Activity("com.android.settings", "com.android.settings.GridSettings");
+        String settingsAppPackageName="com.android.settings";
+        String settingsAppActivityName="com.android.settings.Settings";
+
+        String currentDeviceVersion = getDeviceVersion(appiumDriver);
+
+        if( Constants.DEVICE_VERSION.GALAXY_S5_5_0.equals(currentDeviceVersion)){
+            settingsAppPackageName = "com.android.settings.GridSettings";
+
+        }else{
+            //Swipe screen before launch Settings app
+                scrollScreen(appiumDriver, DIRECTION.UP);
+        }
+
+        Activity activity = new Activity(settingsAppPackageName, settingsAppActivityName);
         activity.setStopApp(false);
         ((AndroidDriver<MobileElement>) appiumDriver).startActivity(activity);
     }
