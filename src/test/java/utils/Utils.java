@@ -4,6 +4,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -179,5 +181,11 @@ public class Utils {
             return appiumDriver.getCapabilities().getCapability("platformVersion").toString();
         }
 
+    }
+
+    public static void launchSettingsApp(AppiumDriver appiumDriver){
+        Activity activity = new Activity("com.android.settings", "com.android.settings.GridSettings");
+        activity.setStopApp(false);
+        ((AndroidDriver<MobileElement>) appiumDriver).startActivity(activity);
     }
 }
