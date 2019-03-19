@@ -9,7 +9,7 @@ public class Constants {
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
     public static final String IOS_HASHED_APP_ID = "050d52cac01da8a38bf3230d82ea82640afcb3dd";
-    public static final String ANDROID_HASHED_APP_ID = "d30d2f6ba73fd3ec0fc714892e0ed439f9d9d1de";
+    public static final String ANDROID_HASHED_APP_ID = "3f72210b8e44788ae7433e2b3924bf90e01ea45e";
 
     public static final int TIME_OUT = 5;
 
@@ -41,7 +41,7 @@ public class Constants {
     }
 
     public static class APP_VERSION {
-        public static final String ANDROID = "4.1.0 (63)";
+        public static final String ANDROID = "4.1.0 (64)";
         public static final String IOS = "4.1.0 (143)";
     }
 
