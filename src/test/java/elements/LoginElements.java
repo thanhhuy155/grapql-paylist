@@ -23,9 +23,12 @@ public class LoginElements extends BasePage {
     }
 
 
+    @AndroidFindBy(id = "Philly.com")
+    public MobileElement phillyApp;
+
 
     @iOSFindBy(id =  "Log In")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/actionBarTitle']")
+    @AndroidFindBy(id = "actionBarTitle")
     public MobileElement actionBarTitle;
 
     @iOSFindBy(id =  "Reset Password")
@@ -35,7 +38,7 @@ public class LoginElements extends BasePage {
     public MobileElement signUpTitle;
 
     @iOSFindBy(id =  "Cancel")
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.ap.philly:id/actionBarBtnClose']")
+    @AndroidFindBy(id = "actionBarBtnClose")
     public MobileElement closeActionButton;
 
 
@@ -55,16 +58,11 @@ public class LoginElements extends BasePage {
     public MobileElement backButton;
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextField")
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/emailEdt']")
+    @AndroidFindBy(id = "emailEdt")
     public MobileElement email;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/textinput_error']")
+   @AndroidFindBy(id = "textinput_error")
     public MobileElement messageEmail;
-
-
-    @iOSFindBy(xpath = "//XCUIElementTypeTextField[contains(@value, 'Please enter your email address')]")
-    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your email address.')]")
-    public MobileElement messageEmailForBlank;
 
 
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter a valid email address.')]")
@@ -72,7 +70,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField")
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/passwordEdt']")
+    @AndroidFindBy(id = "passwordEdt")
     public MobileElement password;
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextField[contains(@value,'Test!1234')]")
@@ -83,12 +81,12 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id= "invisibilityShow")
-    @AndroidFindBy(xpath = "//android.widget.ImageButton[@resource-id='com.ap.philly:id/text_input_password_toggle']")
+    @AndroidFindBy(id = "text_input_password_toggle")
     public MobileElement showOrHidePasswordIcon;
 
 
     @iOSFindBy(id=  "LOG IN")
-    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.ap.philly:id/loginBtn']")
+    @AndroidFindBy(id = "loginBtn")
     public MobileElement logInButton;
 
 
@@ -98,7 +96,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id=  "Forgot password?")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/forgotPassword']")
+    @AndroidFindBy(id = "forgotPassword")
     public MobileElement forgotPasswordLink;
 
 
@@ -108,7 +106,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id = "SEND EMAIL")
-    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.ap.philly:id/sendEmailBtn']")
+    @AndroidFindBy(id = "sendEmailBtn")
     public MobileElement sendEmailButton;
 
     @iOSFindBy(id = "passwordSuccess")
@@ -120,20 +118,19 @@ public class LoginElements extends BasePage {
     public MobileElement successMessage;
 
     @iOSFindBy(id=  "Forgot email?")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/forgotEmail']")
+    @AndroidFindBy(id = "forgotEmail")
     public MobileElement forgotEmailLink;
 
 
     @iOSFindBy(id = "Sign Up.")
-    @AndroidFindBy(xpath = "//android.widget.TextView[(@resource-id='com.ap.philly:id/signUp')]")
+    @AndroidFindBy(id = "signUp")
     public MobileElement signUpLink;
 
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/validate_layout']")
+   @AndroidFindBy(id = "validate_layout")
     public MobileElement validatePassword;
 
 
-    //    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your password.')]")
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='At least 8 characters']")
     public MobileElement validateMinCharacters;
 
@@ -149,58 +146,46 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Numbers']")
     public MobileElement validateNumber;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.ap.philly:id/confirmPasswordEdt']")
+    @AndroidFindBy(id = "confirmPasswordEdt")
     public MobileElement confirmPassword;
 
-    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.ap.philly:id/signUpBtn']")
+    @AndroidFindBy(id = "signUpBtn")
     public MobileElement signUpButton;
 
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/termAndPolicy']")
+   @AndroidFindBy(id = "termAndPolicy")
     public MobileElement termAndPolicy;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/heading']")
-    public MobileElement userLogin;
-
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/dialog_title']")
+    @AndroidFindBy(id = "dialog_title")
     public MobileElement dialogTitle;
 
 
     @iOSFindBy(id = "The email and password you entered don't match.")
-//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name='The email and password you entered don't match.']")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/dialog_message']")
+    @AndroidFindBy(id = "dialog_message")
     public MobileElement dialogMessage;
 
 
     @iOSFindBy(id=  "TRY AGAIN")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/btnOK']")
+    @AndroidFindBy(id = "btnOK")
     public MobileElement tryAgainDialogButton;
-
-    // Reset Password screen
-    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your email address. We will send you an email to reset your password.')]")
-    public MobileElement informationMessage;
 
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextView")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/resetEmail']")
+    @AndroidFindBy(id = "resetEmail")
     public MobileElement forgotEmailMessage;
 
 
     @iOSFindBy(id = "closeOnLight")
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.ap.philly:id/exitResetEmail']")
+    @AndroidFindBy(id = "exitResetEmail")
     public MobileElement exitResetEmailButton;
 
-    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='android:id/button_once']")
-    public MobileElement callJustOnceButton;
 
-    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='android:id/button_always']")
-    public MobileElement alwaysButton;
 
-    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id='com.android.contacts:id/dialpad_search_frame']")
+    @AndroidFindBy(id = "dialpad_search_frame")
     public MobileElement dialerWindow;
 
     @iOSFindBy(xpath = "//XCUIElementTypeLink")
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.android.contacts:id/digits']")
+    @AndroidFindBy(id = "digits")
     public MobileElement customerServiceNumber;
 
     public static void assertValue(MobileElement element, String expectedValue){
@@ -229,9 +214,11 @@ public class LoginElements extends BasePage {
         Assert.assertEquals(trueOrFalse, getShowPasswordIconStatus, "Check "+ element.getText()+ "is selected");
     }
 
-    /* Use to click Text inside TextView
-      Example: Click Sign Up link
-      * */
+    /**
+     * Click on Sign Up link inside in Text View at bottom
+     * @param appiumDriver
+     * @param element
+     */
     public static void clickSignUpLink(AppiumDriver appiumDriver, MobileElement element) {
         TouchAction touchAction = new TouchAction(appiumDriver);
         Point point = element.getCenter();
@@ -241,6 +228,11 @@ public class LoginElements extends BasePage {
         touchAction.tap(PointOption.point(pointX,pointY)).perform();
     }
 
+    /**
+     * Click on Customer Service Number link inside in Text View
+     * @param appiumDriver
+     * @param element
+     */
     public static void clickCustomerServiceNumber(AppiumDriver appiumDriver, MobileElement element) {
         TouchAction touchAction = new TouchAction(appiumDriver);
         Point point = element.getLocation();
@@ -250,12 +242,16 @@ public class LoginElements extends BasePage {
         touchAction.tap(PointOption.point(pointX,pointY)).perform();
     }
 
+    /**
+     * Click outside field to hidden keyboard
+     * @param appiumDriver
+     * @param element
+     */
     public void hiddenKeyboard(AppiumDriver appiumDriver, MobileElement element){
         Point keyboardPoint = element.getLocation();
         TouchAction touchAction = new TouchAction(appiumDriver);
         int pointX= keyboardPoint.getX() +2;
         int pointY= keyboardPoint.getY() -2;
         touchAction.tap(PointOption.point(pointX,pointY)).perform();
-
     }
 }
