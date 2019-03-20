@@ -9,7 +9,7 @@ public class Constants {
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
     public static final String IOS_HASHED_APP_ID = "050d52cac01da8a38bf3230d82ea82640afcb3dd";
-    public static final String ANDROID_HASHED_APP_ID = "afbbe45a5f2c0c97ae2d54e20fbbff0ab1470d76";
+    public static final String ANDROID_HASHED_APP_ID = "c31c40d24f7b758a83ce221152483e048cc05c8a";
 
     public static final int TIME_OUT = 5;
 
@@ -18,6 +18,9 @@ public class Constants {
 
     public static final String LOGIN_EMAIL = "empphilly01@gmail.com";
     public static final String LOGIN_PASSWORD = "Test!1234";
+
+    public static final String SIGN_UP_EMAIL = "SEMP01@gmail.com";
+    public static final String SIGN_UP_PASSWORD = "Test1234";
 
 
     public static String EXECUTING_SUITE = new String();
@@ -41,7 +44,7 @@ public class Constants {
     }
 
     public static class APP_VERSION {
-        public static final String ANDROID = "4.1.0 (62)";
+        public static final String ANDROID = "4.1.0 (64)";
         public static final String IOS = "4.1.0 (143)";
     }
 
@@ -82,6 +85,7 @@ public class Constants {
         //Sign Up
         public  static final String SIGN_UP_TERM_AND_POLICY = "By signing up you indicate that you have read and agree to the Terms of Use and Privacy Policy.";
         public  static final String SIGN_UP_TITLE = "Sign Up";
+        public  static  final  String SIGN_UP_EMAIL_ERROR_MESSAGE = "The email address you entered is already registered.";
     }
 
     public static class DEVICE_VERSION{
