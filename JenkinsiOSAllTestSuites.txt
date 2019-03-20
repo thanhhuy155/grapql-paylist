@@ -20,7 +20,7 @@ pipeline{
 		always{
             node('iOS')
             {
-                bat 'C:\\Users\\ENCLAVEIT\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\iOS\\workspace\\iOSAllTestSuites\\allure-results -c -o C:\\agents\\iOS\\workspace\\iOSAllTestSuites\\allure-report'
+                bat 'C:\\Users\\Administrator\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\iOS\\workspace\\iOSAllTestSuites\\allure-results -c -o C:\\agents\\iOS\\workspace\\iOSAllTestSuites\\allure-report'
                 allure([
         			includeProperties: false,
         			jdk: '',
@@ -35,7 +35,7 @@ pipeline{
 						<br/>
 						<b/>
 						<p><font font="Verdana" size="3" color="navy">***Please click the link to see the detail report:</font>
-						&QUOT;<a href='http://117.3.65.55:9500/view/PhillyDotComNativeAppProjects/job/iOSAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
+						&QUOT;<a href='https://100.26.222.41:8443/view/PhillyDotComNativeAppProjects/job/iOSAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
 						<b/>
 						<p><font font="Verdana" size="2" color="navy">BrowserStack iOS_SprintH_RegressionTest build: </font>
                         &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
@@ -44,7 +44,7 @@ pipeline{
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
 					subject: '$DEFAULT_SUBJECT_iOS_SprintH_RegressionTest',
-          			to: 'hera@enclave.vn, pduncan@phillynews.com, tdang@phillynews.com, missy@enclave.vn, sarah@enclave.vn'
+          			to: 'hera@enclave.vn, pduncan@philly.com, tdang@phillynews.com, missy@enclave.vn, sarah@enclave.vn'
 		}
 	}
 
