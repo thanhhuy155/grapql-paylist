@@ -190,7 +190,7 @@ public class Utils {
         String currentDeviceVersion = getDeviceVersion(appiumDriver);
 
         if( Constants.DEVICE_VERSION.GALAXY_S5_5_0.equals(currentDeviceVersion)){
-            settingsAppPackageName = "com.android.settings.GridSettings";
+            settingsAppActivityName = "com.android.settings.GridSettings";
 
         }else{
             //Swipe screen before launch Settings app
