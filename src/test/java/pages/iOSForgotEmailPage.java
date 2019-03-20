@@ -29,57 +29,57 @@ public class iOSForgotEmailPage extends BasePage {
 
 
     public void TestCasePCOM_001() {
+        //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
         loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
 
-
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
-        //Check Login screen
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailLink), "Check Forgot Email link displays");
 
 
-        //Click Forgot Email link
+        //2. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailMessage),"Check forgot message display: ");
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
-
     }
 
     public void TestCasePCOM_002() {
+        //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
         loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
 
-
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
-        //Check Login screen
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailLink), "Check Forgot email link exist");
 
-        //Click Forgot Email link
+
+        //2. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailMessage),"Check forgot email information message display: ");
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 
 
-        //Click on phone number on the message
+        //3. Click on the phone number on the message
         loginElements.clickCustomerServiceNumber(appiumDriver, loginElements.forgotEmailMessage);
         Assert.assertTrue(Utils.checkElementExist(loginElements.callButton));
         Assert.assertTrue(Utils.checkElementExist(loginElements.cancelButton));
 
 
-        //Click Call
+        //4. Click Call button
         loginElements.callButton.click();
         Assert.assertFalse(Utils.checkElementExist(loginElements.endCallButton));
 
+
+        //5. End call and return to the app
         if(Utils.checkElementExist(loginElements.OKButton)) {
         //Click OK to end Call in iPhone 6S Plus
             loginElements.OKButton.click();
@@ -91,70 +91,68 @@ public class iOSForgotEmailPage extends BasePage {
 
         //Check Login page
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
-
     }
 
     public void TestCasePCOM_004() {
+        //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
         loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
 
-
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
-        //Check Login screen
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailLink), "Check Forgot email link exist");
 
-        //Click Forgot Email link
+
+        //2. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailMessage),"Check forgot email information message display: ");
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 
 
-        //Click on phone number on the message
+        //3. Click on the phone number on the message
         loginElements.clickCustomerServiceNumber(appiumDriver, loginElements.forgotEmailMessage);
         Assert.assertTrue(Utils.checkElementExist(loginElements.callButton));
         Assert.assertTrue(Utils.checkElementExist(loginElements.cancelButton));
 
 
-        //Click Cancel
+        //4. Click Cancel button
         loginElements.cancelButton.click();
         Assert.assertFalse(Utils.checkElementExist(loginElements.callButton));
-
     }
 
 
     public void TestCasePCOM_005_001() {
-
-        //Case 3
+        //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
         loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
 
-
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
-        //Check Login screen
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
 
-        //Click Forgot Email link
+
+        //2. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 
 
-        //Click on phone number on the message
+        //3. Click on the phone number on the message
         loginElements.clickCustomerServiceNumber(appiumDriver, loginElements.forgotEmailMessage);
         Assert.assertTrue(Utils.checkElementExist(loginElements.callButton));
 
-        //Click Call
+
+        //4. Click Call button
         loginElements.callButton.click();
         Utils.sleep(Constants.SHORTTIME*2);
 
+        //5. Return to the app
         if(Utils.checkElementExist(loginElements.cancelButton)){
             loginElements.cancelButton.click();
             Utils.sleep(Constants.SHORTTIME);
@@ -163,79 +161,69 @@ public class iOSForgotEmailPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.exitResetEmailButton));
 
 
-        //Click Close
+        //6. Click Close(x) button
         loginElements.exitResetEmailButton.click();
-        //Check Forgot email information message is disabled
         Assert.assertFalse(Utils.checkElementExist(loginElements.exitResetEmailButton),"Check Forgot email information message is closed ");
     }
 
 
     public void TestCasePCOM_005_002() {
-
-        //Case 3
+        //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
         loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
 
-
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
-        //Check Login screen
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
 
-        //Click Forgot Email link
+
+        //2. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 
 
-        //Click on phone number on the message
+        //3. Click on the phone number on the message
         loginElements.clickCustomerServiceNumber(appiumDriver, loginElements.forgotEmailMessage);
         Assert.assertTrue(Utils.checkElementExist(loginElements.callButton));
         Assert.assertTrue(Utils.checkElementExist(loginElements.cancelButton));
 
-        //Click Cancel
+
+        //4. Click Cancel buttonl
         loginElements.cancelButton.click();
         Assert.assertFalse(Utils.checkElementExist(loginElements.callButton));
 
-        //Click Close
+
+        //5. Click Close(x) button
         loginElements.exitResetEmailButton.click();
-        //Check Forgot email information message is disabled
         Assert.assertFalse(Utils.checkElementExist(loginElements.exitResetEmailButton),"Check Forgot email information message is closed ");
     }
 
 
     public void TestCasePCOM_006() {
+        //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
         loginElements.assertValue(settingElements.logInOrSignUp, Constants.LOGIN.LOG_IN_OR_SIGN_UP);
 
-
         settingElements.logInOrSignUp.click();
         Utils.waitForElementVisible(appiumDriver, loginElements.actionBarTitle);
-        //Check Login screen
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
 
 
-        //Click Email field
+        //2. Click Email/ Password field
         loginElements.email.click();
-
-
-        //Click Password field
         loginElements.password.click();
 
 
-        //Click Forgot Email link
+        //3. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
-
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, loginElements.forgotEmailLink);
-
-        //Click Forgot email link
         loginElements.forgotEmailLink.click();
-        //Check forgot email information message displays
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailMessage),"Check forgot email information message display: ");
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
     }
