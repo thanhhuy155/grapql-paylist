@@ -15,9 +15,9 @@ public class TM_HomeTab extends BaseTestClass {
         homeTab.TestCaseNo6();
     }
 
-    @Test(priority = 3)
-    //Note: Unable to implement on iOS since Appium cannot catch system element on Share pop-up
-    public void HomeTabTCNo8() {
-        homeTab.TestCaseNo8();
-    }
+//    @Test(priority = 3)
+//    //Note: Unable to implement on iOS since Appium cannot catch system element on Share pop-up
+//    public void HomeTabTCNo8() {
+//        homeTab.TestCaseNo8();
+//    }
 }

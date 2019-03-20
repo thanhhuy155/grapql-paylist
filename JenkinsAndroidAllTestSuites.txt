@@ -31,7 +31,7 @@ pipeline{
 
             }
 				emailext attachLog: true,
-          			body: '''${SCRIPT, template="/groovy-html-test.template"}
+          			body: '''${SCRIPT, template="/groovy-html-phpunit.template"}
 						<br/>
 						<b/>
 						<p><font font="Verdana" size="2" color="navy">Please click the link to see the detail report: </font>
