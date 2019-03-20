@@ -10,6 +10,8 @@ public class TM_LoginPage_ForgotEmailPage extends BaseTestClass {
        forgotEmailPage.TestCasePCOM_001();
     }
 
+    // This test will skip checking Dialer screen appear when running on BrowserStack
+    // because the Dialer screen is automatically closed then caused automated is not able to catch element Dialer
     @Test(priority = 2)
     @Description("Load Recover Email message and call the number in the link")
     public void ForgotEmailPageTCPCOM_003() {
