@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 public class TM_LoginPage_ForgotPasswordPage extends BaseTestClass {
     @Test(priority = 1)
     @Description("Load Reset Password screen")
-    public void ForgotEmailPageTCPCOM_001() {
+    public void ForgotPasswordPageTCPCOM_001() {
        forgotPasswordPage.TestCasePCOM_001();
     }
 
     @Test(priority = 2)
     @Description("Put phone to sleep on Reset Password screen and wake phone up to home screen")
-    public void ForgotEmailPageTCPCOM_002() {
+    public void ForgotPasswordPageTCPCOM_002() {
         forgotPasswordPage.TestCasePCOM_002();
     }
 
@@ -55,6 +55,8 @@ public class TM_LoginPage_ForgotPasswordPage extends BaseTestClass {
     }
 
 
+    // This test will skip checking Dialer screen appear when running on BrowserStack
+    // because the Dialer screen is automatically closed then caused automated is not able to catch element Dialer
     @Test(priority = 9)
     @Description("Call the phone number in the link")
     public void ForgotPasswordPageTCPCOM_013() {
