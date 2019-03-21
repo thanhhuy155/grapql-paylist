@@ -7,7 +7,7 @@ pipeline{
 	stages{
 		stage ('Test'){
 			steps{
-				node ('android'){
+				node ('iOS'){
 					git branch: 'regression',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
@@ -18,9 +18,9 @@ pipeline{
 	}
 	post{
 		always{
-            node('android')
+            node('iOS')
             {
-                bat 'C:\\Users\\Administrator\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\android\\workspace\\AndroidAllTestSuites\\allure-results -c -o C:\\agents\\android\\workspace\\AndroidAllTestSuites\\allure-report'
+                bat 'C:\\Users\\Administrator\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\iOS\\workspace\\NativeAppLocalRun\\allure-results -c -o C:\\agents\\iOS\\workspace\\NativeAppLocalRun\\allure-report'
                 allure([
         			includeProperties: false,
         			jdk: '',
@@ -37,13 +37,13 @@ pipeline{
 						<p><font font="Verdana" size="2" color="navy">Please click the link to see the detail report: </font>
 						&QUOT;<a href='http://100.26.222.41:8080/view/TestExampleProjects/job/NativeAppLocalRun/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
                         <b/>
-						<p><font font="Verdana" size="2" color="navy">BrowserStack Android_Local build: </font>
+						<p><font font="Verdana" size="2" color="navy">BrowserStack iOS_Local build: </font>
                         &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
 
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
-					subject: '$DEFAULT_SUBJECT_Android_Local',
+					subject: '$DEFAULT_SUBJECT_iOS_Local',
           			to: 'sarah@enclave.vn'
 		}
 	}
