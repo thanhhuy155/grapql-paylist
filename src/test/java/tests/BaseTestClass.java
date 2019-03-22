@@ -25,14 +25,13 @@ public class BaseTestClass extends AppiumBaseClass {
     ExploreTab exploreTab;
     LoginPage loginPage;
     iOSLoginPage iOS_LoginPage;
-    AppiumController instance = new AppiumController();
 
     @BeforeTest
     public void setUp(ITestContext iTestContext) throws Exception {
         Constants.EXECUTING_SUITE = iTestContext.getCurrentXmlTest().getSuite().getName();
         System.out.print("class: " + Constants.EXECUTING_SUITE);
 
-        instance.start();
+        AppiumController.instance.start();
         basePage = new BasePage(driver());
         generalTest = new GeneralTest(driver());
         homeTab = new HomeTab(driver());
@@ -71,7 +70,7 @@ public class BaseTestClass extends AppiumBaseClass {
 
     @AfterTest
     public void tearDown() {
-        instance.stop();
+        AppiumController.instance.stop();
     }
 
 }
