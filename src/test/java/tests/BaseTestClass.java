@@ -3,10 +3,11 @@ package tests;
 import io.qameta.allure.Attachment;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import pages.*;
 import scenarios.AppiumBaseClass;
-import scenarios.AppiumController;
 import utils.Constants;
 
 import java.io.IOException;
@@ -31,7 +32,7 @@ public class BaseTestClass extends AppiumBaseClass {
         Constants.EXECUTING_SUITE = iTestContext.getCurrentXmlTest().getSuite().getName();
         System.out.print("class: " + Constants.EXECUTING_SUITE);
 
-        AppiumController.instance.start();
+        instance.start();
         basePage = new BasePage(driver());
         generalTest = new GeneralTest(driver());
         homeTab = new HomeTab(driver());
@@ -70,7 +71,7 @@ public class BaseTestClass extends AppiumBaseClass {
 
     @AfterTest
     public void tearDown() {
-        AppiumController.instance.stop();
+        instance.stop();
     }
 
 }
