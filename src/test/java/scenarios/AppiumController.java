@@ -29,7 +29,7 @@ public class AppiumController {
         ANDROID_Emulator
     }
 
-    public static AppiumController instance = new AppiumController();
+
     public AppiumDriver driver;
 
     public void start() throws MalformedURLException {
@@ -47,14 +47,15 @@ public class AppiumController {
 //        String iOSBuild = "iOSLocalTestBuild";
         String iOSBuild = "iOS_SprintF_RegressionTest_"+formater2.format(calendar.getTime());
 
+
         switch (executionOS) {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
                 File appDir = new File(classpathRoot, "/app");
-                File app = new File(appDir, "phillydotcom.apk");
+                File app = new File(appDir, "v4.1.0-64.apk");
                 capabilities.setCapability("platformName", "Android");
-                capabilities.setCapability("platformVersion", "7.0");
-                capabilities.setCapability("deviceName", "Galaxy J7 Prime");
+                capabilities.setCapability("platformVersion", "5.0");
+                capabilities.setCapability("deviceName", "Galaxy S5");
                 capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("appPackage", "com.ap.philly");
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
@@ -139,7 +140,7 @@ public class AppiumController {
     public void stop() {
         if (driver != null) {
             driver.quit();
-            driver = null;
+//            driver = null;
         }
     }
 }
