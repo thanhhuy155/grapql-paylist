@@ -29,7 +29,7 @@ public class AppiumController {
         ANDROID_Emulator
     }
 
-    public static AppiumController instance = new AppiumController();
+    public  AppiumController instance = new AppiumController();
     public AppiumDriver driver;
 
     public void start() throws MalformedURLException {
@@ -139,7 +139,7 @@ public class AppiumController {
     public void stop() {
         if (driver != null) {
             driver.quit();
-            driver = null;
+//            driver = null;
         }
     }
 }
