@@ -7,7 +7,7 @@ pipeline{
 	stages{
 		stage ('Test'){
 			steps{
-				node ('Android'){
+				node ('android'){
 					git branch: 'regression',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
@@ -18,9 +18,9 @@ pipeline{
 	}
 	post{
 		always{
-            node('Android')
+            node('android')
             {
-                bat 'C:\\Users\\Administrator\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\Android\\workspace\\NativeAppLocalRun\\allure-results -c -o C:\\agents\\Android\\workspace\\NativeAppLocalRun\\allure-report'
+                bat 'C:\\Users\\Administrator\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\android\\workspace\\NativeAppLocalRun\\allure-results -c -o C:\\agents\\android\\workspace\\NativeAppLocalRun\\allure-report'
                 allure([
         			includeProperties: false,
         			jdk: '',
