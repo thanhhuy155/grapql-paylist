@@ -53,7 +53,8 @@ public class SettingElements extends CommonElements implements ISetting {
     @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'Log In or Sign Up')]")
     public MobileElement logInOrSignUp;
 
-    @AndroidFindBy (xpath = "//android.widget.RelativeLayout/android.widget.TextView[@resource-id='android:id/title']")
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.TextView[1]")
+//    @AndroidFindBy (xpath = "//android.widget.RelativeLayout/android.widget.TextView[@resource-id='android:id/title']")
     public MobileElement signedUpAccount;
 
     @iOSFindBy(id = "View Account Details")

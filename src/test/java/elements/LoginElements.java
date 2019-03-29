@@ -23,7 +23,7 @@ public class LoginElements extends BasePage {
     }
 
 
-    @AndroidFindBy(id = "Philly.com")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Philly.com']")
     public MobileElement phillyApp;
 
 
@@ -65,6 +65,7 @@ public class LoginElements extends BasePage {
     public MobileElement messageEmail;
 
 
+
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter a valid email address.')]")
     public MobileElement messageEmailForInvalid;
 
@@ -83,6 +84,14 @@ public class LoginElements extends BasePage {
     @iOSFindBy(id= "invisibilityShow")
     @AndroidFindBy(id = "text_input_password_toggle")
     public MobileElement showOrHidePasswordIcon;
+
+
+
+    @AndroidFindBy(xpath = "(//android.widget.ImageButton)[1]")
+    public MobileElement signUpShowOrHiddenPasswordIcon;
+
+    @AndroidFindBy(xpath = "(//android.widget.ImageButton)[2]")
+    public MobileElement signUpShowOrHiddenConfirmPasswordIcon;
 
 
     @iOSFindBy(id=  "LOG IN")
@@ -148,6 +157,9 @@ public class LoginElements extends BasePage {
 
     @AndroidFindBy(id = "confirmPasswordEdt")
     public MobileElement confirmPassword;
+
+    @AndroidFindBy(id = "textinput_error")
+    public MobileElement messageConfirmPassword;
 
     @AndroidFindBy(id = "signUpBtn")
     public MobileElement signUpButton;
