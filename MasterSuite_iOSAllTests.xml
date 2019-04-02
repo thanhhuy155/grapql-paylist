@@ -3,7 +3,7 @@
 
 <suite name="iOSSuite">
     <suite-files>
-        <!--<suite-file path="Suite_iOSBookmark.xml" />--> <!-- Comment it due to google server connection issue-->
+        <suite-file path="Suite_iOSBookmark.xml" />
         <suite-file path="Suite_iOSGeneralTest.xml" />
 <!--        <suite-file path="Suite_iOSSectionTab.xml" />-->
         <suite-file path="Suite_iOSHomeTab.xml" />
