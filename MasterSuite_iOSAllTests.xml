@@ -3,7 +3,7 @@
 
 <suite name="iOSSuite">
     <suite-files>
-        <suite-file path="Suite_iOSBookmark.xml" />
+        <!--<suite-file path="Suite_iOSBookmark.xml" />--> <!-- Comment it due to google server connection issue-->
         <suite-file path="Suite_iOSGeneralTest.xml" />
 <!--        <suite-file path="Suite_iOSSectionTab.xml" />-->
         <suite-file path="Suite_iOSHomeTab.xml" />
@@ -11,7 +11,7 @@
         <suite-file path="Suite_SearchTab.xml" />
         <suite-file path="Suite_iOSExploreTab.xml" />
         <suite-file path="Suite_iOSSettingTab.xml" />
-        <suite-file path="Suite_iOSLoginPage.xml" />
+        <!--<suite-file path="Suite_iOSLoginPage.xml" /> --> <!-- Comment it as it is not being included in release version 4.1.1-->
 
     </suite-files>
 </suite>
