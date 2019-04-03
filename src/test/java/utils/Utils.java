@@ -86,9 +86,8 @@ public class Utils {
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                         .moveTo(PointOption.point(endX, endY))
                         .release()
-                        .perform()
-                        .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)));
-//                sleep(1500);
+                        .perform();
+                sleep(1500);
                 break;
             case UP:
                 endX = (dimension.getWidth())/2;
@@ -101,9 +100,8 @@ public class Utils {
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                         .moveTo(PointOption.point(endX, endY))
                         .release()
-                        .perform()
-                        .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)));
-//                sleep(1500);
+                        .perform();
+                sleep(1500);
                 break;
             case RIGHT:
                 fromX = (int)((dimension.getWidth())*0.9);
