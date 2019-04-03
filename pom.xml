@@ -49,6 +49,24 @@
                 </dependencies>
             </plugin>
 
+            <!-- Sarah added codes to remove existing allure-results before running test-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>2.4.1</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${basedir}/allure-results</directory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
@@ -98,6 +116,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Sarah added-->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-clean-plugin</artifactId>
