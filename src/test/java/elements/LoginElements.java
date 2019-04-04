@@ -1,4 +1,3 @@
-
 package elements;
 
 import io.appium.java_client.AppiumDriver;
@@ -23,7 +22,7 @@ public class LoginElements extends BasePage {
     }
 
 
-    @AndroidFindBy(id = "Philly.com")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Philly.com']")
     public MobileElement phillyApp;
 
 
@@ -61,8 +60,9 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(id = "emailEdt")
     public MobileElement email;
 
-   @AndroidFindBy(id = "textinput_error")
+    @AndroidFindBy(id = "textinput_error")
     public MobileElement messageEmail;
+
 
 
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter a valid email address.')]")
@@ -83,6 +83,14 @@ public class LoginElements extends BasePage {
     @iOSFindBy(id= "invisibilityShow")
     @AndroidFindBy(id = "text_input_password_toggle")
     public MobileElement showOrHidePasswordIcon;
+
+
+
+    @AndroidFindBy(xpath = "(//android.widget.ImageButton)[1]")
+    public MobileElement signUpShowOrHiddenPasswordIcon;
+
+    @AndroidFindBy(xpath = "(//android.widget.ImageButton)[2]")
+    public MobileElement signUpShowOrHiddenConfirmPasswordIcon;
 
 
     @iOSFindBy(id=  "LOG IN")
@@ -127,7 +135,7 @@ public class LoginElements extends BasePage {
     public MobileElement signUpLink;
 
 
-   @AndroidFindBy(id = "validate_layout")
+    @AndroidFindBy(id = "validate_layout")
     public MobileElement validatePassword;
 
 
@@ -149,11 +157,14 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(id = "confirmPasswordEdt")
     public MobileElement confirmPassword;
 
+    @AndroidFindBy(id = "textinput_error")
+    public MobileElement messageConfirmPassword;
+
     @AndroidFindBy(id = "signUpBtn")
     public MobileElement signUpButton;
 
 
-   @AndroidFindBy(id = "termAndPolicy")
+    @AndroidFindBy(id = "termAndPolicy")
     public MobileElement termAndPolicy;
 
     @AndroidFindBy(id = "dialog_title")

@@ -37,7 +37,7 @@ public class SettingElements extends CommonElements implements ISetting {
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Version and Build Number')]/following-sibling::android.widget.TextView")
     public MobileElement appVersion;
 
-  // @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/title']")
+    // @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/title']")
     @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'Philadelphia Media Network (Digital), LLC')]")
     public MobileElement pmnName;
 
@@ -53,7 +53,8 @@ public class SettingElements extends CommonElements implements ISetting {
     @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'Log In or Sign Up')]")
     public MobileElement logInOrSignUp;
 
-    @AndroidFindBy (xpath = "//android.widget.RelativeLayout/android.widget.TextView[@resource-id='android:id/title']")
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.TextView[1]")
+//    @AndroidFindBy (xpath = "//android.widget.RelativeLayout/android.widget.TextView[@resource-id='android:id/title']")
     public MobileElement signedUpAccount;
 
     @iOSFindBy(id = "View Account Details")
