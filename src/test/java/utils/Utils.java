@@ -7,15 +7,20 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import scenarios.AppiumController;
 
+import java.security.SecureRandom;
 import java.time.Duration;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
@@ -28,6 +33,8 @@ public class Utils {
         }
         return false;
     }
+
+
 
     public static Boolean checkElementExist(MobileElement element){
         Boolean x = false;
@@ -61,8 +68,8 @@ public class Utils {
         }
     }
     public static void scrollToElement(AppiumDriver appiumDriver, DIRECTION direction, MobileElement element){
-       int count=0;
-       int maxLoop =5;
+        int count=0;
+        int maxLoop =5;
 
         do{
             count ++;
@@ -88,8 +95,9 @@ public class Utils {
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                         .moveTo(PointOption.point(endX, endY))
                         .release()
-                        .perform();
-                sleep(1500);
+                        .perform()
+                        .waitAction(WaitOptions.waitOptions(Duration.ofMillis(3000)));
+//                sleep(1500);
                 break;
             case UP:
                 endX = (dimension.getWidth())/2;
@@ -102,8 +110,9 @@ public class Utils {
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                         .moveTo(PointOption.point(endX, endY))
                         .release()
-                        .perform();
-                sleep(1500);
+                        .perform()
+                        .waitAction(WaitOptions.waitOptions(Duration.ofMillis(3000)));
+//                sleep(1500);
                 break;
             case RIGHT:
                 fromX = (int)((dimension.getWidth())*0.9);
@@ -183,6 +192,10 @@ public class Utils {
 
     }
 
+    /**
+     * Launching Settings app
+     * @param appiumDriver
+     */
     public static void launchSettingsApp(AppiumDriver appiumDriver){
         String settingsAppPackageName="com.android.settings";
         String settingsAppActivityName="com.android.settings.Settings";
@@ -192,13 +205,71 @@ public class Utils {
         if( Constants.DEVICE_VERSION.GALAXY_S5_5_0.equals(currentDeviceVersion)){
             settingsAppActivityName = "com.android.settings.GridSettings";
 
+        }else if( Constants.DEVICE_VERSION.GALAXY_S8_8_0.equals(currentDeviceVersion)) {
+
         }else{
             //Swipe screen before launch Settings app
-                scrollScreen(appiumDriver, DIRECTION.UP);
+            scrollScreen(appiumDriver, DIRECTION.UP);
         }
 
         Activity activity = new Activity(settingsAppPackageName, settingsAppActivityName);
         activity.setStopApp(false);
         ((AndroidDriver<MobileElement>) appiumDriver).startActivity(activity);
+
+        sleep(Constants.SHORTTIME);
     }
+
+
+    public static String generateEmailAddress(){
+        String emailAddress;
+        String domainAndExtension= "@philly.com";
+        String alphabetString = "abcdefghijklmnopqrstuvwxyz";
+
+        SecureRandom secureRnd =  new SecureRandom();
+        StringBuilder userNameSB = new StringBuilder(10);
+        for (int i = 0; i < 10; i++) {
+            userNameSB.append(alphabetString.charAt(secureRnd.nextInt(alphabetString.length())));
+        }
+        emailAddress = userNameSB.toString() + domainAndExtension;
+
+        return emailAddress ;
+    }
+
+    /**
+     * Set 'None' for 'Autofill service' in Settings app
+     *
+     * @param appiumDriver
+     */
+    public static void turnOffSamsungAutofillService( AppiumDriver appiumDriver){
+        String xpathGeneralManagement = "//android.widget.TextView[@text = 'General management']";
+        String xpathLanguageandinput = "//android.widget.TextView[@text='Language and input']";
+        String xpathAutoFillService = "//android.widget.TextView[@text='Autofill service']";
+        String xpathNoneAutoFillService = "(//android.widget.RadioButton)[1]";
+
+        String currentDeviceVersion = Utils.getDeviceVersion(appiumDriver);
+
+        if( !Constants.DEVICE_VERSION.GALAXY_S5_5_0.equals(currentDeviceVersion)) {
+            ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
+            appiumDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+            //Launch Settings app
+            launchSettingsApp(appiumDriver);
+            appiumDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+            //Set None for Autofill service
+            scrollScreen(appiumDriver,DIRECTION.DOWN);
+            MobileElement generalManagementElement =  ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(xpathGeneralManagement));
+
+            if(checkElementExist(generalManagementElement)==false) {
+                scrollToElement(appiumDriver, DIRECTION.DOWN, generalManagementElement);
+            }
+
+            generalManagementElement.click();
+            ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(xpathLanguageandinput)).click();
+            ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(xpathAutoFillService)).click();
+            ((AndroidDriver<MobileElement>)appiumDriver).findElement(By.xpath(xpathNoneAutoFillService)).click();
+            ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
+        }
+    }
+
 }
