@@ -19,6 +19,9 @@ public class Constants {
     public static final String LOGIN_EMAIL = "empphilly01@gmail.com";
     public static final String LOGIN_PASSWORD = "Test!1234";
 
+    public static final String SIGN_UP_EMAIL = "SEMP01@gmail.com";
+    public static final String SIGN_UP_PASSWORD = "Test1234";
+
 
     public static String EXECUTING_SUITE = new String();
     public static int SHORTTIME = 1000;
@@ -82,6 +85,9 @@ public class Constants {
         //Sign Up
         public  static final String SIGN_UP_TERM_AND_POLICY = "By signing up you indicate that you have read and agree to the Terms of Use and Privacy Policy.";
         public  static final String SIGN_UP_TITLE = "Sign Up";
+        public  static  final  String SIGN_UP_EMAIL_ERROR_MESSAGE = "The email address you entered is already registered.";
+        public  static  final  String SIGN_UP_PASSWORD_ERROR_MESSAGE = "Passwords don’t match.";
+        public  static  final  String SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE = "Please confirm your password.";
     }
 
     public static class DEVICE_VERSION{
