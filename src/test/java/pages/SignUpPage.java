@@ -10,6 +10,8 @@ import scenarios.AppiumController;
 import utils.Constants;
 import utils.Utils;
 
+import java.util.concurrent.TimeUnit;
+
 public class SignUpPage extends BasePage {
 
 
@@ -904,12 +906,12 @@ public class SignUpPage extends BasePage {
 
 
         //4. Enter invalid password to Confirm Password field
-        loginElements.confirmPassword.click();
-        loginElements.setValue(loginElements.confirmPassword, "test1234");
+        loginElements.setValue(loginElements.confirmPassword, "test12");
 
 
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
+        appiumDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Assert.assertEquals(loginElements.messageConfirmPassword.getText(),Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
 
 
@@ -950,7 +952,7 @@ public class SignUpPage extends BasePage {
         waitForVisibilityOf( loginElements.confirmPassword);
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
-        //	(//android.widget.ImageButton)[2]
+
         //2. Click on the show/hide password icon on Confirm Password
         loginElements.signUpShowOrHiddenConfirmPasswordIcon.click();
         loginElements.assertFocused(loginElements.confirmPassword, "false");
@@ -967,7 +969,7 @@ public class SignUpPage extends BasePage {
         waitForVisibilityOf( loginElements.confirmPassword);
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
-        //	(//android.widget.ImageButton)[2]
+
         //2. Enter password to Password and Confirm fields
         loginElements.setValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
 
@@ -991,4 +993,7 @@ public class SignUpPage extends BasePage {
         //2. Click "Terms of Service" link
      //TODO
     }
+
+
+
 }
