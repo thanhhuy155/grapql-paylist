@@ -26,16 +26,11 @@ public class SignUpPage extends BasePage {
     public SignUpPage(AppiumDriver driver) {
         super(driver);
 
-        Utils.turnOffSamsungAutofillService(driver);
-
         commonElements = new CommonElements(driver);
         settingElements= new SettingElements(driver);
         loginElements = new LoginElements(driver);
         exploreElements= new ExploreElements(driver);
         bookMarkElements= new BookMarkElements(driver);
-
-
-
     }
 
     public void TestCasePCOM_001() {
