@@ -9,9 +9,9 @@
         <suite-file path="Suite_iOSHomeTab.xml" />
         <suite-file path="Suite_iOSArticlePage.xml" />
         <suite-file path="Suite_SearchTab.xml" />
-        <suite-file path="Suite_iOSExploreTab.xml" />
+        <!--<suite-file path="Suite_iOSExploreTab.xml" />-->  <!-- Comment this suite because the data is pointing to Dev env-->
         <suite-file path="Suite_iOSSettingTab.xml" />
-        <!--<suite-file path="Suite_iOSLoginPage.xml" /> --> <!-- Comment it as it is not being included in release version 4.1.1-->
+        <suite-file path="Suite_iOSLoginPage.xml" />
 
     </suite-files>
 </suite>
