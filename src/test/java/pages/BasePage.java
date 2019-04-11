@@ -1,5 +1,6 @@
 package pages;
 
+import elements.CommonElements;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -21,6 +22,7 @@ import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
@@ -28,6 +30,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class BasePage {
     protected AppiumDriver appiumDriver;
+    private CommonElements commonElements;
 
     public BasePage(AppiumDriver driver) {
         this.appiumDriver = driver;
@@ -115,6 +118,20 @@ public class BasePage {
 
     public void lauchApp() {
         appiumDriver.launchApp();
+
+        //Check and close Customize banner
+        commonElements = new CommonElements(appiumDriver);
+
+        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
+            commonElements.customizeScreenExitButton.click();
+            appiumDriver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
+        }
+
+        if(Utils.checkElementExist(commonElements.customNewsFeedBanner)){
+            commonElements.notNotButton.click();
+            appiumDriver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
+        }
+
     }
 
     public void activateApp(){

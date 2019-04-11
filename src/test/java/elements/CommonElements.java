@@ -19,6 +19,25 @@ public class CommonElements implements ICommon {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
+    //Custom new feed
+    @AndroidFindBy(id = "banner_custom_news_feed")
+    public MobileElement customNewsFeedBanner;
+
+
+    @AndroidFindBy(id = "customizeTv")
+    public MobileElement customizeButton;
+
+    @AndroidFindBy(id = "notNowTv")
+    public MobileElement notNotButton;
+
+    @iOSFindBy(id= "What news do you want to see?")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='What news do you want to see?']")
+    public MobileElement customizeContentScreen;
+
+    @iOSFindBy(id ="closeSmallOverlay")
+    @AndroidFindBy(id = "btn_exit")
+    public MobileElement customizeScreenExitButton;
+
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Gmail']")
     @iOSFindBy(id = "Reminders")
     public MobileElement gmail;
