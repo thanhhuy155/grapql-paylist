@@ -6,11 +6,11 @@
         <!--<suite-file path="Suite_Bookmark.xml" />-->
         <!--<suite-file path="Suite_RatingModule.xml" />-->
         <suite-file path="Suite_GeneralTest.xml" />
-        <!--<suite-file path="Suite_SectionTab.xml" />-->
-        <!--<suite-file path="Suite_SettingTab.xml" />-->
-        <!--<suite-file path="Suite_HomeTab.xml" />-->
-        <suite-file path="Suite_ExploreTab.xml" />
-        <!--<suite-file path="Suite_LoginPage.xml" />--> <!-- Comment it as it is not being included in release version 4.1.1 -->
+        <suite-file path="Suite_SectionTab.xml" />
+        <suite-file path="Suite_SettingTab.xml" />
+        <suite-file path="Suite_HomeTab.xml" />
+        <!--<suite-file path="Suite_ExploreTab.xml" />--> <!-- Comment this suite because the data is pointing to Dev env-->
+        <suite-file path="Suite_LoginPage.xml" />
 
     </suite-files>
 </suite>
