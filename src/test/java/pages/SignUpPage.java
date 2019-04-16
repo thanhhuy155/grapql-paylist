@@ -919,40 +919,6 @@ public class SignUpPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.messageConfirmPassword));
     }
 
-    public void TestCasePCOM_054() {
-        //1. Open the Philly.com app to "Sign Up" screen
-        lauchApp();
-        commonElements.settingTab.click();
-        waitForVisibilityOf(settingElements.logInOrSignUp);
-        settingElements.logInOrSignUp.click();
-        waitForVisibilityOf( loginElements.actionBarTitle);
-        loginElements.clickSignUpLink(appiumDriver, loginElements.signUpLink);
-        waitForVisibilityOf( loginElements.confirmPassword);
-        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
-
-
-        //2. Click on the show/hide password icon on Confirm Password
-        loginElements.signUpShowOrHiddenPasswordIcon.click();
-        loginElements.assertFocused(loginElements.password, "false");
-    }
-
-    public void TestCasePCOM_055() {
-        //1. Open the Philly.com app to "Sign Up" screen
-        lauchApp();
-        commonElements.settingTab.click();
-        waitForVisibilityOf(settingElements.logInOrSignUp);
-        settingElements.logInOrSignUp.click();
-        waitForVisibilityOf( loginElements.actionBarTitle);
-        loginElements.clickSignUpLink(appiumDriver, loginElements.signUpLink);
-        waitForVisibilityOf( loginElements.confirmPassword);
-        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
-
-
-        //2. Click on the show/hide password icon on Confirm Password
-        loginElements.signUpShowOrHiddenConfirmPasswordIcon.click();
-        loginElements.assertFocused(loginElements.confirmPassword, "false");
-    }
-
     public void TestCasePCOM_056() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
@@ -967,14 +933,16 @@ public class SignUpPage extends BasePage {
 
         //2. Enter password to Password and Confirm fields
         loginElements.setValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
+        loginElements.setValue(loginElements.confirmPassword, Constants.SIGN_UP_PASSWORD);
 
 
-        //3.Click on the show/hide password icon on Confirm Password
-        loginElements.signUpShowOrHiddenConfirmPasswordIcon.click();
+        //3. Click on the show/hide password icon on Password field
+        loginElements.signUpShowOrHiddenPasswordIcon.click();
         loginElements.assertValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
+        loginElements.assertValue(loginElements.confirmPassword, Constants.SIGN_UP_PASSWORD);
     }
 
-    public void TestCasePCOM_060() {
+    public void TestCasePCOM_057() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -985,10 +953,107 @@ public class SignUpPage extends BasePage {
         waitForVisibilityOf( loginElements.confirmPassword);
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
-        //2. Click "Terms of Service" link
-     //TODO
+
+        //2. Enter password to Password and Confirm fields
+        loginElements.setValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
+        loginElements.setValue(loginElements.confirmPassword, Constants.SIGN_UP_PASSWORD);
+
+
+        //3. Click on the show/hide password icon on Confirm Password field
+        loginElements.signUpShowOrHiddenConfirmPasswordIcon.click();
+        loginElements.assertValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
+        loginElements.assertValue(loginElements.confirmPassword, Constants.SIGN_UP_PASSWORD);
     }
 
+    public void TestCasePCOM_060() {
+        String termsOfService = "Privacy Policy & Terms of Use";
 
+        //1. Open the Philly.com app to "Sign Up" screen
+        lauchApp();
+        commonElements.settingTab.click();
+        waitForVisibilityOf(settingElements.logInOrSignUp);
+        settingElements.logInOrSignUp.click();
+        waitForVisibilityOf( loginElements.actionBarTitle);
+        loginElements.clickSignUpLink(appiumDriver, loginElements.signUpLink);
+        waitForVisibilityOf( loginElements.confirmPassword);
+        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
+
+
+        //2. Click "Term Of Use" link
+        loginElements.clickTermOfUseLink(appiumDriver,loginElements.termAndPolicy);
+        Utils.sleep(Constants.SHORTTIME*3);
+
+        waitForVisibilityOf(loginElements.termsOfService);
+        Assert.assertTrue(termsOfService.contains(loginElements.termsOfService.getText()));
+        //Check Term Of Use screen display in new browser
+//        String url = appiumDriver.getCurrentUrl();
+//        Assert.assertEquals(url,"Philly.com");
+//        //back to native app
+//        appiumDriver.navigate().back();
+    }
+
+    public void TestCasePCOM_061() {
+        //1. Open the Philly.com app to "Sign Up" screen
+        lauchApp();
+        commonElements.settingTab.click();
+        waitForVisibilityOf(settingElements.logInOrSignUp);
+        settingElements.logInOrSignUp.click();
+        waitForVisibilityOf( loginElements.actionBarTitle);
+        loginElements.clickSignUpLink(appiumDriver, loginElements.signUpLink);
+        waitForVisibilityOf( loginElements.confirmPassword);
+        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
+
+
+        //2. Click "Privacy Policy" link
+        loginElements.clickPrivacyPolicyLink(appiumDriver,loginElements.termAndPolicy);
+        //Check TPrivacy Policy screen display
+
+    }
+
+    public void TestCasePCOM_062() {
+        //1. Open the Philly.com app to "Log In" screen
+        lauchApp();
+        commonElements.settingTab.click();
+        waitForVisibilityOf(settingElements.logInOrSignUp);
+        settingElements.logInOrSignUp.click();
+        waitForVisibilityOf( loginElements.actionBarTitle);
+        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
+
+
+        //2. Enter valid email to Email field on "Log In" screen
+        String validEmail = Utils.generateEmailAddress();
+        loginElements.setValue(loginElements.email,validEmail);
+        loginElements.hiddenKeyboard(appiumDriver, loginElements.email);
+
+
+        //3. Click "Sign Up" link at the bottom
+        loginElements.clickSignUpLink(appiumDriver, loginElements.signUpLink);
+        waitForVisibilityOf( loginElements.confirmPassword);
+        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
+        loginElements.assertValue(loginElements.email,validEmail);
+    }
+
+    public void TestCasePCOM_063() {
+        //1. Open the Philly.com app to "Log In" screen
+        lauchApp();
+        commonElements.settingTab.click();
+        waitForVisibilityOf(settingElements.logInOrSignUp);
+        settingElements.logInOrSignUp.click();
+        waitForVisibilityOf( loginElements.actionBarTitle);
+        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
+
+
+        //2. Enter invalid email to Email field on "Log In" screen
+        String invalidEmail = "Invalid@a";
+        loginElements.setValue(loginElements.email,invalidEmail);
+        loginElements.hiddenKeyboard(appiumDriver, loginElements.email);
+
+
+        //3. Click "Sign Up" link at the bottom
+        loginElements.clickSignUpLink(appiumDriver, loginElements.signUpLink);
+        waitForVisibilityOf( loginElements.confirmPassword);
+        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
+        loginElements.assertValue(loginElements.email,"Email"); //Email is default value
+    }
 
 }

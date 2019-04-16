@@ -122,20 +122,33 @@ public class TM_LoginPage_SignUpPage extends BaseTestClass {
     public void SignUpPageTCPCOM_053() { signUpPage.TestCasePCOM_053(); }
 
     @Test(priority = 27)
-    @Description("Password field does not activate when tapping on the show/hide password icon")
-    public void SignUpPageTCPCOM_054() { signUpPage.TestCasePCOM_054(); }
-
-    @Test(priority = 28)
-    @Description("Confirm Password field does not activate when tapping on the show/hide password icon")
-    public void SignUpPageTCPCOM_055() { signUpPage.TestCasePCOM_055(); }
-
-    @Test(priority = 29)
     @Description("Password and Confirm Password shows or hides the password in both fields simultaneously when tapping on the show/hide password icon in Password fields")
     public void SignUpPageTCPCOM_056() { signUpPage.TestCasePCOM_056(); }
 
+    @Test(priority = 28)
+    @Description("Confirm Password field does not activate when tapping on the show/hide password icon")
+    public void SignUpPageTCPCOM_057() { signUpPage.TestCasePCOM_057(); }
+
+    // @Test(priority = 29) Not completed yet
+    @Description("Take the user to \"Terms of Service\" screen when they tap the “Terms of Service” link at anytime during sign up")
+    public void SignUpPageTCPCOM_060() { signUpPage.TestCasePCOM_060(); }
+
+
+   // @Test(priority = 30) Not completed yet
+    @Description("Take the user to \"Privacy Policy\" screen when they tap the “Privacy Policy” link at anytime during sign up")
+    public void SignUpPageTCPCOM_061() { signUpPage.TestCasePCOM_062(); }
+
+    @Test(priority = 31)
+    @Description("The same email will be filled if the email field in the previous screen was filled and the value is valid")
+    public void SignUpPageTCPCOM_062() { signUpPage.TestCasePCOM_062(); }
+
+
+    @Test(priority = 32)
+    @Description("No email will be filled if the email field in the previous screen was filled and the value is invalid")
+    public void SignUpPageTCPCOM_063() { signUpPage.TestCasePCOM_063(); }
 
     //This test will cause Log In and Sign Up button being disabled so put it here to avoid affecting to the rest test cases
-    @Test(priority = 30)
+    @Test(priority = 33)
     @Description("Enter valid email and password")
     public void SignUpPageTCPCOM_009() { signUpPage.TestCasePCOM_009(); }
 }
