@@ -70,7 +70,7 @@ public class LoginElements extends BasePage {
     public MobileElement messageEmailForInvalid;
 
 
-    @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField")
+    @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField[1]")
     @AndroidFindBy(id = "passwordEdt")
     public MobileElement password;
 
@@ -200,6 +200,13 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(id = "digits")
     public MobileElement customerServiceNumber;
 
+
+    @AndroidFindBy (xpath = "//android.view.View[contains(@text,'Privacy Policy & Terms of Use')]")
+    public MobileElement termsOfService;
+
+    @AndroidFindBy (xpath = "//android.view.View[contains(@text,'PRIVACY POLICY')]")
+    public MobileElement privacyPolicy;
+
     public static void assertValue(MobileElement element, String expectedValue){
         String actualValue = element.getText().trim();
         Assert.assertEquals(actualValue,expectedValue);
@@ -234,6 +241,7 @@ public class LoginElements extends BasePage {
     public static void clickSignUpLink(AppiumDriver appiumDriver, MobileElement element) {
         TouchAction touchAction = new TouchAction(appiumDriver);
         Point point = element.getCenter();
+
         int pointX= (element.getLocation().getX()+ element.getSize().getWidth())*9/10;
         int pointY= point.getY();
 
@@ -264,6 +272,42 @@ public class LoginElements extends BasePage {
         TouchAction touchAction = new TouchAction(appiumDriver);
         int pointX= keyboardPoint.getX() +2;
         int pointY= keyboardPoint.getY() -2;
+        touchAction.tap(PointOption.point(pointX,pointY)).perform();
+    }
+
+
+    /**
+     * Click on Sign Up link inside in Text View at bottom
+     * @param appiumDriver
+     * @param element
+     */
+    public static void clickTermOfUseLink(AppiumDriver appiumDriver, MobileElement element) {
+        TouchAction touchAction = new TouchAction(appiumDriver);
+        Point point1 = element.getLocation();
+        System.out.println("x: "+ point1.getX()+", y: "+point1.getY());
+        System.out.println("height: "+ element.getSize().height+", width: "+ element.getSize().width);
+
+        int x1 = point1.x - (int)(1.3*element.getSize().height);
+        int y1 = point1.y /2;
+
+        System.out.println("x1: "+ x1+", y1: "+y1);
+
+        touchAction.tap(PointOption.point(x1, y1)).perform();
+
+    }
+
+
+    /**
+     * Click on Sign Up link inside in Text View at bottom
+     * @param appiumDriver
+     * @param element
+     */
+    public static void clickPrivacyPolicyLink(AppiumDriver appiumDriver, MobileElement element) {
+        TouchAction touchAction = new TouchAction(appiumDriver);
+        Point point = element.getCenter();
+        int pointX= (element.getLocation().getX()+ element.getSize().getWidth())*9/10;
+        int pointY= point.getY();
+
         touchAction.tap(PointOption.point(pointX,pointY)).perform();
     }
 }
