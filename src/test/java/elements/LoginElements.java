@@ -27,7 +27,7 @@ public class LoginElements extends BasePage {
     public MobileElement phillyApp;
 
 
-    @iOSFindBy(id =  "Log In")
+    @iOSFindBy(xpath = "(//XCUIElementTypeStaticText)[2]")
     @AndroidFindBy(id = "actionBarTitle")
     public MobileElement actionBarTitle;
 
@@ -61,7 +61,8 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(id = "emailEdt")
     public MobileElement email;
 
-   @AndroidFindBy(id = "textinput_error")
+    @iOSFindBy(xpath = "//XCUIElementTypeTextField")
+    @AndroidFindBy(id = "textinput_error")
     public MobileElement messageEmail;
 
 
@@ -74,8 +75,10 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(id = "passwordEdt")
     public MobileElement password;
 
+
     @iOSFindBy(xpath = "//XCUIElementTypeTextField[contains(@value,'Test!1234')]")
     public MobileElement passwordValue;
+
 
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your password.')]")
     public MobileElement messagePassword;
@@ -87,9 +90,11 @@ public class LoginElements extends BasePage {
 
 
 
+    @iOSFindBy(xpath = "(//XCUIElementTypeButton)[3]")
     @AndroidFindBy(xpath = "(//android.widget.ImageButton)[1]")
     public MobileElement signUpShowOrHiddenPasswordIcon;
 
+    @iOSFindBy(xpath = "(//XCUIElementTypeButton/XCUIElementTypeImage)[3]")
     @AndroidFindBy(xpath = "(//android.widget.ImageButton)[2]")
     public MobileElement signUpShowOrHiddenConfirmPasswordIcon;
 
@@ -135,36 +140,44 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(id = "signUp")
     public MobileElement signUpLink;
 
-
+    @iOSFindBy(xpath = "//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[1]")
    @AndroidFindBy(id = "validate_layout")
     public MobileElement validatePassword;
 
 
+    @iOSFindBy(id = "At least 8 characters")
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='At least 8 characters']")
     public MobileElement validateMinCharacters;
 
 
+    @iOSFindBy(id = "Lower case letters")
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Lower case letters']")
     public MobileElement validateLowercase;
 
-
+    @iOSFindBy(id = "Upper case letters")
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Upper case letters']")
     public MobileElement validateUppercase;
 
 
+    @iOSFindBy(id = "Numbers")
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Numbers']")
     public MobileElement validateNumber;
 
+
+    @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField[2]")
     @AndroidFindBy(id = "confirmPasswordEdt")
     public MobileElement confirmPassword;
 
+
+    @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField[2]")
     @AndroidFindBy(id = "textinput_error")
     public MobileElement messageConfirmPassword;
 
+    @iOSFindBy(id = "SIGN UP")
     @AndroidFindBy(id = "signUpBtn")
     public MobileElement signUpButton;
 
-
+    @iOSFindBy(xpath = " //XCUIElementTypeTextView")
    @AndroidFindBy(id = "termAndPolicy")
     public MobileElement termAndPolicy;
 
