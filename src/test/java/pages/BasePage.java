@@ -127,11 +127,6 @@ public class BasePage {
             appiumDriver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
         }
 
-        if(Utils.checkElementExist(commonElements.customNewsFeedBanner)){
-            commonElements.notNotButton.click();
-            appiumDriver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
-        }
-
     }
 
     public void activateApp(){

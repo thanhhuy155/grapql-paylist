@@ -11,6 +11,10 @@
         <suite-file path="Suite_SearchTab.xml" />
         <suite-file path="Suite_iOSExploreTab.xml" />
         <suite-file path="Suite_iOSSettingTab.xml" />
+        <suite-file path="Suite_iOSLoginPage.xml" />
+        <suite-file path="Suite_iOSLoginPage_ForgotEmailPage.xml" />
+        <suite-file path="Suite_iOSLoginPage_ForgotPasswordPage.xml" />
+        <suite-file path="Suite_iOSLoginPage_SignUpPage.xml" />
 
     </suite-files>
 </suite>

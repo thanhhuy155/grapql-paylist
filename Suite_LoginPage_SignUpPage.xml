@@ -5,9 +5,6 @@
     <test name = "SignUpTest">
         <classes>
             <class name = "tests.TM_LoginPage_SignUpPage">
-                <!--<methods>-->
-                    <!--<include name="SignUpPageTCPCOM_001"></include>-->
-                <!--</methods>-->
             </class>
 
         </classes>

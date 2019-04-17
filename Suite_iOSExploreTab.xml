@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "iOSExploreTabSuite">
+<suite name = "iOSExploreTabSuite" configfailurepolicy="continue">
     <test name = "iOSExploreTabTest">
         <classes>
             <class name = "tests.TM_ExploreTab">

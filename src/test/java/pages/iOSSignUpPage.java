@@ -6,13 +6,13 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.testng.Assert;
-import scenarios.AppiumController;
 import utils.Constants;
 import utils.Utils;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class SignUpPage extends BasePage {
+public class iOSSignUpPage extends BasePage {
 
 
     private CommonElements commonElements;
@@ -23,10 +23,8 @@ public class SignUpPage extends BasePage {
 
 
 
-    public SignUpPage(AppiumDriver driver) {
+    public iOSSignUpPage(AppiumDriver driver) {
         super(driver);
-
-        Utils.turnOffSamsungAutofillService(driver);
 
         commonElements = new CommonElements(driver);
         settingElements= new SettingElements(driver);
@@ -34,7 +32,6 @@ public class SignUpPage extends BasePage {
         exploreElements= new ExploreElements(driver);
         bookMarkElements= new BookMarkElements(driver);
     }
-
 
     public void TestCasePCOM_001() {
 
@@ -92,52 +89,6 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_004() {
-        //1. Open the Philly.com app to Sign Up screen from Settings tab.
-        lauchApp();
-        waitForVisibilityOf(commonElements.bottomTab);
-        commonElements.settingTab.click();
-        waitForVisibilityOf(settingElements.logInOrSignUp);
-        settingElements.logInOrSignUp.click();
-        waitForVisibilityOf( loginElements.actionBarTitle);
-        loginElements.clickSignUpLink(appiumDriver, loginElements.signUpLink);
-        waitForVisibilityOf( loginElements.confirmPassword);
-
-
-        //2. Put the device to sleep with Philly.com app on the screen.
-        lockDevice();
-
-
-        //3. Wake the device and unlock (if applicable)
-        unLockDevice();
-
-
-        //4. Observe the Philly.com app opened to "Sign Up"screen.
-        if(AppiumController.executionOS.equals(AppiumController.OS.ANDROID_BROWSERSTACK)) {
-            activateApp();
-        }
-        waitForVisibilityOf( loginElements.confirmPassword);
-
-        //5. Click on Cancel button
-        loginElements.closeActionButton.click();
-        //Check Setting page appears
-        loginElements.assertValue(settingElements.settingsHeading,"Settings");
-
-
-        //6. Click all tabs in navigation
-        //7. Observe the tabs load without crashing.
-        commonElements.homeTabClick();
-        exploreElements.exploreTab.click();
-        //Check Explore page appears
-        loginElements.assertValue(exploreElements.headingTitle,"Explore");
-        bookMarkElements.bookMarkTab.click();
-
-
-        //8. Terminate the app by double clicking the home button and swiping up
-        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
-        Assert.assertFalse(Utils.checkElementExist(commonElements.settingTab));
-    }
-
 
     public void TestCasePCOM_005() {
         //1. Open the Philly.com app to Sign Up screen from Settings tab.
@@ -152,7 +103,7 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
         //2. Double click the home screen button and select another app.
-        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
+        appiumDriver.runAppInBackground(Duration.ofSeconds(-1));
         Assert.assertFalse(Utils.checkElementExist(commonElements.settingTab));
         //Open another app. Launch Settings app
         Utils.launchSettingsApp(appiumDriver);
@@ -314,7 +265,7 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
         //5. Terminate the app by double clicking the home button and swiping up.
-        ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
+        appiumDriver.runAppInBackground(Duration.ofSeconds(-1));
         Assert.assertFalse(Utils.checkElementExist(commonElements.bottomTab));
 
         //6. Open the Philly.com app from home screen
@@ -323,7 +274,7 @@ public class SignUpPage extends BasePage {
         settingElements.logInOrSignUp.click();
         loginElements.clickSignUpLink(appiumDriver, loginElements.signUpLink);
         waitForVisibilityOf( loginElements.confirmPassword);
-        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
+        loginElements.assertValue(loginElements.signUpTitle, Constants.LOGIN.SIGN_UP_TITLE);
     }
 
     public void TestCasePCOM_009() {
@@ -340,11 +291,8 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
         //2. Enter valid email to Email field
-        Assert.assertFalse(Utils.checkElementExist(loginElements.validatePassword));
-
         String emailAddress = Utils.generateEmailAddress();
-        System.out.println("emailAddress: " + emailAddress);
-        loginElements.setValue(loginElements.email, emailAddress  );
+        loginElements.setValue(loginElements.email, emailAddress);
 
 
         //3. Enter valid password to Password field
@@ -361,7 +309,7 @@ public class SignUpPage extends BasePage {
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
         waitForVisibilityOf(settingElements.settingsHeading);
-        Assert.assertEquals(settingElements.signedUpAccount.getText(),emailAddress);
+        Assert.assertEquals(settingElements.signedUpAccount.getAttribute("value"),emailAddress);
     }
 
     public void TestCasePCOM_010() {
@@ -376,7 +324,6 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
         //2. Enter invalid email format to Email field
-        Assert.assertFalse(Utils.checkElementExist(loginElements.validatePassword));
         loginElements.setValue(loginElements.email, "STEST01@gmail");
 
 
@@ -389,7 +336,11 @@ public class SignUpPage extends BasePage {
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
         waitForVisibilityOf(loginElements.messageEmail);
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
     }
 
     public void TestCasePCOM_011() {
@@ -404,7 +355,6 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
         //2. Enter registered email to Email field
-        Assert.assertFalse(Utils.checkElementExist(loginElements.validatePassword));
         loginElements.setValue(loginElements.email, Constants.SIGN_UP_EMAIL);
 
 
@@ -417,7 +367,11 @@ public class SignUpPage extends BasePage {
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
         waitForVisibilityOf(loginElements.messageEmail);
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.SIGN_UP_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.SIGN_UP_EMAIL_ERROR_MESSAGE);
     }
 
     public void TestCasePCOM_026() {
@@ -432,7 +386,6 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
         //2. Enter valid email format to Email field
-        Assert.assertFalse(Utils.checkElementExist(loginElements.validatePassword));
         loginElements.setValue(loginElements.email, Constants.SIGN_UP_EMAIL);
 
 
@@ -444,7 +397,12 @@ public class SignUpPage extends BasePage {
 
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
+
+        //Check error message on Confirm Password field
+        String passwordMsg = loginElements.messageConfirmPassword.getText();
+        String [] passwordMsgParts = passwordMsg.split(":");
+        String passwordMsgPart2 = passwordMsgParts[1].trim();
+        Assert.assertEquals(passwordMsgPart2, Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
     }
 
     public void TestCasePCOM_027() {
@@ -463,7 +421,11 @@ public class SignUpPage extends BasePage {
 
         //3. Click "Sign Up" button
         loginElements.signUpButton.click();
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
     public void TestCasePCOM_028() {
@@ -503,17 +465,21 @@ public class SignUpPage extends BasePage {
 
         //2. Click and leave Email field as blank
         loginElements.email.click();
-        loginElements.assertFocused(loginElements.email, "true");
 
 
         //3. Click on Password field
         loginElements.password.click();
-        loginElements.assertFocused(loginElements.password, "true");
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateMinCharacters));
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateLowercase));
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateUppercase));
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateNumber));
+
     }
 
     public void TestCasePCOM_032() {
@@ -533,7 +499,7 @@ public class SignUpPage extends BasePage {
 
         //3. Click on Password field
         loginElements.password.click();
-        loginElements.assertFocused(loginElements.password, "true");
+
         Assert.assertFalse(Utils.checkElementExist(loginElements.messagePassword));
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateMinCharacters));
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateLowercase));
@@ -566,7 +532,11 @@ public class SignUpPage extends BasePage {
 
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
-        loginElements.assertValue(loginElements.messageEmail,Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
     public void TestCasePCOM_034() {
@@ -583,7 +553,7 @@ public class SignUpPage extends BasePage {
 
         //2. Click and leave Email field as blank
         loginElements.email.click();
-        loginElements.assertFocused(loginElements.email, "true");
+
 
         //3. Enter valid password to Password field
         loginElements.setValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
@@ -595,7 +565,11 @@ public class SignUpPage extends BasePage {
 
         //5. Click outside to dismiss keyboard or "Sign Up" button
         loginElements.hiddenKeyboard(appiumDriver,loginElements.confirmPassword);
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
 
@@ -613,7 +587,6 @@ public class SignUpPage extends BasePage {
 
         //2. Click and leave Email field as blank
         loginElements.email.click();
-        loginElements.assertFocused(loginElements.email, "true");
 
 
         //3. Enter valid password to Password field
@@ -622,7 +595,12 @@ public class SignUpPage extends BasePage {
 
         //4. Click Email field
         loginElements.email.click();
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
     }
 
     public void TestCasePCOM_039() {
@@ -654,7 +632,11 @@ public class SignUpPage extends BasePage {
 
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
-        Assert.assertEquals(loginElements.messageConfirmPassword.getText(),Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
+
+        String confirmPasswprdMsg = loginElements.messageConfirmPassword.getText();
+        String [] confirmPasswordMsgParts = confirmPasswprdMsg.split(":");
+        String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
+        Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
     }
 
     public void TestCasePCOM_040() {
@@ -679,12 +661,15 @@ public class SignUpPage extends BasePage {
 
         //4. Click and leave Confirm Password field as blank
         loginElements.confirmPassword.click();
-        loginElements.assertFocused(loginElements.confirmPassword, "true");
 
 
         //5. Click another field or "Sign Up" button
         loginElements.signUpButton.click();
-        Assert.assertEquals(loginElements.messageConfirmPassword.getText(),Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
+
+        String confirmPasswprdMsg = loginElements.messageConfirmPassword.getText();
+        String [] confirmPasswordMsgParts = confirmPasswprdMsg.split(":");
+        String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
+        Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
     }
 
     public void TestCasePCOM_045() {
@@ -712,7 +697,11 @@ public class SignUpPage extends BasePage {
 
         //5. Click another field or "Sign Up" button
         loginElements.signUpButton.click();
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
 
 
         //6. Enter a value to Email field
@@ -721,7 +710,11 @@ public class SignUpPage extends BasePage {
 
         //7. Click other field
         loginElements.password.click();
-        Assert.assertFalse(Utils.checkElementExist(loginElements.messageEmail));
+
+        emailMsg = loginElements.messageEmail.getText();
+        emailMsgParts = emailMsg.split(":");
+        emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, "");
     }
 
     public void TestCasePCOM_046() {
@@ -738,7 +731,6 @@ public class SignUpPage extends BasePage {
 
         //2. Click and leave Email field as blank
         loginElements.email.click();
-        loginElements.assertFocused(loginElements.email, "true");
 
 
         //3. Enter valid password to Password field
@@ -751,7 +743,11 @@ public class SignUpPage extends BasePage {
 
         //5. Click another field or "Sign Up" button
         loginElements.signUpButton.click();
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
 
 
         //6. Enter a value to Email field
@@ -760,7 +756,11 @@ public class SignUpPage extends BasePage {
 
         //7. Click other field
         loginElements.password.click();
-        Assert.assertFalse(Utils.checkElementExist(loginElements.messageEmail));
+
+        emailMsg = loginElements.messageEmail.getText();
+        emailMsgParts = emailMsg.split(":");
+        emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, "");
     }
 
 
@@ -790,7 +790,11 @@ public class SignUpPage extends BasePage {
 
         //5. Click another field or "Sign Up" button
         loginElements.signUpButton.click();
-        Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
+
+        String emailMsg = loginElements.messageEmail.getText();
+        String [] emailMsgParts = emailMsg.split(":");
+        String emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
 
 
         //6. Enter a value to Email field
@@ -799,7 +803,11 @@ public class SignUpPage extends BasePage {
 
         //7. Click other field
         loginElements.password.click();
-        Assert.assertFalse(Utils.checkElementExist(loginElements.messageEmail));
+
+        emailMsg = loginElements.messageEmail.getText();
+        emailMsgParts = emailMsg.split(":");
+        emailMsgPart2 = emailMsgParts[1].trim();
+        Assert.assertEquals(emailMsgPart2, "");
     }
 
     public void TestCasePCOM_051() {
@@ -831,7 +839,11 @@ public class SignUpPage extends BasePage {
 
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
-        Assert.assertEquals(loginElements.messageConfirmPassword.getText(),Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
+
+        String confirmPasswordMsg = loginElements.messageConfirmPassword.getText();
+        String [] confirmPasswordMsgParts = confirmPasswordMsg.split(":");
+        String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
+        Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
 
 
         //6. Enter a value to Confirm Password field
@@ -865,12 +877,14 @@ public class SignUpPage extends BasePage {
 
         //4. Click and leave Confirm Password field
         loginElements.confirmPassword.click();
-        loginElements.assertFocused(loginElements.confirmPassword, "true");
 
 
         //5. Click Password field
         loginElements.password.click();
-        Assert.assertEquals(loginElements.messageConfirmPassword.getText(),Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
+        String confirmPasswordMsg = loginElements.messageConfirmPassword.getText();
+        String [] confirmPasswordMsgParts = confirmPasswordMsg.split(":");
+        String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
+        Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
 
 
         //6. Click Confirm Password field
@@ -910,7 +924,11 @@ public class SignUpPage extends BasePage {
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
         appiumDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Assert.assertEquals(loginElements.messageConfirmPassword.getText(),Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
+
+        String confirmPasswprdMsg = loginElements.messageConfirmPassword.getText();
+        String [] confirmPasswordMsgParts = confirmPasswprdMsg.split(":");
+        String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
+        Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
 
 
         //6. Enter valid value to Confirm Password field
@@ -921,7 +939,6 @@ public class SignUpPage extends BasePage {
         loginElements.password.click();
         Assert.assertFalse(Utils.checkElementExist(loginElements.messageConfirmPassword));
     }
-
 
     public void TestCasePCOM_056() {
         //1. Open the Philly.com app to "Sign Up" screen
@@ -983,7 +1000,6 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
 
-        //TODO
         //2. Click "Term Of Use" link
         loginElements.clickTermOfUseLink(appiumDriver,loginElements.termAndPolicy);
         Utils.sleep(Constants.SHORTTIME*3);
@@ -1008,7 +1024,7 @@ public class SignUpPage extends BasePage {
         waitForVisibilityOf( loginElements.confirmPassword);
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
 
-        //TODO
+
         //2. Click "Privacy Policy" link
         loginElements.clickPrivacyPolicyLink(appiumDriver,loginElements.termAndPolicy);
         //Check TPrivacy Policy screen display

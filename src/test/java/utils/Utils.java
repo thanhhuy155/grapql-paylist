@@ -35,13 +35,11 @@ public class Utils {
     }
 
 
-
-    public static Boolean checkElementExist(MobileElement element){
+    public static Boolean checkElementExist(MobileElement element) {
         Boolean x = false;
-        try{
+        try {
             x = element.isDisplayed();
-        }
-        finally {
+        } finally {
             return x;
         }
     }
@@ -51,6 +49,7 @@ public class Utils {
     public enum DIRECTION {
         DOWN, UP, LEFT, RIGHT
     }
+
     public static void iOSScrollToElement(AppiumDriver appiumDriver, MobileElement element, String label) {
         String elementID = element.getId();
         HashMap<String, String> scrollObject = new HashMap<>();
@@ -59,54 +58,56 @@ public class Utils {
         scrollObject.put("predicateString", "label == '" + label + "'");
         appiumDriver.executeScript("mobile:scroll", scrollObject);
     }
+
     public static void androidScroll(AppiumDriver appiumDriver) {
-        try{
+        try {
             appiumDriver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"com.ap.philly:id/cardList\").scrollable(true).instance(0)).scrollIntoView(new UiSelector().resourceId(\"com.ap.philly:id/card_view_article\").instance(1).index(3))"));
-        }
-        finally {
+        } finally {
             System.out.print("Scroll to the end of article");
         }
     }
-    public static void scrollToElement(AppiumDriver appiumDriver, DIRECTION direction, MobileElement element){
-        int count=0;
-        int maxLoop =5;
 
-        do{
-            count ++;
+    public static void scrollToElement(AppiumDriver appiumDriver, DIRECTION direction, MobileElement element) {
+        int count = 0;
+        int maxLoop = 5;
+
+        do {
+            count++;
             scrollScreen(appiumDriver, direction);
-        }while (count <= maxLoop && checkElementExist(element)==false);
+        } while (count <= maxLoop && checkElementExist(element) == false);
     }
 
-    public static void scrollScreen(AppiumDriver appiumDriver, DIRECTION direction ){
+    public static void scrollScreen(AppiumDriver appiumDriver, DIRECTION direction) {
         Dimension dimension = appiumDriver.manage().window().getSize();
         int fromX = 0;
         int fromY = 0;
         int endX = 0;
         int endY = 0;
-        switch (direction){
+        switch (direction) {
             case DOWN:
-                endX = (dimension.getWidth())/2;
-                endY = (dimension.getHeight())/5;
-                fromX = (dimension.getWidth())/2;
-                fromY = (dimension.getHeight())-((dimension.getHeight())/4);
-                System.out.print("Scroll: "+fromX+"-"+fromY+";"+endX+"-"+endY);
+                endX = (dimension.getWidth()) / 2;
+                endY = (dimension.getHeight()) / 5;
+                fromX = (dimension.getWidth()) / 2;
+                fromY = (dimension.getHeight()) - ((dimension.getHeight()) / 4);
+                System.out.print("Scroll: " + fromX + "-" + fromY + ";" + endX + "-" + endY);
                 (new TouchAction(appiumDriver))
-                        .press(PointOption.point(fromX,fromY))
+                        .press(PointOption.point(fromX, fromY))
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                         .moveTo(PointOption.point(endX, endY))
                         .release()
                         .perform()
+
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(3000)));
 //                sleep(1500);
                 break;
             case UP:
-                endX = (dimension.getWidth())/2;
-                fromY = (dimension.getHeight())/5;
-                fromX = (dimension.getWidth())/2;
-                endY = (dimension.getHeight())-fromY;
-                System.out.print("Scroll: "+fromX+"-"+fromY+";"+endX+"-"+endY);
+                endX = (dimension.getWidth()) / 2;
+                fromY = (dimension.getHeight()) / 5;
+                fromX = (dimension.getWidth()) / 2;
+                endY = (dimension.getHeight()) - fromY;
+                System.out.print("Scroll: " + fromX + "-" + fromY + ";" + endX + "-" + endY);
                 (new TouchAction(appiumDriver))
-                        .press(PointOption.point(fromX,fromY))
+                        .press(PointOption.point(fromX, fromY))
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                         .moveTo(PointOption.point(endX, endY))
                         .release()
@@ -115,26 +116,26 @@ public class Utils {
 //                sleep(1500);
                 break;
             case RIGHT:
-                fromX = (int)((dimension.getWidth())*0.9);
-                fromY = (dimension.getHeight())/2;
-                endX = (int)((dimension.getWidth())*0.05);
-                endY = (dimension.getHeight())/2;
-                System.out.print("Scroll: "+fromX+"-"+fromY+";"+endX+"-"+endY);
+                fromX = (int) ((dimension.getWidth()) * 0.9);
+                fromY = (dimension.getHeight()) / 2;
+                endX = (int) ((dimension.getWidth()) * 0.05);
+                endY = (dimension.getHeight()) / 2;
+                System.out.print("Scroll: " + fromX + "-" + fromY + ";" + endX + "-" + endY);
                 (new TouchAction(appiumDriver))
-                        .press(PointOption.point(fromX,fromY))
+                        .press(PointOption.point(fromX, fromY))
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                         .moveTo(PointOption.point(endX, endY))
                         .release()
                         .perform();
                 break;
             case LEFT:
-                fromX = (int)((dimension.getWidth())*0.05);
-                fromY = (dimension.getHeight())/2;
-                endX = (int)((dimension.getWidth())*0.9);
-                endY = (dimension.getHeight())/2;
-                System.out.print("Scroll: "+fromX+"-"+fromY+";"+endX+"-"+endY);
+                fromX = (int) ((dimension.getWidth()) * 0.05);
+                fromY = (dimension.getHeight()) / 2;
+                endX = (int) ((dimension.getWidth()) * 0.9);
+                endY = (dimension.getHeight()) / 2;
+                System.out.print("Scroll: " + fromX + "-" + fromY + ";" + endX + "-" + endY);
                 (new TouchAction(appiumDriver))
-                        .press(PointOption.point(fromX,fromY))
+                        .press(PointOption.point(fromX, fromY))
                         .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
                         .moveTo(PointOption.point(endX, endY))
                         .release()
@@ -143,14 +144,17 @@ public class Utils {
         }
 
     }
-    public static void exampleScroll(AppiumDriver appiumDriver){
+
+    public static void exampleScroll(AppiumDriver appiumDriver) {
         appiumDriver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"com.ap.philly:id/cardList\")).scrollIntoView(new UiSelector().resourceId(\"com.ap.philly:id/card_view_article\").instance(1))"));
     }
-    public static MobileElement scrollToElementexample(MobileElement ele, String elementText){
-        return ((AndroidElement)ele).findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""+elementText+"\").instance(0));");
+
+    public static MobileElement scrollToElementexample(MobileElement ele, String elementText) {
+        return ((AndroidElement) ele).findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"" + elementText + "\").instance(0));");
 
     }
-    public static void scrollBySwipe(AppiumDriver appiumDriver){
+
+    public static void scrollBySwipe(AppiumDriver appiumDriver) {
         appiumDriver.findElements(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"com.ap.philly:id/frameLayout\")).setMaxSearchSwipes(3).scrollIntoView("
                 + "new UiSelector().descriptionContains(\"Bookmark IC\"))"));
         //return ele;
@@ -158,35 +162,36 @@ public class Utils {
     }
     //========================================================================================//
 
-    public static void sleep(long milis){
-        try{
+    public static void sleep(long milis) {
+        try {
             Thread.sleep(milis);
-        }
-        catch(InterruptedException ex){
+        } catch (InterruptedException ex) {
             Thread.currentThread().interrupt();
             throw new RuntimeException(ex);
         }
     }
-    public static String getCurrentYear(){
+
+    public static String getCurrentYear() {
         Calendar now = Calendar.getInstance();
         int year = now.get(Calendar.YEAR);
         String yearInString = String.valueOf(year);
         return yearInString;
     }
-    public static void waitForElementVisible(AppiumDriver appiumDriver,MobileElement element) {
+
+    public static void waitForElementVisible(AppiumDriver appiumDriver, MobileElement element) {
         WebDriverWait webDriverWait = new WebDriverWait(appiumDriver, 30);
         webDriverWait.until(visibilityOf(element));
     }
 
 
-    public static String getDeviceVersion(AppiumDriver appiumDriver){
+    public static String getDeviceVersion(AppiumDriver appiumDriver) {
 
         //Get version when running on BrowserStack
-        if(AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS) ||
-                AppiumController.OS.IOS_BROWSERSTACK.equals(AppiumController.executionOS)){
+        if (AppiumController.OS.ANDROID_BROWSERSTACK.equals(AppiumController.executionOS) ||
+                AppiumController.OS.IOS_BROWSERSTACK.equals(AppiumController.executionOS)) {
             return appiumDriver.getCapabilities().getCapability("os_version").toString();
 
-        }else{
+        } else {
             return appiumDriver.getCapabilities().getCapability("platformVersion").toString();
         }
 
@@ -194,20 +199,21 @@ public class Utils {
 
     /**
      * Launching Settings app
+     *
      * @param appiumDriver
      */
-    public static void launchSettingsApp(AppiumDriver appiumDriver){
-        String settingsAppPackageName="com.android.settings";
-        String settingsAppActivityName="com.android.settings.Settings";
+    public static void launchSettingsApp(AppiumDriver appiumDriver) {
+        String settingsAppPackageName = "com.android.settings";
+        String settingsAppActivityName = "com.android.settings.Settings";
 
         String currentDeviceVersion = getDeviceVersion(appiumDriver);
 
-        if( Constants.DEVICE_VERSION.GALAXY_S5_5_0.equals(currentDeviceVersion)){
+        if (Constants.DEVICE_VERSION.GALAXY_S5_5_0.equals(currentDeviceVersion)) {
             settingsAppActivityName = "com.android.settings.GridSettings";
 
-        }else if( Constants.DEVICE_VERSION.GALAXY_S8_8_0.equals(currentDeviceVersion)) {
+        } else if (Constants.DEVICE_VERSION.GALAXY_S8_8_0.equals(currentDeviceVersion)) {
 
-        }else{
+        } else {
             //Swipe screen before launch Settings app
             scrollScreen(appiumDriver, DIRECTION.UP);
         }
@@ -220,20 +226,21 @@ public class Utils {
     }
 
 
-    public static String generateEmailAddress(){
+    public static String generateEmailAddress() {
         String emailAddress;
-        String domainAndExtension= "@philly.com";
+        String domainAndExtension = "@philly.com";
         String alphabetString = "abcdefghijklmnopqrstuvwxyz";
 
-        SecureRandom secureRnd =  new SecureRandom();
+        SecureRandom secureRnd = new SecureRandom();
         StringBuilder userNameSB = new StringBuilder(10);
         for (int i = 0; i < 10; i++) {
             userNameSB.append(alphabetString.charAt(secureRnd.nextInt(alphabetString.length())));
         }
         emailAddress = userNameSB.toString() + domainAndExtension;
 
-        return emailAddress ;
+        return emailAddress;
     }
+
 
     /**
      * Set 'None' for 'Autofill service' in Settings app
@@ -271,5 +278,6 @@ public class Utils {
             ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
         }
     }
+
 
 }
