@@ -51,7 +51,7 @@ public class BaseTestClass extends AppiumBaseClass {
         articlePage = new ArticlePage(driver());
         ratingModule = new RatingModule(driver());
         exploreTab = new ExploreTab(driver());
-
+        iOS_LoginPage = new iOSLoginPage(driver());
         iOS_ForgotEmailPage = new iOSForgotEmailPage(driver());
         iOS_ForgotPasswordPage = new iOSForgotPasswordPage(driver());
         iOS_SignUpPage  = new iOSSignUpPage(driver());
