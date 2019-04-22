@@ -29,6 +29,7 @@ public class AppiumController {
         ANDROID_Emulator
     }
 
+
     public AppiumDriver driver;
 
     public void start() throws MalformedURLException {
@@ -45,6 +46,7 @@ public class AppiumController {
 //        String androidBuild = "AndroidLocalTestBuild";
 //        String iOSBuild = "iOSLocalTestBuild";
         String iOSBuild = "iOS_SprintL_RegressionTest_"+formater2.format(calendar.getTime());
+
 
         switch (executionOS) {
             case ANDROID:
