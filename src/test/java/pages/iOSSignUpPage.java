@@ -447,8 +447,9 @@ public class iOSSignUpPage extends BasePage {
 
         //4. Click Confirm Password field
         loginElements.confirmPassword.click();
-        Assert.assertFalse(Utils.checkElementExist(loginElements.messageEmail));
-        Assert.assertFalse(Utils.checkElementExist(loginElements.messagePassword));
+
+        Assert.assertFalse(loginElements.messageEmail.getText().contains(":"));
+        Assert.assertFalse(loginElements.messagePassword.getText().contains(":"));
     }
 
     public void TestCasePCOM_031() {
@@ -929,6 +930,7 @@ public class iOSSignUpPage extends BasePage {
     public void TestCasePCOM_056() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
+        Utils.sleep(3000);
         commonElements.settingTab.click();
         waitForVisibilityOf(settingElements.logInOrSignUp);
         settingElements.logInOrSignUp.click();
@@ -945,8 +947,11 @@ public class iOSSignUpPage extends BasePage {
 
         //3. Click on the show/hide password icon on Password field
         loginElements.signUpShowOrHiddenPasswordIcon.click();
-        loginElements.assertValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
-        loginElements.assertValue(loginElements.confirmPassword, Constants.SIGN_UP_PASSWORD);
+
+        String passwordValue = loginElements.passwordValue.getAttribute("value");
+        String confirmPasswordValue = loginElements.confirmPasswordValue.getAttribute("value");
+        Assert.assertEquals(passwordValue, Constants.SIGN_UP_PASSWORD);
+        Assert.assertEquals(confirmPasswordValue, Constants.SIGN_UP_PASSWORD);
     }
 
     public void TestCasePCOM_057() {
@@ -962,14 +967,17 @@ public class iOSSignUpPage extends BasePage {
 
 
         //2. Enter password to Password and Confirm fields
-        loginElements.setValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
         loginElements.setValue(loginElements.confirmPassword, Constants.SIGN_UP_PASSWORD);
+        loginElements.setValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
 
 
         //3. Click on the show/hide password icon on Confirm Password field
         loginElements.signUpShowOrHiddenConfirmPasswordIcon.click();
-        loginElements.assertValue(loginElements.password, Constants.SIGN_UP_PASSWORD);
-        loginElements.assertValue(loginElements.confirmPassword, Constants.SIGN_UP_PASSWORD);
+
+        String passwordValue = loginElements.passwordValue.getAttribute("value");
+        String confirmPasswordValue = loginElements.confirmPasswordValue.getAttribute("value");
+        Assert.assertEquals(passwordValue, Constants.SIGN_UP_PASSWORD);
+        Assert.assertEquals(confirmPasswordValue, Constants.SIGN_UP_PASSWORD);
     }
 
 

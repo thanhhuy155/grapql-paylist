@@ -79,10 +79,12 @@ public class LoginElements extends BasePage {
     public MobileElement password;
 
 
-    @iOSFindBy(xpath = "//XCUIElementTypeTextField[contains(@value,'Test!1234')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeTextField[2]")
+   // @iOSFindBy(xpath = "//XCUIElementTypeTextField[contains(@value,'Test!1234')]")
     public MobileElement passwordValue;
 
 
+    @iOSFindBy(xpath = "//XCUIElementTypeTextField[1]")
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your password.')]")
     public MobileElement messagePassword;
 
@@ -97,7 +99,7 @@ public class LoginElements extends BasePage {
     public MobileElement signUpShowOrHiddenPasswordIcon;
 
 
-    @iOSFindBy(xpath = "(//XCUIElementTypeButton/XCUIElementTypeImage)[3]")
+    @iOSFindBy(xpath = "(//XCUIElementTypeButton)[5]")
     @AndroidFindBy(xpath = "(//android.widget.ImageButton)[2]")
     public MobileElement signUpShowOrHiddenConfirmPasswordIcon;
 
@@ -176,6 +178,8 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(id = "confirmPasswordEdt")
     public MobileElement confirmPassword;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeTextField[3]")
+    public MobileElement confirmPasswordValue;
 
     @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField[2]")
     @AndroidFindBy(id = "textinput_error")
