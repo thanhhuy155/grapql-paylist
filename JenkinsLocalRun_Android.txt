@@ -37,7 +37,7 @@ pipeline{
 						<p><font font="Verdana" size="2" color="navy">Please click the link to see the detail report: </font>
 						&QUOT;<a href='http://100.26.222.41:8080/view/TestExampleProjects/job/NativeAppLocalRun/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
                         <b/>
-						<p><font font="Verdana" size="2" color="navy">BrowserStack iOS_Local build: </font>
+						<p><font font="Verdana" size="2" color="navy">BrowserStack Android_Local build: </font>
                         &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
 
 						<br/>''',
