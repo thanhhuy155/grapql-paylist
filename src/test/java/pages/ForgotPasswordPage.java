@@ -104,7 +104,7 @@ public class ForgotPasswordPage extends BasePage {
         commonElements.settingTab.click();
         Assert.assertTrue(commonElements.settingTab.isSelected());
         commonElements.bookMarkTab.click();
-        Assert.assertTrue(commonElements.bookMarkTab.isSelected());
+
 
         //9. Terminate the app by double clicking the home button and swiping up.
         ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
