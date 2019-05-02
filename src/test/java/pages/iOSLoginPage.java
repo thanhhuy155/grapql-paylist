@@ -840,8 +840,8 @@ public class iOSLoginPage extends BasePage {
         //Click on the show/hide password icon
         loginElements.showOrHidePasswordIcon.click();
 
-        Assert.assertFalse(Utils.checkElementExist(loginElements.passwordValue));
-
+        //Check Password field doesn't active
+        Assert.assertFalse(Utils.isKeyboardPresent(appiumDriver));
     }
 
     public void TestCasePCOM_042() {

@@ -279,5 +279,18 @@ public class Utils {
         }
     }
 
+    /**
+     * Used to check soft keyboard is present or not on iOS devices only.
+     * @return True if keyboard shown.
+     */
+    public static boolean isKeyboardPresent(AppiumDriver appiumDriver){
+        boolean flag = true;
+        try {
+            appiumDriver.hideKeyboard();
+        }catch (Exception e){
+            flag = false;
+        }
+        return  flag;
+    }
 
 }
