@@ -148,10 +148,13 @@ public class iOSForgotEmailPage extends BasePage {
         Utils.sleep(Constants.SHORTTIME*2);
 
         //5. Return to the app
-        if(Utils.checkElementExist(loginElements.cancelButton)){
-            loginElements.cancelButton.click();
-            Utils.sleep(Constants.SHORTTIME);
+        //Check and close dialog "No SIM Card Installed"
+        if(appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")){
+            appiumDriver.switchTo().alert().accept();
         }
+
+        loginElements.cancelButton.click();
+        Utils.sleep(Constants.SHORTTIME);
 
         Assert.assertTrue(Utils.checkElementExist(loginElements.exitResetEmailButton));
 
@@ -186,7 +189,12 @@ public class iOSForgotEmailPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.cancelButton));
 
 
-        //4. Click Cancel buttonl
+        //4. Click Cancel button
+        //Check and close dialog "No SIM Card Installed"
+        if(appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")){
+            appiumDriver.switchTo().alert().accept();
+        }
+
         loginElements.cancelButton.click();
         Assert.assertFalse(Utils.checkElementExist(loginElements.callButton));
 
