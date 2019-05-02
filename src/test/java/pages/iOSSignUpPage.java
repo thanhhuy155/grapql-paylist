@@ -500,7 +500,7 @@ public class iOSSignUpPage extends BasePage {
         //3. Click on Password field
         loginElements.password.click();
 
-        Assert.assertFalse(Utils.checkElementExist(loginElements.messagePassword));
+        Assert.assertFalse(loginElements.messagePassword.getText().contains(":"));
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateMinCharacters));
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateLowercase));
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateUppercase));
