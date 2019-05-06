@@ -5,6 +5,8 @@ import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
+import java.util.concurrent.TimeUnit;
+
 public class SearchTab extends BasePage {
     private FeedListElements feedListElements;
     private SearchElements searchElements;
@@ -45,11 +47,14 @@ public class SearchTab extends BasePage {
         //Step: 2. Begin to type any letter
         searchElements.searchBox.sendKeys("A");
 
+
         //Step: 3. Observe the auto-suggest search terms drop down appear
         Assert.assertTrue(searchElements.autoSuggestedTable.isDisplayed());
 
         //Step: 4. Click any auto-suggested search term
-        searchElements.searchByAutoSuggested();
+//        searchElements.searchByAutoSuggested();
+        searchElements.autoSuggestedTerm.click();
+        appiumDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         //Step: 5. Observe the auto-suggest term execute the search
         Assert.assertTrue(searchElements.newestSortOptionForSearchResult.isDisplayed());

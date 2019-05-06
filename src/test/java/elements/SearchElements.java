@@ -2,9 +2,9 @@ package elements;
 
 import actions.ISearch;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
-import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.PageFactory;
 import utils.Constants;
 import utils.Utils;
@@ -31,7 +31,8 @@ public class SearchElements extends CommonElements implements ISearch {
     @iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeCell[1]")
     public  MobileElement autoSuggestedTerm;
 
-    @iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeOther/XCUIElementTypeButton[@name=\"Newest\"]")
+    @iOSFindBy(xpath = "(//XCUIElementTypeButton[@name = 'Newest'])[2]")
+    //@iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeOther/XCUIElementTypeButton[@name=\"Newest\"]")
     public MobileElement newestSortOptionForSearchResult;
 
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name=\"Clear text\"]")
