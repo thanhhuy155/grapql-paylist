@@ -74,6 +74,12 @@ public class iOSForgotEmailPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.endCallButton));
 
 
+        //Add extra step: Click OK when dialog 'No SIM Card Installed' appears
+        if(appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")){
+            appiumDriver.switchTo().alert().accept();
+        }
+
+
         //5. End call and return to the app
         if(Utils.checkElementExist(loginElements.OKButton)) {
         //Click OK to end Call in iPhone 6S Plus
