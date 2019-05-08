@@ -85,10 +85,11 @@ public class iOSForgotEmailPage extends BasePage {
         //Click OK to end Call in iPhone 6S Plus
             loginElements.OKButton.click();
             Utils.sleep(Constants.SHORTTIME);
-
-            //Click Cancel to back Login page
-            loginElements.cancelButton.click();
         }
+
+        //Click Cancel to back Login page
+        loginElements.cancelButton.click();
+        Utils.sleep(Constants.SHORTTIME);
 
         //Check Login page
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
