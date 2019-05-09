@@ -86,6 +86,8 @@ public class ForgotPasswordPage extends BasePage {
         unLockDevice();
         Utils.sleep(Constants.SHORTTIME);
 
+        activateApp();
+
 
         //6. Return to Log In screen and cancel Log In.
         loginElements.closeActionButton.click();
