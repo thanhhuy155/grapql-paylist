@@ -46,7 +46,7 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.sportsSection);
         exploreElements.sportsSection.click();
 
-        String sportsSubsections[] = {"All Sports","Rally High School Sports","Eagles","Flyers","Phillies","Union","Sixers","College Sports"};
+        String sportsSubsections[] = {"All Sports","Eagles","Flyers","Rally High School Sports","Phillies","Union","Sixers","College Sports"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,sportsSubsections, exploreElements.sportsSection);
     }
@@ -60,7 +60,7 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.businessSection);
         exploreElements.businessSection.click();
 
-        String businessSubsections[] = {"All Business","Jobs","Cars","Personal Finance","Health & Pharma","Energy","PhillyDeals","Retail","Small Business","Comcast"};
+        String businessSubsections[] = {"All Business","Jobs","Cars","Consumer","Health & Pharma","Energy","PhillyDeals","Retail","Small Business","Marijuana","Comcast","Economy"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,businessSubsections, exploreElements.businessSection);
     }
@@ -102,7 +102,8 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.entertainmentSection);
         exploreElements.entertainmentSection.click();
 
-        String entertainmentSubsections[] = {"All Entertainment","Arts & Culture","Horoscopes","Movies","Music","Television"};
+       // String entertainmentSubsections[] = {"All Entertainment","Arts & Culture","Horoscopes","Movies","Music","Television"};
+        String entertainmentSubsections[] = {"All Entertainment","Things To Do", "Arts & Culture","Horoscopes","Movies","Music","Television","Celebrity"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,entertainmentSubsections, exploreElements.entertainmentSection);
     }
@@ -183,7 +184,7 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,exploreElements.lifeSection);
         exploreElements.lifeSection.click();
 
-        String lifeSubsections[] = {"All Life","Families","Style","Identity","Sex & Love","Things To Do at the Shore","Travel"};
+        String lifeSubsections[] = {"All Life","Families","Style","Sex & Love","Identity","Things To Do at the Shore","Travel"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,lifeSubsections, exploreElements.lifeSection);
     }
