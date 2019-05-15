@@ -9,11 +9,13 @@
         <suite-file path="Suite_iOSHomeTab.xml" />
         <suite-file path="Suite_iOSArticlePage.xml" />
         <suite-file path="Suite_SearchTab.xml" />
-        <!--<suite-file path="Suite_iOSExploreTab.xml" />-->  <!-- Comment this suite because the data is pointing to Dev env-->
+        <suite-file path="Suite_iOSExploreTab.xml" />
         <!--<suite-file path="Suite_iOSSettingTab.xml" />--> <!-- Comment this suite due to device's Settings app is getting issue - automatically closed-->
-        <suite-file path="Suite_iOSLoginPage.xml" />
-        <suite-file path="Suite_iOSLoginPage_ForgotEmailPage.xml" />
-        <suite-file path="Suite_iOSLoginPage_ForgotPasswordPage.xml" />
-        <suite-file path="Suite_iOSLoginPage_SignUpPage.xml" />
+
+        <!--Comment these suites as they are not included on release sprintK version V.4.1.2 -->
+        <!--<suite-file path="Suite_iOSLoginPage.xml" />-->
+        <!--<suite-file path="Suite_iOSLoginPage_ForgotEmailPage.xml" />-->
+        <!--<suite-file path="Suite_iOSLoginPage_ForgotPasswordPage.xml" />-->
+        <!--<suite-file path="Suite_iOSLoginPage_SignUpPage.xml" />-->
     </suite-files>
 </suite>
