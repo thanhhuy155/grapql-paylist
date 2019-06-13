@@ -9,11 +9,9 @@
         <suite-file path="Suite_SettingTab.xml" />
         <suite-file path="Suite_HomeTab.xml" />
         <suite-file path="Suite_ExploreTab.xml" />
-
-        <!--Comment these suites as they are not included on release sprintK version V.4.1.2 -->
-        <!--<suite-file path="Suite_LoginPage.xml" />-->
-        <!--<suite-file path="Suite_LoginPage_ForgotEmailPage.xml" />-->
-        <!--<suite-file path="Suite_LoginPage_ForgotPasswordPage.xml" />-->
-        <!--<suite-file path="Suite_LoginPage_SignUpPage.xml" />-->
+        <suite-file path="Suite_LoginPage.xml" />
+        <suite-file path="Suite_LoginPage_ForgotEmailPage.xml" />
+        <suite-file path="Suite_LoginPage_ForgotPasswordPage.xml" />
+        <suite-file path="Suite_LoginPage_SignUpPage.xml" />
     </suite-files>
 </suite>
