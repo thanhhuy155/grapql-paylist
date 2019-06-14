@@ -114,7 +114,7 @@ public class iOSForgotPasswordPage extends BasePage {
 
         //4. Click on "Send Email" button
         loginElements.sendEmailButton.click();
-        String emailMsg = loginElements.email.getText();
+        String emailMsg = loginElements.email.getAttribute("name");//.getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -144,7 +144,7 @@ public class iOSForgotPasswordPage extends BasePage {
 
         //4. Click outside
         loginElements.hiddenKeyboard(appiumDriver, loginElements.sendEmailButton);
-        String emailMsg = loginElements.email.getText();
+        String emailMsg = loginElements.email.getAttribute("name");//.getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -176,7 +176,7 @@ public class iOSForgotPasswordPage extends BasePage {
 
         //4. Click on "Send Email" button
         loginElements.sendEmailButton.click();
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name");//.getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
@@ -201,14 +201,13 @@ public class iOSForgotPasswordPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotPasswordMessage),"Check forgot message displays");
 
 
-        //3. Enter invalid email format to Email fieldt
-        String emailElement = "//XCUIElementTypeTextField";
+        //3. Enter invalid email format to Email field
         loginElements.setValue(loginElements.email, "fairlyenclave.vn");
 
 
         //4. Click outside
         loginElements.hiddenKeyboard(appiumDriver,loginElements.email);
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name");//.getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);

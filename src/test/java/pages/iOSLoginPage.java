@@ -131,7 +131,7 @@ public class iOSLoginPage extends BasePage {
 
 
         //Check error message is being returned
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
@@ -157,7 +157,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.password.click();
 
         //Check error message is being returned
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
@@ -295,11 +295,11 @@ public class iOSLoginPage extends BasePage {
         loginElements.logInButton.click();
 
         //Check error messages returned
-        String emailMsg = loginElements.email.getText();
+        String emailMsg = loginElements.email.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
 
-        String passwordMsg = loginElements.password.getText();
+        String passwordMsg = loginElements.password.getAttribute("name"); //getText();
         String [] passwordMsgParts = passwordMsg.split(":");
         String passwordMsgPart2 = passwordMsgParts[1].trim();
 
@@ -329,7 +329,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.password.click();
 
         //Check error message is being returned
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -360,11 +360,11 @@ public class iOSLoginPage extends BasePage {
 
 
         //Check error messages returned
-        String emailMsg = loginElements.email.getText();
+        String emailMsg = loginElements.email.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
 
-        String passwordMsg = loginElements.password.getText();
+        String passwordMsg = loginElements.password.getAttribute("name"); //getText();
         String [] passwordMsgParts = passwordMsg.split(":");
         String passwordMsgPart2 = passwordMsgParts[1].trim();
 
@@ -425,7 +425,7 @@ public class iOSLoginPage extends BasePage {
 
 
         //Check error message is being returned
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -451,7 +451,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.logInButton.click();
 
         //Check error message is being returned
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -477,7 +477,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.email.click();
 
         //Check error message is being returned
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -503,7 +503,7 @@ public class iOSLoginPage extends BasePage {
 
 
         //Check error message returned
-        String message = loginElements.password.getText();
+        String message = loginElements.password.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
@@ -528,7 +528,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.email.click();
 
         //Check error message returned
-        String message = loginElements.password.getText();
+        String message = loginElements.password.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
@@ -554,11 +554,11 @@ public class iOSLoginPage extends BasePage {
 
 
         //Check error messages returned
-        String emailMsg = loginElements.email.getText();
+        String emailMsg = loginElements.email.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
 
-        String passwordMsg = loginElements.password.getText();
+        String passwordMsg = loginElements.password.getAttribute("name"); //getText();
         String [] passwordMsgParts = passwordMsg.split(":");
         String passwordMsgPart2 = passwordMsgParts[1].trim();
 
@@ -585,7 +585,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.logInButton.click();
 
         //Check error message returned
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -621,7 +621,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.setValue(loginElements.password, "123");
 
         //Check error message returned
-        String message = loginElements.email.getText();
+        String message = loginElements.email.getAttribute("name"); //getText();
         String [] parts = message.split(":");
         String part2 = parts[1].trim();
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -663,11 +663,11 @@ public class iOSLoginPage extends BasePage {
 
 
         //Check error messages returned
-        String emailMsg = loginElements.email.getText();
+        String emailMsg = loginElements.email.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
 
-        String passwordMsg = loginElements.password.getText();
+        String passwordMsg = loginElements.password.getAttribute("name"); //getText();
         String [] passwordMsgParts = passwordMsg.split(":");
         String passwordMsgPart2 = passwordMsgParts[1].trim();
 
@@ -682,9 +682,9 @@ public class iOSLoginPage extends BasePage {
         loginElements.logInButton.click();
 
 
-        emailMsg = loginElements.email.getText();
+        emailMsg = loginElements.email.getAttribute("name"); //getText();
 
-        passwordMsg = loginElements.password.getText();
+        passwordMsg = loginElements.password.getAttribute("name"); //getText();
         passwordMsgParts = passwordMsg.split(":");
         passwordMsgPart2 = passwordMsgParts[1].trim();
 
@@ -714,11 +714,11 @@ public class iOSLoginPage extends BasePage {
         loginElements.logInButton.click();
 
         //Check error messages returned
-        String emailMsg = loginElements.email.getText();
+        String emailMsg = loginElements.email.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
 
-        String passwordMsg = loginElements.password.getText();
+        String passwordMsg = loginElements.password.getAttribute("name"); //getText();
         String [] passwordMsgParts = passwordMsg.split(":");
         String passwordMsgPart2 = passwordMsgParts[1].trim();
 
@@ -734,11 +734,11 @@ public class iOSLoginPage extends BasePage {
         loginElements.logInButton.click();
 
 
-        emailMsg = loginElements.email.getText();
+        emailMsg = loginElements.email.getAttribute("name"); //getText();
         emailMsgParts = emailMsg.split(":");
         emailMsgPart2 = emailMsgParts[1].trim();
 
-        passwordMsg = loginElements.password.getText();
+        passwordMsg = loginElements.password.getAttribute("name"); //getText();
 
         //Check error message is still on Email field
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
@@ -766,7 +766,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.logInButton.click();
 
         //Check error message returned
-        String passwordMsg = loginElements.password.getText();
+        String passwordMsg = loginElements.password.getAttribute("name"); //getText();
         String [] passwordMsgParts = passwordMsg.split(":");
         String passwordMsgPart2 = passwordMsgParts[1].trim();
 
@@ -781,7 +781,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.logInButton.click();
 
         //Check no error message return
-        passwordMsg = loginElements.password.getText();
+        passwordMsg = loginElements.password.getAttribute("name"); //getText();
         Assert.assertFalse(passwordMsg.contains(":"));
 
     }
@@ -805,7 +805,7 @@ public class iOSLoginPage extends BasePage {
         loginElements.email.click();
 
         //Check error message returned
-        String passwordMsg = loginElements.password.getText();
+        String passwordMsg = loginElements.password.getAttribute("name"); //getText();
         String [] passwordMsgParts = passwordMsg.split(":");
         String passwordMsgPart2 = passwordMsgParts[1].trim();
         Assert.assertEquals(passwordMsgPart2,Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
@@ -821,7 +821,7 @@ public class iOSLoginPage extends BasePage {
 //        loginElements.logInButton.click();
 
         //Check no error message return
-        passwordMsg = loginElements.password.getText();
+        passwordMsg = loginElements.password.getAttribute("name"); //getText();
         Assert.assertFalse(passwordMsg.contains(":"));
 
     }

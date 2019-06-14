@@ -337,7 +337,8 @@ public class iOSSignUpPage extends BasePage {
         loginElements.signUpButton.click();
         waitForVisibilityOf(loginElements.messageEmail);
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
+
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
@@ -368,7 +369,7 @@ public class iOSSignUpPage extends BasePage {
         loginElements.signUpButton.click();
         waitForVisibilityOf(loginElements.messageEmail);
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.SIGN_UP_EMAIL_ERROR_MESSAGE);
@@ -399,7 +400,7 @@ public class iOSSignUpPage extends BasePage {
         loginElements.signUpButton.click();
 
         //Check error message on Confirm Password field
-        String passwordMsg = loginElements.messageConfirmPassword.getText();
+        String passwordMsg = loginElements.messageConfirmPassword.getAttribute("name"); //getText();
         String [] passwordMsgParts = passwordMsg.split(":");
         String passwordMsgPart2 = passwordMsgParts[1].trim();
         Assert.assertEquals(passwordMsgPart2, Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
@@ -422,7 +423,7 @@ public class iOSSignUpPage extends BasePage {
         //3. Click "Sign Up" button
         loginElements.signUpButton.click();
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -471,7 +472,7 @@ public class iOSSignUpPage extends BasePage {
         //3. Click on Password field
         loginElements.password.click();
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -533,7 +534,7 @@ public class iOSSignUpPage extends BasePage {
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -566,7 +567,7 @@ public class iOSSignUpPage extends BasePage {
         //5. Click outside to dismiss keyboard or "Sign Up" button
         loginElements.hiddenKeyboard(appiumDriver,loginElements.confirmPassword);
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -596,7 +597,7 @@ public class iOSSignUpPage extends BasePage {
         //4. Click Email field
         loginElements.email.click();
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -632,7 +633,7 @@ public class iOSSignUpPage extends BasePage {
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
 
-        String confirmPasswordMsg = loginElements.messageConfirmPassword.getText();
+        String confirmPasswordMsg = loginElements.messageConfirmPassword.getAttribute("name"); //getText();
         String [] confirmPasswordMsgParts = confirmPasswordMsg.split(":");
         String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
         Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
@@ -665,7 +666,7 @@ public class iOSSignUpPage extends BasePage {
         //5. Click another field or "Sign Up" button
         loginElements.signUpButton.click();
 
-        String confirmPasswordMsg = loginElements.messageConfirmPassword.getText();
+        String confirmPasswordMsg = loginElements.messageConfirmPassword.getAttribute("name"); //getText();
         String [] confirmPasswordMsgParts = confirmPasswordMsg.split(":");
         String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
         Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
@@ -697,7 +698,7 @@ public class iOSSignUpPage extends BasePage {
         //5. Click another field or "Sign Up" button
         loginElements.signUpButton.click();
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -739,7 +740,7 @@ public class iOSSignUpPage extends BasePage {
         //5. Click another field or "Sign Up" button
         loginElements.signUpButton.click();
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
@@ -782,7 +783,7 @@ public class iOSSignUpPage extends BasePage {
         //5. Click another field or "Sign Up" button
         loginElements.signUpButton.click();
 
-        String emailMsg = loginElements.messageEmail.getText();
+        String emailMsg = loginElements.messageEmail.getAttribute("name"); //getText();
         String [] emailMsgParts = emailMsg.split(":");
         String emailMsgPart2 = emailMsgParts[1].trim();
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
@@ -827,7 +828,7 @@ public class iOSSignUpPage extends BasePage {
         //5. Click "Sign Up" button
         loginElements.signUpButton.click();
 
-        String confirmPasswordMsg = loginElements.messageConfirmPassword.getText();
+        String confirmPasswordMsg = loginElements.messageConfirmPassword.getAttribute("name"); //getText();
         String [] confirmPasswordMsgParts = confirmPasswordMsg.split(":");
         String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
         Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
@@ -868,7 +869,7 @@ public class iOSSignUpPage extends BasePage {
 
         //5. Click Password field
         loginElements.password.click();
-        String confirmPasswordMsg = loginElements.messageConfirmPassword.getText();
+        String confirmPasswordMsg = loginElements.messageConfirmPassword.getAttribute("name"); //getText();
         String [] confirmPasswordMsgParts = confirmPasswordMsg.split(":");
         String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
         Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
@@ -912,7 +913,7 @@ public class iOSSignUpPage extends BasePage {
         loginElements.signUpButton.click();
         appiumDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-        String confirmPasswprdMsg = loginElements.messageConfirmPassword.getText();
+        String confirmPasswprdMsg = loginElements.messageConfirmPassword.getAttribute("name"); //getText();
         String [] confirmPasswordMsgParts = confirmPasswprdMsg.split(":");
         String confirmPasswordMsgPart2 = confirmPasswordMsgParts[1].trim();
         Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
