@@ -9,7 +9,7 @@ public class Constants {
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
 
-    public static final String IOS_HASHED_APP_ID = "e5881ff6af82c2839496a7293fb6d14c8cdede7d";
+    public static final String IOS_HASHED_APP_ID = "74c4e2bcaae57dc2abe73db48e5ae38ab824c93f";
     public static final String ANDROID_HASHED_APP_ID = "a9a5869bf8b58ccb22aeb88738f12bfd89893776";
 
     public static final int TIME_OUT = 5;
