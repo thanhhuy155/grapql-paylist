@@ -32,7 +32,9 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.newsSection);
         exploreElements.newsSection.click();
 
-        String newsSubsections[] = {"All News","Crime & Justice","Education","Weather","Philadelphia","New Jersey","Pennsylvania","Nation & World"};
+        //String newsSubsections[] = {"All News","Crime & Justice","Education","Weather","Philadelphia","New Jersey","Pennsylvania","Nation & World"};
+        //Dev
+        String newsSubsections[] = {"All News","Politics", "Crime & Justice","Education","Weather","Philadelphia","New Jersey","Pennsylvania","Nation & World News"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,newsSubsections, exploreElements.newsSection);
     }
@@ -60,9 +62,11 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.businessSection);
         exploreElements.businessSection.click();
 
-        String businessSubsections[] = {"All Business","Jobs","Cars","Consumer","Health & Pharma","Energy","PhillyDeals","Retail","Small Business","Marijuana","Comcast","Economy"};
+        //String businessSubsections[] = {"All Business","Jobs","Cars","Consumer","Health & Pharma","Energy","PhillyDeals","Retail","Small Business","Marijuana","Comcast","Economy"};
+        //exploreElements.checkSubsectionsOpenProperly(appiumDriver,businessSubsections, exploreElements.businessSection);
 
-        exploreElements.checkSubsectionsOpenProperly(appiumDriver,businessSubsections, exploreElements.businessSection);
+        //Dev: Business has no sub section
+        exploreElements.checkSectionHeader("Business", exploreElements.feedSectionHeader.getText());
     }
 
     public void TestCaseNo4(){
@@ -88,8 +92,10 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.politicsSection);
         exploreElements.politicsSection.click();
 
-        String politicsSubsections[] = {"All Politics","Pennsylvania Politics","New Jersey Politics","Elections"};
+        //String politicsSubsections[] = {"All Politics","Pennsylvania Politics","New Jersey Politics","Elections"};
 
+        //Dev : Politics has no sub section
+        String politicsSubsections[] = {};
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,politicsSubsections, exploreElements.politicsSection);
     }
 
@@ -103,8 +109,10 @@ public class ExploreTab extends BasePage {
         exploreElements.entertainmentSection.click();
 
        // String entertainmentSubsections[] = {"All Entertainment","Arts & Culture","Horoscopes","Movies","Music","Television"};
-        String entertainmentSubsections[] = {"All Entertainment","Things To Do", "Arts & Culture","Horoscopes","Movies","Music","Television","Celebrity"};
+//        String entertainmentSubsections[] = {"All Entertainment","Things To Do", "Arts & Culture","Horoscopes","Movies","Music","Television","Celebrity"};
 
+        //Dev:
+        String entertainmentSubsections[] = {"All Entertainment", "PMN Events", "Arts & Culture","Horoscopes","Movies","Music","Television"};
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,entertainmentSubsections, exploreElements.entertainmentSection);
     }
 
@@ -117,7 +125,9 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.foodSection);
         exploreElements.foodSection.click();
 
-        String foodSubsections[] = {"All Food","Clean Plates","Drinks","Cooking","Craig LaBan","Michael Klein"};
+        //String foodSubsections[] = {"All Food","Clean Plates","Drinks","Cooking","Craig LaBan","Michael Klein"};
+        //Dev
+        String foodSubsections[] = {"All Food","Clean Plates","Drinks", "Craig LaBan","Michael Klein"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,foodSubsections, exploreElements.foodSection);
     }
@@ -131,7 +141,9 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.healthSection);
         exploreElements.healthSection.click();
 
-        String healthSubsections[] = {"All Health","Science","Climate News","Health Costs","The Opioid Crisis","Wellness"};
+        //String healthSubsections[] = {"All Health","Science","Climate News","Health Costs","The Opioid Crisis","Wellness"};
+        //Dev
+        String healthSubsections[] = {"All Health & Wellness","Science","Climate News","Health Costs","The Opioid Crisis","Wellness"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,healthSubsections, exploreElements.healthSection);
     }
@@ -145,7 +157,10 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.realEstateSection);
         exploreElements.realEstateSection.click();
 
-        String realEstateSubsections[] = {"All Real Estate","Transportation","Residential","Commercial","Inga Saffron","Home"};
+//        String realEstateSubsections[] = {"All Real Estate","Transportation","Residential","Commercial","Inga Saffron","Home"};
+
+        //Dev
+        String realEstateSubsections[] = {"All Real Estate","Transportation","Residential","Commercial","Home", "Inga Saffron"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,realEstateSubsections, exploreElements.realEstateSection);
     }
@@ -184,7 +199,9 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,exploreElements.lifeSection);
         exploreElements.lifeSection.click();
 
-        String lifeSubsections[] = {"All Life","Families","Style","Sex & Love","Identity","Things To Do at the Shore","Travel"};
+        //String lifeSubsections[] = {"All Life","Families","Style","Sex & Love","Identity","Things To Do at the Shore","Travel"};
+        //Dev
+        String lifeSubsections[] = {"All Life","Families","Fashion & Style", "Identity","Love", "Travel"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,lifeSubsections, exploreElements.lifeSection);
     }
