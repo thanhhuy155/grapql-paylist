@@ -3,8 +3,6 @@
 
 <suite name="AndroidSuite">
     <suite-files>
-        <!--<suite-file path="Suite_Bookmark.xml" />-->
-        <!--<suite-file path="Suite_RatingModule.xml" />-->
         <suite-file path="Suite_GeneralTest.xml" />
         <suite-file path="Suite_SettingTab.xml" />
         <suite-file path="Suite_HomeTab.xml" />
