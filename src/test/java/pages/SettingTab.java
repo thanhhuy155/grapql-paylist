@@ -111,7 +111,7 @@ public class SettingTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, settingElements.pmnCopyrightYear);
 
         //Step: Copyright reflects current year and Philadelphia Media Network (Digital), LLC
-        settingElements.checkAppCopyright("Philadelphia Media Network (Digital), LLC");
+        settingElements.checkAppCopyright("The Philadelphia Inquirer, LLC");
     }
 
     public void Draft(){

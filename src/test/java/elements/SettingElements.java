@@ -38,7 +38,7 @@ public class SettingElements extends CommonElements implements ISetting {
     public MobileElement appVersion;
 
     // @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/title']")
-    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'Philadelphia Media Network (Digital), LLC')]")
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text,'The Philadelphia Inquirer, LLC')]")
     public MobileElement pmnName;
 
     //@AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Version and Build Number')]]]/following-sibling::android.widget.LinearLayout//android.widget.TextView[@resource-id='android:id/summary']")
