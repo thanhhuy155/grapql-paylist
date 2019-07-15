@@ -45,7 +45,7 @@ pipeline{
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
 					subject: '$DEFAULT_SUBJECT_iOS_SprintM_RegressionTest',
-          			to: 'hera@enclave.vn, pduncan@philly.com, tdang@phillynews.com, missy@enclave.vn, sarah@enclave.vn'
+          			to: 'hera@enclave.vn, pduncan@inquirer.com,  nguyenm@inquirer.com, sarah@enclave.vn, spham@inquirer.com'
 		}
 	}
 

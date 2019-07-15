@@ -45,7 +45,7 @@ pipeline{
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
 					subject: '$DEFAULT_SUBJECT_iOS_Local',
-          			to: 'sarah@enclave.vn'
+          			to: 'sarah@enclave.vn, spham@inquirer.com'
 		}
 	}
 
