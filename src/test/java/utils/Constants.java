@@ -10,7 +10,7 @@ public class Constants {
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
 
     public static final String IOS_HASHED_APP_ID = "74c4e2bcaae57dc2abe73db48e5ae38ab824c93f";
-    public static final String ANDROID_HASHED_APP_ID = "a9a5869bf8b58ccb22aeb88738f12bfd89893776";
+    public static final String ANDROID_HASHED_APP_ID = "e2324c338f69c4b0e66635630489ccc4ea5ce54f";
 
     public static final int TIME_OUT = 5;
 
@@ -46,7 +46,7 @@ public class Constants {
     }
 
     public static class APP_VERSION {
-        public static final String ANDROID = "4.1.3 (71)";
+        public static final String ANDROID = "4.1.3 (72)";
         public static final String IOS = "4.1.5 (155)";
     }
 
