@@ -38,14 +38,14 @@ pipeline{
 						&QUOT;<a href='http://100.26.222.41:8080/view/PhillyDotComNativeAppProjects/job/AndroidAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
 
                         <b/>
-						<p><font font="Verdana" size="2" color="navy">BrowserStack Android_SprintN_RegressionTest build: </font>
+						<p><font font="Verdana" size="2" color="navy">BrowserStack Android_SprintO_RegressionTest build: </font>
                         &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
 
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
-					subject: '$DEFAULT_SUBJECT_Android_SprintN_RegressionTest',
-          			to: 'hera@enclave.vn, pduncan@inquirer.com,  nguyenm@inquirer.com, sarah@enclave.vn, spham@inquirer.com'
+					subject: '$DEFAULT_SUBJECT_Android_SprintO_RegressionTest',
+          			to: 'hera@inquirer.com, pduncan@inquirer.com,  nguyenm@inquirer.com, spham@inquirer.com'
 		}
 	}
 
