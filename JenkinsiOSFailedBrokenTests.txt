@@ -8,7 +8,7 @@ pipeline{
 		stage ('Test'){
 			steps{
 				node ('iOS'){
-					git branch: 'master',
+					git branch: 'regression',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
                     bat 'mvn clean test -DsuiteXmlFile=MasterSuite_iOSFailedTests.xml'
@@ -37,14 +37,14 @@ pipeline{
 						<p><font font="Verdana" size="2" color="navy">Please click the link to see the detail report: </font>
 						&QUOT;<a href='http://117.3.65.55:9500/view/PhillyDotComNativeAppProjects/job/iOSFailedBrokenTests/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
                         <b/>
-						<p><font font="Verdana" size="2" color="navy">BrowserStack iOS_SprintHoliday_FailedAndBrokenTests build: </font>
+						<p><font font="Verdana" size="2" color="navy">BrowserStack iOS_SprintO_SignUpPage build: </font>
                         &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
 
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
-					subject: '$DEFAULT_SUBJECT_iOSFailedBrokenTests',
-          			to: 'hera@enclave.vn, donna@enclave.vn, pduncan@phillynews.com, tdang@phillynews.com'
+					subject: '$DEFAULT_SUBJECT_iOS_SignUPPage',
+          			to: 'spham@inquirer.com, pduncan@inquirer.com, nguyenm@inquirer.com'
 		}
 	}
 

@@ -3,7 +3,6 @@
 
 <suite name="iOSFailedBrokenSuites">
     <suite-files>
-        <suite-file path="Suite_iOSExploreTab.xml" />
-        <suite-file path="Suite_iOSSettingTab.xml" />
+        <suite-file path="Suite_iOSLoginPage_SignUpPage.xml" />
     </suite-files>
 </suite>
