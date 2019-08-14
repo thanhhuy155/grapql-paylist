@@ -90,10 +90,6 @@ public class Constants {
         public  static  final  String SIGN_UP_EMAIL_ERROR_MESSAGE = "The email address you entered is already registered.";
         public  static  final  String SIGN_UP_PASSWORD_ERROR_MESSAGE = "Passwords don’t match.";
         public  static  final  String SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE = "Please confirm your password.";
-
-        public  static  final  String IOS_SIGN_UP_EMAIL_ERROR_MESSAGE = "The email address you entered is already registered";
-        public  static  final  String IOS_SIGN_UP_PASSWORD_ERROR_MESSAGE = "Passwords don't match";
-        public  static  final  String IOS_SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE = "Please confirm your password";
     }
 
     public static class DEVICE_VERSION{
