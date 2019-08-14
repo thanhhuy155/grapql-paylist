@@ -78,7 +78,7 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.opinionSection);
         exploreElements.opinionSection.click();
 
-        String opinionSubsections[] = {"All Opinion","Columnists","Editorials","Commentary","Cartoons"};
+        String opinionSubsections[] = {"All Opinion","Columnists","Editorials","Commentary","Letters","Cartoons"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,opinionSubsections, exploreElements.opinionSection);
     }
