@@ -79,7 +79,8 @@ public class ExploreElements extends CommonElements implements IExplore {
     public MobileElement lifeSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly:id/category_title']")
-    @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeButton/following-sibling::XCUIElementTypeOther")
+    //@iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeButton/following-sibling::XCUIElementTypeOther")
+    @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeStaticText")
     public MobileElement feedSectionHeader;
 
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id='com.ap.philly:id/child_container']")
