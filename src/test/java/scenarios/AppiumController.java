@@ -45,8 +45,8 @@ public class AppiumController {
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
 //        String androidBuild = "AndroidLocalTestBuild";
 //        String iOSBuild = "iOSLocalTestBuild";
-        String iOSBuild = "iOS_SprintO_RegressionTest_"+formater2.format(calendar.getTime());
-
+//        String iOSBuild = "iOS_SprintO_RegressionTest_"+formater2.format(calendar.getTime());
+        String iOSBuild = "iOS_SprintO_TestingOniOS13Beta_"+formater2.format(calendar.getTime());
 
         switch (executionOS) {
             case ANDROID:
@@ -113,8 +113,8 @@ public class AppiumController {
                 driver = new AndroidDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
             case IOS_BROWSERSTACK:
-                capabilities.setCapability("device", "iPhone 6S Plus");
-                capabilities.setCapability("os_version", "11.4");
+                capabilities.setCapability("device", "iPhone 8");//iPhone 6S Plus
+                capabilities.setCapability("os_version", "13");//11.4
                 capabilities.setCapability("automationName", "XCUITest");
                 capabilities.setCapability("browserstack.debug", true);
                 capabilities.setCapability("app", "bs://" + Constants.IOS_HASHED_APP_ID);
