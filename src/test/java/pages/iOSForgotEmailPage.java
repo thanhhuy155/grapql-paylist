@@ -142,7 +142,7 @@ public class iOSForgotEmailPage extends BasePage {
 
         //2. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
-        Assert.assertEquals(loginElements.forgotEmailMessage.getAttribute("name"),Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
+        Assert.assertEquals(loginElements.forgotEmailMessage.getAttribute("value"),Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 //        loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 
 
@@ -189,7 +189,7 @@ public class iOSForgotEmailPage extends BasePage {
         //2. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
 
-        Assert.assertEquals(loginElements.forgotEmailMessage.getAttribute("name"),Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
+        Assert.assertEquals(loginElements.forgotEmailMessage.getAttribute("value"),Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 //        loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 
 
@@ -238,7 +238,7 @@ public class iOSForgotEmailPage extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, loginElements.forgotEmailLink);
         loginElements.forgotEmailLink.click();
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailMessage),"Check forgot email information message display: ");
-        Assert.assertEquals(loginElements.forgotEmailMessage.getAttribute("name"),Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
+        Assert.assertEquals(loginElements.forgotEmailMessage.getAttribute("value"),Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 //        loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
     }
 }
