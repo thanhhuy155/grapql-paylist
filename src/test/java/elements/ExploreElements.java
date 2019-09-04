@@ -188,6 +188,7 @@ public class ExploreElements extends CommonElements implements IExplore {
             Utils.waitForElementVisible(appiumDriver,element);
         }
         element.click();
+        Utils.sleep(2000);
     }
 
 
