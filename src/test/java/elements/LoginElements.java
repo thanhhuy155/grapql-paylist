@@ -56,7 +56,7 @@ public class LoginElements extends BasePage {
     public MobileElement OKButton;
 
 
-    @iOSFindBy(id = "arrowBack1OnDark")
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[contains(@label, 'arrowBackOnLight')]")
     public MobileElement backButton;
 
 
