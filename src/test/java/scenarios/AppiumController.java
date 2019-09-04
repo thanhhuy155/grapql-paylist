@@ -40,13 +40,12 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-        String androidBuild = "Android_SprintO_RegressionTest_"+formater2.format(calendar.getTime());
+        String androidBuild = "Android_SprintP_RegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_HotFixBuildRegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
 //        String androidBuild = "AndroidLocalTestBuild";
 //        String iOSBuild = "iOSLocalTestBuild";
-//        String iOSBuild = "iOS_SprintO_RegressionTest_"+formater2.format(calendar.getTime());
-        String iOSBuild = "iOS_SprintO_TestingOniOS13Beta_"+formater2.format(calendar.getTime());
+        String iOSBuild = "iOS_SprintP_RegressionTest_"+formater2.format(calendar.getTime());
 
         switch (executionOS) {
             case ANDROID:
@@ -113,8 +112,8 @@ public class AppiumController {
                 driver = new AndroidDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
             case IOS_BROWSERSTACK:
-                capabilities.setCapability("device", "iPhone 8");//iPhone 6S Plus
-                capabilities.setCapability("os_version", "13");//11.4
+                capabilities.setCapability("device", "iPhone 6S");//iPhone 6S Plus
+                capabilities.setCapability("os_version", "12.2");//11.4
                 capabilities.setCapability("automationName", "XCUITest");
                 capabilities.setCapability("browserstack.debug", true);
                 capabilities.setCapability("app", "bs://" + Constants.IOS_HASHED_APP_ID);
