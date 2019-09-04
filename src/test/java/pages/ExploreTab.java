@@ -127,7 +127,7 @@ public class ExploreTab extends BasePage {
 
         //String foodSubsections[] = {"All Food","Clean Plates","Drinks","Cooking","Craig LaBan","Michael Klein"};
         //Dev
-        String foodSubsections[] = {"All Food","Clean Plates","Drinks", "Craig LaBan","Michael Klein"};
+        String foodSubsections[] = {"All Food","Drinks" ,"Clean Plates", "Craig LaBan","Michael Klein"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,foodSubsections, exploreElements.foodSection);
     }
