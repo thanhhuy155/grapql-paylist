@@ -75,21 +75,21 @@ public class iOSForgotEmailPage extends BasePage {
 
 
         //Add extra step: Click OK when dialog 'No SIM Card Installed' appears
-        if(appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")){
-            appiumDriver.switchTo().alert().accept();
-        }
+        if(Utils.checkElementExist(loginElements.cancelButton) == false) {
+            if (appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")) {
+                appiumDriver.switchTo().alert().accept();
+            }
 
+            //5. End call and return to the app
+            if(Utils.checkElementExist(loginElements.OKButton)) {
+                //Click OK to end Call in iPhone 6S Plus
+                loginElements.OKButton.click();
+                Utils.sleep(Constants.SHORTTIME);
+            }
 
-        //5. End call and return to the app
-        if(Utils.checkElementExist(loginElements.OKButton)) {
-        //Click OK to end Call in iPhone 6S Plus
-            loginElements.OKButton.click();
+            loginElements.cancelButton.click();
             Utils.sleep(Constants.SHORTTIME);
         }
-
-        //Click Cancel to back Login page
-        loginElements.cancelButton.click();
-        Utils.sleep(Constants.SHORTTIME);
 
         //Check Login page
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
@@ -157,13 +157,14 @@ public class iOSForgotEmailPage extends BasePage {
 
         //5. Return to the app
         //Check and close dialog "No SIM Card Installed"
-        if(appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")){
-            appiumDriver.switchTo().alert().accept();
+        if(Utils.checkElementExist(loginElements.cancelButton) == false) {
+            if (appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")) {
+                appiumDriver.switchTo().alert().accept();
+            }
+        }else {
+            loginElements.cancelButton.click();
+            Utils.sleep(Constants.SHORTTIME);
         }
-
-        loginElements.cancelButton.click();
-        Utils.sleep(Constants.SHORTTIME);
-
         Assert.assertTrue(Utils.checkElementExist(loginElements.exitResetEmailButton));
 
 
@@ -201,13 +202,14 @@ public class iOSForgotEmailPage extends BasePage {
 
         //4. Click Cancel button
         //Check and close dialog "No SIM Card Installed"
-        if(appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")){
-            appiumDriver.switchTo().alert().accept();
+        if(Utils.checkElementExist(loginElements.cancelButton) == false) {
+            if (appiumDriver.switchTo().alert().getText().equals("No SIM Card Installed")) {
+                appiumDriver.switchTo().alert().accept();
+            }
+        }else {
+            loginElements.cancelButton.click();
+            Assert.assertFalse(Utils.checkElementExist(loginElements.callButton));
         }
-
-        loginElements.cancelButton.click();
-        Assert.assertFalse(Utils.checkElementExist(loginElements.callButton));
-
 
         //5. Click Close(x) button
         loginElements.exitResetEmailButton.click();
@@ -235,8 +237,8 @@ public class iOSForgotEmailPage extends BasePage {
 
         //3. Click "Forgot email?" link
         loginElements.forgotEmailLink.click();
-        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, loginElements.forgotEmailLink);
-        loginElements.forgotEmailLink.click();
+//        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, loginElements.forgotEmailLink);
+//        loginElements.forgotEmailLink.click();
         Assert.assertTrue(Utils.checkElementExist(loginElements.forgotEmailMessage),"Check forgot email information message display: ");
         Assert.assertEquals(loginElements.forgotEmailMessage.getAttribute("value"),Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
 //        loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
