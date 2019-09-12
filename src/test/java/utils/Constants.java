@@ -42,7 +42,7 @@ public class Constants {
         public static final String THE_PHILADELPHIA_INQUIRER_REPLICA = "The Philadelphia Inquirer Replica";
         public static final String THE_PHILADELPHIA_INQUIRER_REPLICA_NJ_EDITION = "The Philadelphia Inquirer Replica - NJ Edition";
         public static final String THE_PHILADELPHIA_DAILY_NEWS_REPLICA = "The Philadelphia Daily News Replica";
-        public static final String VIEW_ACCOUNT_DETAILS = "View Account Details";
+        public static final String VIEW_ACCOUNT_DETAILS = "View Account Settings";
     }
 
     public static class APP_VERSION {

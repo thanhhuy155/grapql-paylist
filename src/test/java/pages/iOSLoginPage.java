@@ -100,10 +100,10 @@ public class iOSLoginPage extends BasePage {
             Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
             //Check account display correctly
             Assert.assertTrue(Utils.checkElementExist(settingElements.viewAccountDetails), "Check account logged in successfully");
-            Assert.assertEquals(Constants.SETTING_TITLE.VIEW_ACCOUNT_DETAILS,settingElements.viewAccountDetails.getText().trim(), "Check View Account Details displays");
+            Assert.assertEquals(Constants.SETTING_TITLE.VIEW_ACCOUNT_DETAILS,settingElements.viewAccountDetails.getText().trim(), "Check View Account Settings displays");
 
         }else{
-            Assert.assertEquals(Constants.SETTING_TITLE.VIEW_ACCOUNT_DETAILS,settingElements.viewAccountDetails.getText().trim(), "Check View Account Details displays");
+            Assert.assertEquals(Constants.SETTING_TITLE.VIEW_ACCOUNT_DETAILS,settingElements.viewAccountDetails.getText().trim(), "Check View Account Settings displays");
 
         }
     }
@@ -841,7 +841,8 @@ public class iOSLoginPage extends BasePage {
         loginElements.showOrHidePasswordIcon.click();
 
         //Check Password field doesn't active
-        Assert.assertFalse(Utils.isKeyboardPresent(appiumDriver));
+        Assert.assertFalse(Utils.isKeyboardPresent(appiumDriver, loginElements.password));
+
     }
 
     public void TestCasePCOM_042() {
