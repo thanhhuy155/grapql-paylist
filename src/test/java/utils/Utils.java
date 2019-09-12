@@ -229,14 +229,14 @@ public class Utils {
     public static String generateEmailAddress() {
         String emailAddress;
         String domainAndExtension = "@philly.com";
-        String alphabetString = "abcdefghijklmnopqrstuvwxyz";
+        String alphabetString = "abc123456";//"abcdefghijklmnopqrstuvwxyz";
 
         SecureRandom secureRnd = new SecureRandom();
-        StringBuilder userNameSB = new StringBuilder(10);
-        for (int i = 0; i < 10; i++) {
+        StringBuilder userNameSB = new StringBuilder(4);
+        for (int i = 0; i < 4; i++) {
             userNameSB.append(alphabetString.charAt(secureRnd.nextInt(alphabetString.length())));
         }
-        emailAddress = userNameSB.toString() + domainAndExtension;
+        emailAddress = "Tester"+ userNameSB.toString() + domainAndExtension;
 
         return emailAddress;
     }
