@@ -89,6 +89,8 @@ public class iOSForgotEmailPage extends BasePage {
 
             loginElements.cancelButton.click();
             Utils.sleep(Constants.SHORTTIME);
+        }else{
+            Utils.sleep(Constants.SHORTTIME);
         }
 
         //Check Login page
