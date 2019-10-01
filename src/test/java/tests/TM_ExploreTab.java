@@ -88,7 +88,8 @@ public class TM_ExploreTab extends BaseTestClass {
         exploreTab.TestCaseNo14();
     }
 
-    @Test(priority = 15 )
+    //@Test(priority = 15 )
+    //Disable running this test due to problem communicating with Google Servers
     //Note: Unable to implement on iOS since Appium cannot catch system element on share pop-up
     public void ExploreTabTCNo15() {
         exploreTab.TestCaseNo15();
