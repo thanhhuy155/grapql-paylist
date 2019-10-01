@@ -22,8 +22,9 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
     @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
     public MobileElement articleDetailTitle;
 
-    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+//    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
 //    @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeButton[1]")
+    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Back']")
     @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar[contains(@name, 'PhillyDotCom2.ArticleMasterView')]/XCUIElementTypeButton[1]")
     public MobileElement backBtn;
 
