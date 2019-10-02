@@ -38,7 +38,7 @@ public class FeedListElements extends CommonElements implements IFeedList {
     public MobileElement btnShareOnFeedArticle;
 
     @AndroidFindBy(id = "bookmarkIC")
-    @iOSFindBy(xpath = "//XCUIElementTypeOther/XCUIElementTypeButton[following-sibling::XCUIElementTypeButton[contains(@name,'share feedIcon')] and preceding-sibling::XCUIElementTypeStaticText]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther/XCUIElementTypeButton[following-sibling::XCUIElementTypeButton[contains(@name,'Share Article')] and preceding-sibling::XCUIElementTypeStaticText]")
     public MobileElement btnBookmarkOnFeedArticle;
 
 

@@ -161,7 +161,12 @@ public class GeneralTest extends BasePage {
     private void openArticle() {
         String title = feedListElements.getFeedItemTopStoryTitle();
         feedListElements.feedItemTopStoryClick();
-        articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+
+        if (Utils.isAndroidPlatform()){
+            articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+        }else{
+            articleDetailElements.assertTitleResult(title, "Article " + articleDetailElements.getTitleArticleDetail());
+        }
     }
 
 }

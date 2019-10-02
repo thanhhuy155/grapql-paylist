@@ -29,7 +29,11 @@ public class ArticlePage extends BasePage {
         feedListElements.feedItemClick();
 
         //feedListElements.feedItemTopStoryClick();
-        articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+        if (Utils.isAndroidPlatform()){
+            articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+        }else{
+            articleDetailElements.assertTitleResult(title, "Article " + articleDetailElements.getTitleArticleDetail());
+        }
     }
 
     public void TestCaseNo4(){

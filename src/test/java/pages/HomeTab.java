@@ -25,7 +25,11 @@ public class HomeTab extends BasePage {
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         String title = feedListElements.getFeedItemTopStoryTitle();
         feedListElements.feedItemTopStoryLayout.click();
-        articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+        if (Utils.isAndroidPlatform()){
+            articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+        }else{
+            articleDetailElements.assertTitleResult(title, "Article " + articleDetailElements.getTitleArticleDetail());
+        }
     }
 
     public void TestCaseNo6() {
@@ -42,7 +46,11 @@ public class HomeTab extends BasePage {
         feedListElements.feedItemTitle.click();
 
         waitForVisibilityOf(articleDetailElements.articleDetailTitle);
-        articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+        if (Utils.isAndroidPlatform()){
+            articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+        }else{
+            articleDetailElements.assertTitleResult(title, "Article " + articleDetailElements.getTitleArticleDetail());
+        }
     }
 
     public void TestCaseNo8() {

@@ -121,6 +121,7 @@ public class BookmarkTab extends BasePage{
 
         //Step: Get article title and Bookmark
         String title = feedListElements.getFeedItemTitle();
+
         Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
         feedListElements.buttonBookmarkClick(appiumDriver);
 
@@ -135,7 +136,14 @@ public class BookmarkTab extends BasePage{
         //Verify point: Check bookmarked article display on Bookmark tab
         Utils.sleep((Constants.SHORTTIME)*5);
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
-        Assert.assertTrue(bookMarkElements.getBookmarkedTitles().contains(title));
+        System.out.println("title: "+ title);
+        System.out.println("Bookmark title: "+ bookMarkElements.getBookmarkedTitles());
+
+        if (Utils.isAndroidPlatform()){
+            Assert.assertTrue(bookMarkElements.getBookmarkedTitles().contains(title));
+        }else{
+            Assert.assertEquals("Article "+ bookMarkElements.getBookmarkedTitles().get(0), title);
+        }
 
         //Post-condition: Delete added bookmark
         bookMarkElements.deleteBookmark(1);
