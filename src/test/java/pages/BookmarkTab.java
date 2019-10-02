@@ -136,8 +136,6 @@ public class BookmarkTab extends BasePage{
         //Verify point: Check bookmarked article display on Bookmark tab
         Utils.sleep((Constants.SHORTTIME)*5);
         waitForVisibilityOf(bookMarkElements.bookmarkTitle);
-        System.out.println("title: "+ title);
-        System.out.println("Bookmark title: "+ bookMarkElements.getBookmarkedTitles());
 
         if (Utils.isAndroidPlatform()){
             Assert.assertTrue(bookMarkElements.getBookmarkedTitles().contains(title));
