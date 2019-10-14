@@ -26,61 +26,77 @@ public class ExploreElements extends CommonElements implements IExplore {
     @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Explore\"]")
     public MobileElement headingTitle;
 
+    @AndroidFindBy(xpath = "(//android.widget.TextView[@resource-id='com.ap.philly.test:id/title_header'])[2]")
+    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeStaticText[@name=\"ALL SECTIONS\"]")
+    public MobileElement readSection;
+
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/title_header'][@text='ALL SECTIONS']")
     @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeStaticText[@name=\"ALL SECTIONS\"]")
     public MobileElement allSectionsTitle;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='News']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'News')]")
+   // @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'News')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'News')]")
     public MobileElement newsSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Sports']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Sports')]")
+    //@iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Sports')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Sports')]")
     public MobileElement sportsSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Business']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Business')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Business')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Business')]")
     public MobileElement businessSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Opinion']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Opinion')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Opinion')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Opinion')]")
     public MobileElement opinionSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Entertainment']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Entertainment')]")
+    //@iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Entertainment')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Entertainment')]")
     public MobileElement entertainmentSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Food']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Food')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Food')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Food')]")
     public MobileElement foodSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Politics']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Politics')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Politics')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Politics')]")
     public MobileElement politicsSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Health']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Health')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Health')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Health')]")
     public MobileElement healthSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Real Estate']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Real Estate')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Real Estate')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Real Estate')]")
     public MobileElement realEstateSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Obituaries']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Obituaries')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Obituaries')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Obituaries')]")
     public MobileElement obituariesSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Jobs']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Jobs')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Jobs')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Jobs')]")
     public MobileElement jobsSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/tv_category'][@text='Life']")
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Life')]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Life')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Life')]")
     public MobileElement lifeSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/category_title']")
     //@iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeButton/following-sibling::XCUIElementTypeOther")
-    @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeStaticText")
+    @iOSFindBy(xpath = "//XCUIElementTypeOther/XCUIElementTypeNavigationBar/XCUIElementTypeStaticText")
     public MobileElement feedSectionHeader;
 
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id='com.ap.philly.test:id/child_container']")
@@ -103,7 +119,7 @@ public class ExploreElements extends CommonElements implements IExplore {
     @Override
     public void checkSubsectionsOpenProperly(AppiumDriver appiumDriver, String subsectionList[], MobileElement section){
         String dynamicXpath = "//android.widget.TextView[contains(@text,'{0}')]";
-        String iOSDynamicXpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
+        String iOSDynamicXpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
 
         for(int i = 0; i<subsectionList.length; i++){
             String subsectionXpath = dynamicXpath.replace("{0}",subsectionList[i]);
