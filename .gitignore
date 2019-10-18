@@ -1,0 +1,8 @@
+# ignore all target
+target/
+
+# ignore allure-results
+allure-results/
+
+app/**.apk
+.idea/
