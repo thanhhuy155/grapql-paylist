@@ -21,6 +21,7 @@
                     <include name="ExploreTabTCNo13"/>
                     <include name="ExploreTabTCNo14"/>
                     <include name="ExploreTabTCNo16"/>
+                    <include name="ExploreTabTCNo18"/>
                 </methods>
             </class>
         </classes>
