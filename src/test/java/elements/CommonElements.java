@@ -38,6 +38,38 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(id = "btn_exit")
     public MobileElement customizeScreenExitButton;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Follow All']")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Follow All']")
+    public MobileElement followAll;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'addTopicCard']")
+    @AndroidFindBy(id = "imv_follow_status_icon")
+    public MobileElement addTopic;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'checkTopicCard']")
+    @AndroidFindBy(id = "imv_follow_status_icon")
+    public MobileElement checkTopic;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeStaticText[1]")
+    @AndroidFindBy(id = "tv_topic_title")
+    public MobileElement topicTitle;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeStaticText[2]")
+    @AndroidFindBy(id = "tv_topic_description")
+    public MobileElement topicDescription;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'SIGN UP FOR FREE']")
+    @AndroidFindBy(id = "btn_signup")
+    public MobileElement signupButton;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'LOG IN']")
+    @AndroidFindBy(id = "btn_login")
+    public MobileElement loginButton;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Not now ›']")
+    @AndroidFindBy(id = "tv_not_now")
+    public MobileElement notNowLink;
+
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Gmail']")
     @iOSFindBy(id = "Reminders")
     public MobileElement gmail;

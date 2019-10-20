@@ -27,7 +27,7 @@ public class ExploreElements extends CommonElements implements IExplore {
     public MobileElement headingTitle;
 
     @AndroidFindBy(xpath = "(//android.widget.TextView[@resource-id='com.ap.philly.test:id/title_header'])[2]")
-    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeStaticText[@name=\"ALL SECTIONS\"]")
+    @iOSFindBy(xpath = "(//XCUIElementTypeCell/XCUIElementTypeStaticText)[1]")
     public MobileElement readSection;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.ap.philly.test:id/title_header'][@text='ALL SECTIONS']")

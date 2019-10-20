@@ -17,6 +17,10 @@ public class FeedListElements extends CommonElements implements IFeedList {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
+    @AndroidFindBy(id = "homeFeedToggleTv")
+    @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly Inquirer\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
+    public MobileElement customizeButton;
+
     @AndroidFindBy(id = "card_view_article")
     @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly Inquirer\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
     public MobileElement feedItemTopStoryLayout;

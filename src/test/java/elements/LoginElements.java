@@ -236,6 +236,21 @@ public class LoginElements extends BasePage {
     @AndroidFindBy (xpath = "//android.view.View[contains(@text,'PRIVACY POLICY')]")
     public MobileElement privacyPolicy;
 
+
+    //****Logout
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'Log Out')]")
+    @AndroidFindBy(id = "logoutBtn")
+    public MobileElement logOutButton;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'Are you sure you want to log out?')]")
+    public MobileElement logOutMessage;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[contains(@name, 'Cancel')]")
+    public MobileElement cancelLogoutDialogBtn;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[contains(@name, 'Log Out')]")
+    public MobileElement logoutDialogBtn;
+
     public static void assertValue(MobileElement element, String expectedValue){
         String actualValue = element.getText().trim();
         Assert.assertEquals(actualValue,expectedValue);
