@@ -110,6 +110,10 @@ public class TM_LoginPage extends BaseTestClass {
         loginPage.TestCasePCOM_046();
     }
 
+    @Test(priority = 28)
+    public void LoginPageTCPCOM_047() {
+        loginPage.TestCasePCOM_047();
+    }
 
     //Put tests here to avoid affected to another tests
     @Test(priority = 32)
@@ -121,6 +125,5 @@ public class TM_LoginPage extends BaseTestClass {
     public void LoginPageTCPCOM_018() {
         loginPage.TestCasePCOM_018();
     }
-
 
 }

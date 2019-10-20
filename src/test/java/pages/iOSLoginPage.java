@@ -942,6 +942,40 @@ public class iOSLoginPage extends BasePage {
        Assert.assertTrue(loginElements.signUpLink.getText().contains("Sign Up."));
     }
 
+    public void TestCasePCOM_048() {
+        lauchApp();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTab.click();
 
+        //check if account has not signed up
+        if ((Utils.checkElementExist(settingElements.viewAccountDetails)== false) ||
+                (!Constants.LOGIN_EMAIL.equals(settingElements.viewAccountDetails.getText().trim()))) {
+            settingElements.logInOrSignUp.click();
+
+            loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
+            loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
+            loginElements.logInButton.click();
+        }
+
+        waitForVisibilityOf(settingElements.settingsHeading);
+
+        //Check Setting page appears
+        Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
+
+        //Check account display correctly
+        Assert.assertEquals(settingElements.viewAccountDetails.getText().trim(), Constants.LOGIN_EMAIL,"Check Email address displays");
+
+        //Click Account
+        settingElements.viewAccountDetails.click();
+        waitForVisibilityOf(loginElements.logOutButton);
+
+        //Click Logout
+        loginElements.logOutButton.click();
+        loginElements.logoutDialogBtn.click();
+        waitForVisibilityOf(settingElements.settingsHeading);
+
+        //Check Setting page appears
+        Assert.assertEquals("Settings",settingElements.settingsHeading.getText().trim(), "Check Setting is being taken");
+    }
 }
 

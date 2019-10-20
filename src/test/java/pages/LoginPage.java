@@ -958,4 +958,23 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
     }
 
+    //C12491
+    public void TestCasePCOM_047() {
+        lauchApp();
+
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTab.click();
+        waitForVisibilityOf(settingElements.logInOrSignUp);
+
+        settingElements.logInOrSignUp.click();
+        loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
+
+        //Scroll to bottom
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, loginElements.signUpLink);
+        System.out.println(loginElements.signUpLink.getText());
+        Assert.assertTrue(loginElements.signUpLink.getText().contains("Sign Up."));
+    }
+
+
+
 }

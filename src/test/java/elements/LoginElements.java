@@ -354,4 +354,5 @@ public class LoginElements extends BasePage {
 
         touchAction.tap(PointOption.point(pointX,pointY)).perform();
     }
+
 }
