@@ -98,7 +98,7 @@ public class AppiumController {
                 driver = new IOSDriver(new URL("http://0.0.0.0:4724/wd/hub"), capabilities);
                 break;
             case ANDROID_BROWSERSTACK:
-                capabilities.setCapability("platformName", "Android");
+                capabilities.setCapability("os", "Android");
                 capabilities.setCapability("device", "Samsung Galaxy Note 9");
                 capabilities.setCapability("os_version", "8.1");
                 capabilities.setCapability("appPackage", "com.ap.philly.test");
