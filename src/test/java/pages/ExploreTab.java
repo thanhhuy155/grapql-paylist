@@ -285,4 +285,13 @@ public class ExploreTab extends BasePage {
 
     }
 
+    //C8822
+    public void TestCaseNo18() {
+        lauchApp();
+
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.exploreTab.click();
+        Assert.assertEquals("MY MOST READ SECTIONS",exploreElements.readSection.getAttribute("value"));
+    }
+
 }

@@ -107,4 +107,8 @@ public class TM_ExploreTab extends BaseTestClass {
         exploreTab.TestCaseNo17();
     }
 
+    @Test(priority = 18 )
+    public void ExploreTabTCNo18() {
+        exploreTab.TestCaseNo18();
+    }
 }
