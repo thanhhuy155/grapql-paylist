@@ -12,6 +12,9 @@ public class Constants {
     public static final String IOS_HASHED_APP_ID = "465ddfcb65d5e16ebef9da73d7ef7c02a15b1ff0";
     public static final String ANDROID_HASHED_APP_ID = "a7eced3adef28e6f70294b748035a0291ccbf0eb";
 
+    public static final String APP_PACKAGE = "com.ap.philly.test";
+    public static final String APP_ACTIVITY = "com.ap.philly.Views.MainActivity";
+
     public static final int TIME_OUT = 5;
 
     public static final String GOOGLEACCOUNT_USERNAME = "testphilly453";
@@ -96,8 +99,10 @@ public class Constants {
         public  static final String GALAXY_S5_5_0= "5.0";
         public  static final String GALAXY_S8_8_0 = "8.0.0";
         public  static final String GALAXY_NOTE9_8_1 = "8.1";
-
     }
 
-
+    public static class CUSTOMIZATION{
+        public  static final String BANNER_MESSAGE_ANDROID= "Customize your news feed according to your interests.";
+        public  static final String BANNER_MESSAGE_IOS = "Customize your news feed according to your interests →";
+    }
 }
