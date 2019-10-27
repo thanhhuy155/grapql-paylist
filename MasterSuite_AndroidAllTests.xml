@@ -3,13 +3,14 @@
 
 <suite name="AndroidSuite">
     <suite-files>
-        <suite-file path="Suite_GeneralTest.xml" />
-        <suite-file path="Suite_SettingTab.xml" />
+<!--        <suite-file path="Suite_GeneralTest.xml" />-->
+<!--        <suite-file path="Suite_SettingTab.xml" />-->
         <suite-file path="Suite_HomeTab.xml" />
-        <suite-file path="Suite_ExploreTab.xml" />
-        <suite-file path="Suite_LoginPage.xml" />
-        <suite-file path="Suite_LoginPage_ForgotEmailPage.xml" />
-        <suite-file path="Suite_LoginPage_ForgotPasswordPage.xml" />
-        <suite-file path="Suite_LoginPage_SignUpPage.xml" />
+<!--        <suite-file path="Suite_ExploreTab.xml" />-->
+<!--        <suite-file path="Suite_LoginPage.xml" />-->
+<!--        <suite-file path="Suite_LoginPage_ForgotEmailPage.xml" />-->
+<!--        <suite-file path="Suite_LoginPage_ForgotPasswordPage.xml" />-->
+<!--        <suite-file path="Suite_LoginPage_SignUpPage.xml" />-->
+<!--        <suite-file path="Suite_CustomizationPage.xml" />-->
     </suite-files>
 </suite>

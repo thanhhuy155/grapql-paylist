@@ -40,12 +40,12 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-        String androidBuild = "Android_SprintG_RegressionTest_"+formater2.format(calendar.getTime());
+//        String androidBuild = "Android_SprintG_RegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_HotFixBuildRegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
-//        String androidBuild = "AndroidLocalTestBuild";
-//        String iOSBuild = "iOSLocalTestBuild";
-        String iOSBuild = "iOS_SprintG_RegressionTest_"+formater2.format(calendar.getTime());
+        String androidBuild = "AndroidLocalTestBuild";
+        String iOSBuild = "iOSLocalTestBuild";
+//        String iOSBuild = "iOS_SprintG_RegressionTest_"+formater2.format(calendar.getTime());
 
         switch (executionOS) {
             case ANDROID:
@@ -98,7 +98,7 @@ public class AppiumController {
                 driver = new IOSDriver(new URL("http://0.0.0.0:4724/wd/hub"), capabilities);
                 break;
             case ANDROID_BROWSERSTACK:
-                capabilities.setCapability("os", "Android");
+                capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("device", "Samsung Galaxy Note 9");
                 capabilities.setCapability("os_version", "8.1");
                 capabilities.setCapability("appPackage", "com.ap.philly.test");
