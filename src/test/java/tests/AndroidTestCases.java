@@ -37,13 +37,13 @@ public class AndroidTestCases extends BaseTestClass{
 
      //============== HOME TAB ============== //
     @Test
-    public void HomeTabTCNo2() {
-        homeTab.TestCaseNo2();
+    public void S203_C18616_HT_TC_001_VerifyTopCarouselArticle() {
+        homeTab.S203_C18616_HT_TC_001_VerifyTopCarouselArticle();
     }
 
     @Test
-    public void HomeTabTCNo6() {
-        homeTab.TestCaseNo6();
+    public void S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick() {
+        homeTab.S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick();
     }
 
     @Test

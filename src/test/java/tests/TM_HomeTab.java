@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 public class TM_HomeTab extends BaseTestClass {
     @Test(priority = 1)
     //Note: Implemented for both iOS and Android
-    public void S203_C18616_HT_TC_001_VerifyTopCaroulselArticle() {
-        homeTab.S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick();
+    public void S203_C18616_HT_TC_001_VerifyTopCarouselArticle() {
+        homeTab.S203_C18616_HT_TC_001_VerifyTopCarouselArticle();
     }
 
     @Test(priority =2 )
