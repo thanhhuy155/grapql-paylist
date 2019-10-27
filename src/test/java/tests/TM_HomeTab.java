@@ -5,14 +5,14 @@ import org.testng.annotations.Test;
 public class TM_HomeTab extends BaseTestClass {
     @Test(priority = 1)
     //Note: Implemented for both iOS and Android
-    public void HomeTabTCNo2() {
-        homeTab.TestCaseNo2();
+    public void S203_C18616_HT_TC_001_VerifyTopCaroulselArticle() {
+        homeTab.HT_TC_001_VerifyTopCaroulselArticle();
     }
 
     @Test(priority =2 )
     //Note: Implemented for both iOS and Android
-    public void HomeTabTCNo6() {
-        homeTab.TestCaseNo6();
+    public void S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick() {
+        homeTab.HT_HF_001_VerifyHomeFeedArticleClick();
     }
 
 //    @Test(priority = 3)

@@ -19,7 +19,7 @@ public class HomeTab extends BasePage {
         commonElements = new CommonElements(driver);
     }
 
-    public void TestCaseNo2() {
+    public void HT_TC_001_VerifyTopCaroulselArticle() {
         lauchApp();
 
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -32,7 +32,7 @@ public class HomeTab extends BasePage {
         }
     }
 
-    public void TestCaseNo6() {
+    public void HT_HF_001_VerifyHomeFeedArticleClick() {
         lauchApp();
 
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);

@@ -6,8 +6,8 @@
         <classes>
             <class name = "tests.TM_HomeTab">
                 <methods>
-                    <include name="HomeTabTCNo2"/>
-                    <include name="HomeTabTCNo6"/>
+                    <include name="S203_C18616_HT_TC_001_VerifyTopCaroulselArticle"/>
+                    <include name="S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick"/>
                 </methods>
             </class>
         </classes>
