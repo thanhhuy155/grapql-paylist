@@ -6,13 +6,13 @@ public class TM_HomeTab extends BaseTestClass {
     @Test(priority = 1)
     //Note: Implemented for both iOS and Android
     public void S203_C18616_HT_TC_001_VerifyTopCaroulselArticle() {
-        homeTab.HT_TC_001_VerifyTopCaroulselArticle();
+        homeTab.S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick();
     }
 
     @Test(priority =2 )
     //Note: Implemented for both iOS and Android
     public void S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick() {
-        homeTab.HT_HF_001_VerifyHomeFeedArticleClick();
+        homeTab.S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick();
     }
 
 //    @Test(priority = 3)
