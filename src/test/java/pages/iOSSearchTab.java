@@ -7,21 +7,17 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class SearchTab extends BasePage {
-    private FeedListElements feedListElements;
+public class iOSSearchTab extends BasePage {
     private SearchElements searchElements;
-    private ArticleDetailElements articleDetailElements;
     private CommonElements commonElements;
 
-    public SearchTab(AppiumDriver driver) {
+    public iOSSearchTab(AppiumDriver driver) {
         super(driver);
-        feedListElements = new FeedListElements(driver);
-        articleDetailElements = new ArticleDetailElements(driver);
         searchElements = new SearchElements(driver);
         commonElements = new CommonElements(driver);
     }
 
-    public void TestCaseNo1() {
+    public void S233_C20428_SET_001_VerifyLoadSearchScreen() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -29,7 +25,7 @@ public class SearchTab extends BasePage {
         Assert.assertTrue(searchElements.searchScreen.isDisplayed());
     }
 
-    public void TestCaseNo2() {
+    public void S233_C20429_SET_002_VerifyQuickSearch() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -37,7 +33,7 @@ public class SearchTab extends BasePage {
         Assert.assertTrue(searchElements.quickSearch.isDisplayed());
     }
 
-    public void TestCaseNo4(){
+    public void S233_C20430_SET_003_VerifyAutoSuggestSearch(){
         lauchApp();
 
         //Step: 1. Click on the "Enter search phrase" input
@@ -64,7 +60,7 @@ public class SearchTab extends BasePage {
         Assert.assertTrue(searchElements.searchScreen.isDisplayed());
     }
 
-    public void TestCaseNo5(){
+    public void S233_C20431_SET_004_VerifySearchByTyping(){
         String searchTerm = "election";
         lauchApp();
 

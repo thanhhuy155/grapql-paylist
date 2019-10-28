@@ -4,11 +4,7 @@
 <suite name = "iOSHomeTabSuite" configfailurepolicy="continue">
     <test name = "iOSHomeTabTest">
         <classes>
-            <class name = "tests.TM_HomeTab">
-                <methods>
-                    <include name="S203_C18616_HT_TC_001_VerifyTopCarouseArticle"/>
-                    <include name="S203_C20164_HT_HF_001_VerifyHomeFeedArticleClick"/>
-                </methods>
+            <class name = "tests.TM_iOSHomeTab">
             </class>
         </classes>
     </test>

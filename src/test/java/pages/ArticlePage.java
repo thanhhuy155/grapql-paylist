@@ -20,7 +20,7 @@ public class ArticlePage extends BasePage {
     }
 
 
-    public void TestCaseNo1() {
+    public void S232_C20434_ART_001_VerifyArticleDisplay() {
         //Step: Open the Philly.com App
         lauchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -36,7 +36,7 @@ public class ArticlePage extends BasePage {
         }
     }
 
-    public void TestCaseNo4(){
+    public void S232_C20436_ART_003_VerifyArticleFeedShare(){
         //Step: Open the Philly.com App
         lauchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -59,7 +59,7 @@ public class ArticlePage extends BasePage {
         Assert.assertTrue(commonElements.gmailSubject.getText().contains(title));
     }
 
-    public void TestCaseNo5() {
+    public void S232_C20437_ART_004_VerifyArticleFeedReturnFromSleep() {
         lauchApp();
 
         feedListElements.feedItemTopStoryClick();
@@ -75,7 +75,7 @@ public class ArticlePage extends BasePage {
         commonElements.bookMarkTabClick(appiumDriver);
     }
 
-    public void TestCaseNo30(){
+    public void S232_C20435_ART_002_VerifyArticleRecirculation(){
         lauchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 

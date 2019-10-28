@@ -1,10 +1,10 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "SearchTabSuite" configfailurepolicy="continue">
-    <test name = "SearchTabTest">
+<suite name = "iOSSearchTabSuite" configfailurepolicy="continue">
+    <test name = "iOSSearchTabTest">
         <classes>
-            <class name = "tests.TM_SearchTab"/>
+            <class name = "tests.TM_iOSSearchTab"/>
         </classes>
     </test>
 </suite>

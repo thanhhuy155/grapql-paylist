@@ -18,20 +18,21 @@ import java.nio.file.Files;
 public class BaseTestClass extends AppiumBaseClass {
     BasePage basePage;
     GeneralTest generalTest;
-
+    iOSGeneral iOS_General;
     HomeTab homeTab;
+    iOSHomeTab iOS_HomeTab;
     BookmarkTab bookmarkTab;
+    iOSBookmarkTab iOS_BookmarkTab;
     SectionTab sectionTab;
     SettingTab settingTab;
+    iOSSettingTab iOS_SettingTab;
+    iOSSearchTab iOS_SearchTab;
     ArticlePage articlePage;
-    SearchTab searchTab;
+    iOSArticlePage iOS_ArticlePage;
     RatingModule ratingModule;
     ExploreTab exploreTab;
     LoginPage loginPage;
 
-    iOSGeneral iOS_General;
-    iOSHomeTab iOS_HomeTab;
-    iOSSettingTab iOS_SettingTab;
     iOSLoginPage iOS_LoginPage;
     ForgotEmailPage forgotEmailPage;
     iOSForgotEmailPage iOS_ForgotEmailPage;
@@ -53,10 +54,12 @@ public class BaseTestClass extends AppiumBaseClass {
         generalTest = new GeneralTest(driver());
         homeTab = new HomeTab(driver());
         bookmarkTab = new BookmarkTab(driver());
+        iOS_BookmarkTab = new iOSBookmarkTab(driver());
         sectionTab = new SectionTab(driver());
         settingTab = new SettingTab(driver());
-        searchTab = new SearchTab(driver());
+        iOS_SearchTab = new iOSSearchTab(driver());
         articlePage = new ArticlePage(driver());
+        iOS_ArticlePage = new iOSArticlePage(driver());
         ratingModule = new RatingModule(driver());
         exploreTab = new ExploreTab(driver());
         customizationPage = new CustomizationPage(driver());

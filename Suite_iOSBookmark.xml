@@ -4,13 +4,7 @@
 <suite name = "iOSBookmarkTabSuite" configfailurepolicy="continue">
     <test name = "iOSBookmarkTabTest">
         <classes>
-            <class name = "tests.TM_BookmarkTab">
-                <methods>
-                    <include name="BookMarkTCNo2"/>
-                    <include name="BookMarkTCNo11"/>
-                    <include name="BookMarkTCNo12"/>
-                    <include name="BookMarkTCNo14"/>
-                </methods>
+            <class name = "tests.TM_iOSBookmarkTab">
             </class>
         </classes>
     </test>

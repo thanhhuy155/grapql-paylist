@@ -4,10 +4,7 @@
 <suite name = "iOSArticlePageSuite" configfailurepolicy="continue">
     <test name = "iOSArticlePageTest">
         <classes>
-            <class name = "tests.TM_ArticlePage">
-                <methods>
-                    <include name="ArticleTCNo1"/>
-                </methods>
+            <class name = "tests.TM_iOSArticlePage">
             </class>
         </classes>
     </test>

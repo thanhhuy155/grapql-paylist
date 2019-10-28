@@ -8,7 +8,7 @@
 <!--        <suite-file path="Suite_iOSSectionTab.xml" />-->
         <suite-file path="Suite_iOSHomeTab.xml" />
         <suite-file path="Suite_iOSArticlePage.xml" />
-        <suite-file path="Suite_SearchTab.xml" />
+        <suite-file path="Suite_iOSSearchTab.xml" />
         <suite-file path="Suite_iOSExploreTab.xml" />
         <!--<suite-file path="Suite_iOSSettingTab.xml" />--> <!-- Comment this suite due to device's Settings app is getting issue - automatically closed-->
 
