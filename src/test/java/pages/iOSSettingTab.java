@@ -7,11 +7,11 @@ import org.testng.Assert;
 import utils.Constants;
 import utils.Utils;
 
-public class SettingTab extends BasePage {
+public class iOSSettingTab extends BasePage {
     private SettingElements settingElements;
     private CommonElements commonElements;
 
-    public SettingTab(AppiumDriver driver) {
+    public iOSSettingTab(AppiumDriver driver) {
         super(driver);
         settingElements = new SettingElements(driver);
         commonElements = new CommonElements(driver);
@@ -64,7 +64,7 @@ public class SettingTab extends BasePage {
         Assert.assertTrue(commonElements.gmailContent.getText().contains("App Version:"));
     }
 
-    public void S229_C20177_ST_002_VerifyMenuAboutDisplayWhenClickingAbout() {
+    public void S241_C20268_ST_002_VerifyMenuAboutDisplayWhenClickingAbout() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -77,7 +77,7 @@ public class SettingTab extends BasePage {
         }
     }
 
-    public void S229_C20178_ST_003_VerifyAppsAppearsWhenClickMoreApss() {
+    public void S241_C20269_ST_003_VerifyAppsAppearsWhenClickMoreApss() {
 
         if (!Utils.isAndroidPlatform()) {
             lauchApp();
@@ -92,7 +92,7 @@ public class SettingTab extends BasePage {
         }
     }
 
-    public void S229_C20179_ST_004_VerifyInquirerAppVersion() {
+    public void S241_C20270_ST_004_VerifyInquirerAppVersion() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();
@@ -103,7 +103,7 @@ public class SettingTab extends BasePage {
         settingElements.checkAppVersion(Constants.APP_VERSION.ANDROID, Constants.APP_VERSION.IOS);
     }
 
-    public void S229_C20180_ST_005_VerifyInquirerCopyright() {
+    public void S241_C20271_ST_005_VerifyInquirerCopyright() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTabClick();

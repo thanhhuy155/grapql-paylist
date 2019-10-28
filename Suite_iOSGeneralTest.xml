@@ -4,10 +4,7 @@
 <suite name = "iOSGeneralTestSuite" configfailurepolicy="continue">
     <test name = "iOSGeneralTest">
         <classes>
-            <class name = "tests.TM_GeneralTest">
-                <methods>
-                    <include name="GeneralTCNo11"/>
-                </methods>
+            <class name = "tests.TM_iOSGeneral">
             </class>
         </classes>
     </test>

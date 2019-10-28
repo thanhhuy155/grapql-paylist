@@ -19,11 +19,13 @@ public class SettingElements extends CommonElements implements ISetting {
     }
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Notifications']")
-    @iOSFindBy(id = "Notifications")
+//    @iOSFindBy(id = "Notifications")
+    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name, 'Notifications')]")
     public MobileElement notification;
 
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[android.widget.RelativeLayout[android.widget.TextView[contains(@text,'About')]]]")
-    @iOSFindBy(id = Constants.SETTING_TITLE.ABOUT_PHILADELPHIA_MEDIA_NETWORK)
+//    @iOSFindBy(id = Constants.SETTING_TITLE.ABOUT_PHILADELPHIA_MEDIA_NETWORK)
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@value, Constants.SETTING_TITLE.ABOUT_PHILADELPHIA_MEDIA_NETWORK)]")
     public MobileElement aboutPMN;
 
     @AndroidFindBy(xpath = "//android.widget.RelativeLayout[android.widget.TextView[contains(@text,'Submit Feedback')]]")
@@ -78,7 +80,7 @@ public class SettingElements extends CommonElements implements ISetting {
     @iOSFindBy(id = "About")
     public MobileElement about;
 
-    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'Notifications')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name, 'Notifications')]")
     public MobileElement notificationSetting;
 
     @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeSwitch[1]")

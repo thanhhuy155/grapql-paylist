@@ -4,14 +4,7 @@
 <suite name = "iOSSettingTabSuite" configfailurepolicy="continue">
     <test name = "iOSSettingTabTest">
         <classes>
-            <class name = "tests.TM_SettingTab">
-                <methods>
-                    <include name="SettingTCNo1"/>
-                    <include name="SettingTCNo4"/>
-                    <include name="SettingTCNo5"/>
-                    <include name="SettingTCNo6"/>
-                    <include name="SettingTCNo7"/>
-                </methods>
+            <class name = "tests.TM_iOSSettingTab">
             </class>
         </classes>
     </test>

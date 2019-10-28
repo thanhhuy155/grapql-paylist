@@ -25,7 +25,7 @@ public class GeneralTest extends BasePage {
         exploreElements = new ExploreElements(driver);
     }
 
-    public void TestCaseNo1() {
+    public void S228_C20166_GN_LA_001_VerifyAppBeAbleToLaunchOnCellConnection() {
         turnOffWifi();
         turnOnCellularConnection();
         lauchApp();
@@ -47,7 +47,7 @@ public class GeneralTest extends BasePage {
         turnOnWifi();
     }
 
-    public void TestCaseNo2() {
+    public void S228_C20167_GN_LA_002_VerifyAppBeAbleToLaunchWithoutConnectivity() {
         turnOffWifi();
         turnOffCellularConnection();
         lauchApp();
@@ -69,7 +69,7 @@ public class GeneralTest extends BasePage {
         turnOnWifi();
     }
 
-    public void TestCaseNo3() {
+    public void S228_C20168_GN_LA_003_VerifyAppBeAbleToLaunchWithoutConnectivityAndNoCache() {
         turnOffWifi();
         turnOffCellularConnection();
         resetApp();
@@ -92,7 +92,7 @@ public class GeneralTest extends BasePage {
         turnOnWifi();
     }
 
-    public void TestCaseNo4() {
+    public void S228_C20169_GN_LA_004_VerifyAppBeAbleToLaunchOnWifi() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -117,7 +117,7 @@ public class GeneralTest extends BasePage {
         ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
     }
 
-    public void TestCaseNo7() {
+    public void S228_C20170_GN_LA_005_VerifyAppBeAbleToLOpenViaComingOutOfSleepMode() {
         lauchApp();
 
         lockDevice();
@@ -143,7 +143,7 @@ public class GeneralTest extends BasePage {
         ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
     }
 
-    public void TestCaseNo11() {
+    public void _VerifyAppWorksFineWhenClickingOnArticle() {
         lauchApp();
         Utils.sleep(Constants.SHORTTIME);
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);

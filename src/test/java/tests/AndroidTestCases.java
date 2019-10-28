@@ -5,33 +5,33 @@ import org.testng.annotations.Test;
 public class AndroidTestCases extends BaseTestClass{
     // ============== General ============== //
     @Test
-    public void GeneralTCNo1() {
-        generalTest.TestCaseNo1();
+    public void S228_C20166_GN_LA_001_VerifyAppBeAbleToLaunchOnCellConnection() {
+        generalTest.S228_C20166_GN_LA_001_VerifyAppBeAbleToLaunchOnCellConnection();
     }
 
     @Test
-    public void GeneralTCNo2() {
-        generalTest.TestCaseNo2();
+    public void S228_C20167_GN_LA_002_VerifyAppBeAbleToLaunchWithoutConnectivity() {
+        generalTest.S228_C20167_GN_LA_002_VerifyAppBeAbleToLaunchWithoutConnectivity();
     }
 
     @Test
-    public void GeneralTCNo3() {
-        generalTest.TestCaseNo3();
+    public void S228_C20168_GN_LA_003_VerifyAppBeAbleToLaunchWithoutConnectivityAndNoCache() {
+        generalTest.S228_C20168_GN_LA_003_VerifyAppBeAbleToLaunchWithoutConnectivityAndNoCache();
     }
 
     @Test
-    public void GeneralTCNo4() {
-        generalTest.TestCaseNo4();
+    public void S228_C20169_GN_LA_004_VerifyAppBeAbleToLaunchOnWifi() {
+        generalTest.S228_C20169_GN_LA_004_VerifyAppBeAbleToLaunchOnWifi();
     }
 
     @Test
-    public void GeneralTCNo7() {
-        generalTest.TestCaseNo7();
+    public void S228_C20170_GN_LA_005_VerifyAppBeAbleToLOpenViaComingOutOfSleepMode() {
+        generalTest.S228_C20170_GN_LA_005_VerifyAppBeAbleToLOpenViaComingOutOfSleepMode();
     }
 
     @Test
-    public void GeneralTCNo11() {
-        generalTest.TestCaseNo11();
+    public void S228_C20171_GN_ART_001_VerifyAppWorksFineWhenClickingOnArticle() {
+        generalTest._VerifyAppWorksFineWhenClickingOnArticle();
     }
 
 
@@ -141,31 +141,31 @@ public class AndroidTestCases extends BaseTestClass{
 
     //============== SETTING TAB ============== //
     @Test
-    public  void SettingTCNo1(){
-        settingTab.TestCaseNo1();
+    public  void S229_C20176_ST_001_VerifyNotificationOnOffWorksWell(){
+        settingTab.S229_C20176_ST_001_VerifyNotificationsOnOffWorksWell();
     }
 
     @Test
     public void SettingTCNo3(){settingTab.TestCaseNo3();}
 
     @Test
-    public  void SettingTCNo4(){
-        settingTab.TestCaseNo4();
+    public  void S229_C20177_ST_002_VerifyMenuAboutDisplayWhenClickingAbout(){
+        settingTab.S229_C20177_ST_002_VerifyMenuAboutDisplayWhenClickingAbout();
     }
 
     @Test
-    public  void SettingTCNo5(){
-        settingTab.TestCaseNo5();
+    public  void S229_C20178_ST_003_VerifyAppsAppearsWhenClickMoreApss(){
+        settingTab.S229_C20178_ST_003_VerifyAppsAppearsWhenClickMoreApss();
     }
 
     @Test
-    public void SettingTCNo6(){
-        settingTab.TestCaseNo6();
+    public void S229_C20179_ST_004_VerifyInquirerAppVersion(){
+        settingTab.S229_C20179_ST_004_VerifyInquirerAppVersion();
     }
 
     @Test
-    public void SettingTCNo7(){
-        settingTab.TestCaseNo7();
+    public void S229_C20180_ST_005_VerifyInquirerCopyright(){
+        settingTab.S229_C20180_ST_005_VerifyInquirerCopyright();
     }
 
     //============== RATING MODULE ============== //
