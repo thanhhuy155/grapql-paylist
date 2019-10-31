@@ -5,139 +5,143 @@ import org.testng.annotations.Test;
 public class TM_iOSLoginPage extends BaseTestClass {
 
     @Test(priority = 1)
-    public void LoginPageTCPCOM_002() {
-        iOS_LoginPage.TestCasePCOM_002();
+    public void S263_C22212_LG_001_VerifyLoadLogInScreenFromSettingsScreen() {
+        iOS_LoginPage.S263_C22212_LG_001_VerifyLoadLogInScreenFromSettingsScreen();
     }
 
     @Test(priority = 2)
-    public void LoginPageTCPCOM_007() {
-        iOS_LoginPage.TestCasePCOM_007();
+    public void S263_C22213_LG_002_VerifyCloseLogInScreenFromSettingsScreen() {
+        iOS_LoginPage.S263_C22213_LG_002_VerifyCloseLogInScreenFromSettingsScreen();
     }
 
 
     @Test(priority = 3)
-    public void LoginPageTCPCOM_019() {
-        iOS_LoginPage.TestCasePCOM_019();
+    public void S263_C22215_LG_005_VerifyLogInWithInvalidEmailFormat() {
+        iOS_LoginPage.S263_C22215_LG_005_VerifyLogInWithInvalidEmailFormat();
     }
 
     @Test(priority = 4)
-    public void LoginPageTCPCOM_020() {
-        iOS_LoginPage.TestCasePCOM_020();
+    public void S263_C22216_LG_006_VerifyLogInWithInvalidEmailFormatWhenClickOutsidePassword() {
+        iOS_LoginPage.S263_C22216_LG_006_VerifyLogInWithInvalidEmailFormatWhenClickOutsidePassword();
     }
 
     @Test(priority = 5)
-    public void LoginPageTCPCOM_021() {
-        iOS_LoginPage.TestCasePCOM_021();
+    public void S263_C22217_LG_007_VerifyLogInWithUnregisteredAccount() {
+        iOS_LoginPage.S263_C22217_LG_007_VerifyLogInWithUnregisteredAccount();
     }
 
     @Test(priority = 6)
-    public void LoginPageTCPCOM_022() {
-        iOS_LoginPage.TestCasePCOM_022();
+    public void S263_C22218_LG_008_VerifyLogInWithIncorrectPassword() {
+        iOS_LoginPage.S263_C22218_LG_008_VerifyLogInWithIncorrectPassword();
     }
 
     @Test(priority = 7)
-    public void LoginPageTCPCOM_023() { iOS_LoginPage.TestCasePCOM_023(); }
+    public void S263_C22219_LG_009_VerifyLoginScreenWhenDismissingAlert() {
+        iOS_LoginPage.S263_C22221_LG_010_VerifyLogInWithoutInputEmailAndPassword(); }
 
     @Test(priority = 8)
-    public void LoginPageTCPCOM_024() {
-        iOS_LoginPage.TestCasePCOM_024();
+    public void S263_C22220_LG_010_VerifyErrorMessagesDisplayWhenLeavingEmailAndPassword() {
+        iOS_LoginPage.S263_C22220_LG_010_VerifyErrorMessagesDisplayWhenLeavingEmailAndPassword();
     }
 
     @Test(priority =9)
-    public void LoginPageTCPCOM_025() {
-        iOS_LoginPage.TestCasePCOM_025();
+    public void S263_C22221_LG_011_VerifyEmailErrorMessageDisplaysWhenClickingEmailAndClickPassword() {
+        iOS_LoginPage.S263_C22221_LG_011_VerifyEmailErrorMessageDisplaysWhenClickingEmailAndClickPassword();
     }
 
     @Test(priority = 10)
-    public void LoginPageTCPCOM_026() {
-        iOS_LoginPage.TestCasePCOM_026();
+    public void S263_C22222_LG_012_VerifyErrorMessageDisplayWhenClickingLogIn() {
+        iOS_LoginPage.S263_C22222_LG_012_VerifyErrorMessageDisplayWhenClickingLogIn();
     }
 
     @Test(priority = 11)
-    public void LoginPageTCPCOM_027() {
-        iOS_LoginPage.TestCasePCOM_027();
+    public void S263_C22223_LG_013_VerifyNoEmailErrorMessageDisplaysWhenClickingPassword() {
+        iOS_LoginPage.S263_C22223_LG_013_VerifyNoEmailErrorMessageDisplaysWhenClickingPassword();
     }
 
     @Test(priority = 12)
-    public void LoginPageTCPCOM_028() {
-        iOS_LoginPage.TestCasePCOM_028();
+    public void S263_C22224_LG_014_VerifyEmailErrorMessageDisplaysWhenLeavingEmailAndClickingLogIn() {
+        iOS_LoginPage.S263_C22224_LG_014_VerifyEmailErrorMessageDisplaysWhenLeavingEmailAndClickingLogIn();
     }
 
     @Test(priority = 13)
-    public void LoginPageTCPCOM_029() {
-        iOS_LoginPage.TestCasePCOM_029();
+    public void S263_C22225_LG_015_VerifyEmailErrorMessageDisplaysWhenPasswordEnteredAndClickingLogIn() {
+        iOS_LoginPage.S263_C22225_LG_015_VerifyEmailErrorMessageDisplaysWhenPasswordEnteredAndClickingLogIn();
     }
 
     @Test(priority = 14)
-    public void LoginPageTCPCOM_030() {
-        iOS_LoginPage.TestCasePCOM_030();
+    public void S263_C22226_LG_016_VerifyNoEmailErrorMessageDisplayWhenClickingEmailAgain() {
+        iOS_LoginPage.S263_C22226_LG_016_VerifyNoEmailErrorMessageDisplayWhenClickingEmailAgain();
     }
 
     @Test(priority = 15)
-    public void LoginPageTCPCOM_032() {
-        iOS_LoginPage.TestCasePCOM_032();
+    public void S263_C22227_LG_017_VerifyPasswordErrorMessageDisplayWhenPasswordIsBlankAndClickingLogIn() {
+        iOS_LoginPage.S263_C22227_LG_017_VerifyPasswordErrorMessageDisplayWhenPasswordIsBlankAndClickingLogIn();
     }
 
     @Test(priority = 16)
-    public void LoginPageTCPCOM_033() {
-        iOS_LoginPage.TestCasePCOM_033();
+    public void S263_C22228_LG_018_VerifyPasswordErrorMessageDisplayWhenPasswordIsBlankAndClickingEmail() {
+        iOS_LoginPage.S263_C22228_LG_018_VerifyPasswordErrorMessageDisplayWhenPasswordIsBlankAndClickingEmail();
     }
 
     @Test(priority = 17)
-    public void LoginPageTCPCOM_035() {
-        iOS_LoginPage.TestCasePCOM_035();
+    public void S263_C22229_LG_019_VerifyErrorMessagesDisplayWhenEnteringInvalidFieldsAndClickingLogIn() {
+        iOS_LoginPage.S263_C22229_LG_019_VerifyErrorMessagesDisplayWhenEnteringInvalidFieldsAndClickingLogIn();
     }
 
     @Test(priority = 18)
-    public void LoginPageTCPCOM_036() {
-        iOS_LoginPage.TestCasePCOM_036();
+    public void S263_C22230_LG_020_VerifyNoEmailErrorMessageDisplayWhenEnteringEmail() {
+        iOS_LoginPage.S263_C22230_LG_020_VerifyNoEmailErrorMessageDisplayWhenEnteringEmail();
     }
 
     @Test(priority = 19)
-    public void LoginPageTCPCOM_037() {
-        iOS_LoginPage.TestCasePCOM_037();
+    public void S263_C22231_LG_021_VerifyNoEmailErrorMessageDisplayWhenActivatingEmail() {
+        iOS_LoginPage.S263_C22231_LG_021_VerifyNoEmailErrorMessageDisplayWhenActivatingEmail();
     }
 
     @Test(priority = 20)
-    public void LoginPageTCPCOM_038_001() {
-        iOS_LoginPage.TestCasePCOM_038_001();
+    public void S263_C22232_LG_022_VerifyNoEmailErrorMessageDisplayWhenEnteringEmailAndClickingLogIn() {
+        iOS_LoginPage.S263_C22232_LG_022_VerifyNoEmailErrorMessageDisplayWhenEnteringEmailAndClickingLogIn();
     }
 
     @Test(priority = 21)
-    public void LoginPageTCPCOM_038_002() {
-        iOS_LoginPage.TestCasePCOM_038_002();
+    public void S263_C22233_LG_023_VerifyNoPasswordErrorMessageDisplayWhenEnteringPasswordAndClickingLogIn() {
+        iOS_LoginPage.S263_C22233_LG_023_VerifyNoPasswordErrorMessageDisplayWhenEnteringPasswordAndClickingLogIn();
     }
 
     @Test(priority = 22)
-    public void LoginPageTCPCOM_039() {  iOS_LoginPage.TestCasePCOM_039();   }
+    public void S263_C22234_LG_024_VerifyNoPasswordErrorMessageDisplayAfterClickingLogInAndEnteringPassword() {
+        iOS_LoginPage.S263_C22234_LG_024_VerifyNoPasswordErrorMessageDisplayAfterClickingLogInAndEnteringPassword();   }
 
     @Test(priority = 23)
-    public void LoginPageTCPCOM_040() {
-        iOS_LoginPage.TestCasePCOM_040();
+    public void S263_C22235_LG_025_VerifyNoPasswordErrorMessageDisplayAfterActivationPassword() {
+        iOS_LoginPage.S263_C22235_LG_025_VerifyNoPasswordErrorMessageDisplayAfterActivationPassword();
     }
 
     @Test(priority = 24)
-    public void LoginPageTCPCOM_041() {
-        iOS_LoginPage.TestCasePCOM_041();
+    public void S263_C22236_LG_026_VerifyPasswordUnActivateWhenTappingIconShowOrHidden() {
+        iOS_LoginPage.S263_C22236_LG_026_VerifyPasswordUnActivateWhenTappingIconShowOrHidden();
     }
 
     @Test(priority = 25)
-    public void LoginPageTCPCOM_042() {
-        iOS_LoginPage.TestCasePCOM_042();
+    public void S263_C22237_LG_027_VerifyPasswordValueShowOrHiddenWhenTappingIconShowOrHidden() {
+        iOS_LoginPage.S263_C22237_LG_027_VerifyPasswordValueShowOrHiddenWhenTappingIconShowOrHidden();
     }
 
     @Test(priority = 26)
-    public void LoginPageTCPCOM_045() {
-        iOS_LoginPage.TestCasePCOM_045();
+    public void S263_C22240_LG_028_VerifyForgotPasswordScreenDisplayWhenTappingForgotPasswordLink() {
+        iOS_LoginPage.S263_C22240_LG_028_VerifyForgotPasswordScreenDisplayWhenTappingForgotPasswordLink();
     }
 
     //Still Failed
     @Test(priority = 27)
-    public void LoginPageTCPCOM_046() { iOS_LoginPage.TestCasePCOM_046();
+    public void S263_C22241_LG_029_VerifyEmailValueIsTakenFromLogInToSignUpScreenWhenClickingSignUpLink() {
+        iOS_LoginPage.S263_C22241_LG_029_VerifyEmailValueIsTakenFromLogInToSignUpScreenWhenClickingSignUpLink();
     }
 
     @Test(priority = 28)
-    public void LoginPageTCPCOM_047() { iOS_LoginPage.TestCasePCOM_047();
+    public void S263_C22242_LG_030_VerifyLogInScreenIsNotChangedWhenScrollUp() {
+        iOS_LoginPage.S263_C22242_LG_030_VerifyLogInScreenIsNotChangedWhenScrollUp();
     }
 
    // @Test(priority = 28)
@@ -146,8 +150,8 @@ public class TM_iOSLoginPage extends BaseTestClass {
 
     //Put tests here to avoid affected to another tests
     @Test(priority = 50)
-    public void LoginPageTCPCOM_018() {
-        iOS_LoginPage.TestCasePCOM_018();
+    public void S263_C22214_LG_004_VerifyLogInWithValidEmailAndPassword() {
+        iOS_LoginPage.S263_C22214_LG_004_VerifyLogInWithValidEmailAndPassword();
     }
 
 

@@ -31,7 +31,7 @@ public class LoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_002() {
+    public void S234_C20187_LG_001_VerifyLoadLogInScreenFromSettingsScreen() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -109,7 +109,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
     }
 
-    public void TestCasePCOM_007() {
+    public void S234_C20188_LG_002_VerifyCloseLogInScreenFromSettingsScreen() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -164,7 +164,7 @@ public class LoginPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_017() {
+    public void S234_C22243_LG_031_VerifyHomeFeedDisplayAfterKillingAppAndThanReopeningAppFromLogInScreen() {
         //Turn on Wifi connection
         if(loginElements.getWiFiConnectionStatus() == false){
             turnOnWifi();
@@ -185,7 +185,7 @@ public class LoginPage extends BasePage {
         waitForVisibilityOf(commonElements.bottomTab);
     }
 
-    public void TestCasePCOM_018() {
+    public void S234_C20190_LG_004_VerifyLogInWithValidEmailAndPassword() {
         //Turn on Wifi connection
         if(loginElements.getWiFiConnectionStatus() == false){
             turnOnWifi();
@@ -216,7 +216,7 @@ public class LoginPage extends BasePage {
         Assert.assertEquals(settingElements.viewAccountDetails.getText().trim(), Constants.LOGIN_EMAIL,"Check Email address displays");
     }
 
-    public void TestCasePCOM_019() {
+    public void S234_C20191_LG_005_VerifyLogInWithInvalidEmailFormat() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -240,7 +240,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.messageEmail, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_020() {
+    public void S234_C20192_LG_006_VerifyLogInWithInvalidEmailFormatWhenClickOutsidePassword() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -262,7 +262,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.messageEmail, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_021() {
+    public void S234_C20193_LG_007_VerifyLogInWithUnregisteredAccount() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -289,7 +289,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.tryAgainDialogButton,Constants.LOGIN.TRY_AGAIN_DIALOG_BUTTON);
     }
 
-    public void TestCasePCOM_022() {
+    public void S234_C20194_LG_008_VerifyLogInWithIncorrectPassword() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -315,7 +315,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.tryAgainDialogButton,Constants.LOGIN.TRY_AGAIN_DIALOG_BUTTON);
     }
 
-    public void TestCasePCOM_023() {
+    public void S234_C20195_LG_009_VerifyDismissAlert() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -367,7 +367,7 @@ public class LoginPage extends BasePage {
         loginElements.assertFocused(loginElements.password,"true");
     }
 
-    public void TestCasePCOM_024() {
+    public void S234_C20196_LG_010_VerifyLogInWithoutInputEmailAndPassword() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -434,7 +434,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.messagePassword, Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_027() {
+    public void S234_C20199_LG_013_VerifyNoEmailErrorMessageDisplaysWhenClickingPassword() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -456,7 +456,7 @@ public class LoginPage extends BasePage {
         loginElements.assertVisible(loginElements.messagePassword, false);
     }
 
-    public void TestCasePCOM_028() {
+    public void S234_C20200_LG_014_VerifyEmailErrorMessageDisplaysWhenLeavingEmailAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -525,7 +525,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.messageEmail,Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_032() {
+    public void S234_C20203_LG_017_VerifyPasswordErrorMessageDisplayWhenPasswordIsBlankAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -547,7 +547,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.messagePassword,Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_033() {
+    public void S234_C20204_LG_018_VerifyPasswordErrorMessageDisplayWhenPasswordIsBlankAndClickingEmail() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -569,7 +569,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.messagePassword,Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_035() {
+    public void S234_C20205_LG_019_VerifyErrorMessagesDisplayWhenEnteringInvalidFieldsAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -592,7 +592,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.messagePassword,Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_036() {
+    public void S234_C20206_LG_020_VerifyNoEmailErrorMessageDisplayWhenEnteringEmail() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -655,7 +655,7 @@ public class LoginPage extends BasePage {
         loginElements.assertVisible(loginElements.messageEmail, false);
     }
 
-    public void TestCasePCOM_038_001() {
+    public void S234_C20208_LG_022_VerifyNoEmailErrorMessageDisplayWhenEnteringEmailAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -690,7 +690,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.messagePassword,Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_038_002() {
+    public void S234_C20209_LG_023_VerifyNoPasswordErrorMessageDisplayWhenEnteringPasswordAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -725,7 +725,7 @@ public class LoginPage extends BasePage {
         loginElements.assertVisible(loginElements.messagePassword,false);
     }
 
-    public void TestCasePCOM_039() {
+    public void S234_C20210_LG_024_VerifyNoPasswordErrorMessageDisplayAfterClickingLogInAndEnteringPassword() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -789,7 +789,7 @@ public class LoginPage extends BasePage {
         loginElements.assertVisible(loginElements.messagePassword, false);
     }
 
-    public void TestCasePCOM_041() {
+    public void S234_C20212_LG_026_VerifyPasswordUnActivateWhenTappingIconShowOrHidden() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -811,7 +811,7 @@ public class LoginPage extends BasePage {
         loginElements.assertFocused(loginElements.password, "false");
     }
 
-    public void TestCasePCOM_042() {
+    public void S234_C20213_LG_027_VerifyPasswordValueShowOrHiddenWhenTappingIconShowOrHidden() {
 
         lauchApp();
 
@@ -910,7 +910,7 @@ public class LoginPage extends BasePage {
         }
     }
 
-    public void TestCasePCOM_045() {
+    public void S234_C20216_LG_028_VerifyForgotPasswordScreenDisplayWhenTappingForgotPasswordLink() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -925,7 +925,7 @@ public class LoginPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, "Reset Password");
     }
 
-    public void TestCasePCOM_046() {
+    public void S234_C20217_LG_029_VerifyEmailValueIsTakenFromLogInToSignUpScreenWhenClickingSignUpLink() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -959,7 +959,7 @@ public class LoginPage extends BasePage {
     }
 
     //C12491
-    public void TestCasePCOM_047() {
+    public void S234_C20218_LG_030_VerifyLogInScreenIsNotChangedWhenScrollUp() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);

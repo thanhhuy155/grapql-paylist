@@ -19,10 +19,12 @@ public class SearchElements extends CommonElements implements ISearch {
     @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Quick Search\"]")
     public MobileElement quickSearch;
 
-    @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar[@name=\"PhillyDotCom2.SearchContainerView\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther")
+   // @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar[@name=\"PhillyDotCom2.SearchContainerView\"]/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther")
+   @iOSFindBy(xpath = "//XCUIElementTypeNavigationBar/XCUIElementTypeStaticText[contains(@name, 'Search')]")
     public  MobileElement searchScreen;
 
-    @iOSFindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Enter search phrase\"]")
+    //@iOSFindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Enter search phrase\"]")
+    @iOSFindBy(xpath = "//XCUIElementTypeSearchField")
     public MobileElement searchBox;
 
     @iOSFindBy(xpath = "//XCUIElementTypeTable")
@@ -31,8 +33,9 @@ public class SearchElements extends CommonElements implements ISearch {
     @iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeCell[1]")
     public  MobileElement autoSuggestedTerm;
 
-    @iOSFindBy(xpath = "(//XCUIElementTypeButton[@name = 'Newest'])[2]")
+   // @iOSFindBy(xpath = "(//XCUIElementTypeButton[@name = 'Newest'])[2]")
     //@iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeOther/XCUIElementTypeButton[@name=\"Newest\"]")
+   @iOSFindBy(xpath = "//XCUIElementTypeTable/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton[1]")
     public MobileElement newestSortOptionForSearchResult;
 
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name=\"Clear text\"]")

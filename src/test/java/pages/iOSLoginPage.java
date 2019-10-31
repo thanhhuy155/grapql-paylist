@@ -27,7 +27,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_002() {
+    public void S263_C22212_LG_001_VerifyLoadLogInScreenFromSettingsScreen() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -49,7 +49,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_007() {
+    public void S263_C22213_LG_002_VerifyCloseLogInScreenFromSettingsScreen() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -68,7 +68,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_018() {
+    public void S263_C22214_LG_004_VerifyLogInWithValidEmailAndPassword() {
 
         //Turn on Cellular connection
         if(loginElements.getCellularConnectionStatus()==false) {
@@ -108,7 +108,7 @@ public class iOSLoginPage extends BasePage {
         }
     }
 
-    public void TestCasePCOM_019() {
+    public void S263_C22215_LG_005_VerifyLogInWithInvalidEmailFormat() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
 
@@ -138,7 +138,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_020() {
+    public void S263_C22216_LG_006_VerifyLogInWithInvalidEmailFormatWhenClickOutsidePassword() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -164,7 +164,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_021() {
+    public void S263_C22217_LG_007_VerifyLogInWithUnregisteredAccount() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -193,7 +193,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_022() {
+    public void S263_C22218_LG_008_VerifyLogInWithIncorrectPassword() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -222,7 +222,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_023() {
+    public void S263_C22221_LG_010_VerifyLogInWithoutInputEmailAndPassword() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -279,7 +279,7 @@ public class iOSLoginPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.dialogMessage), "Check dialog is closed");
     }
 
-    public void TestCasePCOM_024() {
+    public void S263_C22220_LG_010_VerifyErrorMessagesDisplayWhenLeavingEmailAndPassword() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -309,7 +309,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_025() {
+    public void S263_C22221_LG_011_VerifyEmailErrorMessageDisplaysWhenClickingEmailAndClickPassword() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -336,7 +336,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_026() {
+    public void S263_C22222_LG_012_VerifyErrorMessageDisplayWhenClickingLogIn() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -374,7 +374,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_027() {
+    public void S263_C22223_LG_013_VerifyNoEmailErrorMessageDisplaysWhenClickingPassword() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -402,7 +402,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_028() {
+    public void S263_C22224_LG_014_VerifyEmailErrorMessageDisplaysWhenLeavingEmailAndClickingLogIn() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -432,7 +432,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_029() {
+    public void S263_C22225_LG_015_VerifyEmailErrorMessageDisplaysWhenPasswordEnteredAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -458,7 +458,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_030() {
+    public void S263_C22226_LG_016_VerifyNoEmailErrorMessageDisplayWhenClickingEmailAgain() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -484,7 +484,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_032() {
+    public void S263_C22227_LG_017_VerifyPasswordErrorMessageDisplayWhenPasswordIsBlankAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -509,7 +509,7 @@ public class iOSLoginPage extends BasePage {
         Assert.assertEquals(part2, Constants.LOGIN.BLANK_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_033() {
+    public void S263_C22228_LG_018_VerifyPasswordErrorMessageDisplayWhenPasswordIsBlankAndClickingEmail() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -535,7 +535,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_035() {
+    public void S263_C22229_LG_019_VerifyErrorMessagesDisplayWhenEnteringInvalidFieldsAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -568,7 +568,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_036() {
+    public void S263_C22230_LG_020_VerifyNoEmailErrorMessageDisplayWhenEnteringEmail() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -605,7 +605,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_037() {
+    public void S263_C22231_LG_021_VerifyNoEmailErrorMessageDisplayWhenActivatingEmail() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -643,7 +643,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_038_001() {
+    public void S263_C22232_LG_022_VerifyNoEmailErrorMessageDisplayWhenEnteringEmailAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -696,7 +696,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_038_002() {
+    public void S263_C22233_LG_023_VerifyNoPasswordErrorMessageDisplayWhenEnteringPasswordAndClickingLogIn() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -748,7 +748,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_039() {
+    public void S263_C22234_LG_024_VerifyNoPasswordErrorMessageDisplayAfterClickingLogInAndEnteringPassword() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -786,7 +786,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_040() {
+    public void S263_C22235_LG_025_VerifyNoPasswordErrorMessageDisplayAfterActivationPassword() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -826,7 +826,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_041() {
+    public void S263_C22236_LG_026_VerifyPasswordUnActivateWhenTappingIconShowOrHidden() {
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.settingTab.click();
@@ -845,7 +845,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_042() {
+    public void S263_C22237_LG_027_VerifyPasswordValueShowOrHiddenWhenTappingIconShowOrHidden() {
 
         lauchApp();
 
@@ -871,7 +871,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_045() {
+    public void S263_C22240_LG_028_VerifyForgotPasswordScreenDisplayWhenTappingForgotPasswordLink() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -889,7 +889,7 @@ public class iOSLoginPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_046() {
+    public void S263_C22241_LG_029_VerifyEmailValueIsTakenFromLogInToSignUpScreenWhenClickingSignUpLink() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -926,7 +926,7 @@ public class iOSLoginPage extends BasePage {
     }
 
     //C12491
-    public void TestCasePCOM_047() {
+    public void S263_C22242_LG_030_VerifyLogInScreenIsNotChangedWhenScrollUp() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
