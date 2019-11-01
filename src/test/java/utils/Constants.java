@@ -12,7 +12,7 @@ public class Constants {
     public static final String IOS_HASHED_APP_ID = "f50b9c084cccdbbc37fa4934b24e20f9b715f24f";
     public static final String ANDROID_HASHED_APP_ID = "8937bc32baade2ca799e84a62936fcdf975a17cd";
 
-    public static final String APP_PACKAGE = "com.ap.philly.test";
+    public static final String APP_PACKAGE = "com.ap.philly";
     public static final String APP_ACTIVITY = "com.ap.philly.Views.MainActivity";
 
     public static final int TIME_OUT = 5;
