@@ -27,7 +27,7 @@ public class ForgotEmailPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_001() {
+    public void S235_C20181_FE_001_VerifyRecoverEmailTooltipDisplay() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -47,7 +47,7 @@ public class ForgotEmailPage extends BasePage {
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
     }
 
-    public void TestCasePCOM_003() {
+    public void S235_C20184_FE_003_VerifyCancelCallingPhonenNumberWorksWell() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -109,7 +109,7 @@ public class ForgotEmailPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_005() {
+    public void S235_C20185_FE_005_VerifyRecoverEmailTooltipIsCloseWhenClickingCloseXButton() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -135,7 +135,7 @@ public class ForgotEmailPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_006() {
+    public void S235_C20186_FE_006_VerifyTappingForgotEmailLinkWillHiddenKeyboard() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);

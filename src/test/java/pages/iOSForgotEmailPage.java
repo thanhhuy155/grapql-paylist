@@ -23,7 +23,7 @@ public class iOSForgotEmailPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_001() {
+    public void S264_C22250_FE_001_VerifyRecoverEmailTooltipDisplay() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -43,7 +43,7 @@ public class iOSForgotEmailPage extends BasePage {
         loginElements.assertValue(loginElements.forgotEmailMessage, Constants.LOGIN.FORGOT_EMAIL_MESSAGE);
     }
 
-    public void TestCasePCOM_002() {
+    public void S264_C20182_FE_002_VerifyCallButtonOnPhoneNumberOnTooltipWork() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -97,7 +97,7 @@ public class iOSForgotEmailPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.LOG_IN_TITLE);
     }
 
-    public void TestCasePCOM_004() {
+    public void S264_C22251_FE_004_VerifyLogInScreenReturnedAfterClickingCancelButton() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -129,7 +129,7 @@ public class iOSForgotEmailPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_005_001() {
+    public void S264_C22252_FE_005_01_VerifyRecoverEmailTooltipIsCloseWhenClickingCloseXButton() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -176,7 +176,7 @@ public class iOSForgotEmailPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_005_002() {
+    public void S264_C22253_FE_005_02_VerifyRecoverEmailTooltipIsCloseWhenClickingCloseXButton() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -219,7 +219,7 @@ public class iOSForgotEmailPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_006() {
+    public void S264_C22254_FE_006_VerifyTappingForgotEmailLinkWillHiddenKeyboard() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
