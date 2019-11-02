@@ -35,7 +35,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_001() {
+    public void S236_C20219_FP_001_VerifyResetPasswordScreenDisplayWhenClickingForgotPasswordLink() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -60,7 +60,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_002() {
+    public void S236_C20220_FP_002_VerifyResetPasswordScreenDisplayWhenClickingForgotPasswordLink() {
         //1. Open the Philly.com app to Log In screen from Settings tab.
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -113,7 +113,7 @@ public class ForgotPasswordPage extends BasePage {
          Assert.assertFalse(Utils.checkElementExist(commonElements.homeTab));
     }
 
-    public void TestCasePCOM_006() {
+    public void S236_C20222_FP_003_VerifySignUpScreenDoesNotDisplayWhenReopeningApp() {
 
         //1. Open the Philly.com app to Settings tab.
         lauchApp();
@@ -146,7 +146,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_007() {
+    public void S236_C20223_FP_004_VerifyErrorDisplaysWhenClickingSendEmailButtonWithEmptyEmail() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -173,7 +173,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_008() {
+    public void S236_C20224_FP_005_VerifyErrorDisplaysWhenClickingOutsideEmailFieldWithEmptyEmail() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -202,7 +202,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_009() {
+    public void S236_C20225_FP_006_VerifyErrorDisplaysWhenResettingInvalidEmail() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -231,7 +231,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_010() {
+    public void S236_C20226_FP_007_VerifyErrorDisplaysWhenClickingOutsideInvalidEmailField() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -260,7 +260,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_011() {
+    public void S236_C20227_FP_008_VerifySuccessScreenDisplaysWhenInputValidEmailField() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -290,7 +290,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_013() {
+    public void S236_C20228_FP_009_VerifyPreviousScreenBeReturnedAfterClickingPhonenNumber() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -336,7 +336,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_015() {
+    public void S236_C20230_FP_010_VerifyLogInScreenDisplayWhenClickingBackFromSuccessScreen() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);

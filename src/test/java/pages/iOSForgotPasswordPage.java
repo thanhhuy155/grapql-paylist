@@ -34,7 +34,7 @@ public class iOSForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_001() {
+    public void S265_C22255_FP_001_VerifyResetPasswordScreenDisplayWhenClickingForgotPasswordLink() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -59,7 +59,7 @@ public class iOSForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_006() {
+    public void S265_C22256_FP_003_VerifySignUpScreenDoesNotDisplayWhenReopeningApp() {
         //1. Open the Philly.com app to Settings tab.
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -91,7 +91,7 @@ public class iOSForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_007() {
+    public void S265_C22257_FP_004_VerifyErrorDisplaysWhenClickingSendEmailButtonWithEmptyEmail() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -121,7 +121,7 @@ public class iOSForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_008() {
+    public void S265_C22258_FP_005_VerifyErrorDisplaysWhenClickingOutsideEmailFieldWithEmptyEmail() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -151,7 +151,7 @@ public class iOSForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_009() {
+    public void S265_C22259_FP_006_VerifyErrorDisplaysWhenResettingInvalidEmail() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -182,7 +182,7 @@ public class iOSForgotPasswordPage extends BasePage {
         Assert.assertEquals(part2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_010() {
+    public void S265_C22259_FP_007_VerifyErrorDisplaysWhenClickingOutsideInvalidEmailField() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -214,7 +214,7 @@ public class iOSForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_011() {
+    public void S265_C22260_FP_008_VerifySuccessScreenDisplaysWhenInputValidEmailField() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -243,7 +243,7 @@ public class iOSForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_014() {
+    public void S265_C20229_FP_010_VerifyResetPasswordScreenDisplaysWhenClickingCancel() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -282,7 +282,7 @@ public class iOSForgotPasswordPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_015() {
+    public void S265_C22261_FP_011_VerifyLogInScreenDisplayWhenClickingBackFromSuccessScreen() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
