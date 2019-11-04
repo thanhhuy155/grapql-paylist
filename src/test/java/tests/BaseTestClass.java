@@ -31,6 +31,7 @@ public class BaseTestClass extends AppiumBaseClass {
     iOSArticlePage iOS_ArticlePage;
     RatingModule ratingModule;
     ExploreTab exploreTab;
+    iOSExploreTab iOS_ExploreTab;
     LoginPage loginPage;
 
     iOSLoginPage iOS_LoginPage;
@@ -62,6 +63,7 @@ public class BaseTestClass extends AppiumBaseClass {
         iOS_ArticlePage = new iOSArticlePage(driver());
         ratingModule = new RatingModule(driver());
         exploreTab = new ExploreTab(driver());
+        iOS_ExploreTab = new iOSExploreTab(driver());
         customizationPage = new CustomizationPage(driver());
         iOS_General = new iOSGeneral(driver());
         iOS_HomeTab = new iOSHomeTab(driver());

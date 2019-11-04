@@ -9,13 +9,13 @@ import org.testng.Assert;
 import utils.Constants;
 import utils.Utils;
 
-public class ExploreTab extends BasePage {
+public class iOSExploreTab extends BasePage {
     private ExploreElements exploreElements;
     private CommonElements commonElements;
     private FeedListElements feedListElements;
     private ArticleDetailElements articleDetailElements;
 
-    public ExploreTab(AppiumDriver driver) {
+    public iOSExploreTab(AppiumDriver driver) {
         super(driver);
         exploreElements = new ExploreElements(driver);
         commonElements = new CommonElements(driver);
@@ -23,7 +23,7 @@ public class ExploreTab extends BasePage {
         articleDetailElements =new ArticleDetailElements(driver);
     }
 
-    public void S230_C22262_ET_001_01_VerifyNewsSections() {
+    public void S266_C22279_ET_001_01_VerifyNewsSections() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -41,7 +41,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,newsSubsections, exploreElements.newsSection);
     }
 
-    public void S230_C22263_ET_001_02_VerifySportsSections() {
+    public void S266_C22280_ET_001_02_VerifySportsSections() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -55,7 +55,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,sportsSubsections, exploreElements.sportsSection);
     }
 
-    public void S230_C22264_ET_001_03_VerifyBusinessSections(){
+    public void S266_C22281_ET_001_03_VerifyBusinessSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -72,7 +72,7 @@ public class ExploreTab extends BasePage {
        // exploreElements.checkSectionHeader("Business", exploreElements.feedSectionHeader.getText());
     }
 
-    public void S230_C22265_ET_001_04_VerifyOpinionSections(){
+    public void S266_C22282_ET_001_04_VerifyOpinionSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -86,7 +86,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,opinionSubsections, exploreElements.opinionSection);
     }
 
-    public void S230_C22266_ET_001_05_VerifyPoliticsSections(){
+    public void S266_C22283_ET_001_05_VerifyPoliticsSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -103,7 +103,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,politicsSubsections, exploreElements.politicsSection);
     }
 
-    public void S230_C22267_ET_001_06_VerifyEntertainmentsSections(){
+    public void S266_C22284_ET_001_06_VerifyEntertainmentsSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -122,7 +122,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,entertainmentSubsections, exploreElements.entertainmentSection);
     }
 
-    public void S230_C22268_ET_001_07_VerifyFoodSections(){
+    public void S266_C22285_ET_001_07_VerifyFoodSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -140,7 +140,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,foodSubsections, exploreElements.foodSection);
     }
 
-    public void S230_C22269_ET_001_08_VerifyHealthAndWellnessSections(){
+    public void S266_C22286_ET_001_08_VerifyHealthAndWellnessSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -158,7 +158,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,healthSubsections, exploreElements.healthSection);
     }
 
-    public void S230_C22270_ET_001_09_VerifyRealEstateSections(){
+    public void S266_C22287_ET_001_09_VerifyRealEstateSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -176,7 +176,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,realEstateSubsections, exploreElements.realEstateSection);
     }
 
-    public void S230_C22271_ET_001_10_VerifyObituariesSections(){
+    public void S266_C22288_ET_001_10_VerifyObituariesSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -188,7 +188,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSectionHeader("Obituaries", exploreElements.feedSectionHeader.getText());
     }
 
-    public void S230_C22272_ET_001_11_VerifyJobsSections(){
+    public void S266_C22289_ET_001_11_VerifyJobsSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -200,7 +200,7 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSectionHeader("Jobs", exploreElements.feedSectionHeader.getText());
     }
 
-    public void S230_C22273_ET_001_12_VerifyLifeSections(){
+    public void S266_C22290_ET_001_12_VerifyLifeSections(){
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -219,66 +219,8 @@ public class ExploreTab extends BasePage {
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,lifeSubsections, exploreElements.lifeSection);
     }
 
-    public void S230_C22274_ET_002_VerifyExploreTabReturnAfterSleeping() {
-        lauchApp();
 
-        waitForVisibilityOf(commonElements.bottomTab);
-        commonElements.exploreTab.click();
-        lockDevice();
-        unLockDevice();
-    }
-
-    public void S230_C22275_ET_003_VerifyArticlePageWhenClickingFeedArticle() {
-        lauchApp();
-
-        waitForVisibilityOf(commonElements.bottomTab);
-        commonElements.exploreTab.click();
-        exploreElements.navigateToSubSection(appiumDriver, exploreElements.newsSection,"All News");
-
-        String title;
-        waitForVisibilityOf(feedListElements.feedItemTitle);
-        if (Utils.isAndroidPlatform()) {
-            title = feedListElements.getFeedItemTitle();
-            feedListElements.feedItemTitle.click();
-        } else {
-            title = feedListElements.feedItemSectionTab.getText();
-            feedListElements.feedItemSectionTab.click();
-        }
-        articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
-    }
-
-    public void S230_C22276_ET_004_VerifyArticlePageWhenSharingFeedArticle() {
-        lauchApp();
-
-        waitForVisibilityOf(commonElements.bottomTab);
-        commonElements.exploreTab.click();
-        exploreElements.navigateToSubSection(appiumDriver, exploreElements.newsSection,"All News");
-
-        waitForVisibilityOf(feedListElements.feedItemTitle);
-
-        String title = feedListElements.getFeedItemTitle();
-        feedListElements.btnShareOnFeedArticle.click();
-
-        if (Utils.isAndroidPlatform()) {
-            commonElements.shareArticleOn(appiumDriver, CommonElements.ShareOptions.GMAIL);
-            Assert.assertTrue(commonElements.gmailSubject.getText().contains(title));
-        } else {
-
-        }
-
-    }
-
-    public void S230_C22277_ET_005_VerifyArticlePageWhenSwitchingFeedArticle() {
-        lauchApp();
-
-        waitForVisibilityOf(commonElements.bottomTab);
-        commonElements.exploreTab.click();
-        exploreElements.navigateToSubSection(appiumDriver, exploreElements.newsSection,"All News");
-
-        exploreElements.backButton.click();
-    }
-
-    public void S230_C22278_ET_006_VerifyArticlePageWhenSleepingFeedArticle() {
+    public void S266_C22291_ET_003_VerifyArticlePageWhenClickingFeedArticle() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
@@ -295,10 +237,21 @@ public class ExploreTab extends BasePage {
         commonElements.settingTabClick();
         commonElements.homeTabClick();
         commonElements.bookMarkTab.click();
-
     }
 
-    public void S230_C24249_ET_007_VerifyMyMostReadSections() {
+    public void S266_C22292_ET_005_VerifyArticlePageWhenSwitchingFeedArticle() {
+        lauchApp();
+
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.exploreTab.click();
+        exploreElements.navigateToSubSection(appiumDriver, exploreElements.newsSection,"All News");
+
+        exploreElements.backButton.click();
+    }
+
+
+    //C8822
+    public void S266_C24250_ET_007_VerifyMyMostReadSections() {
         lauchApp();
 
         waitForVisibilityOf(commonElements.bottomTab);

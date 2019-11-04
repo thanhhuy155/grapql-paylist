@@ -4,7 +4,7 @@
 <suite name = "iOSExploreTabSuite" configfailurepolicy="continue">
     <test name = "iOSExploreTabTest">
         <classes>
-            <class name = "tests.TM_ExploreTab">
+            <class name = "tests.TM_iOSExploreTab">
                 <methods>
                     <include name="ExploreTabTCNo1"/>
                     <include name="ExploreTabTCNo2"/>
