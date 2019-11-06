@@ -33,7 +33,7 @@ public class iOSSignUpPage extends BasePage {
         bookMarkElements= new BookMarkElements(driver);
     }
 
-    public void TestCasePCOM_001() {
+    public void S287_C24288_SU_001_VerifyLoadSignUpScreen() {
 
         //1. Launch the app
         lauchApp();
@@ -61,7 +61,7 @@ public class iOSSignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_003() {
+    public void S287_C24289_SU_002_VerifyCloseSignUpScreen() {
         //1. Launch the app
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -247,7 +247,7 @@ public class iOSSignUpPage extends BasePage {
         ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
     }
 
-    public void TestCasePCOM_008() {
+    public void S287_C24290_SU_003_VerifyReopenAfterKillingApp() {
         //1. Open the Philly.com app to Settings tab.
         lauchApp();
 
@@ -277,7 +277,7 @@ public class iOSSignUpPage extends BasePage {
         loginElements.assertValue(loginElements.signUpTitle, Constants.LOGIN.SIGN_UP_TITLE);
     }
 
-    public void TestCasePCOM_009() {
+    public void S287_C24291_SU_04_VerifySignUpWhenInputValidEmailAndPassword() {
 
 
         //1. Open the Philly.com app to "Sign Up" screen
@@ -312,7 +312,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(settingElements.signedUpAccount.getAttribute("value"),emailAddress);
     }
 
-    public void TestCasePCOM_010() {
+    public void S287_C24291_SU_023_VerifyErrorReturnedWhenInputInvalidEmailAndValidPassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -344,7 +344,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_011() {
+    public void S287_C24292_SU_005_VerifySignUpWithRegisteredAccount() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -375,7 +375,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.SIGN_UP_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_026() {
+    public void S287_C24293_SU_006_VerifySignUpWithInvalidConfirmPassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -406,7 +406,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(passwordMsgPart2, Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_027() {
+    public void S287_C24294_SU_007_VerifySignUpWithoutInputDataIntoFields() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -429,7 +429,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_028() {
+    public void S287_C24295_SU_008_VerifySignUpWhenEmailAndPasswordAreBlank() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -453,7 +453,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertFalse(loginElements.messagePassword.getText().contains(":"));
     }
 
-    public void TestCasePCOM_031() {
+    public void S287_C24296_SU_009_VerifySignUpWhenBlankEmailAndClickingOutsidePassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -483,7 +483,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateNumber));
     }
 
-    public void TestCasePCOM_032() {
+    public void S287_C24297_SU_010_VerifySignUpWhenBlankEmailAndClickingPassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -508,7 +508,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateNumber));
     }
 
-    public void TestCasePCOM_033() {
+    public void S287_C24298_SU_011_VerifySignUpWhenBlankEmailAndClickingSignUpButton() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -540,7 +540,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_034() {
+    public void S287_C24299_SU_012_VerifySignUpWhenBlankEmailAndClickingOutsideEmail() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -574,7 +574,7 @@ public class iOSSignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_035() {
+    public void S287_C24300_SU_013_VerifySignUpWhenBlankEmailAndReClickingEmailField() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -603,7 +603,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(emailMsgPart2, Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_039() {
+    public void S287_C24301_SU_014_VerifySignUpWhenBlankPassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -639,7 +639,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_040() {
+    public void S287_C24302_SU_015_VerifySignUpWhenBlankPasswordAndClickSignUpButton() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -672,7 +672,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(confirmPasswordMsgPart2, Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_045() {
+    public void S287_C24303_SU_017_01_VerifyEmailMessageWhenInputValidValueAndClickSignUp() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -713,7 +713,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertFalse(loginElements.messageEmail.getText().contains(":"));
     }
 
-    public void TestCasePCOM_046() {
+    public void S287_C24304_SU_017_02_VerifyEmailMessageWhenInputValidValueAndClickOtherField() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -756,7 +756,7 @@ public class iOSSignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_047() {
+    public void S287_C24305_SU_017_03_VerifyEmailMessageWhenInputValidValueAndClickSignUp() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -798,7 +798,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertFalse(loginElements.messageEmail.getText().contains(":"));
     }
 
-    public void TestCasePCOM_051() {
+    public void S287_C24309_SU_018_VerifyConfirmPasswordMessageWhenInputValidValue() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -845,7 +845,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertFalse(confirmPasswordMsg.contains(":"), "Error Confirm message still display");
     }
 
-    public void TestCasePCOM_052() {
+    public void S287_C24310_SU_019_VerifyConfirmPasswordMessageWhenInputValidValueAndClickOtherField() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -889,7 +889,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertFalse(confirmPasswordMsg.contains(":"), "Error Confirm message still display");
     }
 
-    public void TestCasePCOM_053() {
+    public void S287_C24311_SU_020_VerifyConfirmPasswordMessageWhenInputValidValue() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -934,7 +934,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertFalse(confirmPasswordMsg.contains(":"), "Error Confirm message still display");
     }
 
-    public void TestCasePCOM_056() {
+    public void S287_C24312_SU_021_01_VerifyShowOrHidePasswordIcon() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         Utils.sleep(3000);
@@ -961,7 +961,7 @@ public class iOSSignUpPage extends BasePage {
         Assert.assertEquals(confirmPasswordValue, Constants.SIGN_UP_PASSWORD);
     }
 
-    public void TestCasePCOM_057() {
+    public void S287_C24313_SU_021_02_VerifyShowOrHidePasswordIcon() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -988,7 +988,7 @@ public class iOSSignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_062() {
+    public void S287_C24314_SU_022_VerifyEmailDataBePassedFromLoginScreen() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -1011,7 +1011,7 @@ public class iOSSignUpPage extends BasePage {
         loginElements.assertValue(loginElements.email,validEmail);
     }
 
-    public void TestCasePCOM_063() {
+    public void S287_C24315_SU_023_VerifyEmptyEmailBePassedFromLoginScreen() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         commonElements.settingTab.click();

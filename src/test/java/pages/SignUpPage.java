@@ -33,7 +33,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_001() {
+    public void S237_C20231_SU_001_VerifyLoadSignUpScreen() {
 
         //1. Launch the app
         lauchApp();
@@ -61,7 +61,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_003() {
+    public void S237_C20232_SU_002_VerifyCloseSignUpScreen() {
         //1. Launch the app
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -247,7 +247,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_007() {
+    public void S237_C20235_SU_023_VerifySignUpWithInvalidEmailFormat() {
         //1. Open the Philly.com app using Test Case #1.
         lauchApp();
 
@@ -293,7 +293,7 @@ public class SignUpPage extends BasePage {
         ((AndroidDriver) appiumDriver).pressKey(new KeyEvent(AndroidKey.HOME));
     }
 
-    public void TestCasePCOM_008() {
+    public void S237_C20233_SU_003_VerifyReopenAfterKillingApp() {
         //1. Open the Philly.com app to Settings tab.
         lauchApp();
 
@@ -323,7 +323,7 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.actionBarTitle, Constants.LOGIN.SIGN_UP_TITLE);
     }
 
-    public void TestCasePCOM_009() {
+    public void S237_C20234_SU_04_VerifySignUpWhenInputValidEmailAndPassword() {
 
 
         //1. Open the Philly.com app to "Sign Up" screen
@@ -361,7 +361,7 @@ public class SignUpPage extends BasePage {
         Assert.assertEquals(settingElements.signedUpAccount.getText(),emailAddress);
     }
 
-    public void TestCasePCOM_010() {
+    public void S237_C20234_SU_023_VerifyErrorReturnedWhenInputInvalidEmailAndValidPassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -389,7 +389,7 @@ public class SignUpPage extends BasePage {
         Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_011() {
+    public void S237_C20236_SU_005_VerifySignUpWithRegisteredAccount() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -417,7 +417,7 @@ public class SignUpPage extends BasePage {
         Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.SIGN_UP_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_026() {
+    public void S237_C20237_SU_006_VerifySignUpWithInvalidConfirmPassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -444,7 +444,7 @@ public class SignUpPage extends BasePage {
         Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.SIGN_UP_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_027() {
+    public void S237_C20238_SU_007_VerifySignUpWithoutInputDataIntoFields() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -463,7 +463,7 @@ public class SignUpPage extends BasePage {
         Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_028() {
+    public void S237_C20239_SU_008_VerifySignUpWhenEmailAndPasswordAreBlank() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -486,7 +486,7 @@ public class SignUpPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.messagePassword));
     }
 
-    public void TestCasePCOM_031() {
+    public void S237_C20240_SU_009_VerifySignUpWhenBlankEmailAndClickingOutsidePassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -513,7 +513,7 @@ public class SignUpPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateNumber));
     }
 
-    public void TestCasePCOM_032() {
+    public void S237_C20241_SU_010_VerifySignUpWhenBlankEmailAndClickingPassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -538,7 +538,7 @@ public class SignUpPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(loginElements.validateNumber));
     }
 
-    public void TestCasePCOM_033() {
+    public void S237_C20242_SU_011_VerifySignUpWhenBlankEmailAndClickingSignUpButton() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -566,7 +566,7 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.messageEmail,Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_034() {
+    public void S237_C20244_SU_013_VerifySignUpWhenBlankEmailAndReClickingEmailField() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -596,7 +596,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_035() {
+    public void S237_C20243_SU_012_VerifySignUpWhenBlankEmailAndClickingOutsideEmail() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -622,7 +622,7 @@ public class SignUpPage extends BasePage {
         Assert.assertEquals(loginElements.messageEmail.getText(),Constants.LOGIN.BLANK_EMAIL_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_039() {
+    public void S237_C20245_SU_014_VerifySignUpWhenBlankPassword() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -654,7 +654,7 @@ public class SignUpPage extends BasePage {
         Assert.assertEquals(loginElements.messageConfirmPassword.getText(),Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_040() {
+    public void S237_C20246_SU_015_VerifySignUpWhenBlankPasswordAndClickSignUpButton() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -684,7 +684,7 @@ public class SignUpPage extends BasePage {
         Assert.assertEquals(loginElements.messageConfirmPassword.getText(),Constants.LOGIN.SIGN_UP_CONFIRM_PASSWORD_ERROR_MESSAGE);
     }
 
-    public void TestCasePCOM_045() {
+    public void S237_C20248_SU_017_01_VerifyEmailMessageWhenInputValidValueAndClickSignUp() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -721,7 +721,7 @@ public class SignUpPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.messageEmail));
     }
 
-    public void TestCasePCOM_046() {
+    public void S237_C20249_SU_017_02_VerifyEmailMessageWhenInputValidValueAndClickOtherField() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -761,7 +761,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_047() {
+    public void S237_C20250_SU_017_03_VerifyEmailMessageWhenInputValidValueAndClickSignUp() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -799,7 +799,7 @@ public class SignUpPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.messageEmail));
     }
 
-    public void TestCasePCOM_051() {
+    public void S237_C20251_SU_018_VerifyConfirmPasswordMessageWhenInputValidValue() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -840,7 +840,7 @@ public class SignUpPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.messageConfirmPassword));
     }
 
-    public void TestCasePCOM_052() {
+    public void S237_C20252_SU_019_VerifyConfirmPasswordMessageWhenInputValidValueAndClickOtherField() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -880,7 +880,7 @@ public class SignUpPage extends BasePage {
         Assert.assertFalse(Utils.checkElementExist(loginElements.messageConfirmPassword));
     }
 
-    public void TestCasePCOM_053() {
+    public void S237_C20253_SU_020_VerifyConfirmPasswordMessageWhenInputValidValue() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -920,7 +920,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_056() {
+    public void S237_C20254_SU_021_01_VerifyShowOrHidePasswordIcon() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -943,7 +943,7 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.confirmPassword, Constants.SIGN_UP_PASSWORD);
     }
 
-    public void TestCasePCOM_057() {
+    public void S237_C20255_SU_021_02_VerifyShowOrHidePasswordIcon() {
         //1. Open the Philly.com app to "Sign Up" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -1012,7 +1012,7 @@ public class SignUpPage extends BasePage {
 
     }
 
-    public void TestCasePCOM_062() {
+    public void S237_C20256_SU_022_VerifyEmailDataBePassedFromLoginScreen() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         commonElements.settingTab.click();
@@ -1035,7 +1035,7 @@ public class SignUpPage extends BasePage {
         loginElements.assertValue(loginElements.email,validEmail);
     }
 
-    public void TestCasePCOM_063() {
+    public void S237_C24307_SU_023_VerifyEmptyEmailBePassedFromLoginScreen() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         commonElements.settingTab.click();
