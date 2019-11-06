@@ -5,24 +5,6 @@
     <test name = "iOSExploreTabTest">
         <classes>
             <class name = "tests.TM_iOSExploreTab">
-                <methods>
-                    <include name="ExploreTabTCNo1"/>
-                    <include name="ExploreTabTCNo2"/>
-                    <include name="ExploreTabTCNo3"/>
-                    <include name="ExploreTabTCNo4"/>
-                    <include name="ExploreTabTCNo5"/>
-                    <include name="ExploreTabTCNo6"/>
-                    <include name="ExploreTabTCNo7"/>
-                    <include name="ExploreTabTCNo8"/>
-                    <include name="ExploreTabTCNo9"/>
-                    <include name="ExploreTabTCNo10"/>
-                    <include name="ExploreTabTCNo11"/>
-                    <include name="ExploreTabTCNo12"/>
-                    <include name="ExploreTabTCNo13"/>
-                    <include name="ExploreTabTCNo14"/>
-                    <include name="ExploreTabTCNo16"/>
-                    <include name="ExploreTabTCNo18"/>
-                </methods>
             </class>
         </classes>
     </test>
