@@ -135,7 +135,7 @@ public class TM_iOSLoginPage_SignUpPage extends BaseTestClass {
 
 
     //This test will cause Log In and Sign Up button being disabled so put it here to avoid affecting to the rest test cases
-    @Test(priority = 4)
+    @Test(priority = 26)
     @Description("Enter valid email and password")
     public void S287_C24291_SU_04_VerifySignUpWhenInputValidEmailAndPassword() {
      iOS_SignUpPage.S287_C24291_SU_04_VerifySignUpWhenInputValidEmailAndPassword(); }
