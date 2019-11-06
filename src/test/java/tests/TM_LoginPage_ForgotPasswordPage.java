@@ -59,13 +59,13 @@ public class TM_LoginPage_ForgotPasswordPage extends BaseTestClass {
     // because the Dialer screen is automatically closed then caused automated is not able to catch element Dialer
     @Test(priority = 9)
     @Description("Call the phone number in the link")
-    public void S236_C20228_FP_009_VerifyPreviousScreenBeReturnedAfterClickingPhonenNumber() {
-        forgotPasswordPage.S236_C20228_FP_009_VerifyPreviousScreenBeReturnedAfterClickingPhonenNumber();
+    public void S236_C20228_FP_009_VerifyPreviousScreenBeReturnedAfterClickingPhoneNumber() {
+        forgotPasswordPage.S236_C20228_FP_009_VerifyPreviousScreenBeReturnedAfterClickingPhoneNumber();
     }
 
     @Test(priority = 10)
     @Description("Back from Success screen")
     public void S236_C20230_FP_010_VerifyLogInScreenDisplayWhenClickingBackFromSuccessScreen() {
-        forgotPasswordPage.TestCasePCOM_015();
+        forgotPasswordPage.S236_C20230_FP_010_VerifyLogInScreenDisplayWhenClickingBackFromSuccessScreen();
     }
 }

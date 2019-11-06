@@ -290,7 +290,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
 
-    public void S236_C20228_FP_009_VerifyPreviousScreenBeReturnedAfterClickingPhonenNumber() {
+    public void S236_C20228_FP_009_VerifyPreviousScreenBeReturnedAfterClickingPhoneNumber() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
