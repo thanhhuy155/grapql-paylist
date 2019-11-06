@@ -37,8 +37,8 @@ public class TM_iOSLoginPage_ForgotPasswordPage extends BaseTestClass {
 
     @Test(priority = 7)
     @Description("Error message should be shown when clicking outside with invalid email")
-    public void S265_C22259_FP_007_VerifyErrorDisplaysWhenClickingOutsideInvalidEmailField() {
-        iOS_ForgotPasswordPage.S265_C22259_FP_007_VerifyErrorDisplaysWhenClickingOutsideInvalidEmailField();
+    public void S265_C24345_FP_007_VerifyErrorDisplaysWhenClickingOutsideInvalidEmailField() {
+        iOS_ForgotPasswordPage.S265_C24345_FP_007_VerifyErrorDisplaysWhenClickingOutsideInvalidEmailField();
     }
 
 

@@ -182,7 +182,7 @@ public class iOSForgotPasswordPage extends BasePage {
         Assert.assertEquals(part2, Constants.LOGIN.INVALID_EMAIL_ERROR_MESSAGE);
     }
 
-    public void S265_C22259_FP_007_VerifyErrorDisplaysWhenClickingOutsideInvalidEmailField() {
+    public void S265_C24345_FP_007_VerifyErrorDisplaysWhenClickingOutsideInvalidEmailField() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);

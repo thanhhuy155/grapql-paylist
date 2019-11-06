@@ -89,7 +89,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_004() {
+    public void S237_C24308_SU_025_VerifySignUpScreenReturnsFromSleep() {
         //1. Open the Philly.com app to Sign Up screen from Settings tab.
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -136,7 +136,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void TestCasePCOM_005() {
+    public void S237_C24347_SU_026_VerifySwitchApps() {
         //1. Open the Philly.com app to Sign Up screen from Settings tab.
         lauchApp();
         waitForVisibilityOf(commonElements.bottomTab);
@@ -247,7 +247,7 @@ public class SignUpPage extends BasePage {
     }
 
 
-    public void S237_C20235_SU_023_VerifySignUpWithInvalidEmailFormat() {
+    public void S237_C20235_SU_024_VerifySignUpWithInvalidEmailFormat() {
         //1. Open the Philly.com app using Test Case #1.
         lauchApp();
 
