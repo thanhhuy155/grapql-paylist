@@ -16,6 +16,7 @@
         <suite-file path="Suite_iOSLoginPage_ForgotEmailPage.xml" />
         <suite-file path="Suite_iOSLoginPage_ForgotPasswordPage.xml" />
         <suite-file path="Suite_iOSLoginPage_SignUpPage.xml" />
+        <suite-file path="Suite_iOSCustomizationPage.xml" />
     </suite-files>
 
 </suite>

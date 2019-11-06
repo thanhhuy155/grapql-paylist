@@ -23,7 +23,7 @@ public class CustomizationPage extends BasePage {
     }
 
     //C234
-    public void TestCaseNo1() {
+    public void S295_C24353_CU_001_VerifyBannerDisplaysWhenReOpeningApp() {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -71,7 +71,7 @@ public class CustomizationPage extends BasePage {
     }
 
     //C310
-    public void TestCaseNo3(){
+    public void S295_C24353_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp(){
         //Step: launch app
         appiumDriver.launchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);

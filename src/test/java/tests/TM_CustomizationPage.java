@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 public class TM_CustomizationPage extends BaseTestClass {
     //C234
     @Test(priority = 1)
-    public void CustomizationTCNo1() {
-        customizationPage.TestCaseNo1();
+    public void S295_C24353_CU_001_VerifyBannerDisplaysWhenReOpeningApp() {
+        customizationPage.S295_C24353_CU_001_VerifyBannerDisplaysWhenReOpeningApp();
     }
 
     //C309
@@ -17,8 +17,8 @@ public class TM_CustomizationPage extends BaseTestClass {
 
     //C310
     @Test(priority = 3)
-    public void CustomizationTCNo3() {
-        customizationPage.TestCaseNo3();
+    public void S295_C24353_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp() {
+        customizationPage.S295_C24353_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp();
     }
 
 }
