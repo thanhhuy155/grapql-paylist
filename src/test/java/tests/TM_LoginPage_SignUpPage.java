@@ -120,8 +120,8 @@ public class TM_LoginPage_SignUpPage extends BaseTestClass {
 
     @Test(priority = 22)
     @Description("The same email will be filled if the email field in the previous screen was filled and the value is valid")
-    public void S237_C20256_SU_022_VerifyEmailDataBePassedFromLoginScreen() {
-        signUpPage.S237_C20256_SU_022_VerifyEmailDataBePassedFromLoginScreen(); }
+    public void S237_C24306_SU_022_VerifyEmailDataBePassedFromLoginScreen() {
+        signUpPage.S237_C24306_SU_022_VerifyEmailDataBePassedFromLoginScreen(); }
 
 
     @Test(priority = 23)
@@ -144,9 +144,13 @@ public class TM_LoginPage_SignUpPage extends BaseTestClass {
     public void S237_C24347_SU_026_VerifySwitchApps() {
         signUpPage.S237_C24347_SU_026_VerifySwitchApps(); }
 
+    @Test(priority = 27)
+    @Description("Switch to another app using multitasking and then switch back")
+    public void S237_C20237_SU_006_VerifySignUpWithInvalidConfirmPassword() {
+        signUpPage.S237_C20237_SU_006_VerifySignUpWithInvalidConfirmPassword(); }
 
     //This test will cause Log In and Sign Up button being disabled so put it here to avoid affecting to the rest test cases
-    @Test(priority = 27)
+    @Test(priority = 50)
     @Description("Enter valid email and password")
     public void S237_C20234_SU_04_VerifySignUpWhenInputValidEmailAndPassword() {
         signUpPage.S237_C20234_SU_04_VerifySignUpWhenInputValidEmailAndPassword(); }

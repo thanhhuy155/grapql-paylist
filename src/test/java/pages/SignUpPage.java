@@ -1012,7 +1012,7 @@ public class SignUpPage extends BasePage {
 
     }
 
-    public void S237_C20256_SU_022_VerifyEmailDataBePassedFromLoginScreen() {
+    public void S237_C24306_SU_022_VerifyEmailDataBePassedFromLoginScreen() {
         //1. Open the Philly.com app to "Log In" screen
         lauchApp();
         commonElements.settingTab.click();
