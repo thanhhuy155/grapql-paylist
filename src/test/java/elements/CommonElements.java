@@ -24,6 +24,10 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(id = "banner_custom_news_feed")
     public MobileElement customNewsFeedBanner;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Log in or sign up to')]")
+    @AndroidFindBy(id = "bottom_group_login")
+    public MobileElement bottomLoginDrawer;
+
     @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Customize your news feed according to your interests')]")
     @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.TextView")
     public MobileElement bannerMessage;
@@ -38,8 +42,9 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(id = "homeFeedToggleTv")
     public MobileElement customizeOnFeedButton;
 
-    @iOSFindBy(id= "What news do you want to see?")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='What news do you want to see?']")
+    // @iOSFindBy(id= "What news do you want to see?")
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'What news would')]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'tv_intro')]")
     public MobileElement customizeContentScreen;
 
     @iOSFindBy(id ="closeSmallOverlay")
@@ -47,8 +52,11 @@ public class CommonElements implements ICommon {
     public MobileElement customizeScreenExitButton;
 
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Follow All']")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Follow All']")
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'follow_status_text')]")
     public MobileElement followAll;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Following All']")
+    public MobileElement followingAll;
 
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'addTopicCard']")
 //    @AndroidFindBy(id = "imv_follow_status_icon")

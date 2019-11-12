@@ -102,4 +102,29 @@ public class iOSCustomizationPage extends BasePage {
         Assert.assertTrue(Utils.checkElementExist(commonElements.bannerMessage));
         Assert.assertEquals(Constants.CUSTOMIZATION.BANNER_MESSAGE_IOS, commonElements.bannerMessage.getText());
     }
+
+    //C12493
+    public void S296_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic() {
+        //Step: Open the Philly.com App
+        appiumDriver.launchApp();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
+        //Step:Tap on Customize on banner.
+        if(Utils.checkElementExist(commonElements.bannerMessage)) {
+            commonElements.customizeOnFeedButton.click();
+        }
+
+        //Step: Tap on "Follow ALl" and  "Following All" on Customization screen
+        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
+            commonElements.followAll.click();
+            if(Utils.checkElementExist(commonElements.bottomLoginDrawer)) {
+                Utils.sleep(1000);
+                commonElements.followingAll.click();
+            }
+        }
+
+        //Verify:  Log In/Sign Up Drawer dismisses.
+        Assert.assertTrue(Utils.checkElementExist(commonElements.customizeContentScreen));
+        Assert.assertTrue(Utils.checkElementExist(commonElements.bottomLoginDrawer).equals(false));
+    }
 }

@@ -26,14 +26,13 @@ public class CustomizationPage extends BasePage {
     public void S295_C24353_CU_001_VerifyBannerDisplaysWhenReOpeningApp() {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
-        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         //Step kill app
         resetApp();
 
         //Step: Relaunch app
         appiumDriver.launchApp();
-
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         //Verify: banner appears
         Assert.assertTrue(Utils.checkElementExist(commonElements.bannerMessage));
         Assert.assertEquals(Constants.CUSTOMIZATION.BANNER_MESSAGE_ANDROID, commonElements.bannerMessage.getText());
@@ -74,12 +73,12 @@ public class CustomizationPage extends BasePage {
     public void S295_C24353_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp(){
         //Step: launch app
         appiumDriver.launchApp();
-        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
-
         //Step:Tap Close(x) button on Customization screen
         if(Utils.checkElementExist(commonElements.customizeContentScreen)){
             commonElements.customizeScreenExitButton.click();
         }
+
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         //Step:  Go to Settings tab
         feedListElements.settingTab.click();
@@ -99,10 +98,35 @@ public class CustomizationPage extends BasePage {
 
         //Step: Relaunch app
         appiumDriver.launchApp();
-
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
         //Verify: banner appears
         Assert.assertTrue(Utils.checkElementExist(commonElements.bannerMessage));
         Assert.assertEquals(Constants.CUSTOMIZATION.BANNER_MESSAGE_ANDROID, commonElements.bannerMessage.getText());
+    }
+
+    //C12493
+    public void S295_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic() {
+        //Step: Open the Philly.com App
+        appiumDriver.launchApp();
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+        
+        //Step:Tap on Customize on banner.
+        if(Utils.checkElementExist(commonElements.bannerMessage)) {
+            commonElements.customizeOnBannerButton.click();
+        }
+
+        //Step: Tap on "Follow ALl" and  "Following All" on Customization screen
+        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
+            commonElements.followAll.click();
+            if(Utils.checkElementExist(commonElements.bottomLoginDrawer)) {
+                Utils.sleep(1000);
+                commonElements.followAll.click();
+            }
+        }
+
+        //Verify:  Log In/Sign Up Drawer dismisses.
+        Assert.assertTrue(Utils.checkElementExist(commonElements.customizeContentScreen));
+        Assert.assertTrue(Utils.checkElementExist(commonElements.bottomLoginDrawer).equals(false));
     }
 
 }

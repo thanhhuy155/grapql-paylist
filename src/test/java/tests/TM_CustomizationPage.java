@@ -21,4 +21,10 @@ public class TM_CustomizationPage extends BaseTestClass {
         customizationPage.S295_C24353_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp();
     }
 
+    //C12493
+    @Test(priority = 4)
+    public void S295_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic() {
+        customizationPage.S295_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic();
+    }
+
 }

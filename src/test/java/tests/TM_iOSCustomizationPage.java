@@ -21,4 +21,10 @@ public class TM_iOSCustomizationPage extends BaseTestClass {
         iOS_CustomizationPage.S296_C24356_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp();
     }
 
+    //C12493
+    @Test(priority = 4)
+    public void S296_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic() {
+        iOS_CustomizationPage.S296_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic();
+    }
+
 }
