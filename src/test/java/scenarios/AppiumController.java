@@ -56,7 +56,7 @@ public class AppiumController {
                 capabilities.setCapability("platformVersion", "5.0");
                 capabilities.setCapability("deviceName", "Galaxy S5");
                 capabilities.setCapability("app", app.getAbsolutePath());
-                capabilities.setCapability("appPackage", "com.ap.philly");
+                capabilities.setCapability("appPackage", Constants.APP_PACKAGE);
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
                 driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
                 break;
@@ -79,7 +79,7 @@ public class AppiumController {
                 capabilities.setCapability("platformVersion", "8.0");
                 capabilities.setCapability("deviceName", "192.168.78.101:5555");
                 capabilities.setCapability("app", app.getAbsolutePath());
-                capabilities.setCapability("appPackage", "com.ap.philly");
+                capabilities.setCapability("appPackage", Constants.APP_PACKAGE);
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
                 capabilities.setCapability("noReset", "false");
                 capabilities.setCapability("fullReset", "true");
@@ -101,7 +101,7 @@ public class AppiumController {
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("device", "Samsung Galaxy Note 9");
                 capabilities.setCapability("os_version", "8.1");
-                capabilities.setCapability("appPackage", "com.ap.philly");
+                capabilities.setCapability("appPackage", Constants.APP_PACKAGE);
                 capabilities.setCapability("appActivity", "com.ap.philly.Views.MainActivity");
                 capabilities.setCapability("browserstack.debug", true);
                 capabilities.setCapability("app", "bs://" + Constants.ANDROID_HASHED_APP_ID);
