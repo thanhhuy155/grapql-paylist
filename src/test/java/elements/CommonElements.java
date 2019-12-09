@@ -28,13 +28,22 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(id = "bottom_group_login")
     public MobileElement bottomLoginDrawer;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[contains(@name,'GET MY NEWS')]")
+    @AndroidFindBy(id = "btn_get_your_news")
+    public MobileElement getMyNewsButton;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name='MY NEWS']")
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'MY NEWS')]")
+    public MobileElement myNewsText;
+
     @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Customize your news feed according to your interests')]")
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.TextView")
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.TextView[contains(@text,'Customize your news feed')]")
     public MobileElement bannerMessage;
 
     @AndroidFindBy(id = "customizeTv")
     public MobileElement customizeOnBannerButton;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name='closeSmallOnDark']")
     @AndroidFindBy(id = "notNowTv")
     public MobileElement notNowButton;
 
@@ -66,6 +75,9 @@ public class CommonElements implements ICommon {
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'checkTopicCard']")
     @AndroidFindBy(id = "imv_follow_status_icon")
     public MobileElement checkTopic;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'addTopicCard']")
+    public MobileElement addTopicCard;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeStaticText[1]")
     @AndroidFindBy(id = "tv_topic_title")

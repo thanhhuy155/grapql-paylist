@@ -9,10 +9,10 @@ public class TM_iOSCustomizationPage extends BaseTestClass {
         iOS_CustomizationPage.S296_C24355_CU_001_VerifyBannerDisplaysWhenReOpeningApp();
     }
 
-    //C309
-//    @Test(priority = 2)
-    public void CustomizationTCNo2() {
-        iOS_CustomizationPage.TestCaseNo2();
+    //C263
+    @Test(priority = 2)
+    public void S296_C263_CU_005_VerifyBannerDisplaysAtTheTopOfTheScreen() {
+        iOS_CustomizationPage.S296_C263_CU_005_VerifyBannerDisplaysAtTheTopOfTheScreen();
     }
 
     //C310
@@ -21,10 +21,63 @@ public class TM_iOSCustomizationPage extends BaseTestClass {
         iOS_CustomizationPage.S296_C24356_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp();
     }
 
-    //C12493
+    //C240
     @Test(priority = 4)
+    public void S296_C240_CU_004_VerifyUsersCanNotFollowCategoryWithoutLogin() {
+        iOS_CustomizationPage.S296_C240_CU_004_VerifyUsersCanNotFollowCategoryWithoutLogin();
+    }
+
+    //C309
+//    @Test(priority = 5)
+    public void CustomizationTCNo2() {
+        iOS_CustomizationPage.TestCaseNo2();
+    }
+    //C264
+    @Test(priority = 6)
+    public void S296_C264_CU_007_VerifyCustomizationIsShowWhenTabOnCustomizeButtonOnBanner() {
+        iOS_CustomizationPage.S296_C264_CU_007_VerifyCustomizationIsShowWhenTabOnCustomizeButtonOnBanner();
+    }
+
+    //C266
+    @Test(priority = 7)
+    public void S296_C266_CU_008_VerifyGeneralBannerFlow() {
+        iOS_CustomizationPage.S296_C266_CU_008_VerifyGeneralBannerFlow();
+    }
+
+    //C12493
+    @Test(priority = 8)
     public void S296_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic() {
         iOS_CustomizationPage.S296_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic();
+    }
+
+    //C339
+    @Test(priority = 9)
+    public void S296_C339_CU_009_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromOnBoarding() {
+        iOS_CustomizationPage.S296_C339_CU_009_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromOnBoarding();
+    }
+
+    //C340
+    @Test(priority = 10)
+    public void S296_C340_CU_010_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromSettings() {
+        iOS_CustomizationPage.S296_C340_CU_010_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromSettings();
+    }
+
+    //C8778
+    @Test(priority = 11)
+    public void S296_C8778_CU_011_VerifyLogInScreenAppearsWhenTappingLogInButton() {
+        iOS_CustomizationPage.S296_C8778_CU_011_VerifyLogInScreenAppearsWhenTappingLogInButton();
+    }
+
+    //C8779
+    @Test(priority = 12)
+    public void S296_C8779_CU_012_VerifySignUpScreenAppearsWhenTappingSignUpButton() {
+        iOS_CustomizationPage.S296_C8779_CU_012_VerifySignUpScreenAppearsWhenTappingSignUpButton();
+    }
+
+    //C265
+    @Test(priority = 13)
+    public void S296_C265_CU_006_VerifyBannerIsDismissedWhenTabOnCloseButtonOnBanner() {
+        iOS_CustomizationPage.S296_C265_CU_006_VerifyBannerIsDismissedWhenTabOnCloseButtonOnBanner();
     }
 
 }
