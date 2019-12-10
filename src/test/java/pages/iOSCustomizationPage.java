@@ -103,7 +103,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //C12493
-    public void S296_C12493_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnselectAllTopic() {
+    public void S296_C32115_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnSelectAllTopic() {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -128,7 +128,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //C240
-    public void S296_C240_CU_004_VerifyUsersCanNotFollowCategoryWithoutLogin () {
+    public void S296_C32118_CU_004_VerifyUsersCanNotFollowCategoryWithoutLogin () {
         //Step: Open the Philly.com App
         resetApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -150,7 +150,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //C263
-    public void S296_C263_CU_005_VerifyBannerDisplaysAtTheTopOfTheScreen() {
+    public void S296_C32113_CU_005_VerifyBannerDisplaysAtTheTopOfTheScreen() {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
         //Step:Tap Close(x) button on Customization screen
@@ -165,7 +165,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //C265
-    public void S296_C265_CU_006_VerifyBannerIsDismissedWhenTabOnCloseButtonOnBanner() {
+    public void S296_C32121_CU_006_VerifyBannerIsDismissedWhenTabOnCloseButtonOnBanner() {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
         //Step:Tap Close(x) button on Customization screen
@@ -189,7 +189,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //C264
-    public void S296_C264_CU_007_VerifyCustomizationIsShowWhenTabOnCustomizeButtonOnBanner() {
+    public void S296_C32124_CU_007_VerifyCustomizationIsShowWhenTabOnCustomizeButtonOnBanner() {
         //Step: Open the Philly.com App
         resetApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -202,7 +202,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     // C266
-    public void S296_C266_CU_008_VerifyGeneralBannerFlow () {
+    public void S296_C32127_CU_008_VerifyGeneralBannerFlow () {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -241,7 +241,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //C339
-    public void S296_C339_CU_009_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromOnBoarding () {
+    public void S296_C32128_CU_009_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromOnBoarding () {
         //Step: Open the Philly.com App
         resetApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
@@ -291,7 +291,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //    C340
-    public void S296_C340_CU_010_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromSettings () {
+    public void S296_C32129_CU_010_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromSettings () {
         resetApp();
 
         //Step: Relaunch app
@@ -351,7 +351,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //C8778
-    public void S296_C8778_CU_011_VerifyLogInScreenAppearsWhenTappingLogInButton() {
+    public void S296_C32130_CU_011_VerifyLogInScreenAppearsWhenTappingLogInButton() {
         //Step: Relaunch app
         appiumDriver.launchApp();
 
@@ -378,7 +378,7 @@ public class iOSCustomizationPage extends BasePage {
     }
 
     //C8779
-    public void S296_C8779_CU_012_VerifySignUpScreenAppearsWhenTappingSignUpButton() {
+    public void S296_C32131_CU_012_VerifySignUpScreenAppearsWhenTappingSignUpButton() {
         //Step kill app
         appiumDriver.launchApp();
 
