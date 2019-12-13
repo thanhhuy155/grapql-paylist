@@ -13,8 +13,14 @@ public class Constants {
     public static final String ANDROID_HASHED_APP_ID = "af502e098f8b19e5805a50cbee62c618b2278e75";
 
 //    public static final String APP_PACKAGE = "com.ap.philly";
-    public static final String APP_PACKAGE = "com.ap.philly.test";
-    public static final String APP_ACTIVITY = "com.ap.philly.Views.MainActivity";
+
+    //dev branch
+    //public static final String APP_PACKAGE = "com.ap.philly.test";
+    //public static final String APP_ACTIVITY = "com.ap.philly.Views.MainActivity";
+
+    //qa branch
+    public static final String APP_PACKAGE = "com.ap.philly.qa";
+    public static final String APP_ACTIVITY = "com.ap.philly.Views.SplashScreenActivity";
 
     public static final int TIME_OUT = 5;
 
