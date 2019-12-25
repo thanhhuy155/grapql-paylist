@@ -16,7 +16,7 @@ public class TM_iOSCustomizationPage extends BaseTestClass {
     }
 
     //C310
-    @Test(priority = 3)
+    @Test(priority = 5)
     public void S296_C24356_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp() {
         iOS_CustomizationPage.S296_C24356_CU_002_VerifyBannerDisplaysAfterLoggingInAndReOpeningApp();
     }
@@ -33,7 +33,7 @@ public class TM_iOSCustomizationPage extends BaseTestClass {
         iOS_CustomizationPage.TestCaseNo2();
     }
     //C264
-    @Test(priority = 6)
+    @Test(priority = 3)
     public void S296_C32124_CU_007_VerifyCustomizationIsShowWhenTabOnCustomizeButtonOnBanner() {
         iOS_CustomizationPage.S296_C32124_CU_007_VerifyCustomizationIsShowWhenTabOnCustomizeButtonOnBanner();
     }
@@ -74,10 +74,36 @@ public class TM_iOSCustomizationPage extends BaseTestClass {
         iOS_CustomizationPage.S296_C32131_CU_012_VerifySignUpScreenAppearsWhenTappingSignUpButton();
     }
 
-    //C265
+    //C32121
     @Test(priority = 13)
     public void S296_C32121_CU_006_VerifyBannerIsDismissedWhenTabOnCloseButtonOnBanner() {
         iOS_CustomizationPage.S296_C32121_CU_006_VerifyBannerIsDismissedWhenTabOnCloseButtonOnBanner();
     }
+    //C35415
+    @Test(priority = 14)
+    public void S296_C35415_CU_015_VerifyDiscardPopUpShowWhenCloseCustomizeWithChanges() {
+        iOS_CustomizationPage.S296_C35415_CU_015_VerifyDiscardPopUpShowWhenCloseCustomizeWithChanges();
+    }
+    //C35416
+    @Test(priority = 15)
+    public void S296_C35416_CU_016_VerifyCustomizationKeepChangesWhenClickCancelCloseButton() {
+        iOS_CustomizationPage.S296_C35416_CU_016_VerifyCustomizationKeepChangesWhenClickCancelCloseButton();
+    }
+    //C35417
+    @Test(priority = 16)
+    public void S296_C35417_CU_017_DiscardChangesWhenClosingCustomizationScreenWithChanges() {
+        iOS_CustomizationPage.S296_C35417_CU_017_DiscardChangesWhenClosingCustomizationScreenWithChanges();
+    }
 
+    //C35414
+    @Test(priority = 17)
+    public void S296_C35414_CU_014_VerifyTheNewSetOfTopicsWillOverwriteTheirCustomizedTopics() {
+        iOS_CustomizationPage.S296_C35414_CU_014_VerifyTheNewSetOfTopicsWillOverwriteTheirCustomizedTopics();
+    }
+
+    //C35413
+    @Test(priority = 18)
+    public void S296_C35413_CU_013_VerifyUserAbleContinueCustomizationOnboardFlowAfterLogIn() {
+        iOS_CustomizationPage.S296_C35413_CU_013_VerifyUserAbleContinueCustomizationOnboardFlowAfterLogIn();
+    }
 }

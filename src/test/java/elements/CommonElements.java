@@ -40,6 +40,12 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.TextView[contains(@text,'Customize your news feed')]")
     public MobileElement bannerMessage;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name = 'Enable Notifications']")
+    public MobileElement bannerNotification;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'Get notifications of breaking news, top stories and the topics you follow')]")
+    public MobileElement bannerNotificationMessage;
+
     @AndroidFindBy(id = "customizeTv")
     public MobileElement customizeOnBannerButton;
 
@@ -66,6 +72,39 @@ public class CommonElements implements ICommon {
 
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Following All']")
     public MobileElement followingAll;
+
+    //Notification after finish customize and click GET MY NEWS.
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Want to get notifications?')]")
+    public MobileElement getNotificationPopUpText;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'NOT NOW']")
+    public MobileElement notNowButtonGetNotification;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'YES']")
+    public MobileElement yesButtonGetNotification;
+
+    //Notification alert after close Customizescreen.
+    @iOSFindBy(xpath = "//XCUIElementTypeAlert[contains(@name,'Would Like to Send You Notifications')]")
+    public MobileElement notificationAlert;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Don’t Allow']")
+    public MobileElement turnOffNotification;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Allow']")
+    public MobileElement allowNotification;
+
+    //Discard change popup.
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name = 'Discard changes?']")
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'dialog_message')]")
+    public MobileElement discardChangeText;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'btnCancel')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Cancel']")
+    public MobileElement discardChangeButtonCancel;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'btnOK')]")
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'Discard']")
+    public MobileElement discardChangeButtonDiscard;
 
     @iOSFindBy(xpath = "//XCUIElementTypeButton[@name = 'addTopicCard']")
 //    @AndroidFindBy(id = "imv_follow_status_icon")

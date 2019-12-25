@@ -40,6 +40,8 @@ public class iOSHomeTab extends BasePage {
 //        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.UP, feedListElements.feedItemTitle);
 //        feedListElements.feedItemClick();
         feedListElements.feedItemTitle.click();
+        Utils.sleep(5000);
+        articleDetailElements = new ArticleDetailElements(appiumDriver);
 
         waitForVisibilityOf(articleDetailElements.articleDetailTitle);
         if (Utils.isAndroidPlatform()){

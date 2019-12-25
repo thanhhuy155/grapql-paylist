@@ -18,11 +18,11 @@ public class FeedListElements extends CommonElements implements IFeedList {
     }
 
     @AndroidFindBy(id = "homeFeedToggleTv")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly Inquirer\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
     public MobileElement customizeButton;
 
     @AndroidFindBy(id = "card_view_article")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly Inquirer\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
     public MobileElement feedItemTopStoryLayout;
 
     @AndroidFindBy(id = "cardLayoutArticle")
@@ -83,10 +83,10 @@ public class FeedListElements extends CommonElements implements IFeedList {
 
     //========================================================================================//
     //iOS element only
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Philly Inquirer\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]")
+    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]")
     public  MobileElement firstFeedItemSection;
 
-    @iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"Philly Inquirer\"]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
+    @iOSFindBy(xpath="//XCUIElementTypeApplication[1]//XCUIElementTypeNavigationBar/following-sibling::XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]")
     public MobileElement firstTopStorySection;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")

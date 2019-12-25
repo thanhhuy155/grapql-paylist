@@ -111,5 +111,6 @@ public class Constants {
     public static class CUSTOMIZATION{
         public  static final String BANNER_MESSAGE_ANDROID= "Customize your news feed according to your interests.";
         public  static final String BANNER_MESSAGE_IOS = "Customize your news feed according to your interests →";
+        public  static final String BANNER_NOTIFICATION_MESSAGE_IOS = "Get notifications of breaking news, top stories and the topics you follow →";
     }
 }

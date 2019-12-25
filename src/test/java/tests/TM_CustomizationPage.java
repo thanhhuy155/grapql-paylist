@@ -81,4 +81,33 @@ public class TM_CustomizationPage extends BaseTestClass {
         customizationPage.S295_C32122_CU_006_VerifyBannerIsDismissedWhenTabOnCloseButtonOnBanner();
     }
 
+    //C35420
+    @Test(priority = 13)
+    public void S295_C35420_CU_015_VerifyDiscardPopUpShowWhenCloseCustomizeWithChanges() {
+        customizationPage.S295_C35420_CU_015_VerifyDiscardPopUpShowWhenCloseCustomizeWithChanges();
+    }
+
+    //C35421
+    @Test(priority = 14)
+    public void S295_C35421_CU_016_VerifyCustomizationKeepChangesWhenClickCancelCloseButton() {
+        customizationPage.S295_C35421_CU_016_VerifyCustomizationKeepChangesWhenClickCancelCloseButton();
+    }
+
+    //C35422
+    @Test(priority = 15)
+    public void S295_C35422_CU_017_CU_017_DiscardChangesWhenClosingCustomizationScreenWithChanges() {
+        customizationPage.S295_C35422_CU_017_CU_017_DiscardChangesWhenClosingCustomizationScreenWithChanges();
+    }
+
+    //C35419
+    @Test(priority = 16)
+    public void S295_C35419_CU_014_VerifyTheNewSetOfTopicsWillOverwriteTheirCustomizedTopics() {
+        customizationPage.S295_C35419_CU_014_VerifyTheNewSetOfTopicsWillOverwriteTheirCustomizedTopics();
+    }
+
+    //C35418
+    @Test(priority = 17)
+    public void S295_C35418_CU_013_VerifyUserAbleContinueCustomizationOnboardFlowAfterLogIn() {
+        customizationPage.S295_C35418_CU_013_VerifyUserAbleContinueCustomizationOnboardFlowAfterLogIn();
+    }
 }
