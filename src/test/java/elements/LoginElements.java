@@ -120,7 +120,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id = Constants.LOGIN.FORGOT_PASSWORD_MESSAGE)
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@resource-id='com.ap.philly:id/layout_reset_password_item']/android.widget.LinearLayout[@resource-id='com.ap.philly:id/container']/android.widget.TextView")
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@resource-id='"+ Constants.APP_PACKAGE +":id/layout_reset_password_item']/android.widget.LinearLayout[@resource-id='"+ Constants.APP_PACKAGE +":id/container']/android.widget.TextView")
     public MobileElement forgotPasswordMessage;
 
 
