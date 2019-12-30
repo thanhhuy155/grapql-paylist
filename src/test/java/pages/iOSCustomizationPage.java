@@ -434,14 +434,14 @@ public class iOSCustomizationPage extends BasePage {
         if(Utils.checkElementExist(commonElements.customizeOnFeedButton)) {
             commonElements.customizeOnFeedButton.click();
         } else {
-            Utils.sleep(200);
+            Utils.sleep(1000);
         }
         //Step: Follow one topic on Customization screen
         if(Utils.checkElementExist(commonElements.addTopicCard)){
             commonElements.addTopicCard.click();
         }
 
-
+        waitForVisibilityOf(commonElements.loginButton);
         commonElements.loginButton.click();
         waitForVisibilityOf(loginElements.email);
 
@@ -458,7 +458,7 @@ public class iOSCustomizationPage extends BasePage {
         if(Utils.checkElementExist(commonElements.customizeOnFeedButton)) {
             commonElements.customizeOnFeedButton.click();
         } else {
-            Utils.sleep(200);
+            Utils.sleep(1000);
         }
 
         //Step: Follow one topic on Customization screen
@@ -466,6 +466,7 @@ public class iOSCustomizationPage extends BasePage {
             commonElements.followAll.click();
         }
 
+        waitForVisibilityOf(commonElements.signupButton);
         commonElements.signupButton.click();
         waitForVisibilityOf(loginElements.signUpButton);
 
