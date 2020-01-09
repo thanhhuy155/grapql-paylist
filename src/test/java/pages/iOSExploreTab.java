@@ -155,7 +155,7 @@ public class iOSExploreTab extends BasePage {
         //String healthSubsections[] = {"All Health","Science","Climate News","Health Costs","The Opioid Crisis","Wellness", "Expert Opinions"};
 
         //Dev
-        String healthSubsections[] = {"All Health & Wellness","Science","Climate News","Health Costs","The Opioid Crisis","Wellness"};
+        String healthSubsections[] = {"All Health & Wellness","Science","Climate News","Health Costs", "The Opioid Crisis", "Wellness"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,healthSubsections, exploreElements.healthSection);
     }

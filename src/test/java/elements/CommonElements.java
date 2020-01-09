@@ -230,7 +230,8 @@ public class CommonElements implements ICommon {
     public MobileElement bottomTab;
 
     @AndroidFindBy(id = "home")
-    @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTabBar[1]/XCUIElementTypeButton[1]")
+   // @iOSFindBy(xpath = "//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTabBar[1]/XCUIElementTypeButton[1]")
+    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[1]")
     public MobileElement homeTab;
 
     @AndroidFindBy(id = "find")

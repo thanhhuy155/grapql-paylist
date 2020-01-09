@@ -27,7 +27,7 @@ public class ExploreElements extends CommonElements implements IExplore {
     @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Explore\"]")
     public MobileElement headingTitle;
 
-    @AndroidFindBy(xpath = "(//android.widget.RelativeLayout/android.widget.TextView[2]")
+    @AndroidFindBy(xpath = "//android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.TextView")
     @iOSFindBy(xpath = "(//XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText)[1]")
     public MobileElement readSection;
 
@@ -70,7 +70,7 @@ public class ExploreElements extends CommonElements implements IExplore {
     @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Politics')]")
     public MobileElement politicsSection;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='"+ Constants.APP_PACKAGE +":id/tv_category'][@text='Health']")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='"+ Constants.APP_PACKAGE +":id/tv_category'][@text = 'Health & Wellness']")
 //    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Health')]")
     @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Health')]")
     public MobileElement healthSection;
@@ -119,8 +119,10 @@ public class ExploreElements extends CommonElements implements IExplore {
 
     @Override
     public void checkSubsectionsOpenProperly(AppiumDriver appiumDriver, String subsectionList[], MobileElement section){
-        String dynamicXpath = "//android.widget.TextView[contains(@text,'{0}')]";
-        String iOSDynamicXpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
+//        String dynamicXpath = "//android.widget.TextView[contains(@text,'{0}')]";
+        String dynamicXpath = "//android.widget.TextView[@text ='{0}']";
+       // String iOSDynamicXpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
+        String iOSDynamicXpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[@name ='{0}']";
 
         for(int i = 0; i<subsectionList.length; i++){
             String subsectionXpath = dynamicXpath.replace("{0}",subsectionList[i]);
@@ -144,9 +146,10 @@ public class ExploreElements extends CommonElements implements IExplore {
                     element = ((IOSDriver<MobileElement>)appiumDriver).findElement(By.xpath(iOSSubsectionXpath));
                 }
             }
-//            if(subsectionList[i]=="All Life"||subsectionList[i]=="Families"){
-//                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
-//            }
+           // if(subsectionList[i]=="Wellness" || subsectionList[i]=="All Life" || subsectionList[i]=="Families"){
+           if(i >= subsectionList.length - 2){
+                Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
+            }
 
             if(!Utils.checkElementExist(element)){
 
@@ -184,7 +187,8 @@ public class ExploreElements extends CommonElements implements IExplore {
     @Override
     public void navigateToSubSection(AppiumDriver appiumDriver, MobileElement section, String subsectionName) {
         String dynamicXpath = "//android.widget.TextView[contains(@text,'{0}')]";
-        String iOSDynamicXpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
+       // String iOSDynamicXpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
+        String iOSDynamicXpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeOther/following-sibling::XCUIElementTypeStaticText[contains(@name,'{0}')]";
 
         String subsectionXpath = dynamicXpath.replace("{0}",subsectionName);
         String iOSSubsectionXpath = iOSDynamicXpath.replace("{0}",subsectionName);

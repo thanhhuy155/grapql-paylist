@@ -305,7 +305,7 @@ public class ExploreTab extends BasePage {
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.exploreTab.click();
-        Assert.assertEquals("MY MOST READ SECTIONS",exploreElements.readSection.getAttribute("value"));
+        Assert.assertEquals("MY MOST READ SECTIONS",exploreElements.readSection.getText());
     }
 
 }

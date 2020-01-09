@@ -18,8 +18,9 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @AndroidFindBy(id = "detailHeadline")
-    @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
+    //@AndroidFindBy(id = "detailHeadline")
+    @AndroidFindBy(xpath = "//XCUIElementTypeScrollView/android.widget.RelativeLayout/XCUIElementTypeStaticText[2]")
+    @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
     public MobileElement articleDetailTitle;
 
 //    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
@@ -36,6 +37,13 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Share Article']")
     public MobileElement shareArticleButton;
+
+    //meter elements
+    @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeWebView")
+    public MobileElement meterPanel;
+    //meter elements
+    @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeWebView")
+    public MobileElement meterMsg;
 
     @Override
     public String getTitleArticleDetail() {
