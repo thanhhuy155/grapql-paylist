@@ -278,6 +278,7 @@ public class iOSForgotPasswordPage extends BasePage {
 
         //4. Click Cancel button
         loginElements.cancelButton.click();
+        Utils.waitForElementVisible(appiumDriver,loginElements.sendEmailButton);
         Assert.assertTrue(Utils.checkElementExist(loginElements.sendEmailButton));
     }
 
