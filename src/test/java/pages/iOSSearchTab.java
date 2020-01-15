@@ -32,6 +32,7 @@ public class iOSSearchTab extends BasePage {
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.searchTab.click();
+        Utils.sleep(2000);
         Assert.assertTrue(searchElements.quickSearch.isDisplayed());
     }
 
@@ -75,6 +76,7 @@ public class iOSSearchTab extends BasePage {
 
         //Step: 3. Execute the search
         appiumDriver.getKeyboard().pressKey(Keys.ENTER);
+        Utils.sleep(1000);
 
         //Verify point: Search takes search term
         Assert.assertEquals(searchTerm,searchElements.searchBox.getAttribute("value"));

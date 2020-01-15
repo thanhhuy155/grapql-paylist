@@ -33,10 +33,10 @@ public class ExploreTab extends BasePage {
         exploreElements.newsSection.click();
 
         //Production
-        //String newsSubsections[] = {"All News","Crime & Justice","Education","Weather","Philadelphia","New Jersey","Pennsylvania","Nation & World"};
+        String newsSubsections[] = {"All News","Crime & Justice","Education","Weather","Philadelphia","New Jersey","Pennsylvania","Nation & World"};
 
         //Dev
-        String newsSubsections[] = {"All News","Politics", "Crime & Justice","Education","Weather","Philadelphia","New Jersey","Pennsylvania","Nation & World News"};
+//        String newsSubsections[] = {"All News","Politics", "Crime & Justice","Education","Weather","Philadelphia","New Jersey","Pennsylvania","Nation & World News"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,newsSubsections, exploreElements.newsSection);
     }
@@ -65,10 +65,10 @@ public class ExploreTab extends BasePage {
         exploreElements.businessSection.click();
 
         //Production
-        //String businessSubsections[] = {"All Business","Jobs","Cars","Consumer","Health & Pharma","Energy","PhillyDeals","Retail","Small Business","Marijuana","Comcast","Economy"};
+        String businessSubsections[] = {"All Business","Jobs","Cars","Consumer","Health & Pharma","Energy","PhillyDeals","Retail","Small Business","Marijuana","Comcast","Economy"};
 
         //Dev
-        String businessSubsections[] = {"All Business","Jobs","Consumer", "Drugs & Pharmaceuticals", "Energy","PhillyDeals","Retail","Small Business", "Comcast"};
+//        String businessSubsections[] = {"All Business","Jobs","Consumer", "Drugs & Pharmaceuticals", "Energy","PhillyDeals","Retail","Small Business", "Comcast"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,businessSubsections, exploreElements.businessSection);
 
@@ -85,7 +85,7 @@ public class ExploreTab extends BasePage {
         Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, exploreElements.opinionSection);
         exploreElements.opinionSection.click();
 
-        String opinionSubsections[] = {"All Opinion","Columnists","Editorials","Commentary","Letters","Cartoons"};
+        String opinionSubsections[] = {"All Opinion","Columnists","Editorials","Commentary","Cartoons"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,opinionSubsections, exploreElements.opinionSection);
     }
@@ -117,10 +117,10 @@ public class ExploreTab extends BasePage {
         exploreElements.entertainmentSection.click();
 
         //Production
-        //String entertainmentSubsections[] = {"All Entertainment","Things To Do", "Arts & Culture","Horoscopes","Movies","Music","Television","Celebrity"};
+        String entertainmentSubsections[] = {"All Entertainment","Things To Do", "Arts & Culture","Horoscopes","Movies","Music","Television","Celebrity"};
 
         //Dev:
-        String entertainmentSubsections[] = {"All Entertainment", "PMN Events", "Arts & Culture","Horoscopes","Movies","Music","Television"};
+//        String entertainmentSubsections[] = {"All Entertainment", "PMN Events", "Arts & Culture","Horoscopes","Movies","Music","Television"};
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,entertainmentSubsections, exploreElements.entertainmentSection);
     }
 
@@ -152,10 +152,10 @@ public class ExploreTab extends BasePage {
         exploreElements.healthSection.click();
 
         //Production
-        //String healthSubsections[] = {"All Health","Science","Climate News","Health Costs","The Opioid Crisis","Wellness", "Expert Opinions"};
+        String healthSubsections[] = {"All Health","Science","Climate News","Health Costs","The Opioid Crisis","Wellness", "Expert Opinions"};
 
         //Dev
-        String healthSubsections[] = {"All Health & Wellness","Science","Climate News","Health Costs","The Opioid Crisis","Wellness"};
+//        String healthSubsections[] = {"All Health & Wellness","Science","Climate News","Health Costs","The Opioid Crisis","Wellness"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,healthSubsections, exploreElements.healthSection);
     }
@@ -170,16 +170,16 @@ public class ExploreTab extends BasePage {
         exploreElements.realEstateSection.click();
 
         //Production
-        //String realEstateSubsections[] = {"All Real Estate","Transportation","Residential","Commercial","Inga Saffron","Home"};
+        String realEstateSubsections[] = {"All Real Estate","Transportation","Residential","Commercial","Inga Saffron","Home"};
 
         //Dev
-        String realEstateSubsections[] = {"All Real Estate","Transportation","Residential","Commercial","Home", "Inga Saffron"};
+//        String realEstateSubsections[] = {"All Real Estate","Transportation","Residential","Commercial","Home", "Inga Saffron"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,realEstateSubsections, exploreElements.realEstateSection);
     }
 
     public void S230_C22271_ET_001_10_VerifyObituariesSections(){
-        lauchApp();
+        resetApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.exploreTab.click();
@@ -213,16 +213,16 @@ public class ExploreTab extends BasePage {
         exploreElements.lifeSection.click();
 
         //Production
-        //String lifeSubsections[] = {"All Life","Families","Style","Sex & Love","Things To Do at the Shore","Travel"};
+        String lifeSubsections[] = {"All Life","Families","Style","Sex & Love","Things To Do at the Shore","Travel"};
 
         //Dev
-        String lifeSubsections[] = {"All Life","Families","Fashion & Style", "Identity","Love", "Travel"};
+//        String lifeSubsections[] = {"All Life","Families","Fashion & Style", "Identity","Love", "Travel"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,lifeSubsections, exploreElements.lifeSection);
     }
 
     public void S230_C22274_ET_002_VerifyExploreTabReturnAfterSleeping() {
-        lauchApp();
+        resetApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.exploreTab.click();
@@ -231,7 +231,7 @@ public class ExploreTab extends BasePage {
     }
 
     public void S230_C22275_ET_003_VerifyArticlePageWhenClickingFeedArticle() {
-        lauchApp();
+        resetApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.exploreTab.click();
@@ -246,11 +246,11 @@ public class ExploreTab extends BasePage {
             title = feedListElements.feedItemSectionTab.getText();
             feedListElements.feedItemSectionTab.click();
         }
-        articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
+        articleDetailElements.assertTitleResult(title, articleDetailElements.articledetailHeadline.getText());
     }
 
     public void S230_C22276_ET_004_VerifyArticlePageWhenSharingFeedArticle() {
-        lauchApp();
+        resetApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.exploreTab.click();
@@ -271,7 +271,7 @@ public class ExploreTab extends BasePage {
     }
 
     public void S230_C22277_ET_005_VerifyArticlePageWhenSwitchingFeedArticle() {
-        lauchApp();
+        resetApp();
 
         waitForVisibilityOf(commonElements.bottomTab);
         commonElements.exploreTab.click();

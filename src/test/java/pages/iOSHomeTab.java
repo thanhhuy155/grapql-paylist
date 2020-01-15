@@ -43,11 +43,11 @@ public class iOSHomeTab extends BasePage {
         Utils.sleep(5000);
         articleDetailElements = new ArticleDetailElements(appiumDriver);
 
-        waitForVisibilityOf(articleDetailElements.articleDetailTitle);
+        waitForVisibilityOf(articleDetailElements.articledetailHeadline);
         if (Utils.isAndroidPlatform()){
             articleDetailElements.assertTitleResult(title, articleDetailElements.getTitleArticleDetail());
         }else{
-            articleDetailElements.assertTitleResult(title, "Article " + articleDetailElements.getTitleArticleDetail());
+            articleDetailElements.assertTitleResult(title, "Article " + articleDetailElements.articledetailHeadline.getText());
         }
     }
 }

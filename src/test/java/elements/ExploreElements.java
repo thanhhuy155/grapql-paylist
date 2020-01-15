@@ -70,7 +70,7 @@ public class ExploreElements extends CommonElements implements IExplore {
     @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Politics')]")
     public MobileElement politicsSection;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='"+ Constants.APP_PACKAGE +":id/tv_category'][@text = 'Health & Wellness']")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='"+ Constants.APP_PACKAGE +":id/tv_category'][@text = 'Health']")
 //    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Health')]")
     @iOSFindBy(xpath = "//XCUIElementTypeOther[contains(@name,'ALL SECTIONS')]/../following-sibling::XCUIElementTypeCell/XCUIElementTypeStaticText[contains(@name,'Health')]")
     public MobileElement healthSection;
