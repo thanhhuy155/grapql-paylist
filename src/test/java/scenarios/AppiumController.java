@@ -35,12 +35,12 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-        String androidBuild = "Android_V4.3.0_RegressionTestForRelease_"+formater2.format(calendar.getTime());
+        String androidBuild = "Android_R.V4.3_RegressionTestForV4.2ProductionBuild_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_HotFixBuildRegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
 //        String androidBuild = "AndroidLocalTestBuild";
 //        String iOSBuild = "iOSLocalTestBuild";
-        String iOSBuild = "iOS_V4.3.1_RegressionTestForSprintO_"+formater2.format(calendar.getTime());
+        String iOSBuild = "iOS_R.V4.3_RegressionTestForV4.2ProductionBuild_"+formater2.format(calendar.getTime());
 
         switch (executionOS) {
             case ANDROID:
