@@ -9,8 +9,8 @@ public class Constants {
     public static final String BS_USERNAME = "perriduncan1";
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
 
-    public static final String IOS_HASHED_APP_ID = "0d2e4fff9db62fcc6c74bd6bcddb24518d23d622";
-    public static final String ANDROID_HASHED_APP_ID = "39553d8a75bb539780b1feafa7a076b9d3ae53b9";//6e00dd4c297e41d480805ba61c3501547acb8a53
+    public static final String IOS_HASHED_APP_ID = "e3a62019e2b38dff57daec9edb752e60046af600";
+    public static final String ANDROID_HASHED_APP_ID = "5054b8baa2bdf36d30a1e43881bde0dec92357e4";//6e00dd4c297e41d480805ba61c3501547acb8a53
 
     //Release app
     public static final String APP_PACKAGE = "com.ap.philly";
