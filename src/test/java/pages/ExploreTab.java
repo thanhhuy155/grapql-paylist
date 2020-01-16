@@ -100,10 +100,10 @@ public class ExploreTab extends BasePage {
         exploreElements.politicsSection.click();
 
         //Production
-        //String politicsSubsections[] = {"All Politics","Pennsylvania Politics","New Jersey Politics","National Polictices", "Elections"};
+        String politicsSubsections[] = {"All Politics","Pennsylvania Politics","New Jersey Politics","National Politics", "Elections"};
 
         //Dev : Politics has no sub section
-        String politicsSubsections[] = {};
+//        String politicsSubsections[] = {};
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,politicsSubsections, exploreElements.politicsSection);
     }
 
@@ -134,10 +134,10 @@ public class ExploreTab extends BasePage {
         exploreElements.foodSection.click();
 
         //Production
-        //String foodSubsections[] = {"All Food","Clean Plates","Drinks","Cooking","Craig LaBan","Michael Klein"};
+        String foodSubsections[] = {"All Food","Clean Plates","Drinks","Cooking","Craig LaBan","Michael Klein"};
 
         //Dev
-        String foodSubsections[] = {"All Food","Drinks" ,"Clean Plates", "Craig LaBan","Michael Klein"};
+        //String foodSubsections[] = {"All Food","Drinks" ,"Clean Plates", "Craig LaBan","Michael Klein"};
 
         exploreElements.checkSubsectionsOpenProperly(appiumDriver,foodSubsections, exploreElements.foodSection);
     }
