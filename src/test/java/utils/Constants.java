@@ -10,11 +10,12 @@ public class Constants {
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
 
     public static final String IOS_HASHED_APP_ID = "f190bb00998de5176f6d3551840732493db88683";
-    public static final String ANDROID_HASHED_APP_ID = "ff8c73986f343736b47eee4d7ba92d4004d553e5";//6e00dd4c297e41d480805ba61c3501547acb8a53
+    public static final String ANDROID_HASHED_APP_ID = "39553d8a75bb539780b1feafa7a076b9d3ae53b9";//6e00dd4c297e41d480805ba61c3501547acb8a53
 
     //Release app
     public static final String APP_PACKAGE = "com.ap.philly";
-    public static final String APP_ACTIVITY = "com.ap.philly.Views.SplashScreenActivity";
+    public static final String APP_ACTIVITY = "com.ap.philly.Views.MainActivity";
+//    public static final String APP_ACTIVITY = "com.ap.philly.Views.SplashScreenActivity";
 
     //dev branch
 //    public static final String APP_PACKAGE = "com.ap.philly.test";
@@ -58,7 +59,7 @@ public class Constants {
     }
 
     public static class APP_VERSION {
-        public static final String ANDROID = "4.3.0 Build: 1";
+        public static final String ANDROID = "4.2 (104)";
         public static final String IOS = "4.3.1 (95)";
     }
 
