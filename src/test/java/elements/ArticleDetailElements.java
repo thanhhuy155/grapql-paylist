@@ -18,8 +18,8 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    //@AndroidFindBy(id = "detailHeadline")
-    @AndroidFindBy(xpath = "//XCUIElementTypeScrollView/android.widget.RelativeLayout/XCUIElementTypeStaticText[2]")
+    @AndroidFindBy(id = "detailHeadline")
+   // @AndroidFindBy(xpath = "//XCUIElementTypeScrollView/android.widget.RelativeLayout/XCUIElementTypeStaticText[2]")
     @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
     public MobileElement articleDetailTitle;
 
