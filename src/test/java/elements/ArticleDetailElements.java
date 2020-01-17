@@ -24,8 +24,8 @@ public class ArticleDetailElements extends CommonElements implements IArticleDet
     public MobileElement articleDetailTitle;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'detailHeadline')]")
-    @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
-    //@iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]")
+//    @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]")
+    @iOSFindBy(xpath = "//XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]")
     public MobileElement articledetailHeadline;
 
 //    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")

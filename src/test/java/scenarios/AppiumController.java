@@ -1,12 +1,9 @@
 package scenarios;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Constants;
 
 import java.io.File;
@@ -15,10 +12,8 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
-
 public class AppiumController {
-    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
+    public static OS executionOS = OS.IOS_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -40,12 +35,12 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-        String androidBuild = "Android_R.V4.3_RegressionTestForV4.2ProductionBuild_"+formater2.format(calendar.getTime());
+        String androidBuild = "Android_R.V4.3_RegressionTestForRC_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_HotFixBuildRegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
 //        String androidBuild = "AndroidLocalTestBuild";
 //        String iOSBuild = "iOSLocalTestBuild";
-        String iOSBuild = "iOS_R.V4.3_RegressionTestForV4.2ProductionBuild_"+formater2.format(calendar.getTime());
+        String iOSBuild = "iOS_R.V4.3_RegressionTestForRC_"+formater2.format(calendar.getTime());
 
         switch (executionOS) {
             case ANDROID:
@@ -125,13 +120,13 @@ public class AppiumController {
                 break;
         }
 
-        if (executionOS.equals(OS.IOS) || executionOS.equals(OS.IOS_BROWSERSTACK)) {
-            // for click on dialog allow notification in iOS
-            IOSElement textButton = (IOSElement) new WebDriverWait(driver, 5).until(
-                    elementToBeClickable(MobileBy.AccessibilityId("Allow")));
-
-            textButton.click();
-        }
+//        if (executionOS.equals(OS.IOS) || executionOS.equals(OS.IOS_BROWSERSTACK)) {
+//            // for click on dialog allow notification in iOS
+//            IOSElement textButton = (IOSElement) new WebDriverWait(driver, 5).until(
+//                    elementToBeClickable(MobileBy.AccessibilityId("Allow")));
+//
+//            textButton.click();
+//        }
     }
 
     public void stop() {
