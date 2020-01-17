@@ -14,8 +14,8 @@ public class Constants {
 
     //Release app
     public static final String APP_PACKAGE = "com.ap.philly";
-    public static final String APP_ACTIVITY = "com.ap.philly.Views.MainActivity";
-//    public static final String APP_ACTIVITY = "com.ap.philly.Views.SplashScreenActivity";
+//    public static final String APP_ACTIVITY = "com.ap.philly.Views.MainActivity"; //run on iOS
+    public static final String APP_ACTIVITY = "com.ap.philly.Views.SplashScreenActivity"; //run on android
 
     //dev branch
 //    public static final String APP_PACKAGE = "com.ap.philly.test";
