@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class AppiumController {
-    public static OS executionOS = OS.IOS_BROWSERSTACK;
+    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
