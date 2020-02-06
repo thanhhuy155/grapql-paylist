@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class AppiumController {
-    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
+    public static OS executionOS = OS.IOS_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -40,7 +40,7 @@ public class AppiumController {
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
 //        String androidBuild = "AndroidLocalTestBuild";
 //        String iOSBuild = "iOSLocalTestBuild";
-        String iOSBuild = "iOS_R.V4.3_RegressionTestForRC_"+formater2.format(calendar.getTime());
+        String iOSBuild = "iOS_R.V4.4_RegressionTestForRC_"+formater2.format(calendar.getTime());
 
         switch (executionOS) {
             case ANDROID:
