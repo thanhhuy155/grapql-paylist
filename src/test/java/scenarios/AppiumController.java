@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class AppiumController {
-    public static OS executionOS = OS.IOS_BROWSERSTACK;
+    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -35,7 +35,7 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-        String androidBuild = "Android_R.V4.3_RegressionTestForRC_"+formater2.format(calendar.getTime());
+        String androidBuild = "Android_V4.4(107)_RegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_HotFixBuildRegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
 //        String androidBuild = "AndroidLocalTestBuild";

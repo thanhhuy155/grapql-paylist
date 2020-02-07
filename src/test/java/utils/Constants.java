@@ -10,7 +10,7 @@ public class Constants {
     public static final String BS_ACCESSKEY = "FXQUqgscz3gX5NzxH61k";
 
     public static final String IOS_HASHED_APP_ID = "5e940d9f4322c7668b13943073d6aebc5fbf38e5";
-    public static final String ANDROID_HASHED_APP_ID = "ff8c73986f343736b47eee4d7ba92d4004d553e5";//6e00dd4c297e41d480805ba61c3501547acb8a53
+    public static final String ANDROID_HASHED_APP_ID = "d1196ce9154853f8e8cdd129fca0adc9679d000c";//6e00dd4c297e41d480805ba61c3501547acb8a53
 
     //Release app
     public static final String APP_PACKAGE = "com.ap.philly";
@@ -59,7 +59,7 @@ public class Constants {
     }
 
     public static class APP_VERSION {
-        public static final String ANDROID = "4.3.0 Build: 1";
+        public static final String ANDROID = "4.4.0 Build: 107";
         public static final String IOS = "4.4 (4)";
     }
 
