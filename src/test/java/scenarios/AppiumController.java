@@ -40,7 +40,7 @@ public class AppiumController {
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
 //        String androidBuild = "AndroidLocalTestBuild1";
 //        String iOSBuild = "iOSLocalTestBuild";
-       String iOSBuild = "iOS_R.V4.5(12)_RegressionTest"+formater2.format(calendar.getTime());
+       String iOSBuild = "iOS_R.V4.5(13)_RegressionTest"+formater2.format(calendar.getTime());
 
         switch (executionOS) {
             case ANDROID:

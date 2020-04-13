@@ -239,14 +239,14 @@ public class CommonElements implements ICommon {
     public MobileElement sectionTab;
 
     @AndroidFindBy(id = "bookmarks")
-    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[4]")
+    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[3]")
     public MobileElement bookMarkTab;
 
     @AndroidFindBy(id = "settings")
-    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[5]")
+    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[4]")
     public MobileElement settingTab;
 
-    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[3]")
+    @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[2]")
     public MobileElement searchTab;
 
     @AndroidFindBy(id = "find")
