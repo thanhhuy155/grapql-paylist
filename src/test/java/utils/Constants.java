@@ -60,7 +60,7 @@ public class Constants {
 
     public static class APP_VERSION {
         public static final String ANDROID = "4.5 Build: 110";
-        public static final String IOS = "4.4 (4)";
+        public static final String IOS = "4.5 (13)";
     }
 
     public static class LABLE {
