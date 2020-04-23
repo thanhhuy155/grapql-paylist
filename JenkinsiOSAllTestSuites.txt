@@ -20,7 +20,7 @@ pipeline{
 		always{
             node('iOS')
             {
-                bat 'java -jar Tools/testrail-junit.jar -h https://inquirer.testrail.net -u spham@inquirer.com -p Enclave123 -j 4 -e 7 -m 157 -d ./target/surefire-reports -g junitreports\\*.xml -i "Automated results from Jenkins for project"'
+                bat 'java -jar Tools/testrail-junit.jar -h https://inquirer.testrail.net -u spham@inquirer.com -p Enclave123 -j 4 -e 7 -m 172 -d ./target/surefire-reports -g junitreports\\*.xml -i "Automated results from Jenkins for project"'
                 bat 'C:\\Users\\Administrator\\.jenkins\\tools\\allure2.6.0\\allure-2.6.0\\bin\\allure.bat generate C:\\agents\\iOS\\workspace\\iOSAllTestSuites\\allure-results -c -o C:\\agents\\iOS\\workspace\\iOSAllTestSuites\\allure-report'
                 allure([
         			includeProperties: false,
@@ -39,13 +39,13 @@ pipeline{
 						&QUOT;<a href='http://100.26.222.41:8080/view/PhillyDotComNativeAppProjects/job/iOSAllTestSuites/$BUILD_NUMBER/allure/'>Allure Report link</a>&QUOT;</p>
 
 						<b/>
-						<p><font font="Verdana" size="2" color="navy">BrowserStack iOS_R.V4.5(13)_Regression Test in Production: </font>
+						<p><font font="Verdana" size="2" color="navy">BrowserStack iOS_R.V4.5.1(1)_Regression Test in Production: </font>
                         &QUOT;<a href='https://app-automate.browserstack.com/'>BrowserStack link</a>&QUOT;</p>
 
 						<br/>''',
 					postsendScript: '$DEFAULT_POSTSEND_SCRIPT',
 					presendScript: '$DEFAULT_PRESEND_SCRIPT',
-					subject: '$DEFAULT_SUBJECT_iOS_R.V4.5(13)_RegressionTestInProduction',
+					subject: '$DEFAULT_SUBJECT_iOS_R.V4.5.1(1)_RegressionTestInProduction',
           			to: 'nguyenhe@inquirer.com, pduncan@inquirer.com,  nguyenm@inquirer.com, spham@inquirer.com'
 		}
 	}
