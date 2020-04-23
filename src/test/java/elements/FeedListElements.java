@@ -33,7 +33,7 @@ public class FeedListElements extends CommonElements implements IFeedList {
     @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[following-sibling::XCUIElementTypeStaticText[contains(@name,'by')] and preceding-sibling::XCUIElementTypeStaticText]")
     public MobileElement feedItemTitle;
 
-    @AndroidFindBy(id = "tv_top_story_title")
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'tv_top_story_title')]")
     @iOSFindBy(xpath = "//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText[1]")
     public MobileElement feedItemTitleTopStory;
 
