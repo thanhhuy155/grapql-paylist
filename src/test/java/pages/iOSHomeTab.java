@@ -51,6 +51,7 @@ public class iOSHomeTab extends BasePage {
 
 //        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.UP, feedListElements.feedItemTitle);
 //        feedListElements.feedItemClick();
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,feedListElements.feedItemLayout);
         feedListElements.feedItemTitle.click();
         Utils.sleep(5000);
         articleDetailElements = new ArticleDetailElements(appiumDriver);

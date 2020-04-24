@@ -20,6 +20,7 @@ public class iOSGeneral extends BasePage {
         Utils.sleep(Constants.SHORTTIME);
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,feedListElements.feedItemLayout);
         openArticle();
         articleDetailElements.back();
 

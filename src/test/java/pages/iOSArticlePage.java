@@ -20,7 +20,7 @@ public class iOSArticlePage extends BasePage {
         //Step: Open the Philly.com App
         lauchApp();
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
-
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,feedListElements.feedItemLayout);
         String title = feedListElements.getFeedItemTitle();
         feedListElements.feedItemClick();
 

@@ -111,6 +111,7 @@ public class iOSBookmarkTab extends BasePage{
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         //Step: Get article title and Bookmark
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN,feedListElements.feedItemLayout);
         String title = feedListElements.getFeedItemTitle();
 
         Utils.scrollScreen(appiumDriver, Utils.DIRECTION.DOWN);
