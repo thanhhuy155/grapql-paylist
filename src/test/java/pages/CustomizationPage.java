@@ -117,13 +117,8 @@ public class CustomizationPage extends BasePage {
     public void S295_C32116_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnSelectAllTopic() {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
-
-        //Step:Tap Close(x) button on Customization screen
-        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
-            commonElements.customizeScreenExitButton.click();
-        }
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
-        
+
         //Step:Tap on Customize on banner.
         if(Utils.checkElementExist(commonElements.bannerMessage)) {
             commonElements.customizeOnBannerButton.click();
@@ -147,11 +142,6 @@ public class CustomizationPage extends BasePage {
     public void S295_C32123_CU_004_VerifyUsersCanNotFollowCategoryWithoutLogin () {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
-
-        //Step:Tap Close(x) button on Customization screen
-        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
-            commonElements.customizeScreenExitButton.click();
-        }
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         //Step:Tap on Customize on banner.
@@ -213,10 +203,6 @@ public class CustomizationPage extends BasePage {
     public void S295_C32125_CU_007_VerifyCustomizationIsShowWhenTabOnCustomizeButtonOnBanner() {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
-        //Step:Tap Close(x) button on Customization screen
-        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
-            commonElements.customizeScreenExitButton.click();
-        }
         waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
 
         //Step kill app
@@ -237,13 +223,14 @@ public class CustomizationPage extends BasePage {
     public void S295_C32126_CU_008_VerifyGeneralBannerFlow () {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
-        Utils.sleep(5000);
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
         //Step kill app
         resetApp();
 
         //Step: Relaunch app
         appiumDriver.launchApp();
-        Utils.sleep(5000);
+        Utils.sleep(2000);
 
         //Verify:   customization screen is show.
         Assert.assertTrue(Utils.checkElementExist(commonElements.bannerMessage));
@@ -279,20 +266,17 @@ public class CustomizationPage extends BasePage {
     public void S295_C32132_CU_009_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromOnBoarding () {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
-        Utils.sleep(2000);
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
         //Step kill app
         resetApp();
 
         //Step: Relaunch app
         appiumDriver.launchApp();
-        //Step:Tap Close(x) button on Customization screen
-        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
-            commonElements.customizeScreenExitButton.click();
-        }
 
         waitForVisibilityOf(commonElements.customizeOnBannerButton);
         commonElements.customizeOnBannerButton.click();
-        Utils.sleep(5000);
+        Utils.sleep(2000);
 
         //Step: Follow one topic on Customization screen
         if(Utils.checkElementExist(commonElements.customizeContentScreen)){
@@ -375,7 +359,7 @@ public class CustomizationPage extends BasePage {
     public void S295_C32134_CU_011_VerifyLogInScreenAppearsWhenTappingLogInButton() {
         //Step: Open the Philly.com App
         appiumDriver.launchApp();
-        Utils.sleep(2000);
+
         //Step kill app
         resetApp();
 
@@ -625,5 +609,54 @@ public class CustomizationPage extends BasePage {
         //Verify: MyNews on the Home Feed after customized .
         Assert.assertTrue(Utils.checkElementExist(commonElements.getMyNewsButton), "getMyNewsButton not display");
         Assert.assertTrue(Utils.checkElementExist(commonElements.customizeContentScreen), "customizeContentScreen not display");
+    }
+    //C43143
+    public void S296_C43143_CU_018_VerifyThePhiladelphiaInquirerLogoTopOfTheCustomizationOnboarding () {
+        //Step: Open the Philly.com App
+        resetApp();
+
+        appiumDriver.launchApp();
+        Utils.sleep(2000);
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
+        commonElements.customizeOnFeedButton.click();
+        Utils.sleep(2000);
+
+        //Step: Follow one topic on Customization screen
+        waitForVisibilityOf(commonElements.followAll);
+
+        //Verify: MyNews on the Home Feed after customized .
+        Assert.assertTrue(Utils.checkElementExist(commonElements.customizeContentScreen), "customizeContentScreen not display");
+        Assert.assertTrue(Utils.checkElementExist(commonElements.customizeContentScreen), "customizeLogo not display");
+    }
+
+    //   C43144
+    public void S296_C43144_CU_019_VerifyGetYourNewsIsChangedToGetMyNewsOnOnboardingScreen () {
+        //Step: Open the Philly.com App
+        resetApp();
+
+        appiumDriver.launchApp();
+        Utils.sleep(2000);
+        waitForVisibilityOf(feedListElements.feedItemTitleTopStory);
+
+        commonElements.customizeOnFeedButton.click();
+        Utils.sleep(2000);
+
+        //Step: Follow one topic on Customization screen
+        waitForVisibilityOf(commonElements.followAll);
+        commonElements.followAll.click();
+
+
+        commonElements.loginButton.click();
+        waitForVisibilityOf(loginElements.email);
+
+        //Step: Log into the app with valid
+        loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
+        loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
+        loginElements.logInButton.click();
+
+        //Step: Tap on GetMyNews Button
+        waitForVisibilityOf(commonElements.getMyNewsButton);
+        Assert.assertEquals( commonElements.getMyNewsButton.getText(), "GET MY NEWS");
     }
 }

@@ -45,7 +45,7 @@ public class TM_iOSCustomizationPage extends BaseTestClass {
     }
 
     //C12493
-    @Test(priority = 8)
+//    @Test(priority = 8)
     public void S296_C32115_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnSelectAllTopic() {
         iOS_CustomizationPage.S296_C32115_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnSelectAllTopic();
     }
@@ -105,5 +105,67 @@ public class TM_iOSCustomizationPage extends BaseTestClass {
     @Test(priority = 18)
     public void S296_C35413_CU_013_VerifyUserAbleContinueCustomizationOnboardFlowAfterLogIn() {
         iOS_CustomizationPage.S296_C35413_CU_013_VerifyUserAbleContinueCustomizationOnboardFlowAfterLogIn();
+    }
+
+    //C43143
+    @Test(priority = 19)
+    public void S296_C43143_CU_018_VerifyThePhiladelphiaInquirerLogoTopOfTheCustomizationOnboarding() {
+        iOS_CustomizationPage.S296_C43143_CU_018_VerifyThePhiladelphiaInquirerLogoTopOfTheCustomizationOnboarding();
+    }
+
+    //C119520
+    @Test(priority = 20)
+    public void S296_C119520_CU_019_VerifyGetYourNewsIsChangedToGetMyNewsOnOnboardingScreen() {
+        iOS_CustomizationPage.S296_C119520_CU_019_VerifyGetYourNewsIsChangedToGetMyNewsOnOnboardingScreen();
+    }
+
+    //C119511
+    @Test(priority = 21)
+    public void S296_C119511_CU_020_VerifyFollowTopicAfterSigningUpAnAccount() {
+        iOS_CustomizationPage.S296_C119511_CU_020_VerifyFollowTopicAfterSigningUpAnAccount();
+    }
+
+    //C119482
+    @Test(priority = 22)
+    public void S296_C119482_CU_021_VerifyFollowMultipleTopicsInACategory() {
+        iOS_CustomizationPage.S296_C119482_CU_021_VerifyFollowMultipleTopicsInACategory();
+    }
+    //C119483
+    @Test(priority = 23)
+    public void S296_C119483_CU_022_VerifyFollowAllTopicsInACategory() {
+        iOS_CustomizationPage.S296_C119483_CU_022_VerifyFollowAllTopicsInACategory();
+    }
+    //C119484
+    @Test(priority = 24)
+    public void S296_C119484_CU_023_VerifyUnFollowMultipleTopicsInACategory() {
+        iOS_CustomizationPage.S296_C119484_CU_023_VerifyUnFollowMultipleTopicsInACategory();
+    }
+    //C119485
+    @Test(priority = 25)
+    public void S296_C119485_CU_024_VerifyUnFollowAllTopicsInACategory() {
+        iOS_CustomizationPage.S296_C119485_CU_024_VerifyUnFollowAllTopicsInACategory();
+    }
+
+    //C35413
+    @Test(priority = 26)
+    public void S296_C119487_CU_026_VerifyFollowACategoryWithoutLogin() {
+        iOS_CustomizationPage.S296_C119487_CU_026_VerifyFollowACategoryWithoutLogin();
+    }
+
+    //C35413
+    @Test(priority = 27)
+    public void S296_C119490_CU_028_VerifyUnFollowACategoryWithoutLogin() {
+        iOS_CustomizationPage.S296_C119490_CU_028_VerifyUnFollowACategoryWithoutLogin();
+    }
+
+    //C35413
+    @Test(priority = 28)
+    public void S296_C119486_CU_025_VerifyThatTheLogInSignUpdrawerIsUpdated() {
+        iOS_CustomizationPage.S296_C119486_CU_025_VerifyThatTheLogInSignUpdrawerIsUpdated();
+    }
+    //C35413
+    @Test(priority = 29)
+    public void S296_C119492_CU_029_VerifyThatTheLogInSignUpdrawerAlwaysVisible() {
+        iOS_CustomizationPage.S296_C119492_CU_029_VerifyThatTheLogInSignUpdrawerAlwaysVisible();
     }
 }

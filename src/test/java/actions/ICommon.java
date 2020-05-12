@@ -20,6 +20,8 @@ public interface ICommon {
 
     void bookMarkTabClick(AppiumDriver appiumDriver);
 
+    void logOutFromSetting();
+
     void settingTabClick();
 
     void shareArticleOn(AppiumDriver appiumDriver, CommonElements.ShareOptions option);

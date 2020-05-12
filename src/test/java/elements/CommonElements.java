@@ -62,6 +62,13 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'tv_intro')]")
     public MobileElement customizeContentScreen;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeCell[1]/XCUIElementTypeOther[1]")
+//    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'tv_intro')]")
+    public MobileElement customizeLogo;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'addTopicCard']")
+    public MobileElement addTopicCard1;
+
     @iOSFindBy(id ="closeSmallOverlay")
     @AndroidFindBy(id = "btn_exit")
     public MobileElement customizeScreenExitButton;
@@ -115,8 +122,15 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(id = "imv_follow_status_icon")
     public MobileElement checkTopic;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeCell[4]/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'checkTopicCard']")
+    @AndroidFindBy(id = "imv_follow_status_icon")
+    public MobileElement checkTopic2;
+
     @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'addTopicCard']")
     public MobileElement addTopicCard;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeCell[4]/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'addTopicCard']")
+    public MobileElement addTopicCard2;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeStaticText[1]")
     @AndroidFindBy(id = "tv_topic_title")
@@ -252,6 +266,18 @@ public class CommonElements implements ICommon {
     @AndroidFindBy(id = "find")
     @iOSFindBy(xpath = "//XCUIElementTypeTabBar/XCUIElementTypeButton[2]")
     public MobileElement exploreTab;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name = 'View Account Settings']")
+    @AndroidFindBy (xpath = "//android.widget.RelativeLayout/android.widget.TextView[@resource-id='android:id/title']")
+    //@AndroidFindBy (xpath = "//android.widget.TextView[contains(@Text, 'View Account Details')]")
+    public MobileElement viewAccountDetails;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'Log Out')]")
+    @AndroidFindBy(id = "logoutBtn")
+    public MobileElement logOutButton;
+
+    @iOSFindBy(xpath = "//XCUIElementTypeButton[contains(@name, 'Log Out')]")
+    public MobileElement logoutDialogBtn;
     //========================================================================================//
 
     @Override
@@ -383,6 +409,21 @@ public class CommonElements implements ICommon {
             }
         }
         Utils.sleep((Constants.SHORTTIME*3));
+    }
+
+    @Override
+    public void logOutFromSetting() {
+        settingTab.click();
+        Utils.sleep((Constants.SHORTTIME*2));
+        if (Utils.checkElementExist(viewAccountDetails)) {
+            //Click Account
+            viewAccountDetails.click();
+            Utils.sleep((Constants.SHORTTIME*2));
+            //Click Logout
+            logOutButton.click();
+            logoutDialogBtn.click();
+        }
+        Utils.sleep((Constants.SHORTTIME*2));
     }
 
     @Override
