@@ -11,7 +11,7 @@ pipeline{
 					git branch: 'regression',
 						credentialsId: 'b4006acc-b754-4381-9c27-c1c5d9c1629b',
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
-                    bat 'mvn clean test -DhashedID ="23bc4cbde2fb6d889dc247724500a4bd023929f5"  -DsuiteXmlFile=Suite_HomeTab.xml'
+                     bat 'mvn clean test -DsuiteXmlFile=MasterSuite_AndroidAllTests.xml'
                 }
 			}
 		}
