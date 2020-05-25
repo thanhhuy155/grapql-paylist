@@ -1,6 +1,7 @@
 package pages;
 
 import elements.CommonElements;
+import elements.LoginElements;
 import elements.SettingElements;
 import io.appium.java_client.AppiumDriver;
 import org.testng.Assert;
@@ -10,11 +11,13 @@ import utils.Utils;
 public class SettingTab extends BasePage {
     private SettingElements settingElements;
     private CommonElements commonElements;
+    private LoginElements loginElements;
 
     public SettingTab(AppiumDriver driver) {
         super(driver);
         settingElements = new SettingElements(driver);
         commonElements = new CommonElements(driver);
+        loginElements = new LoginElements(driver);
     }
 
     public void S229_C20176_ST_001_VerifyNotificationsOnOffWorksWell() {
@@ -112,6 +115,63 @@ public class SettingTab extends BasePage {
 
         //Step: Copyright reflects current year and Philadelphia Media Network (Digital), LLC
         settingElements.checkAppCopyright("The Philadelphia Inquirer, LLC");
+    }
+
+    // C119498
+    public void S229_C119498_ST_006_VerifySettingsAccountField () {
+        lauchApp();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTabClick();
+        Assert.assertTrue( Utils.checkElementExist(settingElements.logInOrSignUp));
+        Assert.assertTrue( Utils.checkElementExist(settingElements.customizeMyNews));
+
+        settingElements.logInOrSignUp.click();
+        waitForVisibilityOf(loginElements.email);
+        //Step: Log into the app with valid
+        loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
+        loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
+        loginElements.logInButton.click();
+        waitForVisibilityOf(settingElements.settingsHeading);
+        Assert.assertTrue( Utils.checkElementExist(settingElements.manageMyNews));
+        Assert.assertTrue( Utils.checkElementExist(settingElements.accountSettings));
+    }
+
+    public void S229_C119499_ST_007_VerifyUserWillSeeViewAccountSettingsLabelAfterLoggingIn() {
+        resetApp();
+        lauchApp();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTabClick();
+        Assert.assertTrue( Utils.checkElementExist(settingElements.logInOrSignUp));
+        settingElements.logInOrSignUp.click();
+        waitForVisibilityOf(loginElements.email);
+        //Step: Log into the app with valid
+        loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
+        loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
+        loginElements.logInButton.click();
+        waitForVisibilityOf(settingElements.settingsHeading);
+        Assert.assertTrue( Utils.checkElementExist(settingElements.accountSettings));
+    }
+
+    public void S229_C119500_ST_008_VerifyUserWillPushIntoAccountSettingsScreenWhenTappingOnEmailCell() {
+        resetApp();
+        lauchApp();
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTabClick();
+        Assert.assertTrue( Utils.checkElementExist(settingElements.logInOrSignUp));
+        settingElements.logInOrSignUp.click();
+        waitForVisibilityOf(loginElements.email);
+        //Step: Log into the app with valid
+        loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
+        loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
+        loginElements.logInButton.click();
+        waitForVisibilityOf(settingElements.settingsHeading);
+        Assert.assertTrue( Utils.checkElementExist(settingElements.accountSettings));
+        settingElements.accountSettings.click();
+
+        //Step: Verify
+        waitForVisibilityOf(settingElements.accountSettingTitle);
+        Assert.assertTrue( Utils.checkElementExist(settingElements.manageMyAccount));
+        Assert.assertTrue( Utils.checkElementExist(settingElements.logoutBtn));
     }
 
     public void Draft(){

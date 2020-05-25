@@ -28,7 +28,7 @@ public class TM_CustomizationPage extends BaseTestClass {
     }
 
     //C12493
-    @Test(priority = 4)
+    //    @Test(priority = 4)
     public void S295_C32116_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnSelectAllTopic() {
         customizationPage.S295_C32116_CU_003_VerifyLogInSignUpDrawerDismissesWhenNotLoggedUserUnSelectAllTopic();
     }
@@ -109,5 +109,61 @@ public class TM_CustomizationPage extends BaseTestClass {
     @Test(priority = 17)
     public void S295_C35418_CU_013_VerifyUserAbleContinueCustomizationOnboardFlowAfterLogIn() {
         customizationPage.S295_C35418_CU_013_VerifyUserAbleContinueCustomizationOnboardFlowAfterLogIn();
+    }
+    //C35418
+    @Test(priority = 18)
+    public void S295_C43141_CU_018_VerifyThePhiladelphiaInquirerLogoTopOfTheCustomizationOnboarding() {
+        customizationPage.S295_C43141_CU_018_VerifyThePhiladelphiaInquirerLogoTopOfTheCustomizationOnboarding();
+    }
+    //C35418
+    @Test(priority = 19)
+    public void S295_C128216_CU_019_VerifyGetYourNewsIsChangedToGetMyNewsOnOnboardingScreen() {
+        customizationPage.S295_C128216_CU_019_VerifyGetYourNewsIsChangedToGetMyNewsOnOnboardingScreen();
+    }
+    //C35418
+    @Test(priority = 20)
+    public void S295_C128217_CU_020_VerifyFollowTopicAfterSigningUpAnAccount() {
+        customizationPage.S295_C128217_CU_020_VerifyFollowTopicAfterSigningUpAnAccount();
+    }
+    //C35418
+    @Test(priority = 21)
+    public void S295_C128218_CU_021_VerifyFollowMultipleTopicsInACategory() {
+        customizationPage.S295_C128218_CU_021_VerifyFollowMultipleTopicsInACategory();
+    }
+    //C35418
+    @Test(priority = 22)
+    public void S295_C128219_CU_022_VerifyFollowAllTopicsInACategory() {
+        customizationPage.S295_C128219_CU_022_VerifyFollowAllTopicsInACategory();
+    }
+    //C35418
+    @Test(priority = 23)
+    public void S295_C128220_CU_023_VerifyUnFollowMultipleTopicsInACategory() {
+        customizationPage.S295_C128220_CU_023_VerifyUnFollowMultipleTopicsInACategory();
+    }
+
+    //C35418
+    @Test(priority = 24)
+    public void S295_C128221_CU_024_VerifyUnFollowAllTopicsInACategory() {
+        customizationPage.S295_C128221_CU_024_VerifyUnFollowAllTopicsInACategory();
+    }
+    //C35418
+    @Test(priority = 25)
+    public void S295_C128223_CU_026_VerifyFollowACategoryWithoutLogin() {
+        customizationPage.S295_C128223_CU_026_VerifyFollowACategoryWithoutLogin();
+    }
+    //C35418
+    @Test(priority = 26)
+    public void S295_C128224_CU_028_VerifyUnFollowACategoryWithoutLogin() {
+        customizationPage.S295_C128224_CU_028_VerifyUnFollowACategoryWithoutLogin();
+    }
+    //C35418
+    @Test(priority = 27)
+    public void S295_C128222_CU_025_VerifyThatTheLogInSignUpdrawerIsUpdated() {
+        customizationPage.S295_C128222_CU_025_VerifyThatTheLogInSignUpdrawerIsUpdated();
+    }
+    //C35418
+    @Test(priority = 28)
+    public void S295_C128225_CU_029_VerifyThatTheLogInSignUpdrawerAlwaysVisible() {
+        customizationPage.S295_C128225_CU_029_VerifyThatTheLogInSignUpdrawerAlwaysVisible();
     }
 }

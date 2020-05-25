@@ -2,6 +2,7 @@ package pages;
 
 import elements.CommonElements;
 import elements.SettingElements;
+import elements.LoginElements;
 import io.appium.java_client.AppiumDriver;
 import org.testng.Assert;
 import utils.Constants;
@@ -10,11 +11,13 @@ import utils.Utils;
 public class iOSSettingTab extends BasePage {
     private SettingElements settingElements;
     private CommonElements commonElements;
+    private LoginElements loginElements;
 
     public iOSSettingTab(AppiumDriver driver) {
         super(driver);
         settingElements = new SettingElements(driver);
         commonElements = new CommonElements(driver);
+        loginElements = new LoginElements(driver);
     }
 
     public void S229_C20176_ST_001_VerifyNotificationsOnOffWorksWell() {
@@ -113,6 +116,37 @@ public class iOSSettingTab extends BasePage {
         //Step: Copyright reflects current year and Philadelphia Media Network (Digital), LLC
         settingElements.checkAppCopyright("The Philadelphia Inquirer, LLC");
     }
+
+
+    public void S241_C20271_ST_005_VerifyInquirerCopyright1() {
+        //Step: launch app
+        appiumDriver.launchApp();
+
+        //Step:Tap Close(x) button on Customization screen
+        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
+            commonElements.customizeScreenExitButton.click();
+        }
+        waitForVisibilityOf(commonElements.bottomTab);
+        commonElements.settingTabClick();
+
+        Utils.scrollToElement(appiumDriver, Utils.DIRECTION.DOWN, settingElements.pmnCopyrightYear);
+
+        //Step: veryfi
+        Assert.assertTrue(Utils.checkElementExist(settingElements.logInOrSignUp));
+        Assert.assertTrue(Utils.checkElementExist(settingElements.customizeMyNews));
+
+        //Step: Log into the app with valid
+        settingElements.logInOrSignUp.click();
+        loginElements.setValue(loginElements.email, Constants.LOGIN_EMAIL);
+        loginElements.setValue(loginElements.password, Constants.LOGIN_PASSWORD);
+        loginElements.logInButton.click();
+        Utils.sleep(3000);
+
+        Assert.assertTrue(Utils.checkElementExist(settingElements.viewAccountDetails));
+        Assert.assertTrue(Utils.checkElementExist(settingElements.manageMyNews));
+
+    }
+
 
     public void Draft(){
         lauchApp();

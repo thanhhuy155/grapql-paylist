@@ -63,7 +63,7 @@ public class CommonElements implements ICommon {
     public MobileElement customizeContentScreen;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCell[1]/XCUIElementTypeOther[1]")
-//    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@resource-id,'tv_intro')]")
+    @AndroidFindBy(xpath = "//android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ImageView")
     public MobileElement customizeLogo;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'addTopicCard']")
@@ -123,13 +123,14 @@ public class CommonElements implements ICommon {
     public MobileElement checkTopic;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCell[4]/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'checkTopicCard']")
-    @AndroidFindBy(id = "imv_follow_status_icon")
+//    @AndroidFindBy(xpath = "//android.widget.ImageView[contains(@resource-id,'imv_follow_status_icon' and @instance[5])]")
     public MobileElement checkTopic2;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'addTopicCard']")
     public MobileElement addTopicCard;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCell[4]/XCUIElementTypeOther/XCUIElementTypeButton[@name = 'addTopicCard']")
+    @AndroidFindBy(xpath ="//android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ImageView")
     public MobileElement addTopicCard2;
 
     @iOSFindBy(xpath = "//XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeStaticText[1]")

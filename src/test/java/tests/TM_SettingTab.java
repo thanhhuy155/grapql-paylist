@@ -38,4 +38,20 @@ public class TM_SettingTab extends BaseTestClass {
     public void S229_C20180_ST_005_VerifyInquirerCopyright(){
         settingTab.S229_C20180_ST_005_VerifyInquirerCopyright();
     }
+    @Test(priority = 7)
+    //Note: Implemented for both iOS and Android
+    public void S229_C119498_ST_006_VerifySettingsAccountField(){
+        settingTab.S229_C119498_ST_006_VerifySettingsAccountField();
+    }
+    @Test(priority = 8)
+    //Note: Implemented for both iOS and Android
+    public void S229_C119499_ST_007_VerifyUserWillSeeViewAccountSettingsLabelAfterLoggingIn(){
+        settingTab.S229_C119499_ST_007_VerifyUserWillSeeViewAccountSettingsLabelAfterLoggingIn();
+    }
+    @Test(priority = 9)
+    //Note: Implemented for both iOS and Android
+    public void S229_C119500_ST_008_VerifyUserWillPushIntoAccountSettingsScreenWhenTappingOnEmailCell(){
+        settingTab.S229_C119500_ST_008_VerifyUserWillPushIntoAccountSettingsScreenWhenTappingOnEmailCell();
+    }
+
 }

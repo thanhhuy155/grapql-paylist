@@ -70,14 +70,24 @@ public class SettingElements extends CommonElements implements ISetting {
     //@AndroidFindBy (xpath = "//android.widget.TextView[contains(@Text, 'View Account Details')]")
     public MobileElement viewAccountDetails;
 
+    @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name = 'Manage My News']")
+    @AndroidFindBy (xpath = "//android.widget.RelativeLayout/android.widget.TextView[contains(@text,'Manage My News')]")
+    //@AndroidFindBy (xpath = "//android.widget.TextView[contains(@Text, 'View Account Details')]")
+    public MobileElement manageMyNews;
+
     @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name = 'View Account Settings']")
     @AndroidFindBy (xpath = "//android.widget.RelativeLayout/android.widget.TextView[@resource-id='android:id/title']")
     //@AndroidFindBy (xpath = "//android.widget.TextView[contains(@Text, 'View Account Details')]")
     public MobileElement accountSettings;
 
     @iOSFindBy(xpath = "//XCUIElementTypeStaticText[@name = 'View Account Settings']")
-    @AndroidFindBy (xpath = "//android.widget.RelativeLayout/android.widget.TextView[@resource-id='android:id/title']")
-    //@AndroidFindBy (xpath = "//android.widget.TextView[contains(@Text, 'View Account Details')]")
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text, 'Account Settings')]")
+    public MobileElement accountSettingTitle;
+
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@text, 'Manage My Account')]")
+    public MobileElement manageMyAccount;
+
+    @AndroidFindBy (xpath = "//android.widget.TextView[contains(@resource-id, 'logOutTv')]")
     public MobileElement logoutBtn;
 
     //========================================================================================//
