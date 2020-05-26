@@ -26,7 +26,7 @@ public class LoginElements extends BasePage {
     public MobileElement phillyApp;
 
     @iOSFindBy(xpath = "(//XCUIElementTypeStaticText)[2]")
-    @AndroidFindBy(id = "actionBarTitle")
+    @AndroidFindBy(id =  "com_auth0_lock_change_password_btn")
     public MobileElement actionBarTitle;
 
     @iOSFindBy(id =  "Reset Password")
@@ -61,12 +61,12 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextField")
-    @AndroidFindBy(id = "emailEdt")
+    @AndroidFindBy(xpath = "//android.widget.EditText[contains(@text,'Email')]")
     public MobileElement email;
 
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextField")
-    @AndroidFindBy(id = "textinput_error")
+    @AndroidFindBy(id = "errorDescription")
     public MobileElement messageEmail;
 
 
@@ -75,7 +75,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(xpath = "//XCUIElementTypeSecureTextField[1]")
-    @AndroidFindBy(id = "passwordEdt")
+    @AndroidFindBy(xpath = "//android.widget.EditText[contains(@text,'Password')]")
     public MobileElement password;
 
 
@@ -85,12 +85,12 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(xpath = "//XCUIElementTypeTextField[1]")
-    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Please enter your password.')]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'Invalid Password')]")
     public MobileElement messagePassword;
 
 
     @iOSFindBy(id= "invisibilityShow")
-    @AndroidFindBy(id = "text_input_password_toggle")
+    @AndroidFindBy(id = "com_auth0_lock_show_password_toggle")
     public MobileElement showOrHidePasswordIcon;
 
 
@@ -105,7 +105,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id=  "LOG IN")
-    @AndroidFindBy(id = "loginBtn")
+    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text,'LOG IN')]")
     public MobileElement logInButton;
 
 
@@ -115,7 +115,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id=  "Forgot password?")
-    @AndroidFindBy(id = "forgotPassword")
+    @AndroidFindBy(id = "com_auth0_lock_change_password_btn")
     public MobileElement forgotPasswordLink;
 
 
@@ -145,7 +145,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id = "Sign Up.")
-    @AndroidFindBy(id = "signUp")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Sign Up']")
     public MobileElement signUpLink;
 
 
@@ -187,7 +187,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id = "SIGN UP")
-    @AndroidFindBy(id = "signUpBtn")
+    @AndroidFindBy(id = "btn_signup")
     public MobileElement signUpButton;
 
 
@@ -201,7 +201,7 @@ public class LoginElements extends BasePage {
 
 
     @iOSFindBy(id = "The email and password you entered don't match.")
-    @AndroidFindBy(id = "dialog_message")
+    @AndroidFindBy(id = "com_auth0_lock_result_message")
     public MobileElement dialogMessage;
 
 

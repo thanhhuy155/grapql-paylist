@@ -272,17 +272,8 @@ public class CustomizationPage extends BasePage {
     public void S295_C32132_CU_009_VerifyMyNewsHeaderWhenCustomizeTopicOnCustomizationScreenFromOnBoarding () {
         //Step kill app
         resetApp();
-
-        //Step: Relaunch app
-        appiumDriver.launchApp();
-        if(Utils.checkElementExist(commonElements.customizeContentScreen)){
-            commonElements.customizeScreenExitButton.click();
-        }
-        //Step: Relaunch app
-        appiumDriver.launchApp();
-
-        waitForVisibilityOf(commonElements.customizeOnBannerButton);
-        commonElements.customizeOnBannerButton.click();
+//        waitForVisibilityOf(commonElements.customizeOnBannerButton);
+//        commonElements.customizeOnBannerButton.click();
         Utils.sleep(2000);
 
         //Step: Follow one topic on Customization screen
@@ -387,7 +378,7 @@ public class CustomizationPage extends BasePage {
         }
 
         commonElements.signupButton.click();
-        waitForVisibilityOf(loginElements.signUpButton);
+//        waitForVisibilityOf(loginElements.signUpButton);
 
         //Verify: Verify that SignUp screen appears when tapping on "Sign Up" button
         Assert.assertTrue(Utils.checkElementExist(loginElements.confirmPassword));
