@@ -27,6 +27,7 @@ public class AppiumController {
 
     public AppiumDriver driver;
 
+    // mvn clean test -DexecOS=ANDROID_BROWSERSTACK -DappId=20016593aa5f08f858d608af1571e85a6d44b11c -DsuiteXmlFile=Suite_HomeTab.xml
     public void start() throws MalformedURLException {
         if (driver != null) {
             System.out.print("driver: "+driver);
@@ -35,14 +36,17 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-        String androidBuild = "Android_V4.6(112)_RegressionTest_"+formater2.format(calendar.getTime());
+//        String androidBuild = "Android_V4.6(112)_RegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_HotFixBuildRegressionTest_"+formater2.format(calendar.getTime());
         //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
-//        String androidBuild = "AndroidLocalTestBuild1";
-//        String iOSBuild = "iOSLocalTestBuild";
-      String iOSBuild = "iOS_R.V4.6(7)_RegressionTest"+formater2.format(calendar.getTime());
 
-        switch (executionOS) {
+        String androidBuild = "AndroidLocalTestBuild1";
+        String iOSBuild = "iOSLocalTestBuild";
+//      String iOSBuild = "iOS_R.V4.5.1(4)_RegressionTest"+formater2.format(calendar.getTime());
+        OS execOS = OS.valueOf(System.getProperty("execOS"));
+        switch (execOS) {
+        //switch (executionOS) {
+
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
                 File appDir = new File(classpathRoot, "/app");
@@ -99,7 +103,11 @@ public class AppiumController {
                 capabilities.setCapability("appPackage", Constants.APP_PACKAGE);
                 capabilities.setCapability("appActivity", Constants.APP_ACTIVITY);
                 capabilities.setCapability("browserstack.debug", true);
-                capabilities.setCapability("app", "bs://" + Constants.ANDROID_HASHED_APP_ID);
+                String appId = System.getProperty("appId");
+                System.out.println("Run Android with appId=" + appId);
+                capabilities.setCapability("app", "bs://" + appId);
+                //capabilities.setCapability("app", "bs://" + Constants.ANDROID_HASHED_APP_ID);
+
 //                capabilities.setCapability("noReset", "false");
 //                capabilities.setCapability("fullReset", "true");
                 capabilities.setCapability("build",androidBuild);
