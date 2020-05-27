@@ -1,5 +1,10 @@
 pipeline{
 	agent any
+	parameters {
+    			string(name: "MilestoneId", defaultValue: "", description: "Input Milestone")
+    			choice(name: "ExecutionOS", choices: ["ANDROID_BROWSERSTACK", "IOS_BROWSERSTACK"], description: "Select environmen")
+
+            }
 	tools {
         maven 'Maven3'
         jdk 'JDK8'
@@ -13,7 +18,7 @@ pipeline{
 						url: 'https://HeraNguyen@bitbucket.org/HeraNguyen/mobile-test-pcom.git'
 
                     //bat 'mvn clean test -DsuiteXmlFile=MasterSuite_AndroidAllTests.xml'
-                    bat 'mvn clean test -DexecOS=ANDROID_BROWSERSTACK -DappId=20016593aa5f08f858d608af1571e85a6d44b11c -DsuiteXmlFile=Suite_HomeTab.xml'
+                    bat 'mvn clean test -DexecOS= ${ExecutionOS} -DappId=20016593aa5f08f858d608af1571e85a6d44b11c -DsuiteXmlFile=Suite_HomeTab.xml'
                 }
 			}
 		}
