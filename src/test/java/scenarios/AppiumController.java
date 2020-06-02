@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class AppiumController {
-    public static OS executionOS = OS.IOS_BROWSERSTACK;
+    public static OS executionOS = OS.ANDROID_BROWSERSTACK;
 
     public enum OS {
         ANDROID,
@@ -24,10 +24,8 @@ public class AppiumController {
         ANDROID_Emulator
     }
 
-
     public AppiumDriver driver;
 
-    // mvn clean test -DexecOS=ANDROID_BROWSERSTACK -DappId=20016593aa5f08f858d608af1571e85a6d44b11c -DsuiteXmlFile=Suite_HomeTab.xml
     public void start() throws MalformedURLException {
         if (driver != null) {
             System.out.print("driver: "+driver);
@@ -36,17 +34,14 @@ public class AppiumController {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater2 = new SimpleDateFormat("ddMMyyyy");
-//        String androidBuild = "Android_V4.6(112)_RegressionTest_"+formater2.format(calendar.getTime());
-        //String androidBuild = "Android_SprintC_HotFixBuildRegressionTest_"+formater2.format(calendar.getTime());
-        //String androidBuild = "Android_SprintC_RerunFailedTests_"+formater2.format(calendar.getTime());
-
-        String androidBuild = "AndroidLocalTestBuild1";
-        String iOSBuild = "iOSLocalTestBuild";
+//      String androidBuild = "Android_V4.6(112)_RegressionTest_"+formater2.format(calendar.getTime());
 //      String iOSBuild = "iOS_R.V4.5.1(4)_RegressionTest"+formater2.format(calendar.getTime());
-        OS execOS = OS.valueOf(System.getProperty("execOS"));
-        switch (execOS) {
-        //switch (executionOS) {
 
+        String buildName = "";
+        String appId = System.getProperty("appId");
+        executionOS = OS.valueOf(System.getProperty("execOS"));
+
+        switch (executionOS) {
             case ANDROID:
                 File classpathRoot = new File(System.getProperty("user.dir"));
                 File appDir = new File(classpathRoot, "/app");
@@ -84,7 +79,7 @@ public class AppiumController {
                 capabilities.setCapability("fullReset", "true");
                 driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
                 break;
-            case IOS_Simulator:
+             case IOS_Simulator:
                 classpathRoot = new File(System.getProperty("user.dir"));
                 appDir = new File(classpathRoot, "/app");
                 app = new File(appDir, "PhillyDotCom131.app");
@@ -103,14 +98,11 @@ public class AppiumController {
                 capabilities.setCapability("appPackage", Constants.APP_PACKAGE);
                 capabilities.setCapability("appActivity", Constants.APP_ACTIVITY);
                 capabilities.setCapability("browserstack.debug", true);
-                String appId = System.getProperty("appId");
-                System.out.println("Run Android with appId=" + appId);
-                capabilities.setCapability("app", "bs://" + appId);
-                //capabilities.setCapability("app", "bs://" + Constants.ANDROID_HASHED_APP_ID);
 
-//                capabilities.setCapability("noReset", "false");
-//                capabilities.setCapability("fullReset", "true");
-                capabilities.setCapability("build",androidBuild);
+                System.out.println("Run Android with appId: " + appId);
+                capabilities.setCapability("app", "bs://" + appId);
+                buildName = "Android_RegressionTesting_"+formater2.format(calendar.getTime());
+                capabilities.setCapability("build", buildName);
                 capabilities.setCapability("name",Constants.EXECUTING_SUITE);
                 driver = new AndroidDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
@@ -119,10 +111,11 @@ public class AppiumController {
                 capabilities.setCapability("os_version", "12.2");//11.4
                 capabilities.setCapability("automationName", "XCUITest");
                 capabilities.setCapability("browserstack.debug", true);
-                capabilities.setCapability("app", "bs://" + Constants.IOS_HASHED_APP_ID);
-//                capabilities.setCapability("noReset", "false");
-//                capabilities.setCapability("fullReset", "true");
-                capabilities.setCapability("build",iOSBuild);
+
+                System.out.println("Run iOS with appId: " + appId);
+                capabilities.setCapability("app", "bs://" + appId);
+                buildName = "iOS_RegressionTesting_"+formater2.format(calendar.getTime());
+                capabilities.setCapability("build", buildName);
                 capabilities.setCapability("name",Constants.EXECUTING_SUITE);
                 driver = new IOSDriver(new URL("https://" + Constants.BS_USERNAME + ":" + Constants.BS_ACCESSKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
